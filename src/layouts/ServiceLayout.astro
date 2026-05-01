@@ -75,19 +75,24 @@ const description = service.metaDescBase;
   </section>
 
   {service.gallery && service.gallery.filter((g) => g.src !== service.heroImage).length > 0 && (
-    <section class="container-wide pb-16">
-      <div class="mb-8" data-reveal>
-        <h2 class="text-balance">{service.shortName} Project Gallery</h2>
-        <p class="mt-2 text-slate-600">Recent {service.shortName.toLowerCase()} work across the Inland Empire.</p>
-      </div>
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-        {service.gallery.filter((g) => g.src !== service.heroImage).map((g, i) => (
-          <figure class="group overflow-hidden rounded-xl border border-slate-200 shadow-sm hover:shadow-xl transition-shadow duration-300" data-reveal data-reveal-delay={String((i % 3) * 100 + 100)}>
-            <div class="aspect-[4/3] overflow-hidden bg-slate-100">
-              <img src={g.src} alt={g.alt} loading="lazy" decoding="async" class="h-full w-full object-cover img-zoom" />
-            </div>
-          </figure>
-        ))}
+    <section class="container-wide pb-20 overflow-hidden">
+      <div class="relative space-y-12 md:space-y-16">
+        {service.gallery.filter((g) => g.src !== service.heroImage).map((g, i) => {
+          const layouts = [
+            { wrap: 'md:w-3/5 md:ml-0',           tilt: '-rotate-2',  reveal: 'left' },
+            { wrap: 'md:w-1/2 md:ml-auto md:mr-4', tilt: 'rotate-2',   reveal: 'right' },
+            { wrap: 'md:w-3/4 md:mx-auto',         tilt: 'rotate-0',   reveal: 'zoom' },
+            { wrap: 'md:w-2/5 md:ml-12',           tilt: 'rotate-1',   reveal: 'left' },
+            { wrap: 'md:w-2/5 md:ml-auto md:mr-12',tilt: '-rotate-1',  reveal: 'right' },
+            { wrap: 'md:w-1/2 md:mx-auto',         tilt: 'rotate-2',   reveal: 'zoom' },
+          ];
+          const L = layouts[i % layouts.length];
+          return (
+            <figure class={`${L.wrap} ${L.tilt} transition-transform duration-500 hover:rotate-0 hover:scale-[1.02]`} data-reveal={L.reveal} data-reveal-delay={String((i % 3) * 120)}>
+              <img src={g.src} alt={g.alt} loading="lazy" decoding="async" class="w-full rounded-2xl shadow-2xl ring-1 ring-brand-100" />
+            </figure>
+          );
+        })}
       </div>
     </section>
   )}

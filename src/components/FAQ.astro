@@ -1,0 +1,19 @@
+---
+interface FAQItem { q: string; a: string; }
+interface Props { faqs: FAQItem[]; heading?: string; }
+const { faqs, heading = 'Frequently Asked Questions' } = Astro.props as Props;
+---
+<section class="container-narrow py-16">
+  <h2 class="text-balance mb-8">{heading}</h2>
+  <dl class="divide-y divide-slate-200 border-y border-slate-200">
+    {faqs.map((f, i) => (
+      <details class="group py-4" open={i === 0}>
+        <summary class="flex items-center justify-between gap-4 cursor-pointer text-left text-lg font-semibold text-brand-900 list-none">
+          <span>{f.q}</span>
+          <span class="shrink-0 text-brand-700 transition-transform group-open:rotate-45 text-2xl">+</span>
+        </summary>
+        <dd class="mt-3 text-slate-700 leading-relaxed">{f.a}</dd>
+      </details>
+    ))}
+  </dl>
+</section>

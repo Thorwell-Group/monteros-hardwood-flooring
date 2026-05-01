@@ -1,0 +1,73 @@
+---
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import Hero from '~/components/Hero.astro';
+import TrustBar from '~/components/TrustBar.astro';
+import CTABanner from '~/components/CTABanner.astro';
+import Breadcrumbs from '~/components/Breadcrumbs.astro';
+import { breadcrumbSchema } from '~/lib/schema';
+import { business } from '~/data/business';
+const crumbs = [{ name: 'Home', href: '/' }, { name: 'About', href: '/about/' }];
+const schemas = [breadcrumbSchema(crumbs)];
+---
+<BaseLayout
+  title={`About ${business.brandName} | Family-Owned for ${business.yearsInBusiness}+ Years`}
+  description={`Meet ${business.brandName} — family-owned flooring contractor serving the Inland Empire for ${business.yearsInBusiness}+ years. Honest pricing, lifetime workmanship guarantee, real craftsmanship.`}
+  pathname="/about/"
+  schemas={schemas}
+>
+  <Hero
+    eyebrow="About Us"
+    title={`Family-Owned. Inland Empire-Rooted. ${business.yearsInBusiness}+ Years.`}
+    subtitle={`Meet the ${business.brandName} family — the crew Inland Empire homeowners trust to install, refinish, and repair their hardwood floors.`}
+    image="/images/monteros-flooring-team-installation.webp"
+    alt={`${business.brandName} family installing hardwood floors`}
+    ratingBadge={false}
+  />
+  <TrustBar />
+
+  <section class="container-wide py-16">
+    <div class="mb-4"><Breadcrumbs items={crumbs} /></div>
+    <div class="grid lg:grid-cols-3 gap-10">
+      <div class="lg:col-span-2 prose-brand">
+        <h2>Our Story</h2>
+        <p>{business.brandName} started as a family business in San Bernardino over {business.yearsInBusiness} years ago, built around one idea: the floors we install in your home should be the same quality we\'d install in our own.</p>
+        <p>Two decades later, we\'ve installed, refinished, and repaired hardwood, luxury vinyl, and laminate floors in thousands of Inland Empire homes — from craftsman bungalows in Redlands to new-construction homes in Eastvale, and everything in between.</p>
+
+        <h2>What Hasn\'t Changed</h2>
+        <p>We still measure twice and install once. We still give you a written, itemized quote with no surprise add-ons. We still acclimate hardwood the full 3 – 5 days before install — non-negotiable in our climate. We still send the crew that bid your job to do your job.</p>
+        <p>And we still stand behind every install with a lifetime workmanship guarantee. If something we install ever fails because of how we installed it, we make it right — for as long as you own the floor.</p>
+
+        <h2>Why People Choose Us</h2>
+        <ul>
+          <li><strong>Family-owned.</strong> The same family answers the phone, bids the job, and runs the install crew.</li>
+          <li><strong>Local roots.</strong> {business.yearsInBusiness}+ years working specifically in the Inland Empire climate, building stock, and neighborhoods.</li>
+          <li><strong>Honest pricing.</strong> Written, itemized, holds for 30 days, no upsell pressure.</li>
+          <li><strong>Lifetime workmanship guarantee.</strong> If our install fails, we fix it.</li>
+          <li><strong>Clean job sites.</strong> Drop cloths, dust containment, daily clean-up.</li>
+        </ul>
+
+        <h2>Where We Work</h2>
+        <p>Our shop is at {business.address.street} in {business.address.city}, {business.address.region}. From there, we serve {business.serviceArea.primaryCounty}, Riverside County, and surrounding communities. <a href="/areas-we-serve/">See all areas we serve</a>.</p>
+
+        <h2>Get in Touch</h2>
+        <p>Free in-home estimates, available across the Inland Empire. <a href="/contact/">Contact us</a> or call <a href={`tel:${business.phoneE164}`}>{business.phoneDisplay}</a>.</p>
+      </div>
+
+      <aside class="space-y-4 lg:sticky lg:top-24">
+        <div class="card p-6">
+          <div class="font-display text-xl font-bold text-brand-900">Quick Facts</div>
+          <ul class="mt-4 space-y-3 text-sm">
+            <li><span class="text-slate-600">Years in business:</span> <span class="font-semibold">{business.yearsInBusiness}+</span></li>
+            <li><span class="text-slate-600">Headquartered:</span> <span class="font-semibold">{business.address.city}, {business.address.region}</span></li>
+            <li><span class="text-slate-600">Service area:</span> <span class="font-semibold">{business.serviceArea.primaryCounty} + Riverside County</span></li>
+            <li><span class="text-slate-600">Hours:</span> <span class="font-semibold">{business.hoursSummary}</span></li>
+            <li><span class="text-slate-600">Rating:</span> <span class="font-semibold">{business.ratings.averageRating}★ ({business.ratings.reviewCount}+ reviews)</span></li>
+          </ul>
+          <a href="/contact/" class="btn-primary w-full mt-5">Free Estimate</a>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <CTABanner />
+</BaseLayout>

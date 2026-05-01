@@ -1,0 +1,16 @@
+---
+interface Props { query: string; title: string; height?: string; }
+const { query, title, height = 'h-[400px]' } = Astro.props as Props;
+const url = `https://www.google.com/maps?q=${encodeURIComponent(query)}&output=embed`;
+---
+<div class={`w-full ${height} rounded-xl overflow-hidden border border-slate-200 bg-slate-100`}>
+  <iframe
+    src={url}
+    title={title}
+    width="100%"
+    height="100%"
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+    style="border:0;"
+  ></iframe>
+</div>

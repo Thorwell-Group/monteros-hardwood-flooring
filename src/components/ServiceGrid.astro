@@ -1,0 +1,33 @@
+---
+import { services } from '~/data/services';
+import type { City } from '~/data/cities';
+interface Props { city?: City; heading?: string; subheading?: string; }
+const { city, heading, subheading } = Astro.props as Props;
+const linkBase = city ? `/areas-we-serve/${city.slug}` : '/services';
+const titleSuffix = city ? ` in ${city.name}` : '';
+---
+<section class="container-wide py-16 md:py-20">
+  {heading && (
+    <div class="max-w-2xl mb-10">
+      <h2 class="text-balance">{heading}</h2>
+      {subheading && <p class="mt-3 text-lg text-slate-600">{subheading}</p>}
+    </div>
+  )}
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+    {services.filter((s) => !city || s.cityVariant).map((s) => (
+      <a href={`${linkBase}/${s.slug}/`} class="card group overflow-hidden">
+        <div class="aspect-[16/10] overflow-hidden bg-slate-100">
+          <img src={s.heroImage} alt={s.altText} loading="lazy" decoding="async" width="640" height="400" class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-500" />
+        </div>
+        <div class="p-5">
+          <h3 class="text-xl font-semibold text-brand-900">{s.shortName}{titleSuffix}</h3>
+          <p class="mt-2 text-sm text-slate-600">{s.oneLiner}</p>
+          <span class="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-brand-700 group-hover:text-brand-900">
+            Learn more
+            <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path d="M5 10h10m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+          </span>
+        </div>
+      </a>
+    ))}
+  </div>
+</section>

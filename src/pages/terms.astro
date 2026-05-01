@@ -1,0 +1,57 @@
+---
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import Breadcrumbs from '~/components/Breadcrumbs.astro';
+import { breadcrumbSchema } from '~/lib/schema';
+import { business } from '~/data/business';
+const crumbs = [{ name: 'Home', href: '/' }, { name: 'Terms', href: '/terms/' }];
+const schemas = [breadcrumbSchema(crumbs)];
+---
+<BaseLayout
+  title="Terms of Use"
+  description={`Terms of use for ${business.brandName} website.`}
+  pathname="/terms/"
+  schemas={schemas}
+>
+  <section class="container-narrow py-16">
+    <div class="mb-4"><Breadcrumbs items={crumbs} /></div>
+    <h1>Terms of Use</h1>
+    <p class="text-slate-600 mt-2">Last updated: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+
+    <div class="prose-brand mt-8">
+      <p>By using {business.siteUrl} ("the site"), you agree to these terms. {business.brandName} ("we", "us") may update them at any time; continued use after changes means acceptance.</p>
+
+      <h2>Use of the Site</h2>
+      <p>You may browse the site for personal, non-commercial use. You agree not to:</p>
+      <ul>
+        <li>Reproduce, copy, or scrape content beyond what is permitted by fair use</li>
+        <li>Use automated systems to extract data without permission</li>
+        <li>Submit false information through any contact form</li>
+        <li>Attempt to disrupt or compromise the site\'s security or availability</li>
+      </ul>
+
+      <h2>Estimates and Quotes</h2>
+      <p>Estimates and quotes provided through this site or in person are estimates only and subject to change based on inspection of conditions, product availability, and other factors. A binding agreement is created only upon a signed written contract.</p>
+
+      <h2>Pricing</h2>
+      <p>Prices and ranges shown on this site are typical pricing for the Inland Empire market and are subject to change. Final pricing is provided in your written estimate after an in-home consultation.</p>
+
+      <h2>Warranty</h2>
+      <p>Workmanship and material warranties are governed by the written terms provided at project sign-off. See our <a href="/warranty/">warranty page</a> for general information.</p>
+
+      <h2>Intellectual Property</h2>
+      <p>All content on this site — text, images, logos, design — is owned by {business.brandName} or licensed for our use. Reproduction without written permission is prohibited.</p>
+
+      <h2>Disclaimer</h2>
+      <p>Information on this site is provided "as is" for general informational purposes. We make reasonable efforts to ensure accuracy but make no warranties about completeness or applicability to your specific situation. Always consult a professional for project-specific advice.</p>
+
+      <h2>Limitation of Liability</h2>
+      <p>To the maximum extent permitted by law, {business.brandName} is not liable for indirect, incidental, or consequential damages arising from use of this site.</p>
+
+      <h2>Governing Law</h2>
+      <p>These terms are governed by the laws of the State of California. Any disputes will be resolved in the courts of San Bernardino County, California.</p>
+
+      <h2>Contact</h2>
+      <p>{business.brandName}<br/>{business.address.street}<br/>{business.address.city}, {business.address.region} {business.address.postalCode}<br/>{business.email}<br/>{business.phoneDisplay}</p>
+    </div>
+  </section>
+</BaseLayout>

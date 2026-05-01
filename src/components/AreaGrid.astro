@@ -1,0 +1,22 @@
+---
+import { cities } from '~/data/cities';
+interface Props { heading?: string; subheading?: string; }
+const { heading, subheading } = Astro.props as Props;
+---
+<section class="container-wide py-16 md:py-20">
+  {heading && (
+    <div class="max-w-2xl mb-10">
+      <h2 class="text-balance">{heading}</h2>
+      {subheading && <p class="mt-3 text-lg text-slate-600">{subheading}</p>}
+    </div>
+  )}
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-3">
+    {cities.map((c) => (
+      <a href={`/areas-we-serve/${c.slug}/`} class="card p-5 hover:border-brand-400 group">
+        <div class="text-lg font-semibold text-brand-900 group-hover:text-brand-700">{c.name}, {c.state}</div>
+        <div class="text-xs text-slate-500 mt-1">{c.county}</div>
+        <div class="mt-3 text-sm text-slate-600 line-clamp-2">{c.neighborhoods.slice(0, 3).join(' · ')}</div>
+      </a>
+    ))}
+  </div>
+</section>

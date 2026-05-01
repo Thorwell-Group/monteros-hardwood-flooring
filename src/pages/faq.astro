@@ -1,0 +1,41 @@
+---
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import Hero from '~/components/Hero.astro';
+import TrustBar from '~/components/TrustBar.astro';
+import FAQ from '~/components/FAQ.astro';
+import CTABanner from '~/components/CTABanner.astro';
+import Breadcrumbs from '~/components/Breadcrumbs.astro';
+import { generalFaqs } from '~/data/faqs';
+import { services } from '~/data/services';
+import { breadcrumbSchema, faqSchema } from '~/lib/schema';
+
+const allFaqs = [
+  ...generalFaqs,
+  ...services.flatMap((s) => s.faqs.slice(0, 2).map((f) => ({ q: f.q, a: f.a }))),
+];
+
+const crumbs = [{ name: 'Home', href: '/' }, { name: 'FAQ', href: '/faq/' }];
+const schemas = [breadcrumbSchema(crumbs), faqSchema(allFaqs)];
+---
+<BaseLayout
+  title="Flooring FAQ | Inland Empire Hardwood Questions"
+  description="Frequently asked flooring questions — pricing, timeline, materials, financing, warranty. From a 20+ year Inland Empire flooring contractor."
+  pathname="/faq/"
+  schemas={schemas}
+>
+  <Hero
+    eyebrow="FAQ"
+    title="Frequently Asked Flooring Questions"
+    subtitle="The questions Inland Empire homeowners ask us most often, answered straight."
+    image="/images/hardwood-flooring-installation.webp"
+    alt="Flooring FAQ"
+    ratingBadge={false}
+  />
+  <TrustBar />
+
+  <section class="container-narrow pt-10"><Breadcrumbs items={crumbs} /></section>
+
+  <FAQ faqs={allFaqs} heading="Common Questions" />
+
+  <CTABanner />
+</BaseLayout>

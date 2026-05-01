@@ -1,0 +1,106 @@
+---
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import Hero from '~/components/Hero.astro';
+import Breadcrumbs from '~/components/Breadcrumbs.astro';
+import TrustBar from '~/components/TrustBar.astro';
+import ServiceGrid from '~/components/ServiceGrid.astro';
+import GoogleMap from '~/components/GoogleMap.astro';
+import FAQ from '~/components/FAQ.astro';
+import CTABanner from '~/components/CTABanner.astro';
+import { breadcrumbSchema, faqSchema } from '~/lib/schema';
+import { generalFaqs } from '~/data/faqs';
+import { business } from '~/data/business';
+import { cityHubIntro, cityHubServiceSummary } from '~/lib/content';
+import type { City } from '~/data/cities';
+
+interface Props { city: City; }
+const { city } = Astro.props as Props;
+const path = `/areas-we-serve/${city.slug}/`;
+
+const crumbs = [
+  { name: 'Home', href: '/' },
+  { name: 'Areas We Serve', href: '/areas-we-serve/' },
+  { name: city.name, href: path },
+];
+
+const intro = cityHubIntro(city);
+const serviceSummary = cityHubServiceSummary(city);
+
+const cityFaqs = [
+  {
+    q: `Do you serve ${city.name}, CA?`,
+    a: `Yes — ${city.name} is one of our core service cities. We work in ${city.neighborhoods.slice(0, 3).join(', ')}, and across the rest of ${city.name} weekly. ${city.driveMinutesFromHQ === 0 ? 'Our shop is located here in San Bernardino at 717 W 36th St.' : `Our San Bernardino shop is about ${city.driveMinutesFromHQ} minutes away.`}`,
+  },
+  {
+    q: `What flooring services do you offer in ${city.name}?`,
+    a: `Hardwood installation, hardwood refinishing, luxury vinyl plank (LVP), laminate, and floor repair. We also handle hardwood stair installation and refinishing as a separate specialty.`,
+  },
+  {
+    q: `How do I get a free estimate in ${city.name}?`,
+    a: `Call ${business.phoneDisplay} or use our contact form. We'll schedule an in-home visit, take measurements and subfloor moisture readings, walk through samples, and follow up with a written, itemized estimate within a couple of business days.`,
+  },
+  ...generalFaqs.slice(0, 4),
+];
+
+const schemas = [
+  breadcrumbSchema(crumbs),
+  faqSchema(cityFaqs),
+];
+
+const title = `Hardwood, LVP & Laminate Flooring in ${city.name}, ${city.state}`;
+const description = `${city.name} flooring contractor for hardwood installation, refinishing, luxury vinyl plank, laminate, and floor repair. Family-owned for 20+ years. Free in-home estimates.`;
+---
+<BaseLayout
+  title={title}
+  description={description}
+  pathname={path}
+  schemas={schemas}
+>
+  <Hero
+    eyebrow={`Serving ${city.name}, ${city.state}`}
+    title={`Flooring Contractor in ${city.name}`}
+    subtitle={`Hardwood, luxury vinyl, laminate, refinishing, and repair. Family-owned for ${business.yearsInBusiness}+ years across ${city.county}.`}
+    image="/images/hardwood-flooring-installation.webp"
+    alt={`Hardwood floor installation in ${city.name}, ${city.state}`}
+  />
+
+  <TrustBar />
+
+  <section class="container-wide py-16">
+    <div class="mb-4"><Breadcrumbs items={crumbs} /></div>
+
+    <div class="grid lg:grid-cols-3 gap-10 items-start">
+      <div class="lg:col-span-2 prose-brand">
+        <h2>Flooring in {city.name}, {city.state}</h2>
+        <p>{intro}</p>
+        <p>{serviceSummary}</p>
+
+        <h3>Neighborhoods We Serve in {city.name}</h3>
+        <p>{business.brandName} works across all of {city.name} and surrounding zip codes:</p>
+        <ul>{city.neighborhoods.map((n) => <li>{n}</li>)}</ul>
+        <p class="text-sm text-slate-500 mt-2">Common zip codes: {city.zipCodes.join(', ')}</p>
+      </div>
+
+      <aside class="space-y-4 lg:sticky lg:top-24">
+        <div class="card p-6">
+          <div class="text-xs uppercase tracking-wider text-brand-700 font-semibold">Get Started</div>
+          <div class="mt-3 text-2xl font-display font-bold text-brand-900">Free Estimate</div>
+          <div class="text-sm text-slate-600 mt-1">In-home consultation in {city.name}, samples on-site, written quote.</div>
+          <a href="/contact/" class="btn-primary w-full mt-5">Request Estimate</a>
+          <a href={`tel:${business.phoneE164}`} class="btn-secondary w-full mt-2">Call {business.phoneDisplay}</a>
+        </div>
+        <GoogleMap query={`${city.name}, ${city.state}`} title={`Map of ${city.name}, ${city.state}`} height="h-[280px]" />
+      </aside>
+    </div>
+  </section>
+
+  <ServiceGrid
+    city={city}
+    heading={`Our Services in ${city.name}`}
+    subheading={`Click any service to see ${city.name}-specific details, pricing, and FAQ.`}
+  />
+
+  <FAQ faqs={cityFaqs} heading={`${city.name} Flooring FAQ`} />
+
+  <CTABanner title={`Ready to floor your ${city.name} home?`} />
+</BaseLayout>

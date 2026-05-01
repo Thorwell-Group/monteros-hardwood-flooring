@@ -1,0 +1,71 @@
+---
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import Hero from '~/components/Hero.astro';
+import TrustBar from '~/components/TrustBar.astro';
+import CTABanner from '~/components/CTABanner.astro';
+import Breadcrumbs from '~/components/Breadcrumbs.astro';
+import { breadcrumbSchema } from '~/lib/schema';
+import { business } from '~/data/business';
+const crumbs = [{ name: 'Home', href: '/' }, { name: 'Warranty', href: '/warranty/' }];
+const schemas = [breadcrumbSchema(crumbs)];
+---
+<BaseLayout
+  title="Lifetime Workmanship Warranty | Monteros Hardwood Flooring"
+  description="Lifetime workmanship warranty on every Monteros flooring installation. Plus manufacturer material warranties. What\'s covered and how to make a claim."
+  pathname="/warranty/"
+  schemas={schemas}
+>
+  <Hero
+    eyebrow="Warranty"
+    title="Lifetime Workmanship Guarantee"
+    subtitle="If our installation ever fails because of how we installed it, we make it right — for as long as you own the floor."
+    image="/images/hardwood-flooring-installation.webp"
+    alt="Lifetime workmanship warranty"
+    ratingBadge={false}
+  />
+  <TrustBar />
+
+  <section class="container-wide py-16">
+    <div class="mb-4"><Breadcrumbs items={crumbs} /></div>
+    <div class="prose-brand max-w-3xl">
+      <h2>What\'s Covered (Workmanship)</h2>
+      <ul>
+        <li>Squeaks caused by our nailing or fastening method</li>
+        <li>Lifting boards caused by improper subfloor prep we performed</li>
+        <li>Open seams or transitions caused by improper install</li>
+        <li>Quarter-round, baseboard, and trim work we installed</li>
+        <li>Stair tread and riser installation we performed</li>
+        <li>Refinishing finish failures attributable to our application process</li>
+      </ul>
+
+      <h2>What\'s Covered (Materials)</h2>
+      <p>The materials themselves carry manufacturer warranties — typically 25 to 50 years for hardwood, 15 to 30 years for LVP and laminate. We provide all warranty paperwork at job sign-off.</p>
+
+      <h2>What\'s Not Covered</h2>
+      <ul>
+        <li>Damage from water leaks, plumbing failures, or flooding</li>
+        <li>Damage from pets, furniture, or impact</li>
+        <li>Color fading from prolonged direct sunlight</li>
+        <li>Failure from indoor humidity outside the manufacturer\'s recommended range (typically 35 – 55%)</li>
+        <li>Damage from improper cleaning products (we provide a recommended cleaner list)</li>
+        <li>Modifications, repairs, or refinishing performed by others</li>
+      </ul>
+
+      <h2>How to Make a Workmanship Claim</h2>
+      <ol>
+        <li>Call us at <a href={`tel:${business.phoneE164}`}>{business.phoneDisplay}</a> or email <a href={`mailto:${business.email}`}>{business.email}</a>.</li>
+        <li>Describe the issue and provide photos if possible.</li>
+        <li>We schedule an inspection within a few business days.</li>
+        <li>If covered, we repair at no cost. If not covered, we provide an honest assessment and quote.</li>
+      </ol>
+
+      <h2>How to Make a Materials Claim</h2>
+      <p>Manufacturer material warranties are between you and the manufacturer. We provide all paperwork and contact information at sign-off and assist with the claim process if needed.</p>
+
+      <h2>Transferability</h2>
+      <p>Workmanship warranty is non-transferable — it covers the original homeowner. If you sell, the new owner would need to address any issues directly.</p>
+    </div>
+  </section>
+
+  <CTABanner />
+</BaseLayout>

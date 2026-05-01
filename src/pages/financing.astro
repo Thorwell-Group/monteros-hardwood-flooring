@@ -1,0 +1,68 @@
+---
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import Hero from '~/components/Hero.astro';
+import TrustBar from '~/components/TrustBar.astro';
+import CTABanner from '~/components/CTABanner.astro';
+import Breadcrumbs from '~/components/Breadcrumbs.astro';
+import { breadcrumbSchema } from '~/lib/schema';
+import { business } from '~/data/business';
+const crumbs = [{ name: 'Home', href: '/' }, { name: 'Financing', href: '/financing/' }];
+const schemas = [breadcrumbSchema(crumbs)];
+---
+<BaseLayout
+  title="Flooring Financing | 0% Promo Available"
+  description="Flooring financing options for Inland Empire homeowners. 0% promotional financing for qualified customers. Apply during your free estimate."
+  pathname="/financing/"
+  schemas={schemas}
+>
+  <Hero
+    eyebrow="Financing"
+    title="Flexible Flooring Financing"
+    subtitle="0% promotional financing for qualified customers. Apply during your free in-home estimate — no commitment."
+    image="/images/hardwood-flooring-installation.webp"
+    alt="Flooring financing options"
+    ratingBadge={false}
+  />
+  <TrustBar />
+
+  <section class="container-wide py-16">
+    <div class="mb-4"><Breadcrumbs items={crumbs} /></div>
+    <div class="grid lg:grid-cols-2 gap-10 prose-brand max-w-none">
+      <div>
+        <h2>Promotional 0% Financing</h2>
+        <p>Qualified customers can finance flooring projects with 0% interest promotional plans — typically 6, 12, or 18 months depending on project size.</p>
+        <p>Plans are offered through established home-improvement financing partners and are subject to credit approval. Specific terms and minimum project amounts vary.</p>
+
+        <h2>How to Apply</h2>
+        <ol>
+          <li>Schedule your <a href="/contact/">free in-home estimate</a>.</li>
+          <li>We discuss financing options that fit your project size.</li>
+          <li>You apply through the partner financing platform — soft credit pull initially.</li>
+          <li>Approval typically returns within minutes.</li>
+          <li>Financing is finalized at project sign-off.</li>
+        </ol>
+
+        <p class="text-sm text-slate-500"><strong>Disclosure:</strong> Financing terms are subject to credit approval by our financing partners. Promotional offers are time-limited and subject to change. Specific plans, terms, APRs (after promotional period), and minimum amounts will be disclosed at the time of application. {business.brandName} does not directly extend credit.</p>
+      </div>
+      <div>
+        <h2>Why Finance?</h2>
+        <ul>
+          <li><strong>Get your project done now</strong> instead of saving for months.</li>
+          <li><strong>Pay over time</strong> with low monthly payments.</li>
+          <li><strong>0% promo period</strong> means no interest if paid within the promotional window.</li>
+          <li><strong>No prepayment penalty</strong> on most financing plans.</li>
+          <li><strong>Quick approval</strong> — usually within minutes.</li>
+        </ul>
+
+        <h2>Common Financing Questions</h2>
+        <p><strong>Will applying hurt my credit?</strong> Initial pre-qualification is typically a soft pull. Full application after approval may result in a hard pull. Disclosed before you commit.</p>
+        <p><strong>What if I don\'t qualify?</strong> Other financing options may be available. We can also discuss project scope adjustments to fit different budgets.</p>
+        <p><strong>Can I pay cash and skip financing?</strong> Absolutely. Most projects are paid via cash, check, or credit card without financing.</p>
+
+        <a href="/contact/" class="btn-primary mt-4">Schedule Free Estimate</a>
+      </div>
+    </div>
+  </section>
+
+  <CTABanner />
+</BaseLayout>

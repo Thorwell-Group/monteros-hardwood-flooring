@@ -1,0 +1,18 @@
+---
+import { business } from '~/data/business';
+interface Props { title?: string; subtitle?: string; }
+const {
+  title = 'Ready to upgrade your floors?',
+  subtitle = `Free in-home estimate. Honest pricing. ${business.yearsInBusiness}+ years of Inland Empire craftsmanship.`,
+} = Astro.props as Props;
+---
+<section class="bg-brand-800 text-white">
+  <div class="container-wide py-14 md:py-20 text-center">
+    <h2 class="text-white text-balance">{title}</h2>
+    <p class="mt-4 text-lg text-brand-100 max-w-2xl mx-auto text-balance">{subtitle}</p>
+    <div class="mt-8 flex flex-wrap items-center justify-center gap-3">
+      <a href="/contact/" class="btn-cta">Get a Free Estimate</a>
+      <a href={`tel:${business.phoneE164}`} class="btn-outline">Call {business.phoneDisplay}</a>
+    </div>
+  </div>
+</section>

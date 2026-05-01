@@ -1,0 +1,66 @@
+---
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import Breadcrumbs from '~/components/Breadcrumbs.astro';
+import { breadcrumbSchema } from '~/lib/schema';
+import { business } from '~/data/business';
+const crumbs = [{ name: 'Home', href: '/' }, { name: 'Privacy', href: '/privacy/' }];
+const schemas = [breadcrumbSchema(crumbs)];
+---
+<BaseLayout
+  title="Privacy Policy"
+  description={`Privacy policy for ${business.brandName} — what we collect, how we use it, and your rights.`}
+  pathname="/privacy/"
+  schemas={schemas}
+>
+  <section class="container-narrow py-16">
+    <div class="mb-4"><Breadcrumbs items={crumbs} /></div>
+    <h1>Privacy Policy</h1>
+    <p class="text-slate-600 mt-2">Last updated: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+
+    <div class="prose-brand mt-8">
+      <p>{business.brandName} ("we", "us", "our") respects your privacy. This policy explains what information we collect through this website, how we use it, and your rights.</p>
+
+      <h2>Information We Collect</h2>
+      <p>When you contact us via form, phone, or email, we collect:</p>
+      <ul>
+        <li>Your name, phone number, email address</li>
+        <li>Your home address or service location (if you provide it for an estimate)</li>
+        <li>Project details you choose to share</li>
+      </ul>
+      <p>We do not collect personal information about visitors who only browse the site without contacting us. Standard server logs (IP address, browser, page visited, timestamp) may be collected for security and analytics.</p>
+
+      <h2>How We Use Your Information</h2>
+      <ul>
+        <li>To respond to your inquiry and schedule estimates</li>
+        <li>To provide flooring services you request</li>
+        <li>To follow up on completed work and warranty matters</li>
+        <li>To send occasional service updates if you opt in</li>
+      </ul>
+
+      <h2>What We Don\'t Do</h2>
+      <ul>
+        <li>We do not sell your personal information.</li>
+        <li>We do not share your information with third parties for marketing.</li>
+        <li>We do not contact you with marketing texts without explicit opt-in.</li>
+      </ul>
+
+      <h2>Third-Party Services</h2>
+      <p>This site uses:</p>
+      <ul>
+        <li>Google Maps for embedded location maps (governed by Google\'s privacy policy)</li>
+        <li>Form submission via Formspree or similar service (governed by their privacy policy)</li>
+        <li>Standard analytics may be added (we will update this policy if so)</li>
+      </ul>
+
+      <h2>Your Rights</h2>
+      <p>You may request access to, correction of, or deletion of any personal information we hold by contacting us at <a href={`mailto:${business.email}`}>{business.email}</a>. California residents have additional rights under the CCPA — contact us to exercise them.</p>
+
+      <h2>Cookies</h2>
+      <p>This site uses minimal cookies, primarily for functionality (remembering form values during a session). No advertising trackers are used.</p>
+
+      <h2>Contact</h2>
+      <p>Questions about this policy? Contact us:</p>
+      <p>{business.brandName}<br/>{business.address.street}<br/>{business.address.city}, {business.address.region} {business.address.postalCode}<br/>{business.email}<br/>{business.phoneDisplay}</p>
+    </div>
+  </section>
+</BaseLayout>

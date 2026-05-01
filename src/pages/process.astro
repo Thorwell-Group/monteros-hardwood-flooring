@@ -1,0 +1,43 @@
+---
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import Hero from '~/components/Hero.astro';
+import TrustBar from '~/components/TrustBar.astro';
+import ProcessSteps from '~/components/ProcessSteps.astro';
+import CTABanner from '~/components/CTABanner.astro';
+import Breadcrumbs from '~/components/Breadcrumbs.astro';
+import { breadcrumbSchema } from '~/lib/schema';
+
+const crumbs = [{ name: 'Home', href: '/' }, { name: 'Our Process', href: '/process/' }];
+const schemas = [breadcrumbSchema(crumbs)];
+
+const fullProcess = [
+  { step: 'Initial call or form', detail: 'You reach out by phone, web form, or email. We respond within one business day.' },
+  { step: 'Free in-home estimate', detail: 'We come to your home with samples. Measure, take subfloor moisture readings, walk through species, finishes, widths, and your timeline.' },
+  { step: 'Written, itemized quote', detail: 'Within a couple of business days, you receive a detailed quote in writing — every line item, no surprise add-ons. Holds for 30 days.' },
+  { step: 'Materials ordered + acclimation', detail: 'Once you sign off, we order materials. Hardwood acclimates in your home 3 – 5 days before install — non-negotiable in our climate.' },
+  { step: 'Demo and subfloor prep', detail: 'Old flooring removed, subfloor cleaned, leveled, and moisture-tested again. Drop cloths laid, dust containment set up.' },
+  { step: 'Installation', detail: 'Boards installed by skilled craftsmen. Daily clean-up, drop cloths replaced, your home stays livable as much as possible.' },
+  { step: 'Finish work + transitions', detail: 'Quarter-round, baseboards, transitions to other flooring, stair nosings — clean lines and tight reveals.' },
+  { step: 'Walk-through and sign-off', detail: 'You walk the floor with us. Punch list addressed before we leave. You sign off only when it\'s right.' },
+  { step: 'Lifetime workmanship warranty', detail: 'Written warranty in your hand. If our installation ever fails, we make it right.' },
+];
+---
+<BaseLayout
+  title="Our Flooring Process | From Estimate to Walk-Through"
+  description="The Monteros flooring process — from first call to lifetime workmanship guarantee. Predictable, clear, and clean every time."
+  pathname="/process/"
+  schemas={schemas}
+>
+  <Hero
+    eyebrow="Our Process"
+    title="From First Call to Final Walk-Through"
+    subtitle="Predictable from the first phone call to the last sign-off. No surprises, no pressure."
+    image="/images/monteros-flooring-team-installation.webp"
+    alt="The Monteros flooring process"
+    ratingBadge={false}
+  />
+  <TrustBar />
+  <section class="container-wide pt-10"><Breadcrumbs items={crumbs} /></section>
+  <ProcessSteps steps={fullProcess} heading="The Full 9-Step Process" subheading="Every project follows the same predictable steps from estimate through warranty." />
+  <CTABanner />
+</BaseLayout>

@@ -1,0 +1,68 @@
+---
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import Hero from '~/components/Hero.astro';
+import TrustBar from '~/components/TrustBar.astro';
+import ServiceGrid from '~/components/ServiceGrid.astro';
+import AreaGrid from '~/components/AreaGrid.astro';
+import ProcessSteps from '~/components/ProcessSteps.astro';
+import FAQ from '~/components/FAQ.astro';
+import CTABanner from '~/components/CTABanner.astro';
+import { generalFaqs } from '~/data/faqs';
+import { faqSchema } from '~/lib/schema';
+import { business } from '~/data/business';
+
+const homeProcess = [
+  { step: 'Free in-home estimate', detail: 'We measure your space, take subfloor moisture readings, and walk you through species, finishes, and width options on-site.' },
+  { step: 'Written, itemized quote', detail: 'No vague pricing. You get every line item in writing — materials, labor, demo, disposal — and the price holds for 30 days.' },
+  { step: 'Materials acclimate, then install', detail: 'Hardwood acclimates 3 – 5 days in your home before install. Our crew shows up on schedule, lays drop cloths, and works clean.' },
+  { step: 'Final walk-through and warranty', detail: 'You sign off only when it\'s right. Lifetime workmanship guarantee, materials warranty paperwork in hand.' },
+];
+
+const schemas = [faqSchema(generalFaqs)];
+---
+<BaseLayout
+  title={`Inland Empire Hardwood Flooring | Family-Owned ${business.yearsInBusiness}+ Years`}
+  description={`${business.brandName} — hardwood, luxury vinyl, laminate, refinishing, and floor repair across San Bernardino, Riverside, and the Inland Empire. Family-owned for ${business.yearsInBusiness}+ years. Free estimates.`}
+  pathname="/"
+  schemas={schemas}
+>
+  <Hero
+    eyebrow="Inland Empire's Trusted Hardwood Crew"
+    title="Hardwood Floors Done Right the First Time"
+    subtitle={`Family-owned for ${business.yearsInBusiness}+ years across San Bernardino, Riverside, and the Inland Empire. Hardwood installation, refinishing, luxury vinyl, laminate, and repair — with honest pricing and a lifetime workmanship guarantee.`}
+    image="/images/hardwood-flooring-installation.webp"
+    alt="Newly installed wide-plank hardwood floor in a Southern California home"
+  />
+
+  <TrustBar />
+
+  <section class="container-wide py-16 md:py-20">
+    <div class="grid lg:grid-cols-2 gap-10 items-center">
+      <div>
+        <div class="badge mb-3">Family-Owned · {business.yearsInBusiness}+ Years</div>
+        <h2 class="text-balance">Inland Empire Homeowners' First Call for Real Hardwood Floors</h2>
+        <p class="mt-5 text-lg text-slate-700 leading-relaxed">For over two decades, the Monteros family has been installing, refinishing, and repairing hardwood, luxury vinyl, and laminate floors across San Bernardino County, Riverside County, and beyond. We measure twice, install once, and stand behind every job for life.</p>
+        <p class="mt-4 text-slate-700 leading-relaxed">No high-pressure sales. No mystery fees. Just a written, itemized quote, on-time crews, dust-controlled work, and floors that look as good in ten years as they do on day one.</p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="/contact/" class="btn-primary">Free In-Home Estimate</a>
+          <a href="/about/" class="btn-secondary">About Our Family</a>
+        </div>
+      </div>
+      <div>
+        <img src="/images/monteros-flooring-team-installation.webp" alt={`${business.brandName} crew installing hardwood floors in an Inland Empire home`} loading="lazy" decoding="async" width="800" height="600" class="rounded-2xl shadow-lg" />
+      </div>
+    </div>
+  </section>
+
+  <ServiceGrid heading="Our Flooring Services" subheading="Six core services, every floor type, all delivered with the same craftsmanship and clear pricing." />
+
+  <div class="bg-slate-50">
+    <ProcessSteps steps={homeProcess} heading="The Monteros Process" subheading="Predictable from first call to final walk-through. No surprises." />
+  </div>
+
+  <AreaGrid heading="Areas We Serve" subheading="Family-owned and locally rooted across the Inland Empire — find your city below or call for service outside this list." />
+
+  <FAQ faqs={generalFaqs} />
+
+  <CTABanner />
+</BaseLayout>

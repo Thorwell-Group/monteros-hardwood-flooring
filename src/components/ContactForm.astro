@@ -1,0 +1,48 @@
+---
+import { business } from '~/data/business';
+import { services } from '~/data/services';
+interface Props { defaultService?: string; defaultCity?: string; }
+const { defaultService = '', defaultCity = '' } = Astro.props as Props;
+const action = `https://formspree.io/f/${business.formspreeId}`;
+---
+<form action={action} method="POST" class="space-y-5">
+  <input type="hidden" name="_subject" value={`New estimate request — ${business.brandName}`} />
+  <input type="hidden" name="_redirect" value={`${business.siteUrl}/thank-you/`} />
+  <div class="grid md:grid-cols-2 gap-4">
+    <label class="block">
+      <span class="text-sm font-semibold text-slate-700">Name *</span>
+      <input type="text" name="name" required autocomplete="name" class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2.5 focus:ring-2 focus:ring-brand-500 focus:border-brand-500" />
+    </label>
+    <label class="block">
+      <span class="text-sm font-semibold text-slate-700">Phone *</span>
+      <input type="tel" name="phone" required autocomplete="tel" class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2.5 focus:ring-2 focus:ring-brand-500 focus:border-brand-500" />
+    </label>
+  </div>
+  <label class="block">
+    <span class="text-sm font-semibold text-slate-700">Email *</span>
+    <input type="email" name="email" required autocomplete="email" class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2.5 focus:ring-2 focus:ring-brand-500 focus:border-brand-500" />
+  </label>
+  <div class="grid md:grid-cols-2 gap-4">
+    <label class="block">
+      <span class="text-sm font-semibold text-slate-700">City *</span>
+      <input type="text" name="city" required value={defaultCity} class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2.5 focus:ring-2 focus:ring-brand-500 focus:border-brand-500" />
+    </label>
+    <label class="block">
+      <span class="text-sm font-semibold text-slate-700">Service Interested In</span>
+      <select name="service" class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2.5 focus:ring-2 focus:ring-brand-500 focus:border-brand-500">
+        <option value="">— Select —</option>
+        {services.map((s) => (
+          <option value={s.name} selected={s.slug === defaultService}>{s.name}</option>
+        ))}
+        <option value="Not sure yet">Not sure yet</option>
+      </select>
+    </label>
+  </div>
+  <label class="block">
+    <span class="text-sm font-semibold text-slate-700">Project Details</span>
+    <textarea name="message" rows="5" placeholder="Approximate square footage, current flooring, timeline, anything else we should know" class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2.5 focus:ring-2 focus:ring-brand-500 focus:border-brand-500"></textarea>
+  </label>
+  <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hidden" />
+  <button type="submit" class="btn-primary w-full md:w-auto">Request My Free Estimate</button>
+  <p class="text-xs text-slate-500">We'll respond within one business day. Most estimates scheduled within the same week.</p>
+</form>

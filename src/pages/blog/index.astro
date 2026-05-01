@@ -1,0 +1,54 @@
+---
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import Hero from '~/components/Hero.astro';
+import Breadcrumbs from '~/components/Breadcrumbs.astro';
+import CTABanner from '~/components/CTABanner.astro';
+import { blogPosts } from '~/data/blog';
+import { breadcrumbSchema } from '~/lib/schema';
+import { formatDate } from '~/lib/formatting';
+
+const posts = [...blogPosts].sort((a, b) => b.date.localeCompare(a.date));
+const crumbs = [
+  { name: 'Home', href: '/' },
+  { name: 'Blog', href: '/blog/' },
+];
+const schemas = [breadcrumbSchema(crumbs)];
+---
+<BaseLayout
+  title="Flooring Blog | Inland Empire Hardwood Tips & Guides"
+  description="Practical hardwood, LVP, laminate, and refinishing guides from a 20+ year Inland Empire flooring contractor. Cost guides, comparisons, and maintenance tips."
+  pathname="/blog/"
+  schemas={schemas}
+>
+  <Hero
+    eyebrow="Blog"
+    title="Inland Empire Flooring Guides"
+    subtitle="Practical articles on hardwood, LVP, laminate, refinishing, and floor repair — written by the team installing them every day."
+    image="/images/hardwood-floor-refinishing.webp"
+    alt="Hardwood flooring articles and guides"
+  />
+
+  <section class="container-wide pt-10"><Breadcrumbs items={crumbs} /></section>
+
+  <section class="container-wide py-12">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {posts.map((post) => (
+        <a href={`/blog/${post.slug}/`} class="card overflow-hidden group">
+          <div class="aspect-[16/10] overflow-hidden bg-slate-100">
+            <img src={post.image} alt={post.alt} loading="lazy" decoding="async" width="640" height="400" class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          </div>
+          <div class="p-5">
+            <div class="badge mb-2 capitalize">{post.category}</div>
+            <h3 class="text-lg font-semibold text-brand-900 group-hover:text-brand-700">{post.title}</h3>
+            <p class="mt-2 text-sm text-slate-600 line-clamp-3">{post.excerpt}</p>
+            <div class="mt-3 text-xs text-slate-500">
+              <time datetime={post.date}>{formatDate(post.date)}</time> · {post.readMins} min read
+            </div>
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <CTABanner />
+</BaseLayout>

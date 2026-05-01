@@ -1,0 +1,56 @@
+---
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import Hero from '~/components/Hero.astro';
+import TrustBar from '~/components/TrustBar.astro';
+import CTABanner from '~/components/CTABanner.astro';
+import Breadcrumbs from '~/components/Breadcrumbs.astro';
+import { breadcrumbSchema } from '~/lib/schema';
+const crumbs = [{ name: 'Home', href: '/' }, { name: 'Gallery', href: '/gallery/' }];
+const schemas = [breadcrumbSchema(crumbs)];
+
+const gallery = [
+  { src: '/images/hardwood-flooring-installation.webp', alt: 'Hardwood floor installation in an Inland Empire home', label: 'Hardwood Installation' },
+  { src: '/images/hardwood-floor-refinishing.webp', alt: 'Hardwood floor refinishing showing transformation', label: 'Refinishing' },
+  { src: '/images/luxury-vinyl-plank-flooring.webp', alt: 'Luxury vinyl plank flooring in a living room', label: 'Luxury Vinyl Plank' },
+  { src: '/images/luxury-vinyl-plank-detail.webp', alt: 'Detailed view of luxury vinyl plank installation', label: 'LVP Detail' },
+  { src: '/images/laminate-flooring.webp', alt: 'Laminate flooring in a Southern California home', label: 'Laminate' },
+  { src: '/images/laminate-flooring-detail.webp', alt: 'Laminate flooring detail', label: 'Laminate Detail' },
+  { src: '/images/laminate-vs-luxury-vinyl-comparison.webp', alt: 'Laminate and LVP comparison', label: 'Laminate vs LVP' },
+  { src: '/images/hardwood-kitchen-flooring.webp', alt: 'Hardwood kitchen flooring in an Inland Empire home', label: 'Kitchen Floors' },
+  { src: '/images/hardwood-staircase-installation.webp', alt: 'Hardwood staircase installation', label: 'Staircase' },
+  { src: '/images/commercial-flooring-installation.webp', alt: 'Commercial flooring installation', label: 'Commercial' },
+  { src: '/images/monteros-flooring-team-installation.webp', alt: 'Monteros team installing hardwood floors', label: 'Our Crew at Work' },
+];
+---
+<BaseLayout
+  title="Project Gallery | Inland Empire Flooring Work"
+  description="Photo gallery of recent hardwood, LVP, laminate, and refinishing projects across the Inland Empire."
+  pathname="/gallery/"
+  schemas={schemas}
+>
+  <Hero
+    eyebrow="Gallery"
+    title="Recent Inland Empire Flooring Projects"
+    subtitle="A look at the work — installs, refinishes, repairs, and the floors we\'re proudest of."
+    image="/images/hardwood-kitchen-flooring.webp"
+    alt="Monteros project gallery"
+    ratingBadge={false}
+  />
+  <TrustBar />
+
+  <section class="container-wide py-12">
+    <div class="mb-4"><Breadcrumbs items={crumbs} /></div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      {gallery.map((g) => (
+        <figure class="card overflow-hidden">
+          <div class="aspect-[4/3] bg-slate-100 overflow-hidden">
+            <img src={g.src} alt={g.alt} loading="lazy" decoding="async" width="800" height="600" class="h-full w-full object-cover hover:scale-105 transition-transform duration-500" />
+          </div>
+          <figcaption class="p-3 text-sm font-semibold text-brand-900">{g.label}</figcaption>
+        </figure>
+      ))}
+    </div>
+  </section>
+
+  <CTABanner />
+</BaseLayout>

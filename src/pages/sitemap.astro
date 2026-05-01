@@ -1,0 +1,93 @@
+---
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import Breadcrumbs from '~/components/Breadcrumbs.astro';
+import { services, cityVariantServices } from '~/data/services';
+import { cities } from '~/data/cities';
+import { blogPosts } from '~/data/blog';
+import { guides } from '~/data/guides';
+import { breadcrumbSchema } from '~/lib/schema';
+
+const crumbs = [{ name: 'Home', href: '/' }, { name: 'Sitemap', href: '/sitemap/' }];
+const schemas = [breadcrumbSchema(crumbs)];
+---
+<BaseLayout
+  title="HTML Sitemap | All Pages"
+  description="Complete list of pages on Monteros Hardwood Flooring."
+  pathname="/sitemap/"
+  schemas={schemas}
+>
+  <section class="container-wide py-16">
+    <div class="mb-4"><Breadcrumbs items={crumbs} /></div>
+    <h1>Site Map</h1>
+    <p class="text-slate-600 mt-2">Every page on the site, organized by section.</p>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+      <div>
+        <h2 class="text-xl">Main Pages</h2>
+        <ul class="mt-3 space-y-1 text-sm">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/process/">Our Process</a></li>
+          <li><a href="/contact/">Contact</a></li>
+          <li><a href="/free-estimate/">Free Estimate</a></li>
+          <li><a href="/gallery/">Gallery</a></li>
+          <li><a href="/reviews/">Reviews</a></li>
+          <li><a href="/financing/">Financing</a></li>
+          <li><a href="/warranty/">Warranty</a></li>
+          <li><a href="/faq/">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="text-xl">Services</h2>
+        <ul class="mt-3 space-y-1 text-sm">
+          <li><a href="/services/">All Services</a></li>
+          {services.map((s) => (
+            <li><a href={`/services/${s.slug}/`}>{s.shortName}</a></li>
+          ))}
+        </ul>
+
+        <h2 class="text-xl mt-6">Flooring Guides</h2>
+        <ul class="mt-3 space-y-1 text-sm">
+          {guides.map((g) => (
+            <li><a href={`/flooring/${g.slug}/`}>{g.title}</a></li>
+          ))}
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="text-xl">Areas We Serve</h2>
+        <ul class="mt-3 space-y-1 text-sm">
+          <li><a href="/areas-we-serve/">All Areas</a></li>
+          {cities.map((c) => (
+            <li>
+              <a href={`/areas-we-serve/${c.slug}/`} class="font-semibold">{c.name}</a>
+              <ul class="ml-4 mt-1 space-y-0.5 text-xs">
+                {cityVariantServices.map((s) => (
+                  <li>↳ <a href={`/areas-we-serve/${c.slug}/${s.slug}/`}>{s.shortName}</a></li>
+                ))}
+              </ul>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="text-xl">Blog</h2>
+        <ul class="mt-3 space-y-1 text-sm">
+          <li><a href="/blog/">Blog Index</a></li>
+          {blogPosts.map((p) => (
+            <li><a href={`/blog/${p.slug}/`}>{p.title}</a></li>
+          ))}
+        </ul>
+
+        <h2 class="text-xl mt-6">Legal</h2>
+        <ul class="mt-3 space-y-1 text-sm">
+          <li><a href="/privacy/">Privacy Policy</a></li>
+          <li><a href="/terms/">Terms of Use</a></li>
+          <li><a href="/sitemap.xml">XML Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

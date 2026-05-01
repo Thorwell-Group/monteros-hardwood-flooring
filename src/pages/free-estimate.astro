@@ -1,0 +1,65 @@
+---
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import Hero from '~/components/Hero.astro';
+import TrustBar from '~/components/TrustBar.astro';
+import ContactForm from '~/components/ContactForm.astro';
+import Breadcrumbs from '~/components/Breadcrumbs.astro';
+import { breadcrumbSchema } from '~/lib/schema';
+import { business } from '~/data/business';
+const crumbs = [{ name: 'Home', href: '/' }, { name: 'Free Estimate', href: '/free-estimate/' }];
+const schemas = [breadcrumbSchema(crumbs)];
+---
+<BaseLayout
+  title="Free In-Home Flooring Estimate | Inland Empire"
+  description="Schedule a free in-home flooring estimate across the Inland Empire. Samples brought to you, written quote within days, no pressure."
+  pathname="/free-estimate/"
+  schemas={schemas}
+>
+  <Hero
+    eyebrow="Free Estimate"
+    title="Schedule Your Free In-Home Estimate"
+    subtitle={`Samples brought to your home, measurements taken, subfloor moisture tested, written quote within a couple of business days.`}
+    image="/images/monteros-flooring-team-installation.webp"
+    alt="Schedule a free in-home flooring estimate"
+    ratingBadge={false}
+  />
+  <TrustBar />
+
+  <section class="container-wide py-16">
+    <div class="mb-4"><Breadcrumbs items={crumbs} /></div>
+    <div class="grid lg:grid-cols-2 gap-10">
+      <div class="prose-brand">
+        <h2>What to Expect</h2>
+        <ol>
+          <li><strong>You submit the form or call</strong> {business.phoneDisplay}.</li>
+          <li><strong>We respond within one business day</strong> to schedule your in-home visit.</li>
+          <li><strong>We come to you</strong> with samples of the flooring types you\'re considering.</li>
+          <li><strong>We measure and assess.</strong> Square footage, subfloor condition, moisture readings, demo complexity.</li>
+          <li><strong>Written, itemized quote within a couple of business days.</strong> Holds for 30 days.</li>
+          <li><strong>You decide on your timeline.</strong> No pressure, no follow-up calls unless you ask.</li>
+        </ol>
+
+        <h2>What\'s Included in the Quote</h2>
+        <ul>
+          <li>Materials (planks, underlayment, fasteners, finish, trim)</li>
+          <li>Labor (demo, prep, install, finish)</li>
+          <li>Disposal of old flooring</li>
+          <li>Standard furniture moving</li>
+          <li>Quarter-round and transitions</li>
+          <li>Lifetime workmanship guarantee</li>
+        </ul>
+
+        <h2>What\'s Quoted Separately</h2>
+        <ul>
+          <li>Stairs (priced per tread)</li>
+          <li>Subfloor repair beyond standard prep</li>
+          <li>Specialty trim or custom transitions</li>
+          <li>Pianos, gun safes, oversized items moving</li>
+        </ul>
+      </div>
+      <div>
+        <ContactForm />
+      </div>
+    </div>
+  </section>
+</BaseLayout>

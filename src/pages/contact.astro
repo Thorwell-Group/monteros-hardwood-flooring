@@ -1,0 +1,64 @@
+---
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import Hero from '~/components/Hero.astro';
+import TrustBar from '~/components/TrustBar.astro';
+import ContactForm from '~/components/ContactForm.astro';
+import GoogleMap from '~/components/GoogleMap.astro';
+import Breadcrumbs from '~/components/Breadcrumbs.astro';
+import { breadcrumbSchema } from '~/lib/schema';
+import { business } from '~/data/business';
+
+const crumbs = [{ name: 'Home', href: '/' }, { name: 'Contact', href: '/contact/' }];
+const schemas = [breadcrumbSchema(crumbs)];
+---
+<BaseLayout
+  title={`Contact ${business.brandName} | Free In-Home Estimate`}
+  description={`Contact ${business.brandName} for a free in-home flooring estimate. Call ${business.phoneDisplay} or use the form. Inland Empire-wide service.`}
+  pathname="/contact/"
+  schemas={schemas}
+>
+  <Hero
+    eyebrow="Contact"
+    title="Free In-Home Estimate"
+    subtitle="Call, fill out the form, or stop by. We respond within one business day and most estimates are scheduled within the same week."
+    image="/images/hardwood-flooring-installation.webp"
+    alt="Contact Monteros Hardwood Flooring"
+    ratingBadge={false}
+  />
+  <TrustBar />
+
+  <section class="container-wide py-16">
+    <div class="mb-4"><Breadcrumbs items={crumbs} /></div>
+    <div class="grid lg:grid-cols-2 gap-10">
+      <div>
+        <h2>Send Us a Message</h2>
+        <p class="mt-3 text-slate-600">Tell us about your project. We\'ll respond within one business day to schedule your free in-home estimate.</p>
+        <div class="mt-6"><ContactForm /></div>
+      </div>
+      <aside class="space-y-6">
+        <div class="card p-6">
+          <h3 class="font-display text-xl font-bold text-brand-900">Reach Us Directly</h3>
+          <ul class="mt-4 space-y-3 text-sm">
+            <li class="flex items-start gap-3">
+              <span class="text-brand-700 font-semibold">Phone:</span>
+              <a href={`tel:${business.phoneE164}`} class="text-brand-800 font-semibold hover:underline">{business.phoneDisplay}</a>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-brand-700 font-semibold">Email:</span>
+              <a href={`mailto:${business.email}`} class="hover:underline">{business.email}</a>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-brand-700 font-semibold">Address:</span>
+              <address class="not-italic">{business.address.street}<br/>{business.address.city}, {business.address.region} {business.address.postalCode}</address>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-brand-700 font-semibold">Hours:</span>
+              <span>{business.hoursSummary}<br/>Sunday: Closed</span>
+            </li>
+          </ul>
+        </div>
+        <GoogleMap query={`${business.address.street}, ${business.address.city}, ${business.address.region} ${business.address.postalCode}`} title="Monteros Hardwood Flooring location" />
+      </aside>
+    </div>
+  </section>
+</BaseLayout>

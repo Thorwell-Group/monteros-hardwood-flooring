@@ -1,0 +1,48 @@
+---
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import Hero from '~/components/Hero.astro';
+import TrustBar from '~/components/TrustBar.astro';
+import AreaGrid from '~/components/AreaGrid.astro';
+import CTABanner from '~/components/CTABanner.astro';
+import Breadcrumbs from '~/components/Breadcrumbs.astro';
+import GoogleMap from '~/components/GoogleMap.astro';
+import { breadcrumbSchema } from '~/lib/schema';
+import { business } from '~/data/business';
+import { cities } from '~/data/cities';
+
+const crumbs = [
+  { name: 'Home', href: '/' },
+  { name: 'Areas We Serve', href: '/areas-we-serve/' },
+];
+const schemas = [breadcrumbSchema(crumbs)];
+---
+<BaseLayout
+  title="Areas We Serve | Inland Empire Flooring"
+  description={`Inland Empire flooring service area. ${business.brandName} serves ${cities.length}+ cities across San Bernardino County and Riverside County, including ${cities.slice(0, 5).map((c) => c.name).join(', ')} and more.`}
+  pathname="/areas-we-serve/"
+  schemas={schemas}
+>
+  <Hero
+    eyebrow="Service Area"
+    title="Areas We Serve Across the Inland Empire"
+    subtitle={`Family-owned and locally rooted. We bring hardwood, luxury vinyl, laminate, refinishing, and floor repair to ${cities.length}+ cities across San Bernardino County and Riverside County.`}
+    image="/images/hardwood-kitchen-flooring.webp"
+    alt="Inland Empire homes served by Monteros Hardwood Flooring"
+  />
+  <TrustBar />
+  <section class="container-wide pt-10"><Breadcrumbs items={crumbs} /></section>
+
+  <section class="container-wide py-12">
+    <div class="grid lg:grid-cols-3 gap-8 items-start">
+      <div class="lg:col-span-2 prose-brand">
+        <h2>Our Inland Empire Service Area</h2>
+        <p>Our shop is at {business.address.street} in {business.address.city}, {business.address.region}. From there, our crews fan out across the Inland Empire daily — installing, refinishing, and repairing floors in homes, condos, and small commercial spaces from San Bernardino to Corona.</p>
+        <p>Click any city below to see services, neighborhoods covered, and pricing specific to your area.</p>
+      </div>
+      <GoogleMap query={`${business.address.city}, ${business.address.region}`} title="Monteros Hardwood Flooring service area" />
+    </div>
+  </section>
+
+  <AreaGrid heading="Cities We Serve" />
+  <CTABanner />
+</BaseLayout>

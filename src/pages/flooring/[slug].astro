@@ -1,0 +1,77 @@
+---
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import Hero from '~/components/Hero.astro';
+import TrustBar from '~/components/TrustBar.astro';
+import Breadcrumbs from '~/components/Breadcrumbs.astro';
+import CTABanner from '~/components/CTABanner.astro';
+import { guides, guidesBySlug } from '~/data/guides';
+import { breadcrumbSchema } from '~/lib/schema';
+import { servicesBySlug } from '~/data/services';
+import { marked } from 'marked';
+
+export function getStaticPaths() {
+  return guides.map((guide) => ({
+    params: { slug: guide.slug },
+    props: { guide },
+  }));
+}
+
+const { guide } = Astro.props;
+const path = `/flooring/${guide.slug}/`;
+const html = marked.parse(guide.body, { async: false }) as string;
+
+const crumbs = [
+  { name: 'Home', href: '/' },
+  { name: 'Flooring Guides', href: '/services/' },
+  { name: guide.title, href: path },
+];
+
+const schemas = [breadcrumbSchema(crumbs)];
+const parent = guide.parentService ? servicesBySlug[guide.parentService] : null;
+---
+<BaseLayout
+  title={guide.metaTitle}
+  description={guide.metaDesc}
+  pathname={path}
+  image={guide.image}
+  schemas={schemas}
+>
+  <Hero
+    eyebrow={guide.category === 'comparison' ? 'Comparison' : guide.category === 'room' ? 'Room Type' : 'Specialty'}
+    title={guide.title}
+    subtitle={guide.intro}
+    image={guide.image}
+    alt={guide.alt}
+  />
+  <TrustBar />
+
+  <section class="container-wide pt-10"><Breadcrumbs items={crumbs} /></section>
+
+  <section class="container-prose py-12 prose-brand" set:html={html}></section>
+
+  {parent && (
+    <section class="container-narrow pb-8">
+      <div class="card p-6 bg-brand-50/60 border-brand-200">
+        <div class="text-xs uppercase tracking-wider text-brand-700 font-semibold">Related service</div>
+        <a href={`/services/${parent.slug}/`} class="block mt-2 text-lg font-semibold text-brand-900 hover:text-brand-700">→ {parent.name}</a>
+        <p class="text-sm text-slate-600 mt-1">{parent.oneLiner}</p>
+      </div>
+    </section>
+  )}
+
+  {guide.relatedGuides && guide.relatedGuides.length > 0 && (
+    <section class="container-narrow pb-12">
+      <h3 class="text-xl font-semibold text-brand-900 mb-4">Related Guides</h3>
+      <ul class="space-y-2">
+        {guide.relatedGuides.map((slug) => {
+          const r = guidesBySlug[slug];
+          return r ? (
+            <li>→ <a href={`/flooring/${r.slug}/`} class="font-semibold text-brand-700 hover:text-brand-900">{r.title}</a></li>
+          ) : null;
+        })}
+      </ul>
+    </section>
+  )}
+
+  <CTABanner />
+</BaseLayout>

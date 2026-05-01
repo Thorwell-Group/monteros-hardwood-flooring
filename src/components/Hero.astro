@@ -1,0 +1,48 @@
+---
+import { business } from '~/data/business';
+interface Props {
+  eyebrow?: string;
+  title: string;
+  subtitle?: string;
+  image: string;
+  alt: string;
+  primaryCta?: { href: string; label: string };
+  secondaryCta?: { href: string; label: string };
+  ratingBadge?: boolean;
+}
+const {
+  eyebrow,
+  title,
+  subtitle,
+  image,
+  alt,
+  primaryCta = { href: '/contact/', label: 'Get a Free Estimate' },
+  secondaryCta = { href: `tel:${business.phoneE164}`, label: `Call ${business.phoneDisplay}` },
+  ratingBadge = true,
+} = Astro.props as Props;
+---
+<section class="relative overflow-hidden bg-brand-950 text-white">
+  <div class="absolute inset-0 z-0">
+    <img src={image} alt={alt} class="h-full w-full object-cover opacity-50" loading="eager" decoding="async" fetchpriority="high" />
+    <div class="absolute inset-0 bg-gradient-to-r from-brand-950/90 via-brand-900/70 to-brand-950/40"></div>
+  </div>
+  <div class="relative z-10 container-wide py-20 md:py-28 lg:py-32">
+    <div class="max-w-2xl">
+      {eyebrow && <div class="text-brand-300 font-semibold text-sm uppercase tracking-widest mb-3">{eyebrow}</div>}
+      <h1 class="text-white text-balance">{title}</h1>
+      {subtitle && <p class="mt-5 text-lg md:text-xl text-slate-100 leading-relaxed text-balance">{subtitle}</p>}
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href={primaryCta.href} class="btn-cta">{primaryCta.label}</a>
+        <a href={secondaryCta.href} class="btn-outline">{secondaryCta.label}</a>
+      </div>
+      {ratingBadge && (
+        <div class="mt-8 flex items-center gap-3 text-sm">
+          <div class="flex items-center gap-1 text-wood-300">
+            {[1,2,3,4,5].map(() => (<svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.928 6.063L19.5 8 14.75 12.625 16 19l-6-3.5L4 19l1.25-6.375L.5 8l6.572-.937L10 1z"/></svg>))}
+          </div>
+          <span class="text-slate-100">{business.ratings.averageRating} from {business.ratings.reviewCount}+ Inland Empire homeowners</span>
+        </div>
+      )}
+    </div>
+  </div>
+</section>

@@ -19,6 +19,7 @@ export interface Service {
   materials?: string[];
   faqs: { q: string; a: string }[];
   intent: 'install' | 'refinish' | 'repair' | 'specialty';
+  gallery?: { src: string; alt: string }[];  // additional service-relevant photos
 }
 
 export const services: Service[] = [
@@ -58,6 +59,12 @@ export const services: Service[] = [
       { q: 'Do you offer financing?', a: 'Yes - 0% promotional financing is available for qualified customers. Ask during your free estimate and we\'ll walk through the options.' },
     ],
     intent: 'install',
+    gallery: [
+      { src: '/images/hardwood-flooring-installation.webp', alt: 'Newly installed wide-plank hardwood floor in an Inland Empire home' },
+      { src: '/images/hardwood-formal-living-room.webp', alt: 'Hardwood flooring in a formal Inland Empire living room' },
+      { src: '/images/hardwood-large-living-space.webp', alt: 'Hardwood flooring in a large open living space' },
+      { src: '/images/hardwood-kitchen-flooring.webp', alt: 'Hardwood kitchen flooring installation' },
+    ],
   },
   {
     slug: 'hardwood-floor-refinishing',
@@ -94,6 +101,10 @@ export const services: Service[] = [
       { q: 'How often can hardwood be refinished?', a: 'Solid 3/4-inch hardwood typically handles 4 – 7 full refinishes over its lifetime. Screen-and-recoat (light refresh) can be done many more times in between.' },
     ],
     intent: 'refinish',
+    gallery: [
+      { src: '/images/hardwood-floor-refinishing.webp', alt: 'Mid-refinishing hardwood floor showing freshly sanded wood ready for stain' },
+      { src: '/images/hardwood-staircase-refinishing.webp', alt: 'Hardwood staircase mid-refinish' },
+    ],
   },
   {
     slug: 'luxury-vinyl-plank',
@@ -131,6 +142,13 @@ export const services: Service[] = [
       { q: 'How long does it last?', a: 'Quality LVP carries 20 – 30 year residential warranties. Real-world life depends on traffic and the wear layer thickness - we explain the differences during the estimate.' },
     ],
     intent: 'install',
+    gallery: [
+      { src: '/images/luxury-vinyl-plank-flooring.webp', alt: 'Waterproof luxury vinyl plank flooring' },
+      { src: '/images/luxury-vinyl-plank-detail.webp', alt: 'Detail view of luxury vinyl plank seam and texture' },
+      { src: '/images/luxury-vinyl-plank-perspective.webp', alt: 'Low-angle perspective of luxury vinyl plank flooring' },
+      { src: '/images/luxury-vinyl-plank-styled-room.webp', alt: 'Styled room featuring luxury vinyl plank flooring' },
+      { src: '/images/luxury-vinyl-plank-samples.webp', alt: 'Luxury vinyl plank samples laid out for selection' },
+    ],
   },
   {
     slug: 'laminate-flooring',
@@ -168,6 +186,14 @@ export const services: Service[] = [
       { q: 'Will it work in my kitchen?', a: 'Water-resistant cored laminate works fine in most kitchens. For kitchens with frequent spills or near a dishwasher, we typically suggest LVP for full peace of mind.' },
     ],
     intent: 'install',
+    gallery: [
+      { src: '/images/laminate-flooring.webp', alt: 'Laminate wood-look flooring in an Inland Empire living room' },
+      { src: '/images/laminate-flooring-detail.webp', alt: 'Close-up detail of laminate flooring grain' },
+      { src: '/images/laminate-large-space.webp', alt: 'Laminate flooring across a large open living space' },
+      { src: '/images/laminate-living-space.webp', alt: 'Furnished living space with laminate flooring' },
+      { src: '/images/laminate-sample-selection.webp', alt: 'Laminate flooring samples laid out for selection' },
+      { src: '/images/dog-on-laminate-flooring.webp', alt: 'Family dog resting on durable laminate flooring' },
+    ],
   },
   {
     slug: 'floor-repair',
@@ -204,6 +230,12 @@ export const services: Service[] = [
       { q: 'Should I repair or refinish?', a: 'If damage is in 2 – 3 areas, repair. If it\'s widespread or the whole finish is worn out, refinish makes more sense and often costs less per square foot. We\'ll tell you straight which path fits.' },
     ],
     intent: 'repair',
+    gallery: [
+      { src: '/images/hardwood-formal-living-room.webp', alt: 'Repaired and refinished hardwood floor in a formal living room' },
+      { src: '/images/hardwood-large-living-space.webp', alt: 'Hardwood floor with seamless board replacement across a large space' },
+      { src: '/images/hardwood-floor-refinishing.webp', alt: 'Hardwood floor mid-repair, freshly sanded for board matching' },
+      { src: '/images/hardwood-flooring-installation.webp', alt: 'Hardwood floor showing seamlessly patched boards woven into the existing pattern' },
+    ],
   },
   {
     slug: 'stair-installation',
@@ -240,6 +272,9 @@ export const services: Service[] = [
       { q: 'Are the treads slippery?', a: 'Properly finished hardwood treads have similar slip resistance to floors. We finish with satin polyurethane (less slippery than gloss) and can add discrete grip strips if needed.' },
     ],
     intent: 'specialty',
+    gallery: [
+      { src: '/images/hardwood-staircase-refinishing.webp', alt: 'Refinished hardwood staircase with matching treads and risers' },
+    ],
   },
 ];
 

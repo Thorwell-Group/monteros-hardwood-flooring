@@ -1,0 +1,217 @@
+---
+import LandingLayout from '~/layouts/LandingLayout.astro';
+import { business } from '~/data/business';
+
+// Spanish translations of the 5 real reviews from src/data/testimonials.ts
+const reviews = [
+  {
+    text: `Recomiendo mucho a Monteros Hardwood Flooring. Lijaron y barnizaron los pisos de madera de nuestra casa en Redlands y quedaron como nuevos — estamos muy contentos con el resultado. Javier se comunicó constantemente durante todo el proyecto. Su equipo es profesional, eficiente y muy puntual, y el trabajo lo terminaron a tiempo. Estamos muy satisfechos y los recomendamos sin dudar.`,
+    author: 'Kari Morgan',
+    city: 'Redlands',
+    rating: 5,
+    service: 'Acabado de Madera',
+  },
+  {
+    text: `Fácil trabajar con ellos, llegaron a tiempo y por el precio justo cotizado. Javier respetó una cotización vieja y entregó un trabajo increíble. Muy recomendados.`,
+    author: 'David Thurston',
+    city: 'Inland Empire',
+    rating: 5,
+    service: 'Acabado de Madera',
+  },
+  {
+    text: `¡Tuvimos una excelente experiencia con Monteros Hardwood Flooring! Javier, el dueño, y su equipo fueron muy amables y fáciles de tratar. Escucharon exactamente lo que queríamos y se aseguraron de que todo quedara perfecto. Los pisos quedaron mucho mejor de lo que esperábamos. Su atención al detalle fue impresionante, se nota que se enorgullecen de su trabajo. Si está buscando renovar sus pisos, los recomiendo con los ojos cerrados.`,
+    author: 'Bao Wallace',
+    city: 'Inland Empire',
+    rating: 5,
+    service: 'Acabado de Madera',
+  },
+  {
+    text: `Otro contratista local me dejó plantado tres días antes del trabajo, pero Javier y su equipo vinieron en corto plazo y terminaron mi proyecto de 1,050 pies cuadrados en dos días y medio. Verdaderos profesionales, y mis pisos se ven y se sienten increíbles. La comunicación también fue excelente. ¡Muy recomendados!`,
+    author: 'William Perkins',
+    city: 'Inland Empire',
+    rating: 5,
+    service: 'Acabado de Madera',
+  },
+  {
+    text: `¡Equipo increíble! Trabajan juntos como una máquina — amables, atentos, detallistas y muy productivos. Llegaron a tiempo e hicieron un trabajo de maestros. Solo usaría a ellos para proyectos futuros.`,
+    author: 'Bob Entrikin',
+    city: 'Inland Empire',
+    rating: 5,
+  },
+];
+
+const valueAdds = [
+  { label: `${business.yearsInBusiness}+ años`, sub: 'Empresa familiar, Inland Empire' },
+  { label: `${business.ratings.averageRating}★`, sub: `${business.ratings.reviewCount}+ reseñas de Google` },
+  { label: 'Muestras', sub: 'Llevadas a su casa' },
+  { label: 'De por vida', sub: 'Garantía de mano de obra' },
+];
+---
+<LandingLayout
+  title="Obtenga Su Estimación Gratuita de Pisos en Casa | Monteros"
+  description="Programe su estimación gratuita de pisos de madera en casa. Llevamos muestras a su hogar. Cotización por escrito en 48 horas. Familias del Inland Empire confían en Monteros."
+  pathname="/es/free-estimate/"
+  lang="es"
+>
+  <!-- Countdown bar -->
+  <section class="bg-gradient-to-r from-brand-700 via-brand-800 to-brand-900 text-white">
+    <div class="container-wide py-3 md:py-4">
+      <div class="flex flex-col md:flex-row md:items-center md:justify-center gap-2 md:gap-5 text-center">
+        <div class="flex items-center justify-center gap-2 md:gap-3 font-display font-extrabold tabular-nums" aria-live="polite">
+          <div class="flex flex-col items-center">
+            <span id="cd-days" class="text-2xl md:text-3xl leading-none">--</span>
+            <span class="text-[10px] uppercase tracking-widest text-brand-200 mt-1">días</span>
+          </div>
+          <span class="text-2xl md:text-3xl text-brand-300 leading-none">:</span>
+          <div class="flex flex-col items-center">
+            <span id="cd-hours" class="text-2xl md:text-3xl leading-none">--</span>
+            <span class="text-[10px] uppercase tracking-widest text-brand-200 mt-1">hrs</span>
+          </div>
+          <span class="text-2xl md:text-3xl text-brand-300 leading-none">:</span>
+          <div class="flex flex-col items-center">
+            <span id="cd-mins" class="text-2xl md:text-3xl leading-none">--</span>
+            <span class="text-[10px] uppercase tracking-widest text-brand-200 mt-1">min</span>
+          </div>
+          <span class="text-2xl md:text-3xl text-brand-300 leading-none">:</span>
+          <div class="flex flex-col items-center">
+            <span id="cd-secs" class="text-2xl md:text-3xl leading-none">--</span>
+            <span class="text-[10px] uppercase tracking-widest text-brand-200 mt-1">seg</span>
+          </div>
+        </div>
+        <div class="text-xs md:text-sm text-brand-100 font-medium">
+          Precios de instalación por tiempo limitado — reserve su estimación gratuita antes de que cierre la ventana
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hero + form -->
+  <section class="bg-gradient-to-b from-brand-50/60 to-white">
+    <div class="container-wide pt-6 md:pt-10 pb-10 md:pb-14">
+      <div class="max-w-3xl mx-auto text-center mb-6 md:mb-8">
+        <h1 class="font-display text-3xl md:text-5xl font-extrabold text-brand-900 leading-[1.1] tracking-tight">
+          Obtenga Su Estimación Gratuita en Casa Hoy
+        </h1>
+        <p class="mt-3 md:mt-4 text-base md:text-lg text-slate-600">
+          Llevamos muestras a su casa, tomamos medidas y le entregamos una cotización por escrito en 48 horas. Sin presión, sin llamadas de seguimiento a menos que usted lo pida.
+        </p>
+      </div>
+
+      <div class="max-w-lg mx-auto">
+        <div class="text-center text-xs md:text-sm font-semibold uppercase tracking-[0.18em] text-brand-700 mb-3">
+          Cuéntenos sobre su proyecto
+        </div>
+        <iframe
+          src="https://api.leadconnectorhq.com/widget/survey/bGjke5DT10ATM54G1Cdr"
+          style="border:none;width:100%;min-height:420px;background:transparent;"
+          scrolling="no"
+          id="bGjke5DT10ATM54G1Cdr"
+          title="Solicitud de estimación gratuita"
+          loading="eager"
+          fetchpriority="high"
+          referrerpolicy="strict-origin-when-cross-origin"
+        ></iframe>
+        <p class="mt-3 text-center text-xs text-slate-500">
+          O llame al <a href={`tel:${business.phoneE164}`} class="text-brand-800 font-semibold hover:underline">{business.phoneDisplay}</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Google reviews badge + value adds -->
+  <section class="border-y border-slate-200 bg-white">
+    <div class="container-wide py-8 md:py-10">
+      <div class="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-10">
+        <a href={business.social.google} target="_blank" rel="noopener" class="inline-flex items-center gap-3 rounded-full bg-white ring-1 ring-slate-200 shadow-sm px-4 py-2 hover:shadow-md transition-shadow">
+          <svg class="h-7 w-7" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill="#4285F4" d="M22.5 12.27c0-.79-.07-1.54-.2-2.27H12v4.51h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.32z"/>
+            <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A10.99 10.99 0 0012 23z"/>
+            <path fill="#FBBC05" d="M5.84 14.1c-.22-.66-.35-1.36-.35-2.1s.13-1.44.35-2.1V7.07H2.18A10.99 10.99 0 001 12c0 1.77.42 3.45 1.18 4.93l3.66-2.83z"/>
+            <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.83C6.71 7.31 9.14 5.38 12 5.38z"/>
+          </svg>
+          <div class="text-left leading-tight">
+            <div class="flex items-center gap-1 text-amber-400">
+              {[1,2,3,4,5].map(() => (
+                <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.928 6.063L19.5 8 14.75 12.625 16 19l-6-3.5L4 19l1.25-6.375L.5 8l6.572-.937L10 1z"/></svg>
+              ))}
+            </div>
+            <div class="text-xs text-slate-600 mt-0.5"><strong class="text-slate-800">{business.ratings.averageRating}</strong> · {business.ratings.reviewCount}+ reseñas de Google</div>
+          </div>
+        </a>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 flex-1 max-w-2xl">
+          {valueAdds.map((v) => (
+            <div class="text-center">
+              <div class="font-display text-xl md:text-2xl font-extrabold text-brand-700">{v.label}</div>
+              <div class="text-[11px] md:text-xs uppercase tracking-wider text-slate-600 mt-0.5">{v.sub}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Five reviews -->
+  <section class="bg-white">
+    <div class="container-wide py-10 md:py-14">
+      <h2 class="font-display text-2xl md:text-3xl font-extrabold text-brand-900 text-center mb-6 md:mb-8">Lo Que Dicen Nuestros Clientes del Inland Empire</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        {reviews.map((t) => (
+          <article class="card p-6 flex flex-col">
+            <div class="flex items-center gap-1 text-amber-400 mb-3" aria-label={`${t.rating} de 5 estrellas`}>
+              {Array.from({ length: t.rating }).map(() => (
+                <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.928 6.063L19.5 8 14.75 12.625 16 19l-6-3.5L4 19l1.25-6.375L.5 8l6.572-.937L10 1z"/></svg>
+              ))}
+            </div>
+            <p class="text-slate-700 leading-relaxed flex-1">"{t.text}"</p>
+            <div class="mt-4 pt-4 border-t border-slate-100 flex items-center gap-3">
+              <div class="flex h-10 w-10 items-center justify-center rounded-full bg-brand-100 text-brand-700 font-bold">{t.author.charAt(0)}</div>
+              <div>
+                <div class="font-semibold text-brand-900 text-sm">{t.author}</div>
+                <div class="text-xs text-slate-500">{t.city}{t.service ? ` · ${t.service}` : ''}</div>
+              </div>
+              <svg class="ml-auto h-5 w-5" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="#4285F4" d="M22.5 12.27c0-.79-.07-1.54-.2-2.27H12v4.51h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.32z"/>
+                <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A10.99 10.99 0 0012 23z"/>
+                <path fill="#FBBC05" d="M5.84 14.1c-.22-.66-.35-1.36-.35-2.1s.13-1.44.35-2.1V7.07H2.18A10.99 10.99 0 001 12c0 1.77.42 3.45 1.18 4.93l3.66-2.83z"/>
+                <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.83C6.71 7.31 9.14 5.38 12 5.38z"/>
+              </svg>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- LeadConnector form auto-resize (preloaded in <head>) -->
+  <script src="https://link.msgsndr.com/js/form_embed.js" defer></script>
+
+  <!-- Countdown timer: 9d -> 6d cycling (resets to 9 when it hits 6) -->
+  <script is:inline>
+    (function () {
+      var startDays = 9;
+      var endDays = 6;
+      var cycleMs = (startDays - endDays) * 86400000;
+      var startMs = startDays * 86400000;
+      var elDays = document.getElementById('cd-days');
+      var elHrs  = document.getElementById('cd-hours');
+      var elMin  = document.getElementById('cd-mins');
+      var elSec  = document.getElementById('cd-secs');
+      function pad(n) { return n < 10 ? '0' + n : '' + n; }
+      function tick() {
+        var elapsed = Date.now() % cycleMs;
+        var remaining = startMs - elapsed;
+        var d = Math.floor(remaining / 86400000);
+        var h = Math.floor((remaining % 86400000) / 3600000);
+        var m = Math.floor((remaining % 3600000) / 60000);
+        var s = Math.floor((remaining % 60000) / 1000);
+        if (elDays) elDays.textContent = pad(d);
+        if (elHrs)  elHrs.textContent  = pad(h);
+        if (elMin)  elMin.textContent  = pad(m);
+        if (elSec)  elSec.textContent  = pad(s);
+      }
+      tick();
+      setInterval(tick, 1000);
+    })();
+  </script>
+</LandingLayout>

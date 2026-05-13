@@ -69,6 +69,9 @@ const valueAdds = [
             scrolling="no"
             id="KorNp0UbZXR5C1EggcJH"
             title="Free estimate request"
+            loading="eager"
+            fetchpriority="high"
+            referrerpolicy="strict-origin-when-cross-origin"
           ></iframe>
         </div>
         <p class="mt-3 text-center text-xs text-slate-500">
@@ -143,8 +146,8 @@ const valueAdds = [
     </div>
   </section>
 
-  <!-- LeadConnector form auto-resize -->
-  <script src="https://link.msgsndr.com/js/form_embed.js"></script>
+  <!-- LeadConnector form auto-resize (preloaded in <head>) -->
+  <script src="https://link.msgsndr.com/js/form_embed.js" defer></script>
 
   <!-- Countdown timer: 9d -> 6d cycling (resets to 9 when it hits 6) -->
   <script is:inline>

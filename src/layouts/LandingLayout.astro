@@ -66,6 +66,55 @@ const t = lang === 'es'
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Raleway:wght@400;500&display=swap" rel="stylesheet" />
 
     <MetaPixel />
+
+    {/* Ad attribution capture: reads UTMs + Meta click IDs from the URL/cookies,
+        persists first-touch across funnel hops, and appends them to every GHL
+        iframe src so the data lands on the contact. */}
+    <script is:inline>
+      (function () {
+        var KEYS = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term',
+                    'campaign_id','adset_id','ad_id','fbclid','fbc','fbp'];
+        var STORE = 'tw_attrib';
+        function getCookie(n){var m=document.cookie.match('(^|;)\\s*'+n+'\\s*=\\s*([^;]+)');return m?decodeURIComponent(m.pop()):'';}
+
+        var params = new URLSearchParams(window.location.search), data = {};
+        KEYS.forEach(function(k){ var v=params.get(k); if(v) data[k]=v; });
+        var fbp=getCookie('_fbp'), fbc=getCookie('_fbc'), fbclid=params.get('fbclid')||'';
+        if(!fbc && fbclid) fbc='fb.1.'+Date.now()+'.'+fbclid;
+        if(fbclid) data.fbclid=fbclid; if(fbc) data.fbc=fbc; if(fbp) data.fbp=fbp;
+
+        var stored={}; try{ stored=JSON.parse(localStorage.getItem(STORE)||'{}'); }catch(e){}
+        var merged={}; KEYS.forEach(function(k){ merged[k]=data[k]||stored[k]||''; });
+        if(fbp) merged.fbp=fbp; if(fbc) merged.fbc=fbc;
+        try{ localStorage.setItem(STORE, JSON.stringify(merged)); }catch(e){}
+        data = merged;
+
+        function tagIframes(){
+          document.querySelectorAll(
+            'iframe[src*="/widget/survey/"],iframe[src*="/widget/booking/"],iframe[src*="/widget/form/"],' +
+            'iframe[src*="leadconnectorhq.com"],iframe[src*="msgsndr.com"],iframe[src*="lc.thorwellgroup.com"]'
+          ).forEach(function(f){
+            if(f.getAttribute('data-tw')==='1') return;
+            var src=f.getAttribute('src'); if(!src) return;
+            var u; try{ u=new URL(src, window.location.origin);}catch(e){ return; }
+            KEYS.forEach(function(k){ if(data[k] && !u.searchParams.has(k)) u.searchParams.set(k,data[k]); });
+            f.setAttribute('data-tw','1');
+            if(u.toString()!==src) f.setAttribute('src', u.toString());
+          });
+        }
+        function fillInputs(){
+          KEYS.forEach(function(k){ if(!data[k]) return;
+            var el=document.querySelector('input[name="'+k+'"],input#'+k+',input[data-q="'+k+'"]');
+            if(el){ el.value=data[k]; el.dispatchEvent(new Event('input',{bubbles:true})); el.dispatchEvent(new Event('change',{bubbles:true})); }
+          });
+        }
+        function run(){ tagIframes(); fillInputs(); }
+        try{ new MutationObserver(run).observe(document.documentElement,{childList:true,subtree:true}); }catch(e){}
+        if(document.readyState!=='loading') run();
+        document.addEventListener('DOMContentLoaded', run);
+        setTimeout(run,1000); setTimeout(run,3000);
+      })();
+    </script>
   </head>
   <body class={bodyClass}>
     <header class="bg-white border-b-2 border-brand-100">

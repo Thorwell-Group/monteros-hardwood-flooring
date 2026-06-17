@@ -6,6 +6,7 @@ import CTABanner from '~/components/CTABanner.astro';
 import Breadcrumbs from '~/components/Breadcrumbs.astro';
 import { breadcrumbSchema, faqSchema } from '~/lib/schema';
 import FAQ from '~/components/FAQ.astro';
+import GoogleReviews from '~/components/GoogleReviews.astro';
 import { generalFaqs } from '~/data/faqs';
 import { business } from '~/data/business';
 const crumbs = [{ name: 'Home', href: '/' }, { name: 'Reviews', href: '/reviews/' }];
@@ -13,19 +14,21 @@ const schemas = [breadcrumbSchema(crumbs), faqSchema(generalFaqs)];
 ---
 <BaseLayout
   title={`Reviews | ${business.brandName} (${business.ratings.averageRating}★)`}
-  description={`Customer reviews of ${business.brandName}. ${business.ratings.averageRating}-star average across ${business.ratings.reviewCount}+ Inland Empire homeowners.`}
+  description={`Customer reviews of ${business.brandName}. ${business.ratings.averageRating}-star average from Inland Empire homeowners on Google.`}
   pathname="/reviews/"
   schemas={schemas}
 >
   <Hero
     eyebrow="Reviews"
-    title={`${business.ratings.averageRating}★ from ${business.ratings.reviewCount}+ Inland Empire Homeowners`}
+    title={`${business.ratings.averageRating}★ from Inland Empire Homeowners`}
     subtitle={`Real feedback from real ${business.serviceArea.primaryCounty} homeowners we\'ve worked with.`}
     image="/images/hardwood-flooring-installation.webp"
     alt="Customer reviews"
     ratingBadge={false}
   />
   <TrustBar />
+
+  <GoogleReviews />
 
   <section class="container-wide py-16">
     <div class="mb-4"><Breadcrumbs items={crumbs} /></div>
@@ -35,7 +38,7 @@ const schemas = [breadcrumbSchema(crumbs), faqSchema(generalFaqs)];
         <h2>Where to Read Verified Reviews</h2>
         <p>We earn our reputation one floor at a time. The most credible places to read real reviews are third-party platforms where the reviewer is verified:</p>
         <ul>
-          {business.social.google && <li><strong>Google Business Profile:</strong> <a href={business.social.google} rel="noopener">View on Google</a></li>}
+          {business.social.googleSearch && <li><strong>Google Business Profile:</strong> <a href={business.social.googleSearch} rel="noopener">{business.ratings.averageRating} ★ on Google</a></li>}
           {business.social.yelp && <li><strong>Yelp:</strong> <a href={business.social.yelp} rel="noopener">View on Yelp</a></li>}
           <li><strong>Facebook:</strong> <a href={business.social.facebook} rel="noopener">View our Facebook page</a></li>
           <li><strong>Better Business Bureau (BBB):</strong> Look up "{business.brandName}" in San Bernardino, CA.</li>
@@ -59,7 +62,7 @@ const schemas = [breadcrumbSchema(crumbs), faqSchema(generalFaqs)];
       <aside class="card p-6 bg-brand-50/50 border-brand-200 lg:sticky lg:top-24">
         <div class="text-xs uppercase tracking-wider text-brand-700 font-semibold">Rating Snapshot</div>
         <div class="mt-3 text-5xl font-display font-bold text-brand-900">{business.ratings.averageRating}★</div>
-        <div class="mt-1 text-sm text-slate-600">{business.ratings.reviewCount}+ reviews across platforms</div>
+        <div class="mt-1 text-sm text-slate-600">Rated on Google, Yelp &amp; more</div>
         <div class="mt-5 text-sm space-y-2">
           <div>★★★★★ Hardwood Installation</div>
           <div>★★★★★ Refinishing</div>

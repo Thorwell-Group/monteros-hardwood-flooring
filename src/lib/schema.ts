@@ -1,6 +1,7 @@
 // JSON-LD schema generators. Each returns an object you stringify into a <script type="application/ld+json">.
 
 import { business } from '~/data/business';
+import { testimonials } from '~/data/testimonials';
 import type { City } from '~/data/cities';
 import type { Service } from '~/data/services';
 import type { BlogPost } from '~/data/blog';
@@ -81,10 +82,12 @@ export function localBusinessSchema() {
       '@type': 'AdministrativeArea',
       name: c,
     })),
+    // reviewCount reflects the verbatim Google reviews actually shown on the
+    // site, so the AggregateRating markup stays truthful (no inflated counts).
     aggregateRating: {
       '@type': 'AggregateRating',
       ratingValue: business.ratings.averageRating,
-      reviewCount: business.ratings.reviewCount,
+      reviewCount: testimonials.length,
       bestRating:  business.ratings.bestRating,
       worstRating: business.ratings.worstRating,
     },

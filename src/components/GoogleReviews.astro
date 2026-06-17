@@ -22,11 +22,9 @@ const showCards = realReviews.length > 0;
       <div class="flex items-center gap-4">
         <div class="text-right">
           <div class="font-display text-3xl font-extrabold text-brand-800 leading-none">{business.ratings.averageRating}<span class="text-amber-400 ml-1">★</span></div>
-          <div class="text-xs uppercase tracking-wider text-slate-600 mt-1">{business.ratings.reviewCount}+ reviews</div>
+          <div class="text-xs uppercase tracking-wider text-slate-600 mt-1">on Google</div>
         </div>
-        {business.social.google && (
-          <a href={business.social.google} target="_blank" rel="noopener" class="btn-primary">Read all on Google</a>
-        )}
+        <a href={business.social.googleSearch} target="_blank" rel="noopener" class="btn-primary">{business.ratings.averageRating} ★ on Google</a>
       </div>
     </div>
 
@@ -56,18 +54,27 @@ const showCards = realReviews.length > 0;
           </article>
         ))}
       </div>
+      <div class="mt-8 text-center" data-reveal>
+        <a href={business.social.googleSearch} target="_blank" rel="noopener" class="btn-primary inline-flex items-center gap-2">
+          <svg class="h-5 w-5" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill="#fff" d="M22.5 12.27c0-.79-.07-1.54-.2-2.27H12v4.51h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.32z"/>
+            <path fill="#fff" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A10.99 10.99 0 0012 23z" opacity=".85"/>
+          </svg>
+          {business.ratings.averageRating} ★ on Google &middot; see more reviews
+        </a>
+      </div>
     ) : (
-      <a href={business.social.google} target="_blank" rel="noopener" class="block card p-6 md:p-8 text-center hover:bg-brand-50 transition-colors" data-reveal>
+      <a href={business.social.googleSearch} target="_blank" rel="noopener" class="block card p-6 md:p-8 text-center hover:bg-brand-50 transition-colors" data-reveal>
         <div class="flex items-center justify-center gap-1 text-amber-400 mb-3">
           {[1,2,3,4,5].map(() => (
             <svg class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.928 6.063L19.5 8 14.75 12.625 16 19l-6-3.5L4 19l1.25-6.375L.5 8l6.572-.937L10 1z"/></svg>
           ))}
         </div>
         <p class="text-lg text-slate-700 max-w-2xl mx-auto">
-          Trusted by <span class="font-bold text-brand-800">{business.ratings.reviewCount}+</span> Inland Empire homeowners with a <span class="font-bold text-brand-800">{business.ratings.averageRating}-star</span> average rating on Google.
+          Rated <span class="font-bold text-brand-800">{business.ratings.averageRating} stars</span> by Inland Empire homeowners on Google.
         </p>
         <span class="mt-4 inline-flex items-center gap-2 text-brand-700 font-semibold">
-          Read every review on Google
+          Read the reviews on Google
           <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path d="M5 10h10m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
         </span>
       </a>

@@ -45,6 +45,9 @@ export const business = {
     facebook:  'https://www.facebook.com/people/Monteros-hardwood-flooring/100021212805249/',
     instagram: 'https://www.instagram.com/monteroshardwood/',
     google:    'https://share.google/sDPf41rhQdhTiXxr2',
+    // "4.9 stars on Google" buttons point here: a plain Google search for the
+    // business so visitors land on the GBP card + reviews.
+    googleSearch: 'https://www.google.com/search?q=Monteros+Hardwood+Flooring+San+Bernardino',
     yelp:      'https://www.yelp.com/biz/monteros-hardwood-flooring-san-bernardino-2',
     angi:      'https://www.angi.com/companylist/us/ca/san-bernardino/monteros-hardwood-flooring-reviews-9322310.htm',
   },

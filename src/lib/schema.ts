@@ -2,6 +2,7 @@
 
 import { business } from '~/data/business';
 import { testimonials } from '~/data/testimonials';
+import { cities } from '~/data/cities';
 import type { City } from '~/data/cities';
 import type { Service } from '~/data/services';
 import type { BlogPost } from '~/data/blog';
@@ -78,9 +79,15 @@ export function localBusinessSchema() {
       longitude: business.address.longitude,
     },
     openingHoursSpecification: openingHours(),
-    areaServed: business.serviceArea.counties.map((c) => ({
-      '@type': 'AdministrativeArea',
-      name: c,
+    // All 10 served cities as City entries (plus their counties), so the
+    // LocalBusiness markup reflects the full Inland Empire service footprint.
+    areaServed: cities.map((c) => ({
+      '@type': 'City',
+      name: c.name,
+      containedInPlace: {
+        '@type': 'AdministrativeArea',
+        name: c.county,
+      },
     })),
     // reviewCount reflects the verbatim Google reviews actually shown on the
     // site, so the AggregateRating markup stays truthful (no inflated counts).

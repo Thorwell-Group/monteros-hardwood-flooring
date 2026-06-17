@@ -34,8 +34,54 @@ const schemas = [
   faqSchema(allFaqs),
 ];
 
-const title = `${service.metaTitleBase} in ${city.name}, ${city.state}`;
-const description = `${service.shortName} in ${city.name}, ${city.state}. ${service.oneLiner} Family-owned for ${business.yearsInBusiness}+ years. Free in-home estimates across ${city.county}.`;
+// --- TITLE (<= 60 chars, keyword-first, brand baked in so buildSEO never
+// appends a suffix that would push it over 60). ---
+// Short, keyword-first service token per service slug.
+const titleLead: Record<string, string> = {
+  'hardwood-flooring-installation': 'Hardwood Floor Install',
+  'hardwood-floor-refinishing': 'Hardwood Refinishing',
+  'luxury-vinyl-plank': 'Luxury Vinyl Plank',
+  'laminate-flooring': 'Laminate Flooring',
+  'floor-repair': 'Hardwood Floor Repair',
+};
+const lead = titleLead[service.slug] ?? service.shortName;
+// e.g. "Hardwood Floor Install in Highland, CA | Monteros" — brand short form
+// keeps it unique, <=60, and prevents buildSEO's longer suffix from being added.
+let title = `${lead} in ${city.name}, ${city.state} | ${business.shortName}`;
+// Hard safety: if any city name ever pushes it past 60, drop the brand token
+// (buildSEO will then re-add it only if it still fits the rules).
+if (title.length > 60) {
+  title = `${lead} in ${city.name}, ${city.state}`;
+}
+
+// --- META DESCRIPTION (unique 140-160 chars per city+service combo). ---
+// Built from city-specific tokens: city + a real neighborhood/landmark + service + benefit.
+// Refinish/repair anchor on a landmark; install services anchor on a neighborhood,
+// so adjacent services on the same city never read identically.
+const descHood = city.neighborhoods[0] ?? city.name;
+const descLandmark = city.landmarks[0] ?? city.name;
+const benefitByIntent: Record<Service['intent'], string> = {
+  install: 'Solid & engineered, slab prep, on-site acclimation, lifetime guarantee.',
+  refinish: 'Dust-contained sanding, custom stain matching, durable low-VOC finish.',
+  repair: 'Seamless board matching, water-damage, squeak & gouge repair done right.',
+  specialty: 'Custom craftsmanship matched to your existing floors and finish.',
+};
+const benefitShortByIntent: Record<Service['intent'], string> = {
+  install: 'Slab prep, on-site acclimation, lifetime workmanship guarantee.',
+  refinish: 'Dust-contained sanding, custom stain matching, low-VOC finish.',
+  repair: 'Seamless board matching plus water-damage and squeak repair done right.',
+  specialty: 'Custom craftsmanship matched to your existing floors.',
+};
+const useLandmark = service.intent === 'refinish' || service.intent === 'repair';
+const anchor = useLandmark ? descLandmark : descHood;
+let description = `${service.shortName} in ${city.name}, CA, serving ${anchor} and nearby. ${benefitByIntent[service.intent]} Free in-home estimate.`;
+// Step down to shorter variants only when a long city/anchor pushes past 160.
+if (description.length > 160) {
+  description = `${service.shortName} in ${city.name}, CA, serving ${anchor}. ${benefitShortByIntent[service.intent]} Free in-home estimate.`;
+}
+if (description.length > 160) {
+  description = `${service.shortName} in ${city.name}, CA. ${benefitShortByIntent[service.intent]} Free in-home estimate from a family-owned crew.`;
+}
 
 const intro = cityServiceIntro(city, service);
 const whyUs = cityServiceWhyUs(city, service);
@@ -98,6 +144,9 @@ const projectPhotos = galleryPool.filter((p) => p.src !== service.heroImage && !
         <h3>About {city.name} Homes</h3>
         <p>{city.localContext}</p>
         <p class="text-sm text-slate-600"><strong>Housing profile:</strong> {city.housingProfile}</p>
+
+        <h2>Flooring in {city.name}: What Local Homes Need</h2>
+        <p>{city.localFlooringNotes}</p>
 
         <div class="not-prose mt-8 flex flex-wrap gap-3">
           <a href="/free-estimate/" class="btn-primary">Get a Free Estimate</a>

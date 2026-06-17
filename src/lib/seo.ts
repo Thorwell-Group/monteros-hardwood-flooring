@@ -24,14 +24,18 @@ export interface SEOComputed {
   noindex: boolean;
 }
 
-const TITLE_SUFFIX = `| ${business.brandName}`;
+// Short brand suffix ("| Monteros") so titles stay under the 60-char SERP cap.
+const TITLE_SUFFIX = `| ${business.shortName}`;
 const DESC_MAX_RECOMMENDED = 160;
 const TITLE_MAX_RECOMMENDED = 60;
 
 export function buildSEO(input: SEOInput): SEOComputed {
   let title = input.title.trim();
-  if (!title.toLowerCase().includes(business.brandName.toLowerCase())) {
-    title = `${title} ${TITLE_SUFFIX}`;
+  // Append the brand suffix only when the title doesn't already mention the
+  // brand AND there's room to stay within the 60-char recommendation.
+  if (!title.toLowerCase().includes(business.shortName.toLowerCase())) {
+    const withSuffix = `${title} ${TITLE_SUFFIX}`;
+    title = withSuffix.length <= TITLE_MAX_RECOMMENDED ? withSuffix : title;
   }
 
   let description = input.description.trim().replace(/\s+/g, ' ');

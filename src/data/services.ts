@@ -20,6 +20,10 @@ export interface Service {
   faqs: { q: string; a: string }[];
   intent: 'install' | 'refinish' | 'repair' | 'specialty';
   gallery?: { src: string; alt: string }[];  // additional service-relevant photos
+  // Educational/material deep-dives this transactional service page should link DOWN to.
+  relatedGuides?: { slug: string; label: string }[];
+  // Optional contextual blog interlink (anchor text + path).
+  blogLink?: { href: string; label: string };
 }
 
 export const services: Service[] = [
@@ -29,7 +33,7 @@ export const services: Service[] = [
     shortName: 'Hardwood Installation',
     oneLiner: 'Solid and engineered hardwood floors installed by craftsmen with 20+ years on Inland Empire homes.',
     metaTitleBase: 'Hardwood Floor Installation',
-    metaDescBase: 'Custom hardwood floor installation by Monteros, the Inland Empire\'s family-owned hardwood specialists. Solid oak, white oak, hickory & engineered planks. Free in-home estimate.',
+    metaDescBase: 'Custom hardwood floor installation across the Inland Empire. Solid & engineered oak, hickory & wide planks with a lifetime workmanship warranty. Free estimate.',
     heroImage: '/images/hardwood-modern-open-living.webp',
     altText: 'Wide-plank natural oak hardwood flooring in a modern open-concept Inland Empire kitchen and living room',
     priceFromUSD: 8,
@@ -65,6 +69,13 @@ export const services: Service[] = [
       { src: '/images/hardwood-large-living-space.webp', alt: 'Hardwood flooring in a large open living space' },
       { src: '/images/hardwood-kitchen-flooring.webp', alt: 'Hardwood kitchen flooring installation' },
     ],
+    relatedGuides: [
+      { slug: 'solid-hardwood-flooring', label: 'Solid hardwood flooring explained' },
+      { slug: 'engineered-hardwood-flooring', label: 'Engineered hardwood for slab subfloors' },
+      { slug: 'oak-flooring', label: 'Red oak vs white oak flooring' },
+      { slug: 'engineered-vs-solid-hardwood', label: 'Engineered vs solid hardwood comparison' },
+    ],
+    blogLink: { href: '/blog/how-to-fix-squeaky-hardwood-floors/', label: 'how to fix squeaky hardwood floors' },
   },
   {
     slug: 'hardwood-floor-refinishing',
@@ -72,7 +83,7 @@ export const services: Service[] = [
     shortName: 'Refinishing',
     oneLiner: 'Bring tired hardwood back to life with sand, stain, and seal - most homes done in 3 – 5 days.',
     metaTitleBase: 'Hardwood Floor Refinishing',
-    metaDescBase: 'Hardwood floor refinishing in the Inland Empire. Dust-contained sanding, custom stain matching, and durable finishes. Restore your existing floors for a fraction of replacement.',
+    metaDescBase: 'Hardwood floor refinishing across the Inland Empire. Dust-contained sanding, custom stain matching & durable finishes - restore floors for less. Free estimate.',
     heroImage: '/images/hardwood-floor-sander.webp',
     altText: 'Professional drum sander mid-refinish on an Inland Empire hardwood floor',
     priceFromUSD: 3,
@@ -105,6 +116,12 @@ export const services: Service[] = [
       { src: '/images/hardwood-floor-refinishing.webp', alt: 'Mid-refinishing hardwood floor showing freshly sanded wood ready for stain' },
       { src: '/images/hardwood-staircase-refinishing.webp', alt: 'Hardwood staircase mid-refinish' },
     ],
+    relatedGuides: [
+      { slug: 'sand-and-stain', label: 'Full sand, stain & seal process' },
+      { slug: 'screen-and-recoat', label: 'Screen & recoat (light refresh)' },
+      { slug: 'dustless-floor-refinishing', label: 'Dustless refinishing explained' },
+    ],
+    blogLink: { href: '/blog/how-to-fix-squeaky-hardwood-floors/', label: 'how to fix squeaky hardwood floors before you refinish' },
   },
   {
     slug: 'luxury-vinyl-plank',
@@ -112,7 +129,7 @@ export const services: Service[] = [
     shortName: 'Luxury Vinyl Plank',
     oneLiner: 'Waterproof, kid-proof, dog-proof flooring that looks like real hardwood - installed in a day or two.',
     metaTitleBase: 'Luxury Vinyl Plank Installation',
-    metaDescBase: 'Waterproof luxury vinyl plank (LVP) installation in the Inland Empire. SPC, click-lock, and glue-down options. Pet-safe, kid-safe, and ready for daily life. Free estimate.',
+    metaDescBase: 'Waterproof luxury vinyl plank installation in the Inland Empire. SPC & click-lock LVP that\'s pet-proof and kid-proof, installed fast. Book a free estimate.',
     heroImage: '/images/luxury-vinyl-plank-living-room.webp',
     altText: 'Waterproof luxury vinyl plank flooring in a furnished Inland Empire living room',
     priceFromUSD: 4,
@@ -149,6 +166,12 @@ export const services: Service[] = [
       { src: '/images/luxury-vinyl-plank-styled-room.webp', alt: 'Styled room featuring luxury vinyl plank flooring' },
       { src: '/images/luxury-vinyl-plank-samples.webp', alt: 'Luxury vinyl plank samples laid out for selection' },
     ],
+    relatedGuides: [
+      { slug: 'waterproof-luxury-vinyl-plank', label: 'What makes LVP waterproof' },
+      { slug: 'spc-flooring', label: 'SPC vs WPC cores explained' },
+      { slug: 'click-lock-vinyl-plank', label: 'Click-lock vs glue-down LVP' },
+      { slug: 'laminate-vs-luxury-vinyl-plank', label: 'Laminate vs LVP comparison' },
+    ],
   },
   {
     slug: 'laminate-flooring',
@@ -156,7 +179,7 @@ export const services: Service[] = [
     shortName: 'Laminate',
     oneLiner: 'Budget-friendly hardwood look with tough, scratch-resistant wear layers - installed fast.',
     metaTitleBase: 'Laminate Flooring Installation',
-    metaDescBase: 'Laminate flooring installation in the Inland Empire. Water-resistant, scratch-tough, AC-rated planks. Realistic wood visuals at a friendly price. Free in-home estimate.',
+    metaDescBase: 'Laminate flooring installation in the Inland Empire. Water-resistant, scratch-tough AC4/AC5 planks with realistic wood looks. Get a free in-home estimate.',
     heroImage: '/images/laminate-installation.webp',
     altText: 'Laminate flooring installation in progress in an Inland Empire home',
     priceFromUSD: 3,
@@ -194,6 +217,12 @@ export const services: Service[] = [
       { src: '/images/laminate-sample-selection.webp', alt: 'Laminate flooring samples laid out for selection' },
       { src: '/images/dog-on-laminate-flooring.webp', alt: 'Family dog resting on durable laminate flooring' },
     ],
+    relatedGuides: [
+      { slug: 'ac-rated-laminate', label: 'AC ratings explained (AC4 vs AC5)' },
+      { slug: 'water-resistant-laminate', label: 'Water-resistant laminate guide' },
+      { slug: 'laminate-vs-luxury-vinyl-plank', label: 'Laminate vs LVP comparison' },
+      { slug: 'hardwood-vs-laminate', label: 'Hardwood vs laminate comparison' },
+    ],
   },
   {
     slug: 'floor-repair',
@@ -201,7 +230,7 @@ export const services: Service[] = [
     shortName: 'Floor Repair',
     oneLiner: 'Water damage, scratches, squeaks, and gouges - repaired so the patch is invisible.',
     metaTitleBase: 'Hardwood Floor Repair',
-    metaDescBase: 'Hardwood floor repair in the Inland Empire. Water damage, scratches, squeaks, gouges, and board replacement. Seamless patches by craftsmen with 20+ years experience.',
+    metaDescBase: 'Hardwood floor repair across the Inland Empire. Water damage, scratches, squeaks & board replacement with seamless, color-matched patches. Free assessment.',
     heroImage: '/images/hardwood-staircase-refinishing.webp',
     altText: 'Detailed hardwood floor repair showing seamless board replacement',
     priceFromUSD: 250,
@@ -236,6 +265,10 @@ export const services: Service[] = [
       { src: '/images/hardwood-floor-refinishing.webp', alt: 'Hardwood floor mid-repair, freshly sanded for board matching' },
       { src: '/images/hardwood-flooring-installation.webp', alt: 'Hardwood floor showing seamlessly patched boards woven into the existing pattern' },
     ],
+    relatedGuides: [
+      { slug: 'water-damage-floor-repair', label: 'Water-damaged floor repair guide' },
+      { slug: 'scratch-and-gouge-repair', label: 'Scratch & gouge repair guide' },
+    ],
   },
   {
     slug: 'stair-installation',
@@ -243,7 +276,7 @@ export const services: Service[] = [
     shortName: 'Stairs',
     oneLiner: 'Custom hardwood treads, risers, and refinishing for staircases that anchor your home.',
     metaTitleBase: 'Hardwood Stair Installation & Refinishing',
-    metaDescBase: 'Custom hardwood stair installation and refinishing across the Inland Empire. Tread and riser replacement, stain matching, and code-compliant nosing. Free estimate.',
+    metaDescBase: 'Hardwood stair installation & refinishing across the Inland Empire. Custom treads, risers, stain matching & code-compliant nosing. Free in-home estimate.',
     heroImage: '/images/hardwood-staircase-installation.webp',
     altText: 'Newly refinished hardwood staircase by Monteros in an Inland Empire home',
     priceFromUSD: 80,
@@ -274,6 +307,10 @@ export const services: Service[] = [
     intent: 'specialty',
     gallery: [
       { src: '/images/hardwood-staircase-refinishing.webp', alt: 'Refinished hardwood staircase with matching treads and risers' },
+    ],
+    relatedGuides: [
+      { slug: 'oak-flooring', label: 'Matching stair treads to oak floors' },
+      { slug: 'sand-and-stain', label: 'Refinishing & stain matching' },
     ],
   },
 ];

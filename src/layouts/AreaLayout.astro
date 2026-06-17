@@ -11,7 +11,8 @@ import ProjectGallery from '~/components/ProjectGallery.astro';
 import { breadcrumbSchema, faqSchema } from '~/lib/schema';
 import { generalFaqs } from '~/data/faqs';
 import { business } from '~/data/business';
-import { cityHubIntro, cityHubServiceSummary } from '~/lib/content';
+import { cityHubIntro, cityHubServiceSummary, cityHubLocalProof, cityHubFoundationNote } from '~/lib/content';
+import { cityVariantServices } from '~/data/services';
 import type { City } from '~/data/cities';
 
 interface Props { city: City; }
@@ -26,6 +27,15 @@ const crumbs = [
 
 const intro = cityHubIntro(city);
 const serviceSummary = cityHubServiceSummary(city);
+const localProof = cityHubLocalProof(city);
+const foundationNote = cityHubFoundationNote(city);
+
+// Service-by-location links for this city (all 5 cityVariant services).
+const cityServiceLinks = cityVariantServices.map((s) => ({
+  name: s.shortName,
+  href: `/areas-we-serve/${city.slug}/${s.slug}/`,
+  oneLiner: s.oneLiner,
+}));
 
 const cityFaqs = [
   {
@@ -48,8 +58,21 @@ const schemas = [
   faqSchema(cityFaqs),
 ];
 
-const title = `Hardwood, LVP & Laminate Flooring in ${city.name}, ${city.state}`;
-const description = `${city.name} flooring contractor for hardwood installation, refinishing, luxury vinyl plank, laminate, and floor repair. Family-owned for 20+ years. Free in-home estimates.`;
+// Title <= 60 with brand baked in so buildSEO never appends the longer suffix.
+let title = `Hardwood & LVP Flooring in ${city.name}, ${city.state} | ${business.shortName}`;
+if (title.length > 60) {
+  title = `Hardwood & LVP Flooring in ${city.name}, ${city.state}`;
+}
+
+// City-specific meta description (neighborhood anchor + drive logistics).
+const areaHood = city.neighborhoods[0] ?? city.name;
+let description = `${city.name}, CA flooring contractor serving ${areaHood} and nearby - hardwood, refinishing, luxury vinyl plank, laminate & repair. Family-owned, free estimates.`;
+if (description.length > 160) {
+  description = `${city.name}, CA flooring contractor in ${areaHood} & nearby - hardwood, refinishing, LVP, laminate & repair. Family-owned. Free in-home estimates.`;
+}
+if (description.length > 160) {
+  description = `${city.name}, CA flooring contractor - hardwood, refinishing, luxury vinyl plank, laminate & floor repair. Family-owned. Free in-home estimates.`;
+}
 
 const projectPhotos = [
   { src: '/images/hardwood-modern-open-living.webp', alt: `Modern open-concept hardwood flooring in ${city.name}` },
@@ -87,10 +110,23 @@ const projectPhotos = [
         <p>{intro}</p>
         <p>{serviceSummary}</p>
 
+        <h3>What {city.name} Homes Need from a Flooring Crew</h3>
+        <p>{localProof}</p>
+        <p>{foundationNote}</p>
+
         <h3>Neighborhoods We Serve in {city.name}</h3>
         <p>{business.brandName} works across all of {city.name} and surrounding zip codes:</p>
         <ul>{city.neighborhoods.map((n) => <li>{n}</li>)}</ul>
         <p class="text-sm text-slate-500 mt-2">Common zip codes: {city.zipCodes.join(', ')}</p>
+
+        <h3>{city.name} Flooring Services</h3>
+        <p>Explore the details, pricing, and FAQ for each service in {city.name}:</p>
+        <ul>
+          {cityServiceLinks.map((l) => (
+            <li><a href={l.href}>{l.name} in {city.name}</a> — {l.oneLiner}</li>
+          ))}
+        </ul>
+        <p class="text-sm mt-2"><a href="/areas-we-serve/">← Back to all areas we serve</a></p>
       </div>
 
       <aside class="space-y-4 lg:sticky lg:top-24">

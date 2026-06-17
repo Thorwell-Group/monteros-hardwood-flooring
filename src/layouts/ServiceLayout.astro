@@ -10,6 +10,7 @@ import AreaGrid from '~/components/AreaGrid.astro';
 import ProjectGallery from '~/components/ProjectGallery.astro';
 import { serviceSchema, breadcrumbSchema, faqSchema } from '~/lib/schema';
 import type { Service } from '~/data/services';
+import { guidesBySlug } from '~/data/guides';
 import { business } from '~/data/business';
 
 interface Props { service: Service; }
@@ -168,7 +169,32 @@ const projectPhotos = galleryPool.filter((p) => p.src !== service.heroImage && !
       <a href="/free-estimate/" class="btn-primary">Get a Free Estimate</a>
       <a href={`tel:${business.phoneE164}`} class="btn-secondary">Call {business.phoneDisplay}</a>
     </div>
+    {service.blogLink && (
+      <p class="mt-6 text-lg text-slate-700 leading-relaxed max-w-3xl">
+        Dealing with movement or noise underfoot? Read our guide on <a href={service.blogLink.href} class="font-semibold text-brand-700 underline decoration-brand-300 underline-offset-2 hover:text-brand-900">{service.blogLink.label}</a> before you decide between a repair and a full install.
+      </p>
+    )}
   </section>
+
+  {service.relatedGuides && service.relatedGuides.length > 0 && (
+    <section class="container-wide pb-4">
+      <div class="card p-6 md:p-8 bg-brand-50/60 border-brand-200">
+        <h2 class="text-2xl md:text-3xl font-bold text-brand-900">Learn More About Your Options</h2>
+        <p class="mt-2 text-slate-700">Researching before you commit? These in-depth guides cover materials, durability, and how to choose.</p>
+        <ul class="mt-5 grid sm:grid-cols-2 gap-x-8 gap-y-3">
+          {service.relatedGuides!.map((g) => {
+            const guide = guidesBySlug[g.slug];
+            return guide ? (
+              <li class="flex items-start gap-3">
+                <span class="mt-1.5 h-2 w-2 rounded-full bg-brand-500 shrink-0"></span>
+                <a href={`/flooring/${guide.slug}/`} class="text-lg font-semibold text-brand-700 hover:text-brand-900">{g.label}</a>
+              </li>
+            ) : null;
+          })}
+        </ul>
+      </div>
+    </section>
+  )}
 
   <div class="bg-slate-50">
     <ProcessSteps steps={service.process} heading={`Our ${service.shortName} Process`} subheading="Every project follows the same clear, predictable steps from estimate to walk-through." />

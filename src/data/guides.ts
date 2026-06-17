@@ -13,6 +13,7 @@ export interface Guide {
   parentService?: string; // services slug to cross-link
   body: string;           // markdown
   relatedGuides?: string[];
+  faqs?: { q: string; a: string }[];  // optional FAQ section + FAQPage schema
 }
 
 // 15 specialty deep-dives + 5 rooms + 4 comparisons = 24 pages.
@@ -377,38 +378,48 @@ $3 - $7 per sq ft installed. Often the budget-friendly choice for whole-house in
     image: '/images/laminate-large-space.webp',
     alt: 'AC-rated commercial laminate flooring in a large Inland Empire interior',
     parentService: 'laminate-flooring',
-    body: `AC ratings (Abrasion Class) measure laminate wear-layer durability - specifically resistance to abrasion, impact, stains, and burns. The higher the number, the tougher the floor.
+    body: `AC ratings (Abrasion Class) measure laminate wear-layer durability - specifically resistance to abrasion, impact, stains, and burns. The higher the number, the tougher the floor. Here's what each rating means, what it costs, and which one is right for your home.
 
-## The AC scale
+## AC rating comparison chart
 
-- **AC1** - light residential (closets, bedrooms only). Rare today.
-- **AC2** - moderate residential. Bedrooms and dining rooms.
-- **AC3** - heavy residential / light commercial. Most "good enough" residential laminate.
-- **AC4** - heavy residential / commercial. Family homes with kids and pets.
-- **AC5** - heavy commercial. Restaurants, retail, public spaces.
+| AC rating | Traffic class | Cost premium | Refinishable | Lifespan | Best for |
+| --- | --- | --- | --- | --- | --- |
+| **AC1** | Light residential | Cheapest | No | Short | Closets only (we don't install) |
+| **AC2** | Moderate residential | Low | No | Short | Low-use bedrooms (we don't install) |
+| **AC3** | Heavy residential / light commercial | Baseline | No | ~15 yrs | Casual, low-traffic single household |
+| **AC4** | Heavy residential / commercial | +~$0.50 / sq ft over AC3 | No | 20 - 25 yrs | Family homes with kids & pets |
+| **AC5** | Heavy commercial | Highest | No | 25+ yrs | Offices, retail, restaurants |
 
-## What we recommend
+## Real-world cost ranges
 
-- **Casual single household, low traffic:** AC3 minimum.
-- **Family with kids and pets:** **AC4 minimum.** No exceptions.
+- Installed laminate runs **$3 - $7 per sq ft** regardless of rating - the AC level is a small slice of that.
+- Stepping from **AC3 to AC4 is usually under $0.50 per sq ft** at the material level - about $500 on a 1,000 sq ft job for a meaningful jump in lifespan.
+- **AC5 commercial** laminate sits at the top of the range and is overkill for most homes.
+
+## What AC ratings do NOT cover
+
+- **Water resistance** - a completely separate spec. A high AC rating does not mean waterproof. See [water-resistant laminate](/flooring/water-resistant-laminate/).
+- Realistic visuals, edge bevel, and texture quality.
+- Underlayment quality (chosen separately).
+
+## Best for your situation - the verdict
+
+- **Casual, low-traffic single household:** AC3 minimum.
+- **Family with kids and pets:** **AC4 minimum, no exceptions** - the small price bump pays for itself in lifespan.
 - **Rental property:** AC4.
 - **Commercial space:** AC5.
 
-We don\'t install AC1 or AC2 - the lifespan math doesn\'t work for any household paying us to install professionally.
+If you need both toughness *and* waterproofing (kitchens, baths, pet zones), compare laminate against vinyl in our [laminate vs LVP guide](/flooring/laminate-vs-luxury-vinyl-plank/) - and for the install itself, see our [laminate flooring installation service](/services/laminate-flooring/).
 
-## What AC ratings don\'t cover
-
-- Water resistance (separate spec - see [water-resistant laminate](/flooring/water-resistant-laminate/)).
-- Realistic visuals (separate from durability).
-- Edge bevel and texture quality.
-- Underlayment quality (you choose this separately).
-
-## Why we lean AC4 for almost everyone
-
-The price difference between AC3 and AC4 is small - usually under $0.50 per sq ft at the material level. The lifespan difference is real. If you\'re paying for professional installation, the math always favors AC4.
-
-[Free in-home estimate](/free-estimate/) with AC4 samples brought to your home.`,
+[Get a free in-home estimate](/free-estimate/) with AC4 samples brought to your home.`,
     relatedGuides: ['water-resistant-laminate', 'laminate-vs-luxury-vinyl-plank'],
+    faqs: [
+      { q: 'What AC rating do I need for a family home with pets?', a: 'AC4 minimum. AC4 is rated for heavy residential and light commercial traffic, which is exactly what a household with kids and pets puts a floor through. The step up from AC3 to AC4 usually costs under $0.50 per sq ft but adds years of lifespan, so for any professionally installed floor the math favors AC4.' },
+      { q: 'What is the difference between AC4 and AC5 laminate?', a: 'AC4 is rated for heavy residential and light commercial use - the right choice for almost every home. AC5 is rated for heavy commercial traffic like restaurants, retail, and offices. AC5 costs more and is overkill in a residential setting; AC4 is plenty for family homes.' },
+      { q: 'Does a higher AC rating mean the laminate is waterproof?', a: 'No. AC rating measures abrasion and impact durability only - it has nothing to do with water resistance. A high AC rating laminate can still be damaged by standing water. For wet rooms you need water-resistant laminate or, better, waterproof luxury vinyl plank.' },
+      { q: 'Can AC-rated laminate be refinished?', a: 'No. No laminate, at any AC rating, can be sanded or refinished - the decorative wear layer is a printed image sealed at the factory. When the wear layer eventually fails the plank is replaced, which is why install cost matters more than refinishing with laminate.' },
+      { q: 'How long does AC4 laminate last?', a: 'In a typical family home, quality AC4 laminate lasts about 20 - 25 years before the wear layer shows. Actual lifespan depends on traffic, whether shoes and pet nails are managed, and the underlayment used beneath it.' },
+    ],
   },
   // ========== REFINISHING SPECIALTY ==========
   {
@@ -966,64 +977,53 @@ Hardwood (or engineered) in living/dining/bedrooms + LVP in kitchens/baths/laund
     intro: 'Real wood vs printed wood. Different price tier, different lifespan - both have a place.',
     image: '/images/laminate-flooring.webp',
     alt: 'Hardwood and laminate flooring comparison',
-    body: `Hardwood and laminate occupy different price and quality tiers. Here\'s how they compare on what actually matters.
+    body: `Hardwood and laminate occupy different price and quality tiers, but the gap in looks has narrowed enough that the choice now comes down to budget, lifespan, and where you're installing. Here's the honest, side-by-side breakdown from 20+ years installing both across the Inland Empire.
 
-## Cost
+## Hardwood vs laminate at a glance
 
-- **Hardwood:** $8 - $16 per sq ft installed.
-- **Laminate:** $3 - $7 per sq ft installed.
-- **Difference:** Laminate is roughly half the cost.
+| Feature | Hardwood | Laminate |
+| --- | --- | --- |
+| **Cost (installed)** | $8 - $16 / sq ft | $3 - $7 / sq ft |
+| **Waterproof** | No (poor) | Water-*resistant* only |
+| **Durability** | Dents/scratches, but refinishable | AC4 / AC5 wear layer, very scratch-tough |
+| **Refinishable** | Yes - 4 - 7x (solid), 2 - 4x (engineered) | No - replaced when worn |
+| **Comfort underfoot** | Warm, solid, premium | Can feel hard/hollow without good underlayment |
+| **Lifespan** | 75 - 100+ years | 15 - 25 years |
+| **Best for** | Long-term homes, resale, dry living areas | Budgets, rentals, dry rooms, short-to-mid holds |
 
-## Authenticity
+## Real-world cost ranges in the Inland Empire
 
-- **Hardwood:** real wood. The actual material in your floor.
-- **Laminate:** photo of wood under a clear wear layer. Increasingly realistic; still not real wood.
+- **Laminate:** $3 - $7 per sq ft installed. A 1,000 sq ft project typically lands around $3,000 - $7,000.
+- **Hardwood:** $8 - $16 per sq ft installed (red oak at the low end, wide-plank white oak and European oak at the top). The same 1,000 sq ft runs roughly $8,000 - $16,000.
+- **Bottom line:** laminate is roughly half the up-front cost - but hardwood's refinishability means it can outlast 3 - 4 laminate floors, which changes the lifetime math.
 
-## Refinishability
+## Where hardwood wins
 
-- **Hardwood:** can be sanded and refinished 4 - 7 times (solid) or 2 - 4 times (engineered).
-- **Laminate:** cannot be refinished. Photo wear layer is finished at the factory and replaced when worn.
+- **Lifespan & refinishing.** Sand it back to new every 7 - 10 years - see our [full sand, stain & seal](/flooring/sand-and-stain/) process. Laminate can't be refinished.
+- **Resale value.** "Real hardwood throughout" is a genuine listing remark in mid-to-upper Inland Empire markets.
+- **Look and feel.** Real wood texture and warmth underfoot that printed laminate still can't fully match up close.
 
-## Lifespan
+## Where laminate wins
 
-- **Hardwood:** 75 - 100+ years.
-- **Laminate:** 15 - 25 years residential.
+- **Up-front price.** Roughly half the installed cost.
+- **Scratch resistance.** A good [AC4 or AC5 laminate](/flooring/ac-rated-laminate/) shrugs off pet nails and dragged chairs better than a soft natural finish.
+- **Speed & simplicity.** Floating click-lock install over most existing floors, walk on it the same day.
 
-## Water resistance
+## Best for your situation - the verdict
 
-- **Hardwood:** poor.
-- **Laminate:** water-resistant cores available. Better than hardwood, worse than LVP. Don\'t use in full bathrooms.
+- **Choose hardwood** if you're in the home long-term (10+ years), care about resale, and you're flooring dry living, dining, and bedrooms.
+- **Choose laminate** if budget is the deciding factor, the home is a 5 - 10 year hold or a rental, and you're sticking to dry rooms.
+- **Strongly consider [luxury vinyl plank](/services/luxury-vinyl-plank/) instead** if any room touches water or you have pets. At a similar price to laminate, LVP is fully waterproof - see our [laminate vs LVP comparison](/flooring/laminate-vs-luxury-vinyl-plank/). For wet rooms, neither hardwood nor laminate belongs.
 
-## Sound underfoot
-
-- **Hardwood:** solid, dense sound.
-- **Laminate:** can sound hollow without quality underlayment. Feels less premium underfoot.
-
-## Resale value impact
-
-- **Hardwood:** "real hardwood throughout" is a listing remark.
-- **Laminate:** neutral to slightly negative in upper-tier markets; acceptable in mid and budget tiers.
-
-## When to choose hardwood
-
-- You can budget for it.
-- Long-term home where refinishability extends value.
-- Mid-to-upper tier home.
-- Aesthetic priority.
-
-## When to choose laminate
-
-- Budget is the priority and LVP isn\'t available within budget.
-- Short-to-medium term hold (5 - 10 years).
-- Dry rooms only (avoid full bathrooms).
-- Rental properties (though we usually steer to LVP).
-
-## Honest middle path: LVP
-
-For most homeowners considering laminate today, we recommend looking at LVP at the same price point. It\'s often slightly more expensive but the waterproof advantage is meaningful, and the visuals have largely converged.
-
-[Free in-home estimate](/free-estimate/) with hardwood, laminate, and LVP samples.`,
+Ready to compare in person? We bring [hardwood](/services/hardwood-flooring-installation/), [laminate](/services/laminate-flooring/), and LVP samples to your home. [Get a free in-home estimate](/free-estimate/).`,
     relatedGuides: ['laminate-vs-luxury-vinyl-plank', 'hardwood-vs-luxury-vinyl-plank'],
+    faqs: [
+      { q: 'Is hardwood or laminate cheaper to install?', a: 'Laminate is cheaper up front - $3 - $7 per sq ft installed versus $8 - $16 for hardwood, roughly half the cost. But hardwood can be refinished 4 - 7 times and last 75+ years, so over the life of the home it can be the better value. For a 1,000 sq ft project, expect about $3,000 - $7,000 for laminate and $8,000 - $16,000 for hardwood.' },
+      { q: 'Can you tell laminate from real hardwood?', a: 'Up close, usually yes - laminate is a photographic wear layer over a core, so it lacks the depth, texture, and warmth of real wood underfoot. From across a room, modern high-end laminate is convincing. The biggest tells are the repeating grain pattern and a slightly hollow sound without quality underlayment.' },
+      { q: 'Which lasts longer, hardwood or laminate?', a: 'Hardwood, by a wide margin. Solid hardwood lasts 75 - 100+ years because it can be sanded and refinished 4 - 7 times. Laminate cannot be refinished and is replaced when the wear layer fails, typically at 15 - 25 years in a residential home.' },
+      { q: 'Is laminate or hardwood better for kitchens and bathrooms?', a: 'Neither is ideal for wet rooms. Laminate is only water-resistant and hardwood is damaged by standing water. For kitchens, full bathrooms, and laundry rooms we recommend waterproof luxury vinyl plank or tile instead.' },
+      { q: 'Does laminate hurt resale value compared to hardwood?', a: 'In mid-to-upper Inland Empire price points, real hardwood is a positive listing feature and laminate is neutral to slightly negative. In budget and mid-tier homes, quality laminate is widely accepted and won\'t hurt resale.' },
+    ],
   },
   {
     slug: 'laminate-vs-luxury-vinyl-plank',
@@ -1034,69 +1034,52 @@ For most homeowners considering laminate today, we recommend looking at LVP at t
     intro: 'Two budget-to-mid-tier options at similar price points. The differences matter.',
     image: '/images/laminate-vs-luxury-vinyl-comparison.webp',
     alt: 'Laminate and luxury vinyl plank side by side',
-    body: `Laminate and LVP look similar from a distance and often cost similar amounts. Up close, they\'re different products with different best-uses.
+    body: `Laminate and luxury vinyl plank (LVP) look similar from a distance and often cost similar amounts. Up close they're different products with different best-uses. Here's the honest comparison so you can pick the right one the first time.
 
-## Cost
+## Laminate vs LVP at a glance
 
-- **Laminate:** $3 - $7 per sq ft installed.
-- **LVP:** $4 - $9 per sq ft installed.
-- **Winner:** Laminate by a small margin.
+| Feature | Laminate | Luxury Vinyl Plank (LVP) |
+| --- | --- | --- |
+| **Cost (installed)** | $3 - $7 / sq ft | $4 - $9 / sq ft |
+| **Waterproof** | Water-*resistant* only | 100% waterproof |
+| **Durability** | AC4 / AC5 wear rating | Wear layer in mils (12 mil res, 20+ mil pet/commercial) |
+| **Refinishable** | No | No |
+| **Comfort underfoot** | Harder, closer to tile | Softer, slight give, warmer |
+| **Lifespan** | 15 - 25 years | 15 - 30 years |
+| **Best for** | Tight budgets, strictly dry rooms | Wet rooms, pets, whole-house consistency |
 
-## Water resistance
+## Real-world cost ranges in the Inland Empire
 
-- **Laminate:** water-resistant cores available. Spills wiped within hours are fine. Not for wet rooms.
-- **LVP:** fully waterproof. Bathrooms, kitchens, laundry, all fine.
-- **Winner:** LVP, decisively.
+- **Laminate:** $3 - $7 per sq ft installed - usually the lowest-cost wood-look option.
+- **LVP:** $4 - $9 per sq ft installed. The premium over laminate is often only $0.50 - $1.50 per sq ft once you compare similar quality tiers.
+- **On a 1,000 sq ft job:** roughly $3,000 - $7,000 for laminate vs $4,000 - $9,000 for LVP. The waterproof upgrade is usually a small slice of the total budget.
 
-## Durability against scratches and wear
+## Where laminate wins
 
-- **Laminate:** AC4 / AC5 wear ratings are very tough.
-- **LVP:** wear-layer thickness in mils - quality LVP matches laminate durability.
-- **Winner:** Tie at comparable quality tiers.
+- **Lowest up-front price** at the budget end.
+- **Slightly firmer, "wood-solid" feel** that some homeowners prefer.
+- A good [AC4 or AC5 wear rating](/flooring/ac-rated-laminate/) is genuinely tough against scratches.
 
-## Sound underfoot
+## Where LVP wins
 
-- **Laminate:** can sound hollow; underlayment matters.
-- **LVP:** with attached pad, quieter and warmer underfoot than laminate.
-- **Winner:** LVP.
+- **Fully waterproof.** Kitchens, bathrooms, laundry, mudrooms - see [what makes LVP waterproof](/flooring/waterproof-luxury-vinyl-plank/). Laminate is only [water-resistant](/flooring/water-resistant-laminate/).
+- **Pets.** Accidents wipe up with zero damage; quality wear layers resist claws.
+- **Comfort & quiet.** Attached cork/foam pad makes LVP softer and quieter underfoot.
 
-## Comfort
+## Best for your situation - the verdict
 
-- **Laminate:** harder underfoot; closer to tile in feel.
-- **LVP:** softer, slight give. More comfortable for long periods of standing.
-- **Winner:** LVP.
+- **Choose laminate** only when the budget truly won't stretch to LVP, the rooms are strictly dry (bedrooms, formal living), or it's a cost-driven rental.
+- **Choose LVP** for any home with wet rooms, pets, kids, or a need for whole-house consistency where part of the floor will see water. This is our default recommendation in 2026 - the price gap is small and the waterproof advantage is real.
 
-## Visual realism
-
-- **Laminate:** photographic wear layer; high quality is convincing.
-- **LVP:** photographic wear layer; modern premium LVP is excellent.
-- **Winner:** Tie at quality tiers.
-
-## Pet households
-
-- **Laminate:** OK; accidents need fast cleanup.
-- **LVP:** waterproof handles accidents perfectly. Scratch-resistant.
-- **Winner:** LVP, decisively.
-
-## When to choose laminate
-
-- Tight budget where the LVP price tier isn\'t in reach.
-- Strictly dry rooms (bedrooms, formal living).
-- Rental property where cost matters most.
-
-## When to choose LVP
-
-- Any wet room (bathroom, kitchen, laundry).
-- Pet household.
-- Whole-house consistency where part of the home includes wet areas.
-- Long-term home where waterproof safety adds value.
-
-## Our default in 2026
-
-For most clients today, we install LVP. The price gap with laminate has narrowed, the waterproof advantage is meaningful, and the comfort and quietness underfoot is real. Laminate still has a place; LVP has more of one.
-
-[Free in-home estimate](/free-estimate/) with laminate and LVP samples side-by-side.`,
-    relatedGuides: ['waterproof-luxury-vinyl-plank', 'water-resistant-laminate'],
+Want to feel the difference? We bring [laminate](/services/laminate-flooring/) and [luxury vinyl plank](/services/luxury-vinyl-plank/) samples side-by-side. [Book a free in-home estimate](/free-estimate/).`,
+    relatedGuides: ['waterproof-luxury-vinyl-plank', 'water-resistant-laminate', 'ac-rated-laminate'],
+    faqs: [
+      { q: 'Is LVP more expensive than laminate?', a: 'Slightly. Laminate runs $3 - $7 per sq ft installed and LVP runs $4 - $9 per sq ft. At comparable quality tiers the difference is often only $0.50 - $1.50 per sq ft - a small part of a whole-house budget, and usually worth it for the waterproof upgrade.' },
+      { q: 'Is laminate or vinyl plank better for pets?', a: 'LVP, clearly. It is fully waterproof so accidents wipe up with no damage, and quality wear layers (20 mil for pet households) resist claw scratches. Laminate is only water-resistant, so accidents need fast cleanup and standing liquid can damage the core.' },
+      { q: 'Can laminate or LVP be used in a bathroom?', a: 'Only LVP. Quality SPC or rigid-core LVP is fully waterproof and appropriate for full bathrooms, kitchens, and laundry rooms. Standard laminate is water-resistant only and should be kept to dry rooms or powder rooms.' },
+      { q: 'Which is more comfortable to walk on?', a: 'LVP. With its attached cork or foam pad it has a slight give and a warmer, quieter feel underfoot. Laminate is firmer and closer to tile in feel, which some people prefer but most find less comfortable for long standing.' },
+      { q: 'Do laminate or LVP add resale value?', a: 'Both are considered neutral, practical flooring - acceptable in mid and budget-tier homes and not a negative. Neither carries the resale premium of real hardwood, but LVP\'s waterproof durability is an easy selling point for family buyers.' },
+    ],
   },
   {
     slug: 'engineered-vs-solid-hardwood',

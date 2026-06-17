@@ -1,0 +1,30 @@
+---
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import { business } from '~/data/business';
+---
+<BaseLayout
+  title="Page Not Found (404)"
+  description="The page you're looking for doesn't exist. Browse our flooring services and service areas, or get a free in-home estimate."
+  pathname="/404/"
+  noindex={true}
+>
+  <section class="container-wide py-24 text-center">
+    <p class="text-sm font-semibold uppercase tracking-wider text-brand-700">Error 404</p>
+    <h1 class="mt-3 font-display text-4xl md:text-5xl font-bold text-brand-900">We couldn't find that page</h1>
+    <p class="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">
+      The page may have moved or no longer exists. Here are some helpful places to go instead:
+    </p>
+
+    <div class="mt-8 flex flex-wrap justify-center gap-3">
+      <a href="/" class="btn-primary">Home</a>
+      <a href="/services/" class="btn-secondary">Flooring Services</a>
+      <a href="/areas-we-serve/" class="btn-secondary">Areas We Serve</a>
+      <a href="/free-estimate/" class="btn-secondary">Free Estimate</a>
+    </div>
+
+    <p class="mt-10 text-slate-600">
+      Or call us directly at
+      <a href={`tel:${business.phoneE164}`} class="font-semibold text-brand-700">{business.phoneDisplay}</a>.
+    </p>
+  </section>
+</BaseLayout>

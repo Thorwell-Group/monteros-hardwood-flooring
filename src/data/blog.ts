@@ -14,6 +14,7 @@ export interface BlogPost {
   readMins: number;
   body: string; // markdown
   internalLinks: { href: string; text: string }[];
+  faqs?: { q: string; a: string }[]; // optional; when present, rendered + emitted as FAQPage JSON-LD
 }
 
 export const blogPosts: BlogPost[] = [
@@ -118,7 +119,7 @@ If you want to see samples of both side-by-side in your own light, we bring them
   {
     slug: 'how-to-care-for-hardwood-floors-in-the-desert',
     title: 'How to Care for Hardwood Floors in the Desert (Inland Empire Edition)',
-    metaTitle: 'Hardwood Floor Care in the Inland Empire: Climate-Specific Tips',
+    metaTitle: 'Hardwood Floor Care in the Inland Empire (Desert Climate)',
     metaDesc: 'Real climate guidance for hardwood floors in San Bernardino, Riverside, and the Inland Empire. Humidity ranges, cleaning products, and what to avoid.',
     excerpt: 'Inland Empire summers are brutal on wood. Here\'s the maintenance routine that actually keeps your floors flat and tight.',
     date: '2026-03-28',
@@ -130,7 +131,7 @@ If you want to see samples of both side-by-side in your own light, we bring them
 
 ## The two enemies
 
-**Wide humidity swings.** A typical Inland Empire summer day pushes attic and indoor humidity below 25%. Winter rain can swing it up briefly. Wood expands and contracts with humidity, and big swings are what cause cupping, gapping, and squeaks.
+**Wide humidity swings.** A typical Inland Empire summer day pushes attic and indoor humidity below 25%. Winter rain can swing it up briefly. Wood expands and contracts with humidity, and big swings are what cause cupping, gapping, and [squeaky floors](/blog/how-to-fix-squeaky-hardwood-floors/).
 
 **Direct sun.** Our south-facing rooms get more UV than just about anywhere. Stain fades. Boards in the sun shift faster than boards under a rug.
 
@@ -342,7 +343,7 @@ The number that matters on engineered is the **wear-layer thickness in millimete
 
 **Water.** A dishwasher leak, a refrigerator line that sweats, a roof leak that runs down a wall. Catch water within hours and the floor usually survives. Wait days and you\'re looking at board replacement.
 
-**Humidity neglect.** Indoor humidity that swings from 15% in summer to 60% in winter beats up the floor every season. Cupping and gapping eventually become permanent.
+**Humidity neglect.** Indoor humidity that swings from 15% in summer to 60% in winter beats up the floor every season. Cupping, gapping, and [persistent squeaks](/blog/how-to-fix-squeaky-hardwood-floors/) eventually become permanent.
 
 **Wrong cleaners.** Vinegar, ammonia, and oil soap break down polyurethane finish. The wood underneath is fine; you just lose your protective layer faster than you should.
 
@@ -374,7 +375,7 @@ The good news: a fresh refinish makes a 30-year-old floor look brand new. We res
   {
     slug: 'flooring-trends-2026',
     title: 'Inland Empire Flooring Trends We\'re Seeing in 2026',
-    metaTitle: 'Inland Empire Flooring Trends 2026: What Local Homeowners Are Choosing',
+    metaTitle: 'Inland Empire Flooring Trends 2026: What We\'re Installing',
     metaDesc: 'Real flooring trends from an Inland Empire contractor: wide-plank European oak, water-resistant LVP, lighter stains, and what we\'re installing most.',
     excerpt: 'Wider planks, lighter stains, more LVP, and matte finishes - here\'s what we\'re actually installing in Inland Empire homes this year.',
     date: '2026-02-18',
@@ -483,7 +484,7 @@ If you\'re vetting flooring contractors in the Inland Empire, [we\'re happy to b
   {
     slug: 'preparing-for-flooring-install',
     title: 'How to Prepare Your Home for Flooring Installation',
-    metaTitle: 'How to Prep for Flooring Installation: Pre-Job Homeowner Guide',
+    metaTitle: 'How to Prep Your Home for Flooring Installation',
     metaDesc: 'A practical homeowner checklist for preparing your home for hardwood, LVP, or laminate installation. Furniture, pets, kids, and what to expect.',
     excerpt: 'A practical pre-install checklist so the install week goes smoothly for you, your family, and the crew.',
     date: '2026-02-03',
@@ -541,7 +542,7 @@ If you\'re scheduled with us and have any pre-install question, [give us a call]
   {
     slug: 'water-damaged-hardwood-floors',
     title: 'Water-Damaged Hardwood Floors: What to Do (and When to Call a Pro)',
-    metaTitle: 'Water-Damaged Hardwood Floors: First Steps and Repair Options',
+    metaTitle: 'Water-Damaged Hardwood Floors: What to Do First',
     metaDesc: 'What to do when your hardwood floors get wet - first hours, drying, when to repair vs replace, and how to prevent mold.',
     excerpt: 'A burst pipe, a dishwasher leak, a roof drip - the first 24 hours decide whether your floor survives.',
     date: '2026-01-26',
@@ -571,7 +572,7 @@ If you\'re scheduled with us and have any pre-install question, [give us a call]
 - **Cupping** (board edges higher than centers). Means water is in the wood. Some cupping flattens as the floor fully dries; some becomes permanent.
 - **Crowning** (board centers higher than edges). Usually means the floor was sanded while still wet - typically a refinishing mistake, not a leak.
 - **Discoloration / dark stains.** Water has gone deep into the wood fiber. May fade as the floor dries; may not.
-- **Lifting at seams or board ends.** Adhesive (engineered) or fastener (solid) failure from water exposure.
+- **Lifting at seams or board ends.** Adhesive (engineered) or fastener (solid) failure from water exposure - this same loosened fastening is also a common source of [squeaky floors](/blog/how-to-fix-squeaky-hardwood-floors/) afterward.
 
 ## When to call a pro
 
@@ -669,7 +670,7 @@ For multi-property landlords, [we offer volume pricing](/free-estimate/) - call 
   {
     slug: 'kitchen-flooring-options',
     title: 'The Best Kitchen Flooring Options (and What We Don\'t Recommend)',
-    metaTitle: 'Best Kitchen Flooring: Pro Recommendations for the Inland Empire',
+    metaTitle: 'Best Kitchen Flooring Options: Pro Recommendations',
     metaDesc: 'Kitchen flooring options ranked by an Inland Empire flooring contractor. Tile, LVP, hardwood, laminate - what works and what doesn\'t in real kitchens.',
     excerpt: 'Kitchens are wet, hot, and high-traffic. Most flooring fails on at least one of those. Here\'s what actually holds up.',
     date: '2026-01-12',
@@ -722,7 +723,7 @@ If you\'re planning a kitchen flooring project, [we\'ll come out with samples](/
   {
     slug: 'how-to-fix-squeaky-hardwood-floors',
     title: 'How to Fix Squeaky Hardwood Floors (and When You Can\'t DIY)',
-    metaTitle: 'Fix Squeaky Hardwood Floors: DIY Steps and When to Call a Pro',
+    metaTitle: 'Fix Squeaky Hardwood Floors: DIY Steps & Pro Repairs',
     metaDesc: 'Why hardwood floors squeak and how to fix them. DIY methods, pro fixes from above, and when squeaks signal a bigger problem.',
     excerpt: 'Most squeaky floors can be silenced from above without ripping anything up. Here\'s how it\'s done.',
     date: '2026-01-05',
@@ -730,45 +731,94 @@ If you\'re planning a kitchen flooring project, [we\'ll come out with samples](/
     image: '/images/hardwood-staircase-installation.webp',
     alt: 'Detail of hardwood floor showing professional repair work',
     readMins: 3,
-    body: `Hardwood squeaks because something\'s rubbing - usually a board against another board, or a board against a subfloor nail that\'s lost grip. Here\'s how the fixes work.
+    body: `A squeaky hardwood floor isn\'t the floor failing - it\'s two surfaces rubbing where they shouldn\'t. Almost always it\'s a board moving against a fastener that\'s lost its grip, a board moving against the subfloor, or the subfloor moving against a joist. The good news: most squeaks are fixable, and most can be silenced from the finished side without tearing anything up. Here\'s the full picture - what causes squeaks, how to fix them from above and below, the specific products that work, and the point where a squeak stops being a nuisance and starts being a structural warning.
 
-## Why floors squeak
+## Why hardwood floors squeak
 
-- **Subfloor nails lose grip** as wood dries and contracts over years. The board lifts a fraction and rubs the nail when stepped on.
-- **Boards rub each other** when humidity drops and they shrink, leaving micro-gaps that compress under foot traffic.
-- **Subfloor squeaks itself** - common with original 1950s plywood that\'s starting to age.
-- **Joist movement** in raised foundations, especially if a joist has rotated or settled.
+A squeak is friction plus movement. Something flexes under your weight, two surfaces slide against each other, and you hear it. The four common sources:
 
-## The pro fix from above (most common)
+- **Subfloor gaps.** When the subfloor sheathing isn\'t tight against the joist - because a nail backed out, the wood shrank, or the original install left a gap - the panel drops a hair under foot pressure and pops back up. That up-and-down motion against the fastener is the classic squeak.
+- **Humidity and seasonal movement.** Wood expands in humid months and shrinks in dry ones. In the Inland Empire, indoor humidity can swing from the low 20s in summer to 50%+ during winter rains. As boards shrink, micro-gaps open between them and between board and subfloor; those gaps compress and rub under traffic. This is why a floor that\'s silent in January starts talking in August.
+- **Joist movement.** On raised foundations, joists can settle, rotate, or deflect over decades. A joist that has pulled slightly away from the subfloor above it leaves the sheathing unsupported, and the whole bay flexes when you walk it.
+- **Loose nails and fasteners.** Hardwood is blind-nailed through the tongue into the subfloor. As the wood dries and contracts over years, those cleats and staples loosen their bite. The board lifts a fraction and rubs the shank of the fastener every time you step on it - the single most common squeak in older homes.
 
-We use specialty screws designed to break off below the floor surface. The threads grab the joist below; the head snaps off below the wood. Result: a tight, screw-secured board with no visible patch.
+Pinpointing which one you have matters, because the fix is different for each. Walk the floor slowly and mark every squeak with painter\'s tape. Note whether the squeak is a single sharp pop (usually a fastener) or a longer creak across an area (usually subfloor or joist movement).
 
-The process:
-1. Locate the squeak with foot pressure (or a stud finder for the joists below).
-2. Drill pilot through the hardwood into the joist.
-3. Drive the specialty screw until it snaps at the engineered break-point.
-4. Fill the tiny hole with matching wood filler.
+## DIY fixes from above
 
-Done from the finished side, no ceiling damage. Takes 5 - 15 minutes per squeak.
+If you can\'t get under the floor - slab homes, finished basements, or second stories - everything happens from the finished side. From easiest to most involved:
 
-## DIY options that often work
+- **Lubricant powders.** Powdered graphite, talcum powder, or a dedicated product like a floor-squeak powder worked into the seams reduces wood-on-wood friction. Sweep it into the gaps, work it in with a stiff brush, wipe the excess. It\'s a genuine fix for board-on-board squeaks but temporary - expect to redo it every several months. Cheapest thing to try first.
+- **Shims from the seam.** For a localized squeak where a board edge is lifting, a thin bead of construction adhesive or wood glue worked into the gap and weighted overnight can lock it down. Limited, but effective on a single chatty board.
+- **Breakaway screws (Squeeeek-No-More).** This is the workhorse from-above fix and the basis of most hardware-store squeak kits. The kit includes a depth-control fixture and scored screws. You set the fixture on the floor, drive the screw through the hardwood into the joist below, then rock the screw sideways - it snaps off at a scored point just below the wood surface. The threads stay buried, pulling the board tight to the joist, and the head is gone, leaving a hole the size of a finish nail. On carpet there\'s a version that goes straight through; on bare hardwood you fill the tiny hole with matching wood filler. You must hit a joist for this to work - use a stud finder and confirm with a trial screw.
+- **Face-screwing and plugging.** When you need maximum hold and don\'t mind a more involved repair, drill a counterbored pilot through the hardwood into the joist, drive a trim-head or standard screw to pull the board down hard, then glue a matching wood plug (or fill and finish) over the recess. This is the most secure above-floor fix and what we reach for when a breakaway screw isn\'t enough.
 
-- **Talc or graphite in the seams.** Sprinkle, work in with a soft brush. Reduces wood-on-wood squeaks. Temporary fix - comes back in months but easy to redo.
-- **Squeak-fixing screw kits from a hardware store.** The same idea as the pro fix, with a jig to control depth. Works on most floors but takes practice.
-- **From below in a raised foundation.** If the floor sits over a crawl space, you can drive screws from below into the underside of the squeaking board. Easier than the from-above fix.
+A note on finding the joist: squeaks are easiest to kill when the screw lands in solid framing. If you drive into the subfloor only, you\'ll snug the board to the subfloor but won\'t address a subfloor-to-joist gap. A stud finder run perpendicular to the boards locates joists; they\'re typically 16 inches on center.
 
-## When DIY doesn\'t work
+## Fixes from below
 
-- **Squeaks across multiple rooms or floors.** Likely a structural issue (joist deflection, framing settlement). Get a pro to diagnose before treating symptoms.
-- **Squeaks paired with bouncy spots.** Subfloor delamination or joist failure. Don\'t fix the squeak; fix the structure first.
-- **Squeaks with visible cupping or gapping.** Underlying moisture issue. Find the moisture cause before fixing the squeak.
-- **Engineered hardwood squeaks.** Often glue failure on glue-down installs, or click-lock joint failure. Specialty repair, not a screw fix.
+If your floor sits over an accessible crawl space or unfinished basement, working from below is more permanent and leaves the finished floor untouched. Have a helper walk the floor and stomp on the squeak while you watch and listen from underneath - you\'ll see exactly which bay is moving.
 
-## When the squeak is normal
+- **Shims plus adhesive.** Where the subfloor has pulled away from a joist, tap a thin wood shim coated in construction adhesive into the gap between joist and subfloor. Don\'t force it - over-driving the shim lifts the floor and creates a hump. The shim just fills the void so the subfloor can\'t drop.
+- **Blocking between joists.** For a floor that flexes across a span, install solid wood blocking (short 2x lengths) snug between the joists, tight to the underside of the subfloor. This stiffens the bay and supports the sheathing edges. Screw a long screw up through the subfloor into the blocking where you can.
+- **Joist hangers and steel bridging.** If a joist has dropped at its end or a span feels bouncy, reinforcing the connection with a metal joist hanger, or adding cross-bridging/steel bridging between joists, takes flex out of the framing. This crosses from squeak repair into framing work - if the joist itself is the problem, it\'s worth a pro\'s eyes.
 
-Some seasonal squeak is normal in any wood floor. If your floor squeaks lightly in the dry season but settles in winter, you\'re experiencing normal humidity cycling. A whole-house humidifier set to 35 - 50% reduces it dramatically.
+From-below screws are also an option: drive a screw up through the subfloor into the bottom of the squeaking hardwood board - but stop short of the hardwood\'s surface. Measure the combined subfloor-plus-hardwood thickness and use a screw at least 1/4 inch shorter so you never pop a screw tip through your finished floor.
 
-If you have persistent squeaks you can\'t fix, [reach out](/services/floor-repair/) - most of our squeak-fix calls are 1 - 2 hours total, and the floor goes silent for years.`,
+## When a squeak signals a structural problem
+
+Most squeaks are cosmetic. A few are the floor telling you something is wrong underneath. Stop the DIY and get a professional assessment if you see:
+
+- **Squeaks across multiple rooms or whole floors at once.** Widespread movement points to joist deflection or framing settlement, not loose fasteners. Treating the symptom won\'t hold.
+- **A squeak paired with a soft, spongy, or bouncy spot.** That\'s subfloor delamination (the plywood plies separating) or a failing joist. Screwing the surface down over a rotten substrate does nothing.
+- **Squeaks with cupping, gapping, or staining.** That\'s a moisture story - a slow leak, a slab wicking moisture, or a crawl-space humidity problem rotting the subfloor. Find and fix the water before touching the squeak, or it comes right back.
+- **Foundation or joist movement.** Sloping floors, doors that won\'t latch, and cracks tracking with the squeak suggest the structure is shifting. That\'s a foundation conversation, not a floor one.
+- **Engineered or floating floors.** A glue-down engineered floor that squeaks usually has an adhesive failure; a click-lock floating floor squeaks from joint separation or an uneven subfloor under it. Screws won\'t fix either - these need a specialist.
+
+## What professional squeak repair costs
+
+For a handful of squeaks, a pro repair is one of the cheapest floor services there is. Typical Inland Empire ranges:
+
+- **Per-squeak from above:** roughly $50 - $150 per squeak as a small job, often bundled.
+- **A service-call visit for several squeaks in a room or two:** about $200 - $500 all-in, including locating, fastening, and filling.
+- **From-below work in a crawl space (shims, blocking):** $300 - $800 depending on access and how many bays need attention.
+- **Structural repair (joist reinforcement, subfloor replacement):** $1,000 and up, because at that point you\'re into framing and the floor is a symptom, not the job.
+
+Most of our squeak calls are a 1 - 2 hour visit, and the floor goes quiet for years.
+
+## When the squeak is just the season
+
+Some squeak is normal in any wood floor. If yours pops lightly in the dry summer months and settles down once winter humidity comes up, that\'s ordinary humidity cycling, not a defect. Holding indoor humidity in a steady 35 - 50% band year-round - ideally with a whole-house humidifier on your HVAC - keeps boards dimensionally stable and quiets most seasonal squeaks on its own.
+
+## FAQ
+
+**Why do hardwood floors squeak?**
+Squeaks come from movement and friction: a board rubbing a fastener that has lost its grip, a board rubbing the subfloor, or the subfloor rubbing a joist. Loose nails from years of seasonal wood shrinkage are the most common cause, followed by subfloor gaps, humidity-driven movement, and joist settlement.
+
+**Can I fix squeaky floors without removing the floor?**
+Yes - the majority of squeaks are fixed from above without lifting a single board. Lubricant powders quiet wood-on-wood squeaks, and breakaway screw kits (like Squeeeek-No-More) draw the board tight to the joist and snap off below the surface, leaving only a filler-sized hole. If you can reach the underside through a crawl space, shims and blocking from below are even more permanent.
+
+**Do squeaks mean my subfloor is failing?**
+Usually no. A typical squeak is just a loose fastener or a minor subfloor gap. But a squeak paired with a soft, bouncy, or spongy spot - or with cupping, gapping, or a musty smell - can mean subfloor delamination, water damage, or a failing joist. Those warrant a professional inspection before any cosmetic fix.
+
+**How much does it cost to fix a squeaky hardwood floor?**
+A few squeaks fixed from above typically run $50 - $150 each as a small job, and a service visit for a room or two is usually $200 - $500. From-below crawl-space work runs $300 - $800, and structural repairs that involve joists or subfloor replacement start around $1,000 because that is framing work, not a simple fastening.
+
+**Will fixing humidity stop my floors from squeaking?**
+Often, partly. Wide humidity swings cause the seasonal expansion and contraction behind many squeaks. Holding indoor humidity in a steady 35 - 50% band - a whole-house humidifier on the HVAC is the best tool - reduces seasonal squeaks noticeably. It won\'t cure a loose fastener or a subfloor gap, which still need a mechanical fix.
+
+**Are squeaks worse in engineered or floating floors?**
+They show up differently. Glue-down engineered floors squeak from adhesive failure; click-lock floating floors squeak from joint separation or an uneven subfloor underneath. Neither is fixed by the screw methods used on nailed solid hardwood - both need a specialist who can address the install method directly.
+
+If you have persistent squeaks you can\'t fix yourself, [reach out](/services/floor-repair/) - most of our squeak-fix calls are a quick visit, and the floor goes silent for years.`,
+    faqs: [
+      { q: 'Why do hardwood floors squeak?', a: 'Squeaks come from movement and friction: a board rubbing a fastener that has lost its grip, a board rubbing the subfloor, or the subfloor rubbing a joist. Loose nails from years of seasonal wood shrinkage are the most common cause, followed by subfloor gaps, humidity-driven movement, and joist settlement.' },
+      { q: 'Can I fix squeaky floors without removing the floor?', a: 'Yes - the majority of squeaks are fixed from above without lifting a single board. Lubricant powders quiet wood-on-wood squeaks, and breakaway screw kits (like Squeeeek-No-More) draw the board tight to the joist and snap off below the surface, leaving only a filler-sized hole. If you can reach the underside through a crawl space, shims and blocking from below are even more permanent.' },
+      { q: 'Do squeaks mean my subfloor is failing?', a: 'Usually no. A typical squeak is just a loose fastener or a minor subfloor gap. But a squeak paired with a soft, bouncy, or spongy spot - or with cupping, gapping, or a musty smell - can mean subfloor delamination, water damage, or a failing joist. Those warrant a professional inspection before any cosmetic fix.' },
+      { q: 'How much does it cost to fix a squeaky hardwood floor?', a: 'A few squeaks fixed from above typically run $50 - $150 each as a small job, and a service visit for a room or two is usually $200 - $500. From-below crawl-space work runs $300 - $800, and structural repairs that involve joists or subfloor replacement start around $1,000 because that is framing work, not a simple fastening.' },
+      { q: 'Will fixing humidity stop my floors from squeaking?', a: 'Often, partly. Wide humidity swings cause the seasonal expansion and contraction behind many squeaks. Holding indoor humidity in a steady 35 - 50% band - a whole-house humidifier on the HVAC is the best tool - reduces seasonal squeaks noticeably. It will not cure a loose fastener or a subfloor gap, which still need a mechanical fix.' },
+      { q: 'Are squeaks worse in engineered or floating floors?', a: 'They show up differently. Glue-down engineered floors squeak from adhesive failure; click-lock floating floors squeak from joint separation or an uneven subfloor underneath. Neither is fixed by the screw methods used on nailed solid hardwood - both need a specialist who can address the install method directly.' },
+    ],
     internalLinks: [
       { href: '/services/floor-repair/', text: 'floor repair' },
       { href: '/services/hardwood-floor-refinishing/', text: 'hardwood refinishing' },

@@ -4,8 +4,9 @@ import Hero from '~/components/Hero.astro';
 import TrustBar from '~/components/TrustBar.astro';
 import Breadcrumbs from '~/components/Breadcrumbs.astro';
 import CTABanner from '~/components/CTABanner.astro';
+import FAQ from '~/components/FAQ.astro';
 import { guides, guidesBySlug } from '~/data/guides';
-import { breadcrumbSchema } from '~/lib/schema';
+import { breadcrumbSchema, faqSchema } from '~/lib/schema';
 import { servicesBySlug } from '~/data/services';
 import { marked } from 'marked';
 
@@ -26,7 +27,10 @@ const crumbs = [
   { name: guide.title, href: path },
 ];
 
-const schemas = [breadcrumbSchema(crumbs)];
+const schemas = [
+  breadcrumbSchema(crumbs),
+  ...(guide.faqs && guide.faqs.length > 0 ? [faqSchema(guide.faqs)] : []),
+];
 const parent = guide.parentService ? servicesBySlug[guide.parentService] : null;
 ---
 <BaseLayout
@@ -48,6 +52,12 @@ const parent = guide.parentService ? servicesBySlug[guide.parentService] : null;
   <section class="container-wide pt-10"><Breadcrumbs items={crumbs} /></section>
 
   <section class="container-prose py-12 prose-brand" set:html={html}></section>
+
+  {guide.faqs && guide.faqs.length > 0 && (
+    <div class="bg-slate-50">
+      <FAQ faqs={guide.faqs} heading={`${guide.title} - FAQ`} />
+    </div>
+  )}
 
   {parent && (
     <section class="container-narrow pb-8">

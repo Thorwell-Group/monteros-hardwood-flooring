@@ -45,10 +45,18 @@ import { cities } from '~/data/cities';
         </div>
       </div>
 
-      <a href="/blog/" class="px-3 py-2 text-sm font-medium text-slate-700 hover:text-brand-800">Blog</a>
-      <a href="/about/" class="px-3 py-2 text-sm font-medium text-slate-700 hover:text-brand-800">About</a>
-      <a href="/reviews/" class="px-3 py-2 text-sm font-medium text-slate-700 hover:text-brand-800">Reviews</a>
-      <a href="/financing/" class="px-3 py-2 text-sm font-medium text-slate-700 hover:text-brand-800">Financing</a>
+      <div class="relative group">
+        <button class="px-3 py-2 text-sm font-medium text-slate-700 hover:text-brand-800 inline-flex items-center gap-1" aria-haspopup="true">
+          Company
+          <svg class="h-3 w-3" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4z"/></svg>
+        </button>
+        <div class="absolute right-0 top-full hidden group-hover:block group-focus-within:block bg-white shadow-lg rounded-lg border border-slate-200 min-w-[200px] py-2">
+          <a href="/about/" class="block px-4 py-2 text-sm text-slate-700 hover:bg-brand-50">About</a>
+          <a href="/reviews/" class="block px-4 py-2 text-sm text-slate-700 hover:bg-brand-50">Reviews</a>
+          <a href="/blog/" class="block px-4 py-2 text-sm text-slate-700 hover:bg-brand-50">Blog</a>
+          <a href="/financing/" class="block px-4 py-2 text-sm text-slate-700 hover:bg-brand-50">Financing</a>
+        </div>
+      </div>
     </nav>
 
     <div class="flex items-center gap-2">
@@ -84,10 +92,15 @@ import { cities } from '~/data/cities';
           ))}
         </div>
       </details>
-      <a href="/blog/" class="block px-3 py-2 text-slate-700 font-medium">Blog</a>
-      <a href="/about/" class="block px-3 py-2 text-slate-700 font-medium">About</a>
-      <a href="/reviews/" class="block px-3 py-2 text-slate-700 font-medium">Reviews</a>
-      <a href="/financing/" class="block px-3 py-2 text-slate-700 font-medium">Financing</a>
+      <details class="group">
+        <summary class="px-3 py-2 cursor-pointer text-slate-700 font-medium">Company</summary>
+        <div class="pl-5 space-y-1 mt-1">
+          <a href="/about/" class="block px-3 py-1.5 text-sm text-slate-600">About</a>
+          <a href="/reviews/" class="block px-3 py-1.5 text-sm text-slate-600">Reviews</a>
+          <a href="/blog/" class="block px-3 py-1.5 text-sm text-slate-600">Blog</a>
+          <a href="/financing/" class="block px-3 py-1.5 text-sm text-slate-600">Financing</a>
+        </div>
+      </details>
       <a href="/faq/" class="block px-3 py-2 text-slate-700 font-medium">FAQ</a>
       <a href={`tel:${business.phoneE164}`} class="block px-3 py-2 text-brand-800 font-semibold">{business.phoneDisplay}</a>
     </nav>

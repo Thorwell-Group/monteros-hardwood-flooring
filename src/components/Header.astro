@@ -46,6 +46,7 @@ import { cities } from '~/data/cities';
       </div>
 
       <a href="/blog/" class="px-3 py-2 text-sm font-medium text-slate-700 hover:text-brand-800">Blog</a>
+      <a href="/financing/" class="px-3 py-2 text-sm font-medium text-slate-700 hover:text-brand-800">Financing</a>
       <div class="relative group">
         <button class="px-3 py-2 text-sm font-medium text-slate-700 hover:text-brand-800 inline-flex items-center gap-1" aria-haspopup="true">
           Company
@@ -56,7 +57,6 @@ import { cities } from '~/data/cities';
           <a href="/reviews/" class="block px-4 py-2 text-sm text-slate-700 hover:bg-brand-50">Reviews</a>
         </div>
       </div>
-      <a href="/financing/" class="px-3 py-2 text-sm font-medium text-slate-700 hover:text-brand-800">Financing</a>
     </nav>
 
     <div class="flex items-center gap-2">
@@ -93,6 +93,8 @@ import { cities } from '~/data/cities';
         </div>
       </details>
       <a href="/blog/" class="block px-3 py-2 text-slate-700 font-medium">Blog</a>
+      <a href="/financing/" class="block px-3 py-2 text-slate-700 font-medium">Financing</a>
+      <a href="/faq/" class="block px-3 py-2 text-slate-700 font-medium">FAQ</a>
       <details class="group">
         <summary class="px-3 py-2 cursor-pointer text-slate-700 font-medium">Company</summary>
         <div class="pl-5 space-y-1 mt-1">
@@ -100,8 +102,6 @@ import { cities } from '~/data/cities';
           <a href="/reviews/" class="block px-3 py-1.5 text-sm text-slate-600">Reviews</a>
         </div>
       </details>
-      <a href="/financing/" class="block px-3 py-2 text-slate-700 font-medium">Financing</a>
-      <a href="/faq/" class="block px-3 py-2 text-slate-700 font-medium">FAQ</a>
       <a href={`tel:${business.phoneE164}`} class="block px-3 py-2 text-brand-800 font-semibold">{business.phoneDisplay}</a>
     </nav>
   </div>

@@ -22,7 +22,7 @@ const showCards = realReviews.length > 0;
       <div class="flex items-center gap-4">
         <div class="text-right">
           <div class="font-display text-3xl font-extrabold text-brand-800 leading-none">{business.ratings.averageRating}<span class="text-amber-400 ml-1">★</span></div>
-          <div class="text-xs uppercase tracking-wider text-slate-600 mt-1">on Google</div>
+          <div class="text-xs uppercase tracking-wider text-slate-600 mt-1">{business.ratings.reviewCount} Google reviews</div>
         </div>
         <a href={business.social.googleSearch} target="_blank" rel="noopener" class="btn-primary">{business.ratings.averageRating} ★ on Google</a>
       </div>

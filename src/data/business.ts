@@ -45,7 +45,7 @@ export const business = {
     facebook:  'https://www.facebook.com/people/Monteros-hardwood-flooring/100021212805249/',
     instagram: 'https://www.instagram.com/monteroshardwood/',
     google:    'https://share.google/sDPf41rhQdhTiXxr2',
-    // "4.9 stars on Google" buttons point here: a plain Google search for the
+    // "★ on Google" rating buttons point here: a plain Google search for the
     // business so visitors land on the GBP card + reviews.
     googleSearch: 'https://www.google.com/search?q=Monteros+Hardwood+Flooring+San+Bernardino',
     yelp:      'https://www.yelp.com/biz/monteros-hardwood-flooring-san-bernardino-2',
@@ -59,10 +59,13 @@ export const business = {
     radiusMiles:    50,
   },
 
-  // Trust signals - verify before launch.
+  // Trust signals. Source of truth = the live Google Business Profile.
+  // Verified 2026-06-17: 4.8★ average across 25 Google reviews. Update both
+  // numbers here whenever the GBP changes — they drive the visible rating
+  // and the LocalBusiness aggregateRating markup.
   ratings: {
-    averageRating:  4.9,
-    reviewCount:    127, // VERIFY: pull real count from GMB before launch
+    averageRating:  4.8,
+    reviewCount:    25,
     bestRating:     5,
     worstRating:    1,
   },

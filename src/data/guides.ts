@@ -901,72 +901,55 @@ Most commercial install timelines are tight. We work nights and weekends when ne
     intro: 'Real wood vs the most realistic alternative. Where each wins, where each loses.',
     image: '/images/laminate-vs-luxury-vinyl-comparison.webp',
     alt: 'Hardwood and luxury vinyl plank flooring side by side',
-    body: `The most-asked comparison in residential flooring. Here\'s the honest breakdown.
+    body: `The most-asked comparison in residential flooring - real wood against the most realistic alternative on the market. After 20+ years installing both across the Inland Empire, here's the honest, side-by-side breakdown of where each one wins.
 
-## Cost
+## Hardwood vs LVP at a glance
 
-- **Hardwood:** $8 - $16 per sq ft installed.
-- **LVP:** $4 - $9 per sq ft installed.
-- **Winner:** LVP for budget; depends on priorities at higher tiers.
+| Feature | Hardwood | Luxury Vinyl Plank (LVP) |
+| --- | --- | --- |
+| **Cost (installed)** | $8 - $16 / sq ft | $4 - $9 / sq ft |
+| **Waterproof** | No (poor) | 100% waterproof |
+| **Durability** | Dents/scratches, but refinishable | Wear layer resists claws/scuffs |
+| **Refinishable** | Yes - 4 - 7x (solid), 2 - 4x (engineered) | No - replaced when worn |
+| **Comfort underfoot** | Warm, solid, premium | Soft, slight give, quiet with pad |
+| **Lifespan** | 75 - 100+ years | 15 - 30 years residential |
+| **Resale signal** | Premium in $500K+ markets | Neutral - practical, not premium |
+| **Install time** | 3 - 7 days (incl. acclimation) | 1 - 3 days, no cure time |
+| **Best for** | Long-term homes, resale, dry living areas | Wet rooms, pets, rentals, fast installs |
 
-## Water resistance
+## Real-world cost ranges in the Inland Empire
 
-- **Hardwood:** poor. Spills wiped quickly are fine; standing water damages.
-- **LVP:** fully waterproof. Spills, accidents, dishwasher leaks all fine.
-- **Winner:** LVP, decisively.
+- **LVP:** $4 - $9 per sq ft installed. A 1,000 sq ft project typically lands around $4,000 - $9,000.
+- **Hardwood:** $8 - $16 per sq ft installed (red oak at the low end, wide-plank white oak and [European oak](/flooring/wide-plank-european-oak/) at the top). The same 1,000 sq ft runs roughly $8,000 - $16,000.
+- **Bottom line:** LVP is often half the up-front cost - but hardwood's refinishability means a solid floor can outlast several LVP floors, which changes the lifetime math in a forever home.
 
-## Durability against scratches
+## Where hardwood wins
 
-- **Hardwood:** scratches from pet nails, furniture, dropped objects. Refinishable.
-- **LVP:** wear-layer-resistant scratches. Quality LVP handles pet nails well.
-- **Winner:** LVP for resistance; hardwood for recovery (refinishing).
+- **Lifespan & refinishing.** Solid hardwood can be sanded back to new 4 - 7 times - see our [full sand, stain & seal](/flooring/sand-and-stain/) process. LVP can't be refinished; when the wear layer goes, it's replaced.
+- **Resale value.** "Real hardwood throughout" is a genuine listing remark in mid-to-upper Inland Empire markets, especially neighborhoods where buyers expect it.
+- **Look and feel.** Real wood texture, warmth, and character underfoot that even premium LVP still can't fully match up close.
 
-## Lifespan
+## Where LVP wins
 
-- **Hardwood:** 75 - 100+ years with refinishing along the way.
-- **LVP:** 15 - 30 years residential.
-- **Winner:** Hardwood, by a lot.
+- **Water.** Fully waterproof - kitchens, bathrooms, laundry, and pet accidents are no problem. Hardwood is damaged by standing water - see [what makes LVP waterproof](/flooring/waterproof-luxury-vinyl-plank/).
+- **Scratch resistance for pets.** A quality wear layer shrugs off claws and dragged furniture better than a soft natural finish.
+- **Cost & speed.** Lower installed price and a 1 - 3 day floating install with no acclimation or cure time.
 
-## Resale value
+## Best for your situation - the verdict
 
-- **Hardwood:** premium signal in real estate listings, especially in mid-to-upper price points.
-- **LVP:** acceptable, not premium. Doesn\'t hurt; doesn\'t help significantly.
-- **Winner:** Hardwood in $500K+ markets.
+- **Choose [hardwood](/services/hardwood-flooring-installation/)** if you're in the home long-term (10+ years), care about resale, and you're flooring dry living, dining, and bedrooms with no major water exposure.
+- **Choose [luxury vinyl plank](/services/luxury-vinyl-plank/)** for pet households, wet rooms, rentals, or budget-priority installs - and for slab homes where you want a simpler, waterproof floor.
+- **Best of both:** hardwood (or engineered) in living/dining/bedrooms with LVP in kitchens, baths, and laundry, color-matched so the transition is subtle. It's our most-quoted whole-house plan today.
 
-## Look and feel
-
-- **Hardwood:** real wood - texture, warmth, feel underfoot, character that develops over years.
-- **LVP:** good imitation; modern premium LVP is increasingly close. Still recognizable as not real wood up close.
-- **Winner:** Hardwood, but the gap has narrowed significantly.
-
-## Install time
-
-- **Hardwood:** 3 - 7 days including acclimation.
-- **LVP:** 1 - 3 days, no cure time.
-- **Winner:** LVP.
-
-## When to choose hardwood
-
-- Long-term home (10+ years).
-- Raised foundation or willing to do engineered on slab.
-- Mid-to-upper tier home where resale matters.
-- No major water exposure.
-- Aesthetic priority over practicality.
-
-## When to choose LVP
-
-- Pet households, especially big dogs.
-- Wet rooms (kitchens, bathrooms, laundry).
-- Rental properties.
-- Budget-priority installs.
-- Slab homes where engineered hardwood would also work but LVP is simpler.
-
-## Mixed approach (most common today)
-
-Hardwood (or engineered) in living/dining/bedrooms + LVP in kitchens/baths/laundry. Color-matched. Best of both.
-
-[Free in-home estimate with both samples](/free-estimate/).`,
+Want to compare in person? We bring both samples to every visit. [Get a free in-home estimate](/free-estimate/).`,
     relatedGuides: ['hardwood-vs-laminate', 'engineered-vs-solid-hardwood'],
+    faqs: [
+      { q: 'Is hardwood or LVP cheaper to install?', a: 'LVP is usually cheaper up front - $4 - $9 per sq ft installed versus $8 - $16 for hardwood, often about half the cost. But solid hardwood can be refinished 4 - 7 times and last 75+ years, so in a forever home it can be the better lifetime value. For a 1,000 sq ft project, expect roughly $4,000 - $9,000 for LVP and $8,000 - $16,000 for hardwood.' },
+      { q: 'Is luxury vinyl plank better than hardwood for pets?', a: 'For most pet households, yes. LVP is fully waterproof so accidents wipe up with no damage, and a quality wear layer resists claw scratches. Hardwood scratches over time even with trimmed nails - though it can be refinished, which LVP cannot. If you love real wood and accept some patina, engineered hardwood is workable; otherwise LVP is the practical pick.' },
+      { q: 'Does hardwood add more resale value than LVP?', a: 'In mid-to-upper Inland Empire price points (roughly $500K+), real hardwood is a positive listing feature and "hardwood throughout" gets called out in walk-throughs. LVP is considered neutral - practical and acceptable, but not a premium signal. In budget and mid-tier homes, quality LVP is widely accepted and won\'t hurt resale.' },
+      { q: 'Can I put hardwood in my kitchen or bathroom?', a: 'We don\'t recommend it for wet rooms. Even careful kitchens get dishwasher leaks, and standing water damages hardwood. For kitchens, full bathrooms, and laundry rooms we install waterproof LVP or tile, often color-matched to hardwood in the adjacent living areas.' },
+      { q: 'How long does each one last?', a: 'Solid hardwood lasts 75 - 100+ years because it can be refinished repeatedly; engineered lasts 30 - 50 years depending on wear-layer thickness. LVP is rated for 15 - 30 years of residential use and is replaced rather than refinished at end of life.' },
+    ],
   },
   {
     slug: 'hardwood-vs-laminate',
@@ -1090,68 +1073,52 @@ Want to feel the difference? We bring [laminate](/services/laminate-flooring/) a
     intro: 'Both are real wood. The difference is what\'s under the wear layer.',
     image: '/images/hardwood-flooring-installation.webp',
     alt: 'Engineered and solid hardwood comparison',
-    body: `Both engineered and solid are real hardwood. Same wood, same look, same finish. The difference is structural - and it matters.
+    body: `Both engineered and solid are real hardwood - same wood species, same look, same finish on top. The difference is structural, and in the Inland Empire's slab homes and dry climate it decides which one belongs in your house. Here's the honest, side-by-side breakdown.
 
-## Construction
+## Engineered vs solid hardwood at a glance
 
-- **Solid:** one piece of hardwood, 3/4" thick, tongue-and-groove.
-- **Engineered:** wear layer of real hardwood (1 - 6 mm) on a multi-ply plywood core. Total thickness 1/2" - 5/8".
+| Feature | Solid Hardwood | Engineered Hardwood |
+| --- | --- | --- |
+| **Construction** | One piece, 3/4" thick | Real-wood wear layer (1 - 6 mm) on plywood core, 1/2" - 5/8" |
+| **Cost (installed)** | $9 - $16 / sq ft | $9 - $18 / sq ft |
+| **Refinishable** | 4 - 7x | 2 - 4x (premium), none (thin wear layer) |
+| **Subfloor** | Nail-down to plywood only | Floats, glues, or nails - works over slab |
+| **Max stable plank width** | ~4" - 5" | 6" - 9" |
+| **Lifespan** | 75 - 100+ years | 30 - 50 yrs (premium), 15 - 20 (budget) |
+| **Climate stability** | Sensitive to humidity swings | Plywood core resists movement |
+| **Best for** | Raised foundations, decades-long stays | Slab homes, wide planks, variable humidity |
 
-## Refinishability
+## Real-world cost in the Inland Empire
 
-- **Solid:** 4 - 7 full refinishes possible over the floor\'s lifetime.
-- **Engineered with 4 - 6 mm wear layer:** 2 - 4 refinishes possible.
-- **Engineered with 1 - 2 mm wear layer:** cannot be refinished; replaced at end of life.
+- **Solid:** $9 - $16 per sq ft installed. A 1,000 sq ft project runs roughly $9,000 - $16,000.
+- **Engineered:** $9 - $18 per sq ft installed - the wider range reflects wear-layer thickness, from budget 1 - 2 mm up to premium 4 - 6 mm [wide-plank European oak](/flooring/wide-plank-european-oak/).
+- **Bottom line:** the two are comparable at similar quality tiers. The deciding factor is rarely price - it's your subfloor and the plank width you want.
 
-## Subfloor compatibility
+## Where solid wins
 
-- **Solid:** nail-down to plywood subfloor only. Cannot install over slab without significant prep.
-- **Engineered:** floats, glues down, or nails. Works over slab - the dominant choice for post-1990 Inland Empire homes.
+- **Refinishing life.** Solid 3/4" can be sanded 4 - 7 times over its lifetime via our [sand, stain & seal](/flooring/sand-and-stain/) process; premium engineered manages 2 - 4 and thin-wear-layer engineered can't be refinished at all.
+- **Longevity & resale feel.** A solid floor can outlast the house, and "solid hardwood" still reads as the heritage choice - the right answer in a 1920s craftsman.
 
-## Plank widths
+## Where engineered wins
 
-- **Solid:** stable up to about 4" - 5". Wider widths are prone to cupping in our climate.
-- **Engineered:** stable at 6" - 9" wide planks. The reason wide-plank floors are almost always engineered.
+- **Slab subfloors.** You can't nail solid to concrete without heavy prep. Engineered floats or glues down - the dominant choice for the post-1990 slab homes that fill Fontana, Ontario, and newer Rancho Cucamonga. See our [engineered hardwood guide](/flooring/engineered-hardwood-flooring/).
+- **Wide planks & humidity.** Solid wood at 5"+ cups and gaps with our dry-to-humid swings; an engineered plywood core stays stable at 6" - 9", so almost every wide-plank floor here is engineered.
 
-## Cost
+## Best for your situation - the verdict
 
-- **Solid:** $9 - $16 per sq ft installed.
-- **Engineered:** $9 - $18 per sq ft installed (wider range due to wear-layer variation).
-- **Winner:** Comparable at similar quality tiers.
+- **Choose [solid hardwood](/flooring/solid-hardwood-flooring/)** for a raised-foundation home you plan to keep for decades, where you want traditional 2-1/4" - 5" widths and the option to refinish many times over.
+- **Choose engineered** for a slab home (most newer Inland Empire construction), for wide planks 5"+, for variable-humidity rooms, or for any below-grade space.
+- **What we install most:** solid in older raised-foundation homes, wide-plank engineered in newer slab homes, and premium European-oak engineered in custom and upper-tier builds.
 
-## Lifespan
-
-- **Solid:** 75 - 100+ years with refinishing.
-- **Engineered (premium):** 30 - 50 years with refinishing.
-- **Engineered (budget):** 15 - 20 years.
-
-## Climate stability in the Inland Empire
-
-- **Solid:** more sensitive to humidity swings. Requires whole-house humidifier and tight humidity control.
-- **Engineered:** plywood core resists movement. More forgiving of humidity variation.
-
-## When to choose solid
-
-- Raised-foundation home.
-- Long-term ownership (decades).
-- Aesthetic priority on traditional 2-1/4" - 5" plank widths.
-- Historic home where solid is appropriate.
-
-## When to choose engineered
-
-- Slab subfloor (most newer Inland Empire homes).
-- Want wider planks (5"+).
-- Variable humidity rooms.
-- Below-grade application.
-
-## What we install most
-
-- **Older raised-foundation homes:** solid hardwood, refinish or new.
-- **Newer slab homes:** wide-plank engineered hardwood.
-- **Custom and upper-tier homes:** wide-plank European oak engineered.
-
-[Free in-home estimate](/free-estimate/) with both solid and engineered samples.`,
+Not sure which fits your subfloor? We bring both [solid and engineered samples](/services/hardwood-flooring-installation/) to every visit. [Get a free in-home estimate](/free-estimate/).`,
     relatedGuides: ['solid-hardwood-flooring', 'engineered-hardwood-flooring'],
+    faqs: [
+      { q: 'Is engineered hardwood real wood?', a: 'Yes. Engineered hardwood has a top wear layer of real hardwood (1 - 6 mm thick) bonded to a multi-ply plywood core. The surface you see, feel, and finish is genuine wood - the difference from solid is what sits underneath, which is what makes it more stable over slab and at wide plank widths.' },
+      { q: 'Can engineered hardwood be refinished like solid?', a: 'Sometimes, depending on the wear layer. Premium engineered with a 4 - 6 mm wear layer can be refinished 2 - 4 times. Budget engineered with a 1 - 2 mm wear layer cannot be sanded and is replaced at end of life. Solid 3/4" hardwood refinishes 4 - 7 times. Always confirm the wear-layer thickness in writing before you buy.' },
+      { q: 'Which is better for a slab foundation?', a: 'Engineered, clearly. Solid hardwood must be nailed to a plywood subfloor and can\'t go directly over concrete without significant prep. Engineered floats or glues down over a properly prepped, moisture-barriered slab - which is why it\'s the standard choice for the post-1990 slab homes common across the Inland Empire.' },
+      { q: 'Why is wide-plank flooring almost always engineered?', a: 'Stability. Solid wood expands and contracts with humidity, so at 5"+ widths it\'s prone to cupping and gapping in our dry-to-humid climate swings. An engineered plank\'s plywood core resists that movement, staying flat at 6" - 9" widths where solid would be a gamble.' },
+      { q: 'Does solid hardwood cost more than engineered?', a: 'They\'re comparable at similar quality tiers - solid runs about $9 - $16 per sq ft installed and engineered $9 - $18, with the wider engineered range driven by wear-layer thickness. The choice usually comes down to your subfloor and desired plank width rather than price.' },
+    ],
   },
 ];
 

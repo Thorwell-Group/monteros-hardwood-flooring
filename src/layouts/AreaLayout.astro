@@ -50,6 +50,7 @@ const cityFaqs = [
     q: `How do I get a free estimate in ${city.name}?`,
     a: `Call ${business.phoneDisplay} or use our contact form. We'll schedule an in-home visit, take measurements and subfloor moisture readings, walk through samples, and follow up with a written, itemized estimate within a couple of business days.`,
   },
+  ...(city.extraFaqs ?? []),
   ...generalFaqs.slice(0, 4),
 ];
 
@@ -59,8 +60,9 @@ const schemas = [
 ];
 
 // Title <= 60 with brand baked in so buildSEO never appends the longer suffix.
-let title = `Hardwood & LVP Flooring in ${city.name}, ${city.state} | ${business.shortName}`;
-if (title.length > 60) {
+// A city may supply a full hubMetaTitle override (already brand-baked) for SEO.
+let title = city.hubMetaTitle ?? `Hardwood & LVP Flooring in ${city.name}, ${city.state} | ${business.shortName}`;
+if (!city.hubMetaTitle && title.length > 60) {
   title = `Hardwood & LVP Flooring in ${city.name}, ${city.state}`;
 }
 
@@ -113,6 +115,13 @@ const projectPhotos = [
         <h3>What {city.name} Homes Need from a Flooring Crew</h3>
         <p>{localProof}</p>
         <p>{foundationNote}</p>
+
+        {city.extraSection && (
+          <>
+            <h2>{city.extraSection.heading}</h2>
+            {city.extraSection.paragraphs.map((para) => <p>{para}</p>)}
+          </>
+        )}
 
         <h3>Neighborhoods We Serve in {city.name}</h3>
         <p>{business.brandName} works across all of {city.name} and surrounding zip codes:</p>

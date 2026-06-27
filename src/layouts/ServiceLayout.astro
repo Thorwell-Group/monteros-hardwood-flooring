@@ -29,7 +29,7 @@ const schemas = [
   faqSchema(service.faqs),
 ];
 
-const title = `${service.metaTitleBase} | Inland Empire`;
+const title = service.metaTitle ?? `${service.metaTitleBase} | Inland Empire`;
 const description = service.metaDescBase;
 
 // Build a wider project gallery: combine service-specific photos with a curated set.
@@ -172,6 +172,11 @@ const projectPhotos = galleryPool.filter((p) => p.src !== service.heroImage && !
     {service.blogLink && (
       <p class="mt-6 text-lg text-slate-700 leading-relaxed max-w-3xl">
         Dealing with movement or noise underfoot? Read our guide on <a href={service.blogLink.href} class="font-semibold text-brand-700 underline decoration-brand-300 underline-offset-2 hover:text-brand-900">{service.blogLink.label}</a> before you decide between a repair and a full install.
+      </p>
+    )}
+    {service.areaLink && (
+      <p class="mt-4 text-lg text-slate-700 leading-relaxed max-w-3xl">
+        {service.areaLink.before}<a href={service.areaLink.href} class="font-semibold text-brand-700 underline decoration-brand-300 underline-offset-2 hover:text-brand-900">{service.areaLink.label}</a>{service.areaLink.after}
       </p>
     )}
   </section>

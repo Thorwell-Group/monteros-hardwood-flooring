@@ -25,6 +25,12 @@ export interface City {
   // Short keyword-first title token used to keep area-city titles <= 60 chars.
   // e.g. "Hardwood & LVP Flooring"
   hubTitleLead?: string;
+  // Optional full <title> override for the city hub page (already brand-baked).
+  hubMetaTitle?: string;
+  // Optional extra prose block (H2 + paragraphs) rendered on the city hub page.
+  extraSection?: { heading: string; paragraphs: string[] };
+  // Optional city-specific FAQ entries merged into the hub FAQ + FAQ schema.
+  extraFaqs?: { q: string; a: string }[];
 }
 
 export const cities: City[] = [
@@ -170,6 +176,24 @@ export const cities: City[] = [
     localContext: 'Highland\'s East Highlands Ranch and the foothill homes near Greenspot Road have stunning views and homeowners who care about how their interiors match. We do a lot of wide-plank hardwood and engineered installs here.',
     housingProfile: 'Mix of 1990s – 2010s tract homes in East Highlands Ranch (slab) and older 1960s – 1980s ranches in central Highland (mix of slab and raised). Larger custom homes scattered through the foothills.',
     landmarks: ['East Highlands Ranch', 'Highland Hills'],
+    hubMetaTitle: 'Flooring Contractors in Highland, CA — Install, Refinish & Repair | Monteros',
+    extraSection: {
+      heading: "Highland's Flooring Installers & Hardwood Floor Companies",
+      paragraphs: [
+        'Searching for flooring companies in Highland, CA can feel like a coin toss - which crews actually show up, and which ones know local homes? As flooring installers based just ten minutes away in San Bernardino, Monteros has worked East Highlands Ranch slabs and older central Highland ranch foundations for over 20 years. We know how the foothill heat near Greenspot Road and the Highland Hills moves wood, so we acclimate boards on-site and prep the subfloor accordingly before a single plank goes down.',
+        'Unlike general flooring companies that subcontract the labor, the same Monteros crew handles your Highland project from estimate to final walk-through. Among Highland hardwood floor companies, that consistency is what keeps view-facing great-room plank runs straight and floor color reading right against the natural light. From wide-plank hardwood installs to refinishing original wood in the older central Highland ranches, you get one team, a written itemized quote, and a lifetime workmanship guarantee.',
+      ],
+    },
+    extraFaqs: [
+      {
+        q: 'What makes us different from other flooring companies in Highland, CA?',
+        a: "We're local - our San Bernardino shop is about ten minutes from Highland - and the same family crew does every job, no subcontractors. Unlike flooring companies that rotate crews between sites, you get one team that knows East Highlands Ranch slabs and central Highland's older raised foundations, plus a written estimate that holds for 30 days and a lifetime workmanship guarantee.",
+      },
+      {
+        q: 'Do you install hardwood as well as LVP and laminate in Highland?',
+        a: 'Yes. Among Highland flooring installers we cover the full range - solid and engineered hardwood, refinishing, luxury vinyl plank, laminate, and repair. We are as comfortable matching wide-plank oak in a Highland Hills great room as we are floating waterproof LVP over a slab in East Highlands Ranch.',
+      },
+    ],
     localFlooringNotes: 'Highland sits right at our back door - barely ten minutes from the San Bernardino shop - so it is one of the cities we are in most often. East Highlands Ranch is the heart of our work here: master-planned 1990s-2010s homes on slab, where the prep is all about grinding the concrete dead-flat and moisture-barriering before wide-plank hardwood or engineered goes down. These foothill homes near Greenspot Road and the Highland Hills have view-facing great rooms, and homeowners care that long plank runs stay straight and that floor color reads right against the natural light. Central Highland is the older half - 1960s-1980s ranches on a mix of slab and raised foundations, where raised-foundation homes need a crawlspace and joist check before refinishing or replacement. Highland\'s foothill setting brings sharp day-night temperature swings and seasonal Santa Ana grit, so we acclimate wood on-site and favor durable finishes for entries. The short drive means fast estimates and tight install scheduling.',
   },
   {

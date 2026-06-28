@@ -7,7 +7,10 @@ export interface Service {
   shortName: string;        // for nav and buttons
   oneLiner: string;         // one-sentence pitch for cards
   metaTitleBase: string;    // "{base} | {city, CA}" gets composed at render
+  metaTitle?: string;       // optional full <title> override (already brand-baked)
   metaDescBase: string;     // same composition pattern
+  // Optional contextual internal link to a priority service-area hub page.
+  areaLink?: { href: string; label: string; before: string; after: string };
   heroImage: string;
   altText: string;
   priceFromUSD: number;     // per sq ft, low end
@@ -63,6 +66,7 @@ export const services: Service[] = [
       { q: 'Do you offer financing?', a: 'Yes - 0% promotional financing is available for qualified customers. Ask during your free estimate and we\'ll walk through the options.' },
     ],
     intent: 'install',
+    areaLink: { before: 'Planning a project nearby? Explore our ', label: 'flooring services in Highland', after: ', CA and across the Inland Empire.', href: '/areas-we-serve/highland/' },
     gallery: [
       { src: '/images/hardwood-flooring-installation.webp', alt: 'Newly installed wide-plank hardwood floor in an Inland Empire home' },
       { src: '/images/hardwood-formal-living-room.webp', alt: 'Hardwood flooring in a formal Inland Empire living room' },
@@ -83,6 +87,7 @@ export const services: Service[] = [
     shortName: 'Refinishing',
     oneLiner: 'Bring tired hardwood back to life with sand, stain, and seal - most homes done in 3 – 5 days.',
     metaTitleBase: 'Hardwood Floor Refinishing',
+    metaTitle: 'Floor Refinishing in the Inland Empire — Sand, Stain & Seal in 3-5 Days | Monteros',
     metaDescBase: 'Hardwood floor refinishing across the Inland Empire. Dust-contained sanding, custom stain matching & durable finishes - restore floors for less. Free estimate.',
     heroImage: '/images/hardwood-floor-sander.webp',
     altText: 'Professional drum sander mid-refinish on an Inland Empire hardwood floor',
@@ -112,6 +117,7 @@ export const services: Service[] = [
       { q: 'How often can hardwood be refinished?', a: 'Solid 3/4-inch hardwood typically handles 4 – 7 full refinishes over its lifetime. Screen-and-recoat (light refresh) can be done many more times in between.' },
     ],
     intent: 'refinish',
+    areaLink: { before: 'Local to the area? See why homeowners choose us as their ', label: 'flooring contractor in Highland, CA', after: ' and throughout the Inland Empire.', href: '/areas-we-serve/highland/' },
     gallery: [
       { src: '/images/hardwood-floor-refinishing.webp', alt: 'Mid-refinishing hardwood floor showing freshly sanded wood ready for stain' },
       { src: '/images/hardwood-staircase-refinishing.webp', alt: 'Hardwood staircase mid-refinish' },

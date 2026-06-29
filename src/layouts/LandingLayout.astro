@@ -7,9 +7,12 @@ import { buildSEO, type SEOInput } from '~/lib/seo';
 interface Props extends SEOInput {
   bodyClass?: string;
   lang?: 'en' | 'es';
+  /** Inject the GA4 gtag.js snippet. Opt-in so ad-landing pages (free-estimate)
+      stay untouched; enabled on the booking pages so generate_lead can fire. */
+  ga4?: boolean;
 }
 
-const { bodyClass = '', lang = 'en', ...seoInput } = Astro.props as Props;
+const { bodyClass = '', lang = 'en', ga4 = false, ...seoInput } = Astro.props as Props;
 const seo = buildSEO({
   ...seoInput,
   pathname: seoInput.pathname ?? Astro.url.pathname,
@@ -35,6 +38,19 @@ const t = lang === 'es'
 <!doctype html>
 <html lang={lang} class="scroll-pt-20">
   <head>
+    {ga4 && (
+      <>
+        {/* Google tag (gtag.js) — matches BaseLayout (G-MBZFMGB68K) so the
+            generate_lead key event can fire on this booking page. */}
+        <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-MBZFMGB68K"></script>
+        <script is:inline>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-MBZFMGB68K');
+        </script>
+      </>
+    )}
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="generator" content={Astro.generator} />

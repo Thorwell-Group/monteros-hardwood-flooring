@@ -2,6 +2,9 @@
 # Format: <old-path>  <new-path>  <status>
 # Cloudflare Pages reads this file from the deploy root.
 
+# Canonical host: www → apex
+https://www.monteroshardwoodflooring.com/* https://monteroshardwoodflooring.com/:splat 301
+
 # Homepage alias
 /home  /  301
 

@@ -1,4 +1,12 @@
 ---
+// Self-hosted fonts (Fontsource) — only the weights actually used sitewide.
+// Replaces the render-blocking Google Fonts stylesheet.
+import '@fontsource/plus-jakarta-sans/400.css';
+import '@fontsource/plus-jakarta-sans/500.css';
+import '@fontsource/plus-jakarta-sans/600.css';
+import '@fontsource/plus-jakarta-sans/700.css';
+import '@fontsource/plus-jakarta-sans/800.css';
+import '@fontsource/raleway/400.css';
 import '~/styles/global.css';
 import Header from '~/components/Header.astro';
 import Footer from '~/components/Footer.astro';
@@ -73,11 +81,7 @@ const ldJson = [
     <!-- Performance: preconnect to Google Maps for embeds -->
     <link rel="preconnect" href="https://www.google.com" />
     <link rel="dns-prefetch" href="https://www.google.com" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <!-- Self-hosted font fallback acceptable; loading from Google Fonts for simplicity -->
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Raleway:wght@400;500&display=swap" rel="stylesheet" />
+    <!-- Fonts are self-hosted via Fontsource (imported in frontmatter) — no Google Fonts request needed. -->
 
     <!-- JSON-LD structured data -->
     {ldJson.map((schema) => (

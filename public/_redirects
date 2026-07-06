@@ -2,7 +2,12 @@
 # Format: <old-path>  <new-path>  <status>
 # Cloudflare Pages reads this file from the deploy root.
 
-# Canonical host: www → apex
+# Canonical host: www → apex.
+# NOTE (2026-07-06): Cloudflare Pages does NOT support domain-level redirects in
+# _redirects ("Domain-level redirects ❌" — developers.cloudflare.com/pages/configuration/redirects/),
+# so the rule below is parsed but never fires. Kept to document intent.
+# The actual www → apex 301 must be a Redirect Rule (Rules → Redirect Rules)
+# on the monteroshardwoodflooring.com zone in the Cloudflare dashboard.
 https://www.monteroshardwoodflooring.com/* https://monteroshardwoodflooring.com/:splat 301
 
 # Homepage alias

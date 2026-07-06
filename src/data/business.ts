@@ -55,17 +55,17 @@ export const business = {
   // Service area covered for LocalBusiness schema.
   serviceArea: {
     primaryCounty:  'San Bernardino County',
-    counties:       ['San Bernardino County', 'Riverside County', 'Orange County'],
+    counties:       ['San Bernardino County', 'Riverside County'],
     radiusMiles:    50,
   },
 
   // Trust signals. Source of truth = the live Google Business Profile.
-  // Verified 2026-06-17: 4.8★ average across 25 Google reviews. Update both
+  // Verified 2026-07-06: 4.9★ average across 27 Google reviews. Update both
   // numbers here whenever the GBP changes — they drive the visible rating
   // and the LocalBusiness aggregateRating markup.
   ratings: {
-    averageRating:  4.8,
-    reviewCount:    25,
+    averageRating:  4.9,
+    reviewCount:    27,
     bestRating:     5,
     worstRating:    1,
   },

@@ -89,7 +89,7 @@ export function localBusinessSchema() {
       },
     })),
     // reviewCount + ratingValue mirror the live Google Business Profile exactly
-    // (verified 4.9★ / 27 reviews, 2026-07-06), so the AggregateRating markup stays truthful.
+    // (verified 4.9★ / 28 reviews, 2026-07-20), so the AggregateRating markup stays truthful.
     // The page shows a curated sample of the full-text reviews; the count here
     // is the real GBP total, not just the on-page sample.
     aggregateRating: {

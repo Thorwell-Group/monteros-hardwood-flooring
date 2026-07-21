@@ -60,12 +60,12 @@ export const business = {
   },
 
   // Trust signals. Source of truth = the live Google Business Profile.
-  // Verified 2026-07-06: 4.9★ average across 27 Google reviews. Update both
+  // Verified 2026-07-20: 4.9★ average across 28 Google reviews. Update both
   // numbers here whenever the GBP changes — they drive the visible rating
   // and the LocalBusiness aggregateRating markup.
   ratings: {
     averageRating:  4.9,
-    reviewCount:    27,
+    reviewCount:    28,
     bestRating:     5,
     worstRating:    1,
   },

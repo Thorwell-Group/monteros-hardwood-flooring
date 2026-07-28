@@ -1272,6 +1272,278 @@ Choosing well isn't about finding the lowest bid - it's about finding a licensed
       { q: 'What local questions should I ask an Inland Empire flooring contractor?', a: 'Ask whether they moisture-test the slab before installing, how they acclimate wood for our dry climate, and whether they recommend engineered or solid hardwood for your foundation type. Local, climate-specific experience is as important as the price.' },
     ],
   },
+
+  {
+    slug: 'flooring-highland-ca',
+    title: 'Flooring in Highland, CA: What Local Homes Need',
+    metaTitle: 'Flooring in Highland, CA | Monteros Hardwood Flooring',
+    metaDesc: 'Hardwood, laminate and luxury vinyl installation in Highland, CA. What slab foundations and our dry climate mean for your flooring choice.',
+    excerpt: 'Highland sits right next to our San Bernardino base, and most homes here share one thing that decides the flooring answer: a concrete slab.',
+    date: '2026-07-27',
+    category: 'local',
+    image: '/images/hardwood-modern-open-living.webp',
+    alt: 'Hardwood flooring installed in a Highland, CA home',
+    readMins: 5,
+    body: `Highland is a few minutes from our San Bernardino base, which means we work here constantly and quoting stays quick. It also means we know what the housing stock is like, and there is one shared characteristic that decides most flooring conversations here: nearly everything is built on a concrete slab.
+
+## Why the slab decides your options
+
+Most Highland homes, like most of the Inland Empire, sit directly on a concrete slab rather than over a crawl space or basement. That single fact narrows the sensible choices more than anything else.
+
+Concrete passes moisture vapor upward from the ground continuously. It happens even when the slab looks bone dry, and it happens year-round. Solid hardwood installed directly over a slab reacts badly to that over time, which is why we generally do not recommend it in that situation.
+
+What works over a slab:
+
+**Engineered hardwood** gives you a genuine hardwood surface over a cross-laminated core that handles slab moisture and our humidity swings. In a Highland home this is usually the right way to get real wood.
+
+**Luxury vinyl plank** is fully waterproof and completely unbothered by slab vapor. It is the most forgiving option and the one we install most.
+
+**Laminate** works over a slab with a proper moisture barrier underneath, and gives you a hard, scratch-resistant surface at a lower cost in dry rooms.
+
+**Tile** has always worked over slab, and it is still the right call in wet areas.
+
+The one non-negotiable regardless of material is a moisture test on the slab before anything goes down. Skipping it is how installations fail eighteen months later.
+
+## What our climate does to wood
+
+The Inland Empire is dry, and Highland is no exception. Summers are hot and the air holds very little moisture for much of the year.
+
+Wood responds to that by giving up moisture and shrinking, which opens gaps between boards. Then a humid stretch arrives and the boards swell back. Managed properly this is a non-issue. Ignored, it produces gaps that stay visible and finishes that fail early.
+
+The practical answer is acclimation. Flooring has to sit inside the home, in the rooms where it will be installed, until its moisture content balances with the house. Contractors who skip this step are the reason people end up with gapped floors, and it is invisible to the customer, which is exactly why it gets skipped.
+
+## Matching material to room
+
+The most common mistake is picking one floor for the whole house without thinking about what each room actually does.
+
+Kitchens, baths and laundry rooms want waterproof, because the realistic risk is a slow appliance leak nobody notices for days. Living and dining areas are where hardwood earns its cost and where you have the most freedom. Bedrooms can go either way. Garages and shops are a different conversation entirely.
+
+Running two or three materials through a house is normal and usually gives a better result than compromising on one.
+
+## Repairs are often the better answer
+
+Not every floor needs replacing. Damaged boards can be cut out and woven back in so the repair disappears. Scratches and gouges can be addressed without redoing a room. A floor that has gone dull may only need a screen and recoat rather than a full sanding, which costs a fraction as much.
+
+We would rather tell you a repair will do than sell you a replacement you did not need.
+
+## Getting a real number
+
+We measure in person rather than quoting per square foot over the phone, because the slab condition, the demo, the transitions and the stairs are what actually move the price. If one quote comes in well below the others, that difference is nearly always in the prep.`,
+    internalLinks: [
+      { href: '/areas-we-serve/highland/', text: 'flooring in Highland' },
+      { href: '/services/hardwood-flooring-installation/', text: 'hardwood flooring installation' },
+      { href: '/flooring/engineered-hardwood-flooring/', text: 'engineered hardwood' },
+      { href: '/services/luxury-vinyl-plank/', text: 'luxury vinyl plank' },
+    ],
+    faqs: [
+      { q: 'Can I install solid hardwood over a concrete slab in Highland?', a: 'Generally no. Concrete slabs pass moisture vapor upward from the ground continuously, and solid hardwood reacts badly to that over time. Engineered hardwood gives you a real hardwood surface over a cross-laminated core that handles slab moisture, and it is the right way to get real wood in most Highland homes.' },
+      { q: 'Why do gaps open between my floorboards?', a: 'The Inland Empire is dry for much of the year, and wood gives up moisture and shrinks across its width in response. It is normal seasonal movement rather than a defect. Proper acclimation before installation is what keeps that movement within a range you do not notice.' },
+      { q: 'Do you moisture-test the slab before installing?', a: 'Always. A slab that looks dry can still be passing significant vapor, and installing over it without testing is the leading cause of flooring failures a year or two later. It is a straightforward test and far cheaper than redoing a floor.' },
+      { q: 'Do you serve Highland?', a: 'Yes, regularly. Highland is a few minutes from our San Bernardino base, so scheduling estimates and start dates stays quick rather than requiring a special trip.' },
+    ],
+  },
+
+  {
+    slug: 'hardwood-flooring-riverside-ca',
+    title: 'Hardwood Flooring in Riverside: Choosing for Older and Newer Homes',
+    metaTitle: 'Hardwood Flooring in Riverside, CA | Monteros',
+    metaDesc: 'Hardwood flooring in Riverside, CA. What suits the Wood Streets and older neighborhoods versus newer slab construction, and how to choose species and finish.',
+    excerpt: 'Riverside has two very different housing stocks, and the right hardwood answer depends entirely on which one you own.',
+    date: '2026-07-27',
+    category: 'local',
+    image: '/images/hardwood-formal-living-room.webp',
+    alt: 'Hardwood flooring in a Riverside, CA living room',
+    readMins: 5,
+    body: `Riverside is one of the more interesting places we install hardwood, because the city contains two housing stocks that need almost opposite approaches. Get that distinction right and the rest of the decisions follow easily.
+
+## Older Riverside: you may already have hardwood
+
+The Wood Streets and the older neighborhoods around downtown are full of pre-1950 homes, and a large share of them have original hardwood sitting under carpet that somebody installed in the 1970s.
+
+Before you spend a dollar on new flooring in an older Riverside home, check what is already there. Pulling back a corner of carpet in a closet takes two minutes.
+
+What you are likely to find depends on the era. Craftsman bungalows from the 1900s to 1920s typically have Douglas fir or old-growth pine. The 1920s to 1940s Spanish revival homes often have quartersawn white oak with tighter grain than anything in commercial supply today. Post-war ranch homes usually have solid red oak strip, almost always thick enough to refinish.
+
+If it is structurally sound, refinishing original wood is nearly always cheaper and better than covering it with new material, and old-growth wood is genuinely better than what you can buy now. Our post on restoring historic floors in Redlands and Riverside covers the assessment in detail.
+
+## Newer Riverside: the slab question
+
+Newer Riverside construction sits on concrete slabs, and that changes the answer entirely.
+
+Slabs pass moisture vapor upward from the ground continuously, which is why solid hardwood is generally not recommended directly over concrete. Engineered hardwood is the way to get real wood in these homes. It has a genuine hardwood wear layer over a cross-laminated core that resists both slab moisture and the seasonal movement our dry climate causes.
+
+The one spec that matters most with engineered is wear layer thickness. A thick one can be sanded and refinished once or twice, meaning the floor can be brought back decades from now. A thin one cannot be refinished at all. Ask for the number before anything else.
+
+## Choosing species
+
+**Red oak** is the Inland Empire default for good reason. Hard, widely available, affordable, and its strong grain hides scratches and dents better than smoother woods. It carries warm undertones, which matters when picking stain.
+
+**White oak** is slightly harder, more water resistant, and reads more neutral, which is why it takes modern gray and light finishes cleanly where red oak fights them.
+
+**Hickory** is harder still with dramatic board-to-board color variation, good for busy households.
+
+**Walnut** is beautiful and naturally dark, and noticeably softer, so it suits formal rooms rather than entries.
+
+Whatever the species, choose the stain color on your own sanded floor rather than from a showroom chip. Wood species, age, and your room's light all change how a stain reads, and Riverside light is bright.
+
+## Living with hardwood in a dry climate
+
+Our climate pulls moisture out of wood for much of the year, and boards shrink across their width in response. Two things keep that manageable: acclimating the flooring inside the home before installation, and keeping the house within a normal comfort range rather than letting it swing.
+
+Direct sun is the other Riverside factor. Strong sunlight through large windows will fade and shift the color of a wood floor over years, more noticeably on darker stains. Window coverings and moving rugs occasionally both help.
+
+## Have someone look first
+
+The most useful thing you can do is get someone to look at your actual rooms, subfloor and light before committing to a species or a finish. We install and refinish across Riverside and the surrounding Inland Empire.`,
+    internalLinks: [
+      { href: '/areas-we-serve/riverside/', text: 'flooring in Riverside' },
+      { href: '/services/hardwood-flooring-installation/', text: 'hardwood flooring installation' },
+      { href: '/flooring/oak-flooring/', text: 'oak flooring' },
+      { href: '/flooring/engineered-hardwood-flooring/', text: 'engineered hardwood' },
+    ],
+    faqs: [
+      { q: 'Might there be hardwood under my carpet in an older Riverside home?', a: 'Very possibly. The Wood Streets and older neighborhoods around downtown are full of pre-1950 homes with original Douglas fir or oak under carpet installed decades later. Pulling back a corner of carpet in a closet takes two minutes and can save a great deal of money.' },
+      { q: 'Can I install solid hardwood in a newer Riverside home?', a: 'Usually not directly, because newer construction sits on concrete slabs and slabs pass moisture vapor upward continuously. Engineered hardwood gives you a genuine hardwood surface over a core that handles slab moisture, and it is the practical way to get real wood in those homes.' },
+      { q: 'What hardwood species works best in the Inland Empire?', a: 'Red oak is the regional default because it is hard, available, affordable, and its grain hides wear well. White oak is slightly harder and takes cool and gray finishes more cleanly. Hickory suits busy households, and walnut is beautiful but softer and better in formal rooms.' },
+      { q: 'Will sunlight fade my hardwood floor?', a: 'Over years, yes, particularly with strong Riverside light through large windows, and it shows more on darker stains. Window coverings help, and moving rugs occasionally prevents sharply defined lines where the covered area stays darker than the exposed floor.' },
+    ],
+  },
+
+  {
+    slug: 'hardwood-floor-refinishing-riverside-ca',
+    title: 'Hardwood Floor Refinishing in Riverside: When and How',
+    metaTitle: 'Hardwood Floor Refinishing in Riverside, CA | Monteros',
+    metaDesc: 'Hardwood floor refinishing in Riverside, CA. How to tell whether you need a full sand, a screen and recoat, or nothing yet, and what the process involves.',
+    excerpt: 'Refinishing brings a floor you already own back to new for a fraction of replacement cost. The trick is knowing whether you need a full sand or just a recoat.',
+    date: '2026-07-27',
+    category: 'local',
+    image: '/images/hardwood-floor-refinishing.webp',
+    alt: 'Hardwood floor being refinished in a Riverside, CA home',
+    readMins: 5,
+    body: `Refinishing is almost always the best money you can spend on a hardwood floor. It brings wood you already own back to life for a fraction of what new flooring costs, and it keeps the character that made the floor worth having. Here is how to know what your Riverside floor actually needs.
+
+## Refinish or recoat? They are not the same job
+
+This distinction saves people the most money, and most homeowners have never had it explained.
+
+A **full refinish** sands the floor down to bare wood, removing the old finish and a thin layer of the wood with it, then rebuilds color and finish from scratch. It is the deep reset, and because it removes wood, a floor can only take so many across its life.
+
+A **screen and recoat** is far gentler. We lightly abrade the existing finish so a new coat bonds, then lay a fresh protective layer on top. No stain, no sanding to bare wood, no wood removed. It costs a fraction of a full refinish and takes a fraction of the time.
+
+The strategy that keeps floors alive longest is to lean on recoating so that full sanding comes around as rarely as possible.
+
+## Which one do you need?
+
+Use the water test. Put a few drops of water on a worn area and watch.
+
+If it **beads up**, the finish is still doing its job. You may need nothing at all, or a recoat if the sheen has gone dull.
+
+If it **soaks in or darkens the wood**, the finish has worn through and bare wood is exposed. That means a full sand.
+
+Beyond that test, recoat when the finish looks dull, hazy, or lightly scuffed but the wood itself is not exposed. Go to a full refinish when bare wood shows through, there are deep scratches or dents reaching into the wood, there are gray or water-stained boards, or you want to change the color. Stain only goes onto bare wood, so any color change means a full sand underneath it.
+
+## What the process involves
+
+A full refinish in a Riverside home runs in a consistent order. We assess the floor first, checking board thickness and looking for cupping, gaps, deep gouges and pet stains, which confirms there is enough wood left to sand safely.
+
+Then sanding works through the grits in sequence, coarse first to strip the old finish and level the surface, then progressively finer so the wood ends up smooth. Edges and corners are handled separately so the perimeter matches the field.
+
+Dust gets pulled before anything else goes down, because a clean floor is the only way to get a smooth top coat. Our dustless refinishing system captures the great majority of it at the source rather than letting it settle through the house.
+
+If you are changing color, stain goes on next, and we test samples on your actual floor in your actual light. Color shifts dramatically between a showroom chip and your living room, and Riverside light is bright.
+
+Then finish coats go down with buffing between them, and the floor cures. Light foot traffic is usually fine within a day; heavy furniture and rugs should wait several days.
+
+## Older Riverside floors are worth saving
+
+The Wood Streets and the older neighborhoods around downtown have pre-1950 homes with Douglas fir and old-growth oak that is genuinely better material than anything in commercial supply today. Tighter grain, denser, cut from bigger timber.
+
+If a floor like that is structurally sound, refinishing it is both cheaper and better than replacing it, and once that wood is gone it cannot be bought back.
+
+## Not sure which you need?
+
+The line between a recoat and a full refinish is easy to misjudge from a photo. A quick look in person settles it, and it is the difference between a one-day job and a multi-day one.`,
+    internalLinks: [
+      { href: '/services/hardwood-floor-refinishing/', text: 'hardwood floor refinishing' },
+      { href: '/flooring/dustless-floor-refinishing/', text: 'dustless refinishing' },
+      { href: '/areas-we-serve/riverside/', text: 'flooring in Riverside' },
+      { href: '/flooring/sand-and-stain/', text: 'sand and stain' },
+    ],
+    faqs: [
+      { q: 'What is the difference between refinishing and recoating?', a: 'Refinishing sands the floor to bare wood and rebuilds the color and finish, removing a thin layer of wood in the process. A screen and recoat lightly abrades the existing finish and adds a fresh protective coat without sanding to bare wood. Recoating costs a fraction as much and is far gentler.' },
+      { q: 'How do I know if my floor needs refinishing?', a: 'Try a water test. Put a few drops on a worn spot. If it beads up, the finish is still protecting the wood and a recoat may be all you need. If it soaks in or darkens the wood, the finish has worn through to bare wood and a full sand is required.' },
+      { q: 'Can you change the color of my floor without a full sand?', a: 'No. Stain has to soak into bare wood, so it cannot go over an existing finish and last. Any color change means sanding the old finish off first, which is why staining is always part of a full refinish rather than a standalone service.' },
+      { q: 'How long before I can use the room?', a: 'Light foot traffic is typically fine within a day of the final coat. Heavy furniture and rugs should wait several days so the finish can cure fully, since putting weight and covering on an uncured finish is how new floors pick up marks in their first week.' },
+    ],
+  },
+
+  {
+    slug: 'flooring-services-inland-empire',
+    title: 'Flooring Services in the Inland Empire: What We Actually Do',
+    metaTitle: 'Flooring Services in the Inland Empire | Monteros',
+    metaDesc: 'Hardwood, laminate, luxury vinyl, refinishing, repair and stairs across the Inland Empire. What each service covers and which one your home actually needs.',
+    excerpt: 'A plain rundown of every service we offer across the Inland Empire, and honest guidance on which one your floor actually needs.',
+    date: '2026-07-27',
+    category: 'local',
+    image: '/images/hardwood-large-living-space.webp',
+    alt: 'Hardwood flooring installed across an Inland Empire home',
+    readMins: 5,
+    body: `People find us searching for a lot of different things: a flooring contractor, a hardwood company, someone to fix a squeak. This is a straightforward rundown of everything we actually do across the Inland Empire, so you can work out which one you need.
+
+## Installation
+
+**Hardwood flooring installation** covers both solid and engineered. Solid hardwood can be refinished many times across its life, which makes it the long-term choice over a wood subfloor above grade. Engineered has a genuine hardwood wear layer over a cross-laminated core, which handles slab moisture and our dry-climate movement far better, and it is the practical way to get real wood in most Inland Empire homes.
+
+**Luxury vinyl plank** is the waterproof workhorse. Kitchens, baths, laundry, entries, and anywhere pets and kids are hard on a floor. Unbothered by slab moisture and the most forgiving option we install.
+
+**Laminate flooring** gives a hard, scratch-resistant surface at a lower cost, and works well in dry living areas and bedrooms with a proper moisture barrier over a slab.
+
+**Stair installation** is its own craft rather than flooring with steps. Every tread is cut and fitted to its own opening, notched around skirt boards and balusters, and given a finished nosing. It is priced per piece rather than per square foot for exactly that reason.
+
+## Refinishing
+
+**Hardwood floor refinishing** sands a floor to bare wood and rebuilds the color and finish. It brings a floor you already own back to new for a fraction of replacement cost.
+
+**Screen and recoat** is the gentler version — abrading the existing finish and adding a fresh protective layer without sanding to bare wood. It costs far less, and recoating on a sensible cycle is what lets a floor go many years before it ever needs a full sanding.
+
+**Sand and stain** is what you need if you are changing color, since stain only soaks into bare wood.
+
+**Dustless refinishing** captures the great majority of sanding dust at the source rather than letting it settle through the house.
+
+## Repair
+
+Not every damaged floor needs replacing, and we would rather tell you that than sell you a replacement.
+
+**Floor repair** covers individual damaged boards, which can be cut out and woven back into the existing pattern so the repair disappears once the area is sanded and finished with the surrounding floor. It also covers squeaks, which are movement rather than damage and are almost always fixable once the cause is diagnosed.
+
+**Scratch and gouge repair** handles localized damage without redoing a room.
+
+**Water damage repair** is its own thing. The critical point is that a cupped floor must not be sanded until it has fully dried and flattened, which takes weeks. Sanding a still-swollen floor produces permanent crowning that is much harder to fix than the original cupping.
+
+## What the Inland Empire specifically demands
+
+Two local realities shape nearly every job here.
+
+Most homes sit on **concrete slabs**, which pass moisture vapor upward continuously. That is why we moisture-test the slab before installing anything, and why solid hardwood directly over concrete is generally the wrong call.
+
+And our **dry climate** pulls moisture out of wood for much of the year, so boards shrink and gaps open. Acclimating flooring inside the home before installation is what keeps that within a range you never notice. It costs days nobody can see, which is exactly why rushed crews skip it.
+
+## Where we work
+
+San Bernardino, Riverside, Highland, Redlands, Rialto, Loma Linda, Fontana, Rancho Cucamonga, Ontario and Corona. If you are not sure which service you need, that is a normal place to start — we will look at the floor and tell you honestly.`,
+    internalLinks: [
+      { href: '/services/hardwood-flooring-installation/', text: 'hardwood flooring installation' },
+      { href: '/services/hardwood-floor-refinishing/', text: 'hardwood floor refinishing' },
+      { href: '/services/floor-repair/', text: 'floor repair' },
+      { href: '/areas-we-serve/', text: 'areas we serve' },
+    ],
+    faqs: [
+      { q: 'What flooring services do you offer?', a: 'Hardwood installation in both solid and engineered, luxury vinyl plank, laminate, stair installation, hardwood refinishing including sand-and-stain and dustless refinishing, screen and recoat, and floor repair covering damaged boards, squeaks, scratches and water damage.' },
+      { q: 'Do I need a full refinish or just a recoat?', a: 'Try a water test on a worn area. If water beads up, the finish is still protecting the wood and a recoat is likely enough. If it soaks in or darkens the wood, the finish has worn through and a full sand is needed. A color change always requires a full sand, since stain only soaks into bare wood.' },
+      { q: 'Why do you moisture-test the slab?', a: 'Most Inland Empire homes sit on concrete slabs, and concrete passes moisture vapor upward continuously even when it looks dry. Installing over an untested slab is the leading cause of flooring failures a year or two later. The test is straightforward and far cheaper than redoing a floor.' },
+      { q: 'Can a damaged floor be repaired instead of replaced?', a: 'Very often, yes. Individual damaged boards can be cut out and woven back into the existing pattern so no patch outline shows. Squeaks are movement rather than damage and are almost always fixable. Repair costs a fraction of replacement and reuses wood you already own.' },
+    ],
+  },
 ];
 
 export const blogBySlug = Object.fromEntries(blogPosts.map((p) => [p.slug, p]));

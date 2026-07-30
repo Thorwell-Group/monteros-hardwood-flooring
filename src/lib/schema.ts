@@ -107,9 +107,9 @@ export function serviceSchema(service: Service, opts?: { city?: City }) {
   const city = opts?.city;
   const name = city ? `${service.name} in ${city.name}, ${city.state}` : service.name;
   const description = service.metaDescBase;
-  const url = city
-    ? `${business.siteUrl}/areas-we-serve/${city.slug}/${service.slug}/`
-    : `${business.siteUrl}/services/${service.slug}/`;
+  // Always the service hub: the per-city combo URLs were consolidated away
+  // (2026-07-30) and pointing schema at a redirect is a wasted signal.
+  const url = `${business.siteUrl}/services/${service.slug}/`;
 
   return {
     '@context': 'https://schema.org',

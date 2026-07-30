@@ -64,7 +64,7 @@ const schemas = [breadcrumbSchema(crumbs)];
               <a href={`/areas-we-serve/${c.slug}/`} class="font-semibold">{c.name}</a>
               <ul class="ml-4 mt-1 space-y-0.5 text-xs">
                 {cityVariantServices.map((s) => (
-                  <li>↳ <a href={`/areas-we-serve/${c.slug}/${s.slug}/`}>{s.shortName}</a></li>
+                  <li>↳ <a href={`/services/${s.slug}/`}>{s.shortName}</a></li>
                 ))}
               </ul>
             </li>

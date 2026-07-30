@@ -29,3 +29,72 @@ https://www.monteroshardwoodflooring.com/* https://monteroshardwoodflooring.com/
 /flooring-installation-corona            /areas-we-serve/corona/hardwood-flooring-installation/            301
 /flooring-installation-rialto            /areas-we-serve/rialto/hardwood-flooring-installation/            301
 /flooring-installation-redlands          /areas-we-serve/redlands/hardwood-flooring-installation/          301
+
+# --- City x service matrix consolidation (2026-07-30) ---
+# 50 pages (10 cities x 5 services) that are 73.4% identical across cities and
+# 66.7% identical across services. They earned essentially nothing while the city
+# hubs they sit under rank well (Fontana #8.5, San Bernardino #5.9, Ontario #10.8).
+# Each combo 301s to its service hub. Slugs enumerated, not wildcarded, so the
+# rule cannot swallow /areas-we-serve/{city}/ itself. Cloudflare Pages caps
+# _redirects at ~100 rules; slash-form only keeps this well under.
+
+/areas-we-serve/san-bernardino/hardwood-flooring-installation/  /services/hardwood-flooring-installation/  301
+/areas-we-serve/san-bernardino/hardwood-floor-refinishing/  /services/hardwood-floor-refinishing/  301
+/areas-we-serve/san-bernardino/luxury-vinyl-plank/  /services/luxury-vinyl-plank/  301
+/areas-we-serve/san-bernardino/laminate-flooring/  /services/laminate-flooring/  301
+/areas-we-serve/san-bernardino/floor-repair/  /services/floor-repair/  301
+/areas-we-serve/san-bernardino/stair-installation/  /services/stair-installation/  301
+/areas-we-serve/fontana/hardwood-flooring-installation/  /services/hardwood-flooring-installation/  301
+/areas-we-serve/fontana/hardwood-floor-refinishing/  /services/hardwood-floor-refinishing/  301
+/areas-we-serve/fontana/luxury-vinyl-plank/  /services/luxury-vinyl-plank/  301
+/areas-we-serve/fontana/laminate-flooring/  /services/laminate-flooring/  301
+/areas-we-serve/fontana/floor-repair/  /services/floor-repair/  301
+/areas-we-serve/fontana/stair-installation/  /services/stair-installation/  301
+/areas-we-serve/rancho-cucamonga/hardwood-flooring-installation/  /services/hardwood-flooring-installation/  301
+/areas-we-serve/rancho-cucamonga/hardwood-floor-refinishing/  /services/hardwood-floor-refinishing/  301
+/areas-we-serve/rancho-cucamonga/luxury-vinyl-plank/  /services/luxury-vinyl-plank/  301
+/areas-we-serve/rancho-cucamonga/laminate-flooring/  /services/laminate-flooring/  301
+/areas-we-serve/rancho-cucamonga/floor-repair/  /services/floor-repair/  301
+/areas-we-serve/rancho-cucamonga/stair-installation/  /services/stair-installation/  301
+/areas-we-serve/ontario/hardwood-flooring-installation/  /services/hardwood-flooring-installation/  301
+/areas-we-serve/ontario/hardwood-floor-refinishing/  /services/hardwood-floor-refinishing/  301
+/areas-we-serve/ontario/luxury-vinyl-plank/  /services/luxury-vinyl-plank/  301
+/areas-we-serve/ontario/laminate-flooring/  /services/laminate-flooring/  301
+/areas-we-serve/ontario/floor-repair/  /services/floor-repair/  301
+/areas-we-serve/ontario/stair-installation/  /services/stair-installation/  301
+/areas-we-serve/riverside/hardwood-flooring-installation/  /services/hardwood-flooring-installation/  301
+/areas-we-serve/riverside/hardwood-floor-refinishing/  /services/hardwood-floor-refinishing/  301
+/areas-we-serve/riverside/luxury-vinyl-plank/  /services/luxury-vinyl-plank/  301
+/areas-we-serve/riverside/laminate-flooring/  /services/laminate-flooring/  301
+/areas-we-serve/riverside/floor-repair/  /services/floor-repair/  301
+/areas-we-serve/riverside/stair-installation/  /services/stair-installation/  301
+/areas-we-serve/corona/hardwood-flooring-installation/  /services/hardwood-flooring-installation/  301
+/areas-we-serve/corona/hardwood-floor-refinishing/  /services/hardwood-floor-refinishing/  301
+/areas-we-serve/corona/luxury-vinyl-plank/  /services/luxury-vinyl-plank/  301
+/areas-we-serve/corona/laminate-flooring/  /services/laminate-flooring/  301
+/areas-we-serve/corona/floor-repair/  /services/floor-repair/  301
+/areas-we-serve/corona/stair-installation/  /services/stair-installation/  301
+/areas-we-serve/rialto/hardwood-flooring-installation/  /services/hardwood-flooring-installation/  301
+/areas-we-serve/rialto/hardwood-floor-refinishing/  /services/hardwood-floor-refinishing/  301
+/areas-we-serve/rialto/luxury-vinyl-plank/  /services/luxury-vinyl-plank/  301
+/areas-we-serve/rialto/laminate-flooring/  /services/laminate-flooring/  301
+/areas-we-serve/rialto/floor-repair/  /services/floor-repair/  301
+/areas-we-serve/rialto/stair-installation/  /services/stair-installation/  301
+/areas-we-serve/redlands/hardwood-flooring-installation/  /services/hardwood-flooring-installation/  301
+/areas-we-serve/redlands/hardwood-floor-refinishing/  /services/hardwood-floor-refinishing/  301
+/areas-we-serve/redlands/luxury-vinyl-plank/  /services/luxury-vinyl-plank/  301
+/areas-we-serve/redlands/laminate-flooring/  /services/laminate-flooring/  301
+/areas-we-serve/redlands/floor-repair/  /services/floor-repair/  301
+/areas-we-serve/redlands/stair-installation/  /services/stair-installation/  301
+/areas-we-serve/highland/hardwood-flooring-installation/  /services/hardwood-flooring-installation/  301
+/areas-we-serve/highland/hardwood-floor-refinishing/  /services/hardwood-floor-refinishing/  301
+/areas-we-serve/highland/luxury-vinyl-plank/  /services/luxury-vinyl-plank/  301
+/areas-we-serve/highland/laminate-flooring/  /services/laminate-flooring/  301
+/areas-we-serve/highland/floor-repair/  /services/floor-repair/  301
+/areas-we-serve/highland/stair-installation/  /services/stair-installation/  301
+/areas-we-serve/loma-linda/hardwood-flooring-installation/  /services/hardwood-flooring-installation/  301
+/areas-we-serve/loma-linda/hardwood-floor-refinishing/  /services/hardwood-floor-refinishing/  301
+/areas-we-serve/loma-linda/luxury-vinyl-plank/  /services/luxury-vinyl-plank/  301
+/areas-we-serve/loma-linda/laminate-flooring/  /services/laminate-flooring/  301
+/areas-we-serve/loma-linda/floor-repair/  /services/floor-repair/  301
+/areas-we-serve/loma-linda/stair-installation/  /services/stair-installation/  301

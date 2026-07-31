@@ -1,0 +1,188 @@
+---
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import Hero from '~/components/Hero.astro';
+import Breadcrumbs from '~/components/Breadcrumbs.astro';
+import TrustBar from '~/components/TrustBar.astro';
+import ProcessSteps from '~/components/ProcessSteps.astro';
+import FAQ from '~/components/FAQ.astro';
+import CTABanner from '~/components/CTABanner.astro';
+import GoogleMap from '~/components/GoogleMap.astro';
+import ProjectGallery from '~/components/ProjectGallery.astro';
+import { serviceSchema, breadcrumbSchema, faqSchema } from '~/lib/schema';
+import { cityServiceIntro, cityServiceWhyUs, neighborhoodsCallout, cityServiceExtraFaqs } from '~/lib/content';
+import { business } from '~/data/business';
+import type { Service } from '~/data/services';
+import type { City } from '~/data/cities';
+
+interface Props { service: Service; city: City; }
+const { service, city } = Astro.props as Props;
+const path = `/areas-we-serve/${city.slug}/${service.slug}/`;
+
+const crumbs = [
+  { name: 'Home', href: '/' },
+  { name: 'Areas We Serve', href: '/areas-we-serve/' },
+  { name: city.name, href: `/areas-we-serve/${city.slug}/` },
+  { name: service.shortName, href: path },
+];
+
+const extraFaqs = cityServiceExtraFaqs(city, service);
+const allFaqs = [...extraFaqs, ...service.faqs];
+
+const schemas = [
+  serviceSchema(service, { city }),
+  breadcrumbSchema(crumbs),
+  faqSchema(allFaqs),
+];
+
+// --- TITLE (<= 60 chars, keyword-first, brand baked in so buildSEO never
+// appends a suffix that would push it over 60). ---
+// Short, keyword-first service token per service slug.
+const titleLead: Record<string, string> = {
+  'hardwood-flooring-installation': 'Hardwood Floor Install',
+  'hardwood-floor-refinishing': 'Hardwood Refinishing',
+  'luxury-vinyl-plank': 'Luxury Vinyl Plank',
+  'laminate-flooring': 'Laminate Flooring',
+  'floor-repair': 'Hardwood Floor Repair',
+};
+const lead = titleLead[service.slug] ?? service.shortName;
+// e.g. "Hardwood Floor Install in Highland, CA | Monteros" — brand short form
+// keeps it unique, <=60, and prevents buildSEO's longer suffix from being added.
+let title = `${lead} in ${city.name}, ${city.state} | ${business.shortName}`;
+// Hard safety: if any city name ever pushes it past 60, drop the brand token
+// (buildSEO will then re-add it only if it still fits the rules).
+if (title.length > 60) {
+  title = `${lead} in ${city.name}, ${city.state}`;
+}
+
+// --- META DESCRIPTION (unique 140-160 chars per city+service combo). ---
+// Built from city-specific tokens: city + a real neighborhood/landmark + service + benefit.
+// Refinish/repair anchor on a landmark; install services anchor on a neighborhood,
+// so adjacent services on the same city never read identically.
+const descHood = city.neighborhoods[0] ?? city.name;
+const descLandmark = city.landmarks[0] ?? city.name;
+const benefitByIntent: Record<Service['intent'], string> = {
+  install: 'Solid & engineered, slab prep, on-site acclimation, lifetime guarantee.',
+  refinish: 'Dust-contained sanding, custom stain matching, durable low-VOC finish.',
+  repair: 'Seamless board matching, water-damage, squeak & gouge repair done right.',
+  specialty: 'Custom craftsmanship matched to your existing floors and finish.',
+};
+const benefitShortByIntent: Record<Service['intent'], string> = {
+  install: 'Slab prep, on-site acclimation, lifetime workmanship guarantee.',
+  refinish: 'Dust-contained sanding, custom stain matching, low-VOC finish.',
+  repair: 'Seamless board matching plus water-damage and squeak repair done right.',
+  specialty: 'Custom craftsmanship matched to your existing floors.',
+};
+const useLandmark = service.intent === 'refinish' || service.intent === 'repair';
+const anchor = useLandmark ? descLandmark : descHood;
+let description = `${service.shortName} in ${city.name}, CA, serving ${anchor} and nearby. ${benefitByIntent[service.intent]} Free in-home estimate.`;
+// Step down to shorter variants only when a long city/anchor pushes past 160.
+if (description.length > 160) {
+  description = `${service.shortName} in ${city.name}, CA, serving ${anchor}. ${benefitShortByIntent[service.intent]} Free in-home estimate.`;
+}
+if (description.length > 160) {
+  description = `${service.shortName} in ${city.name}, CA. ${benefitShortByIntent[service.intent]} Free in-home estimate from a family-owned crew.`;
+}
+
+const intro = cityServiceIntro(city, service);
+const whyUs = cityServiceWhyUs(city, service);
+const neighborhoods = neighborhoodsCallout(city);
+
+const galleryPool: { src: string; alt: string }[] = [
+  ...(service.gallery ?? []),
+  { src: '/images/hardwood-modern-open-living.webp', alt: `Modern open-concept hardwood flooring in ${city.name}` },
+  { src: '/images/hardwood-formal-living-room.webp', alt: `Formal living-room hardwood flooring in ${city.name}` },
+  { src: '/images/hardwood-large-living-space.webp', alt: `Hardwood flooring in a large ${city.name} living space` },
+  { src: '/images/hardwood-kitchen-flooring.webp', alt: `Hardwood kitchen flooring in ${city.name}` },
+  { src: '/images/hardwood-staircase-installation.webp', alt: `Hardwood staircase installation in ${city.name}` },
+  { src: '/images/luxury-vinyl-plank-living-room.webp', alt: `Luxury vinyl plank flooring in a ${city.name} living room` },
+  { src: '/images/laminate-large-space.webp', alt: `Laminate flooring across a large ${city.name} room` },
+  { src: '/images/monteros-flooring-team-installation.webp', alt: `Monteros crew installing flooring in ${city.name}` },
+];
+const seen = new Set<string>();
+const projectPhotos = galleryPool.filter((p) => p.src !== service.heroImage && !seen.has(p.src) && seen.add(p.src)).slice(0, 8);
+---
+<BaseLayout
+  title={title}
+  description={description}
+  pathname={path}
+  image={service.heroImage}
+  schemas={schemas}
+>
+  <Hero
+    eyebrow={`${city.name}, ${city.state}`}
+    title={`${service.name} in ${city.name}`}
+    subtitle={service.oneLiner}
+    image={service.heroImage}
+    alt={`${service.shortName} in ${city.name}, ${city.state}`}
+  />
+
+  <TrustBar />
+
+  <section class="container-wide py-16">
+    <div class="mb-4"><Breadcrumbs items={crumbs} /></div>
+
+    <div class="grid lg:grid-cols-3 gap-10 items-start">
+      <div class="lg:col-span-2 prose-brand">
+        <h2>{service.shortName} in {city.name}, {city.state}</h2>
+        <p>{intro}</p>
+        <p>{whyUs}</p>
+
+        <h3>What You Get</h3>
+        <ul>{service.benefits.map((b) => <li>{b}</li>)}</ul>
+
+        {service.materials && (
+          <>
+            <h3>Materials We Install in {city.name}</h3>
+            <ul>{service.materials.map((m) => <li>{m}</li>)}</ul>
+          </>
+        )}
+
+        <h3>Coverage Across {city.name}</h3>
+        <p>{neighborhoods}</p>
+        <p class="text-sm text-slate-500">Zip codes: {city.zipCodes.join(', ')}</p>
+
+        <h3>About {city.name} Homes</h3>
+        <p>{city.localContext}</p>
+        <p class="text-sm text-slate-600"><strong>Housing profile:</strong> {city.housingProfile}</p>
+
+        <h2>Flooring in {city.name}: What Local Homes Need</h2>
+        <p>{city.localFlooringNotes}</p>
+
+        <div class="not-prose mt-8 flex flex-wrap gap-3">
+          <a href="/free-estimate/" class="btn-primary">Get a Free Estimate</a>
+          <a href={`tel:${business.phoneE164}`} class="btn-secondary">Call {business.phoneDisplay}</a>
+        </div>
+      </div>
+
+      <aside class="lg:sticky lg:top-24">
+        <GoogleMap query={`${city.name}, ${city.state}`} title={`Map of ${city.name}, ${city.state}`} height="h-[320px]" />
+      </aside>
+    </div>
+  </section>
+
+  <div class="bg-slate-50">
+    <ProcessSteps steps={service.process} heading={`Our ${service.shortName} Process in ${city.name}`} subheading="Same predictable steps on every job, from first measurement to final walk-through." />
+  </div>
+
+  <ProjectGallery
+    heading={`${service.shortName} Projects in ${city.name} & Nearby`}
+    subheading={`Recent ${service.shortName.toLowerCase()} work across ${city.county}.`}
+    photos={projectPhotos}
+  />
+
+  <FAQ faqs={allFaqs} heading={`${service.shortName} FAQ for ${city.name} Homeowners`} />
+
+  <section class="container-wide py-12">
+    <div class="card p-8 bg-brand-50 border-brand-200">
+      <h3 class="font-display text-2xl font-bold text-brand-900">Other Services We Offer in {city.name}</h3>
+      <p class="text-slate-700 mt-2">Looking for a different flooring service in {city.name}? Browse all options:</p>
+      <div class="mt-4 flex flex-wrap gap-2">
+        <a href={`/areas-we-serve/${city.slug}/`} class="btn-secondary">All {city.name} services</a>
+        <a href={`/services/${service.slug}/`} class="btn-secondary">About {service.shortName}</a>
+        <a href="/services/" class="btn-secondary">All flooring services</a>
+      </div>
+    </div>
+  </section>
+
+  <CTABanner title={`Free ${service.shortName.toLowerCase()} estimate in ${city.name}`} subtitle={`In-home consultation, samples on-site, written quote within days. ${business.yearsInBusiness}+ years of Inland Empire craftsmanship.`} />
+</BaseLayout>

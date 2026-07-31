@@ -3,8 +3,7 @@ import { services } from '~/data/services';
 import type { City } from '~/data/cities';
 interface Props { city?: City; heading?: string; subheading?: string; }
 const { city, heading, subheading } = Astro.props as Props;
-// Always the service hub: per-city service pages were consolidated away 2026-07-30.
-const linkBase = '/services';
+const linkBase = city ? `/areas-we-serve/${city.slug}` : '/services';
 const titleSuffix = city ? ` in ${city.name}` : '';
 ---
 <section class="container-wide py-16 md:py-20">

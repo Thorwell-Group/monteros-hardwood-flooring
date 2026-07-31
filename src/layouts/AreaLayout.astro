@@ -33,7 +33,7 @@ const foundationNote = cityHubFoundationNote(city);
 // Service-by-location links for this city (all 5 cityVariant services).
 const cityServiceLinks = cityVariantServices.map((s) => ({
   name: s.shortName,
-  href: `/services/${s.slug}/`,
+  href: `/areas-we-serve/${city.slug}/${s.slug}/`,
   oneLiner: s.oneLiner,
 }));
 

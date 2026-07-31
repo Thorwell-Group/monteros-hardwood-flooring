@@ -1,0 +1,21 @@
+---
+import CityServiceLayout from '~/layouts/CityServiceLayout.astro';
+import { cities } from '~/data/cities';
+import { cityVariantServices } from '~/data/services';
+
+export function getStaticPaths() {
+  const paths = [];
+  for (const city of cities) {
+    for (const service of cityVariantServices) {
+      paths.push({
+        params: { city: city.slug, service: service.slug },
+        props: { city, service },
+      });
+    }
+  }
+  return paths;
+}
+
+const { city, service } = Astro.props;
+---
+<CityServiceLayout city={city} service={service} />

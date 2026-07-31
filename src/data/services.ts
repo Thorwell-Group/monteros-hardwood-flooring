@@ -288,7 +288,12 @@ export const services: Service[] = [
     priceFromUSD: 80,
     priceToUSD: 200,
     timeline: '2 – 4 days for most staircases',
-    cityVariant: false,
+    // Enabled 2026-07-30. Stairs are the one service where the slab-vs-raised
+    // question does not limit the answer — treads are framed in wood regardless —
+    // so this reads genuinely differently from the other five city services. It
+    // also has real local demand: "staircase installers highland ca" sits at
+    // position 16.7, "stair finishing services fullerton ca" at 36.9.
+    cityVariant: true,
     benefits: [
       'Solid hardwood treads and risers - no veneer shortcuts',
       'Matching to your existing flooring stain and species',

@@ -198,6 +198,64 @@ export const SERVICE_BY_ARCHETYPE: Record<string, Record<Archetype, Block>> = {
       checklist: ['Preparation set by the subfloor', 'Moisture barrier over any slab', 'Honest laminate-vs-LVP comparison', 'Two-day install in most homes'],
     },
   },
+  'stair-installation': {
+    slab: {
+      heading: 'Hardwood stairs in a slab-built home',
+      body: [
+        'Stairs are the one part of a slab-built home where solid hardwood is always on the table — the treads are framed in wood regardless of what the ground floor sits on. So even in a house where we have specified engineered or LVP downstairs, the staircase can still be solid oak.',
+        'Most staircases here start as carpeted construction-grade treads. Capping them in solid hardwood is the single highest-impact change available in a tract home, because the staircase is the first thing anyone sees from the entry.',
+        'Matching the new treads to the downstairs floor is the detail that makes it read as original rather than added on.',
+      ],
+      checklist: ['Solid hardwood possible even over a slab home', 'Construction-grade treads capped in solid wood', 'Treads matched to the main floor', 'Risers, stringers and nosing finished to match'],
+    },
+    historic: {
+      heading: 'Stairs in a historic Inland Empire home',
+      body: [
+        'Original staircases in 1920s craftsman and Spanish-revival homes are usually the best joinery in the house, and they are almost never square. Winders, irregular risers and hand-cut stringers are normal, which makes this hand-work rather than a template job.',
+        'Where treads are original we refinish rather than replace wherever the wood allows. A period staircase with new treads and an original balustrade rarely looks right.',
+        'Balusters, newels and handrail profiles get matched to what is already there — that detail is what people actually see from the hall.',
+      ],
+      checklist: ['Original treads refinished wherever possible', 'Winders and irregular risers cut by hand', 'Baluster and newel profiles matched', 'Period character kept rather than modernised'],
+    },
+    mixed: {
+      heading: 'Hardwood stairs, whatever the house sits on',
+      body: [
+        'Stairs are the exception to the slab rule. Whatever is under your ground floor, the staircase is framed in wood, so solid hardwood treads are an option in every home we work in.',
+        'The job splits by what is there now: solid treads under carpet are a straightforward refinish, while construction-grade treads need capping in new hardwood. We check before quoting, because those are very different pieces of work.',
+        'Stairs take more concentrated wear than any floor in the house, so the finish specification matters more here than it does in a bedroom.',
+      ],
+      checklist: ['Existing treads assessed before quoting', 'Refinish or cap decided on evidence', 'Finish specified for concentrated stair traffic', 'Matched to the adjoining floor'],
+    },
+  },
+  'water-damage-floor-repair': {
+    slab: {
+      heading: 'Water damage over a slab',
+      body: [
+        'When a floor over slab cups or lifts, the first question is always whether water is coming up through the concrete rather than down from a leak. Those look identical at the surface and need completely different fixes.',
+        'We test slab moisture before touching a board. Replacing flooring over an unresolved vapour problem is a repair you pay for twice, and it is the most common reason we get called back to somebody else\u2019s work.',
+        'Where the source is a leak, we make sure it is fixed and the slab has dried to spec before new flooring goes anywhere near it.',
+      ],
+      checklist: ['Slab moisture tested before any repair', 'Vapour drive ruled in or out first', 'Slab dried to spec before re-flooring', 'Insurance documentation supported'],
+    },
+    historic: {
+      heading: 'Water damage in an older home',
+      body: [
+        'A raised foundation is an advantage here: we can get underneath and see what is actually happening rather than inferring it from the surface. Crawlspace humidity, a failed supply line or poor drainage all show themselves from below.',
+        'On original oak, patience pays. Cupping is a moisture response, and once the source is fixed the boards frequently flatten on their own over several weeks. Sanding too early wastes irreplaceable old-growth wood and can leave the floor crowned once it dries.',
+        'Where boards genuinely have to come out, we match width and grain to the original milling and salvage from a closet where we can.',
+      ],
+      checklist: ['Crawlspace inspected from below', 'Cupping given time to flatten before sanding', 'Old-growth wood preserved wherever possible', 'Salvaged boards used for invisible repair'],
+    },
+    mixed: {
+      heading: 'Water damage: finding the cause first',
+      body: [
+        'Whether your home sits on slab or a raised foundation changes both the likely cause and the fix. Slab homes point toward vapour drive through concrete; raised foundations point toward crawlspace humidity or a plumbing leak.',
+        'We identify which before touching the floor, because repairing without solving the cause means doing the whole job again.',
+        'We also measure and wait where waiting is right. A floor responding to a one-off event will often recover on its own, and we would rather tell you that than sell you a full replacement.',
+      ],
+      checklist: ['Cause traced before any board comes up', 'Slab or crawlspace assessed as appropriate', 'Recovery given time where that is the right call', 'Insurance documentation supported'],
+    },
+  },
   'floor-repair': {
     slab: {
       heading: 'Repairing a floor laid over slab',
@@ -245,6 +303,14 @@ const FAMILY_FAQ: Record<string, { q: string; a: () => string }[]> = {
   'laminate-flooring': [
     { q: 'Is laminate waterproof or just water-resistant?', a: () => 'It depends on the product, and the distinction matters. Water-resistant laminate handles spills wiped up promptly. Genuinely waterproof laminate carries a rated core and sealed edges. We will tell you which any quoted product actually is rather than using the words loosely.' },
     { q: 'Laminate or LVP — which is better value?', a: () => 'Laminate usually wins on scratch resistance and costs slightly less. LVP usually wins on water performance and feels softer underfoot. Big dog, go laminate. Busy bathroom, go LVP. We will tell you which way we would go in your specific rooms.' },
+  ],
+  'stair-installation': [
+    { q: 'Can I have hardwood stairs if the rest of my house is on a slab?', a: () => 'Yes. Stairs are framed in wood no matter what the ground floor sits on, so solid hardwood treads are an option in every home we work in — even where we have specified engineered or LVP downstairs. It is the one place the slab does not limit you.' },
+    { q: 'Can you take the carpet off my stairs and finish what is underneath?', a: () => 'Sometimes. Solid oak treads under carpet are a straightforward win. Construction-grade treads need capping with new hardwood instead. We check before quoting so you know which job you actually have rather than finding out mid-project.' },
+  ],
+  'water-damage-floor-repair': [
+    { q: 'My floor is cupping — does it all need replacing?', a: () => 'Often not. Cupping is a moisture response, and once the source is fixed boards frequently flatten on their own over several weeks. Sanding too early wastes wood and can leave the floor crowned when it finally dries. We measure, fix the cause, and wait where waiting is the right answer.' },
+    { q: 'Do you work with insurance claims?', a: () => 'Yes. We document moisture readings, the affected area and the cause, which is what an adjuster actually needs. We will not inflate a scope to suit a claim — that tends to get the whole claim questioned.' },
   ],
   'floor-repair': [
     { q: 'Can you repair just the damaged section?', a: () => 'Usually yes. The honest caveat is blending — a well-matched repair in a worn floor can still show, because the repaired area is cleaner than everything around it. Where that applies we will tell you that a repair plus refinishing that room gives the result you actually want.' },

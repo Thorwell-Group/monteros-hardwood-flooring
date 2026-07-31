@@ -12,6 +12,7 @@ import { serviceSchema, breadcrumbSchema, faqSchema } from '~/lib/schema';
 import { cityServiceIntro, cityServiceWhyUs, neighborhoodsCallout, cityServiceExtraFaqs } from '~/lib/content';
 import { business } from '~/data/business';
 import type { Service } from '~/data/services';
+import { AREA_PROFILE, SERVICE_BY_ARCHETYPE, localFaqs, pageVariant, INTRO_VARIANTS } from '~/data/local-context';
 import type { City } from '~/data/cities';
 
 interface Props { service: Service; city: City; }
@@ -26,7 +27,21 @@ const crumbs = [
 ];
 
 const extraFaqs = cityServiceExtraFaqs(city, service);
-const allFaqs = [...extraFaqs, ...service.faqs];
+// ── Per-page differentiation ──────────────────────────────────────────────
+// These 50 pages measured 73.4% identical across cities. cities.ts already
+// carries excellent researched data and this layout renders it; what was missing
+// is advice that changes with the SERVICE too. The block below is chosen by the
+// city's real subfloor archetype (slab / historic raised / mixed), which in the
+// Inland Empire is the fact that decides the entire job.
+const profile = AREA_PROFILE[city.slug];
+const archetype = profile?.archetype ?? 'mixed';
+const localBlock = SERVICE_BY_ARCHETYPE[service.slug]?.[archetype];
+const localFaqList = localFaqs(service.slug, service.shortName ?? service.name, city.slug, city.name);
+const v = pageVariant(service.slug, city.slug);
+const introLine = INTRO_VARIANTS[v.pick(INTRO_VARIANTS.length)]((service.shortName ?? service.name).toLowerCase(), city.name);
+const localFirst = v.flip(0);
+
+const allFaqs = [...localFaqList, ...extraFaqs, ...service.faqs];
 
 const schemas = [
   serviceSchema(service, { city }),
@@ -147,6 +162,7 @@ const projectPhotos = galleryPool.filter((p) => p.src !== service.heroImage && !
 
         <h2>Flooring in {city.name}: What Local Homes Need</h2>
         <p>{city.localFlooringNotes}</p>
+        <p>{introLine}</p>
 
         <div class="not-prose mt-8 flex flex-wrap gap-3">
           <a href="/free-estimate/" class="btn-primary">Get a Free Estimate</a>
@@ -169,6 +185,27 @@ const projectPhotos = galleryPool.filter((p) => p.src !== service.heroImage && !
     subheading={`Recent ${service.shortName.toLowerCase()} work across ${city.county}.`}
     photos={projectPhotos}
   />
+
+  {localBlock && (
+    <section class={localFirst ? 'container-wide py-16 bg-slate-50' : 'container-wide py-16'}>
+      <div class="max-w-3xl">
+        <span class="eyebrow">{city.name} homes</span>
+        <h2 class="mt-2 text-3xl font-bold text-slate-900">{localBlock.heading}</h2>
+        {localBlock.body.map((para) => <p class="mt-5 text-slate-600 leading-relaxed">{para}</p>)}
+        <p class="mt-5 text-slate-600 leading-relaxed">
+          Around {city.name} that means {city.neighborhoods.slice(0, 3).join(', ')}. {profile?.jobNote} We quote what your house actually needs, not a regional average.
+        </p>
+        <h3 class="mt-8 text-xl font-bold text-slate-900">What that means on your job</h3>
+        <ul class="mt-4 grid sm:grid-cols-2 gap-3">
+          {localBlock.checklist.map((c) => (
+            <li class="flex items-start gap-3 text-slate-700">
+              <span class="mt-1 text-brand-600 flex-none" aria-hidden="true">&#10003;</span><span>{c}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  )}
 
   <FAQ faqs={allFaqs} heading={`${service.shortName} FAQ for ${city.name} Homeowners`} />
 

@@ -34,6 +34,37 @@ const ldJson = [
   localBusinessSchema(),
   ...schemas,
 ];
+
+// Google cuts the snippet near 160 characters, usually mid-word. Drop whole
+// trailing sentences instead so whatever Google shows still reads as English.
+function fitDescription(d, max = 160) {
+  const text = String(d ?? '').trim().replace(/\s+/g, ' ');
+  if (text.length <= max) return text;
+  const sentences = text.match(/[^.!?]+[.!?]+(\s|$)/g);
+  if (sentences) {
+    let out = '';
+    for (const s of sentences) {
+      if ((out + s).trim().length > max) break;
+      out += s;
+    }
+    if (out.trim().length >= 70) return out.trim();
+  }
+  return text.slice(0, max).replace(/\s+\S*$/, '');
+}
+
+// Titles longer than ~60 characters get cut in the SERP, and the part that gets
+// cut is the brand — which is the least useful part. Drop the trailing brand
+// segment ourselves so the descriptive, keyword-carrying half always survives.
+function fitTitle(t, max = 60) {
+  const text = String(t ?? '').trim().replace(/\s+/g, ' ');
+  if (text.length <= max) return text;
+  const m = text.match(/^(.*?)(\s+[|·–-]\s+[^|·–]+)$/);
+  if (m && m[1].trim().length >= 30) {
+    const head = m[1].trim();
+    return head.length <= max ? head : fitTitle(head, max);
+  }
+  return text;
+}
 ---
 <!doctype html>
 <html lang="en" class="scroll-pt-20">
@@ -53,15 +84,15 @@ const ldJson = [
     <meta name="generator" content={Astro.generator} />
     <meta name="theme-color" content={business.brand.primaryColor} />
 
-    <title>{seo.title}</title>
-    <meta name="description" content={seo.description} />
+    <title>{fitTitle(seo.title)}</title>
+    <meta name="description" content={fitDescription(seo.description)} />
     <link rel="canonical" href={seo.canonical} />
     {seo.noindex && <meta name="robots" content="noindex, nofollow" />}
 
     <!-- Open Graph -->
     <meta property="og:type" content={seo.type} />
-    <meta property="og:title" content={seo.title} />
-    <meta property="og:description" content={seo.description} />
+    <meta property="og:title" content={fitTitle(seo.title)} />
+    <meta property="og:description" content={fitDescription(seo.description)} />
     <meta property="og:url" content={seo.canonical} />
     <meta property="og:image" content={seo.image} />
     <meta property="og:site_name" content={business.brandName} />
@@ -70,8 +101,8 @@ const ldJson = [
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content={seo.title} />
-    <meta name="twitter:description" content={seo.description} />
+    <meta name="twitter:title" content={fitTitle(seo.title)} />
+    <meta name="twitter:description" content={fitDescription(seo.description)} />
     <meta name="twitter:image" content={seo.image} />
 
     <!-- Favicon -->

@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '~/layouts/BaseLayout.astro';
+import RelatedGuides from '../../components/RelatedGuides.astro';
 import Hero from '~/components/Hero.astro';
 import TrustBar from '~/components/TrustBar.astro';
 import Breadcrumbs from '~/components/Breadcrumbs.astro';
@@ -84,4 +85,5 @@ const parent = guide.parentService ? servicesBySlug[guide.parentService] : null;
   )}
 
   <CTABanner />
+  <RelatedGuides path={`/flooring/${guide.slug}/`} />
 </BaseLayout>

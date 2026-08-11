@@ -1,0 +1,87 @@
+---
+/**
+ * Surfaces the blog posts that reference this page.
+ *
+ * Why this exists: the blog linked *out* to service and area pages, but nothing
+ * linked *back in* — measured across the built site, service and area pages sent
+ * exactly zero links to blog posts. Every guide was reachable only from the blog
+ * index, so almost no internal authority reached them and they ranked far down.
+ *
+ * The mapping is derived rather than hand-maintained: each post already links to
+ * the services and areas it discusses, so we invert those links. Works whatever
+ * shape a post uses — a structured `related` list, raw HTML, or section prose.
+ */
+import { blogPosts as allPosts } from '../data/blog';
+
+interface Props {
+  /** Path of the current page, e.g. "/services/hardwood/". */
+  path: string;
+  heading?: string;
+  max?: number;
+}
+
+const { path, heading = 'Guides worth reading', max = 3 } = Astro.props;
+
+const normalize = (u: string) => {
+  const s = (u || '').split('#')[0].split('?')[0];
+  if (!s.startsWith('/')) return '';
+  return s.endsWith('/') ? s : `${s}/`;
+};
+
+const here = normalize(path);
+
+/** Every internal link a post declares, however it stores it. */
+const linksOf = (post: unknown): Set<string> => {
+  const blob = JSON.stringify(post) ?? '';
+  const out = new Set<string>();
+  for (const m of blob.matchAll(/href=\\?"([^"\\]+)/g)) out.add(m[1]);
+  for (const m of blob.matchAll(/"href":"([^"]+)"/g)) out.add(m[1]);
+  for (const m of blob.matchAll(/\]\(([^)\s]+)/g)) out.add(m[1]);
+  return out;
+};
+
+const matches = (allPosts as any[])
+  .filter((p) => [...linksOf(p)].some((h) => normalize(h) === here))
+  .slice(0, max);
+
+const titleOf = (p: any) => p.title ?? p.metaTitle ?? p.heading ?? '';
+const blurbOf = (p: any) => p.excerpt ?? p.description ?? p.metaDescription ?? '';
+---
+
+{matches.length > 0 && (
+  <section class="related-guides">
+    <div class="related-guides__inner">
+      <h2 class="related-guides__heading">{heading}</h2>
+      <div class="related-guides__grid">
+        {matches.map((p: any) => (
+          <a class="related-guides__card" href={`/blog/${p.slug}/`}>
+            <h3>{titleOf(p)}</h3>
+            <p>{blurbOf(p)}</p>
+            <span class="related-guides__cta">Read the guide &rarr;</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+)}
+
+<style>
+  .related-guides { padding: 3.5rem 1rem; border-top: 1px solid rgba(0,0,0,.1); }
+  .related-guides__inner { max-width: 72rem; margin: 0 auto; }
+  .related-guides__heading { font-size: 1.75rem; line-height: 1.2; margin: 0 0 1.75rem; }
+  .related-guides__grid { display: grid; gap: 1.25rem; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+  .related-guides__card {
+    display: flex; flex-direction: column; gap: .6rem;
+    padding: 1.4rem; border: 1px solid rgba(0,0,0,.12); border-radius: .6rem;
+    text-decoration: none; color: inherit; background: rgba(255,255,255,.55);
+    transition: border-color .2s ease, box-shadow .2s ease, transform .2s ease;
+  }
+  .related-guides__card:hover { border-color: rgba(0,0,0,.35); box-shadow: 0 10px 28px -18px rgba(0,0,0,.5); transform: translateY(-2px); }
+  .related-guides__card h3 { font-size: 1.05rem; line-height: 1.35; margin: 0; }
+  .related-guides__card p { font-size: .9rem; line-height: 1.55; margin: 0; opacity: .78; }
+  .related-guides__cta { font-size: .85rem; font-weight: 600; margin-top: auto; }
+  @media (prefers-color-scheme: dark) {
+    .related-guides__card { background: rgba(255,255,255,.04); border-color: rgba(255,255,255,.16); }
+    .related-guides__card:hover { border-color: rgba(255,255,255,.4); }
+  }
+</style>

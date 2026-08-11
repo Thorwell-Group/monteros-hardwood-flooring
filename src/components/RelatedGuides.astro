@@ -44,16 +44,36 @@ const matches = (allPosts as any[])
   .filter((p) => [...linksOf(p)].some((h) => normalize(h) === here))
   .slice(0, max);
 
+/**
+ * Pages with no topical match — city pages mostly, since no guide is *about*
+ * a particular town — were showing nothing and passing no authority into the
+ * blog. Fall back to a rotation seeded on the page path so different city pages
+ * surface different guides, spreading links across the whole blog rather than
+ * piling them all onto the same three posts.
+ */
+const seedOf = (str: string) => {
+  let h = 0;
+  for (let i = 0; i < str.length; i++) h = (h * 31 + str.charCodeAt(i)) >>> 0;
+  return h;
+};
+const rotated = (() => {
+  const pool = allPosts as any[];
+  if (!pool.length) return [];
+  const start = seedOf(here) % pool.length;
+  return Array.from({ length: Math.min(max, pool.length) }, (_, i) => pool[(start + i) % pool.length]);
+})();
+const finalMatches = matches.length ? matches : rotated;
+
 const titleOf = (p: any) => p.title ?? p.metaTitle ?? p.heading ?? '';
 const blurbOf = (p: any) => p.excerpt ?? p.description ?? p.metaDescription ?? '';
 ---
 
-{matches.length > 0 && (
+{finalMatches.length > 0 && (
   <section class="related-guides">
     <div class="related-guides__inner">
       <h2 class="related-guides__heading">{heading}</h2>
       <div class="related-guides__grid">
-        {matches.map((p: any) => (
+        {finalMatches.map((p: any) => (
           <a class="related-guides__card" href={`/blog/${p.slug}/`}>
             <h3>{titleOf(p)}</h3>
             <p>{blurbOf(p)}</p>

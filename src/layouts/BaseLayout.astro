@@ -47,7 +47,10 @@ function fitDescription(d, max = 160) {
       if ((out + s).trim().length > max) break;
       out += s;
     }
-    if (out.trim().length >= 70) return out.trim();
+    // Only accept the sentence-trimmed version when it keeps most of the
+    // snippet. A description a few characters over the limit used to collapse
+    // to its first sentence, which threw away more than the cut would have.
+    if (out.trim().length >= 120) return out.trim();
   }
   return text.slice(0, max).replace(/\s+\S*$/, '');
 }

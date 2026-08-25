@@ -54,6 +54,20 @@ const schemas = [
 
     <section class="container-prose py-12 prose-brand" set:html={html}></section>
 
+    {post.faqs && post.faqs.length > 0 && (
+      <section class="container-prose pb-4">
+        <h2 class="text-2xl font-semibold text-slate-900">Frequently asked questions</h2>
+        <dl class="mt-6 space-y-6">
+          {post.faqs.map((f) => (
+            <div>
+              <dt class="font-semibold text-slate-900">{f.q}</dt>
+              <dd class="mt-2 text-slate-600 leading-relaxed">{f.a}</dd>
+            </div>
+          ))}
+        </dl>
+      </section>
+    )}
+
     {post.internalLinks.length > 0 && (
       <section class="container-narrow pb-8">
         <div class="card p-6 bg-brand-50/60 border-brand-200">

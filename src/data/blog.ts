@@ -69,6 +69,8 @@ For a free in-home estimate anywhere in the Inland Empire, [reach out](/free-est
     internalLinks: [
       { href: '/services/hardwood-flooring-installation/', text: 'hardwood floor installation' },
       { href: '/services/floor-repair/', text: 'subfloor and board repair' },
+      { href: '/blog/laminate-vs-hardwood-real-cost/', text: 'laminate vs. hardwood: the 10-year cost' },
+      { href: '/blog/paying-for-new-floors-inland-empire/', text: 'financing vs. phasing a flooring project' },
     ],
   },
   {
@@ -164,6 +166,7 @@ Need an inspection? [Reach out for a free assessment](/free-estimate/).`,
     internalLinks: [
       { href: '/services/hardwood-floor-refinishing/', text: 'refinishing' },
       { href: '/services/floor-repair/', text: 'board repair' },
+      { href: '/blog/gaps-in-hardwood-floors/', text: 'why gaps appear in hardwood floors' },
     ],
   },
   {
@@ -216,6 +219,7 @@ Not sure which way to go? [Get a free in-home assessment](/free-estimate/) - we\
     internalLinks: [
       { href: '/services/hardwood-floor-refinishing/', text: 'refinishing' },
       { href: '/services/hardwood-flooring-installation/', text: 'replacement' },
+      { href: '/blog/screen-and-recoat-vs-full-refinish/', text: 'screen and recoat vs. full refinish' },
     ],
   },
   {
@@ -318,6 +322,7 @@ The number that matters on engineered is the **wear-layer thickness in millimete
     internalLinks: [
       { href: '/services/hardwood-flooring-installation/', text: 'hardwood installation' },
       { href: '/areas-we-serve/', text: 'areas we serve' },
+      { href: '/blog/hardwood-floors-on-concrete-slab/', text: 'hardwood on a concrete slab' },
     ],
   },
   {
@@ -370,6 +375,7 @@ The good news: a fresh refinish makes a 30-year-old floor look brand new. We res
     internalLinks: [
       { href: '/services/hardwood-floor-refinishing/', text: 'hardwood refinishing' },
       { href: '/services/hardwood-flooring-installation/', text: 'new hardwood installation' },
+      { href: '/blog/screen-and-recoat-vs-full-refinish/', text: 'recoating on a schedule extends floor life' },
     ],
   },
   {
@@ -599,6 +605,7 @@ If your floor has water damage, [call us before it gets worse](/services/floor-r
     internalLinks: [
       { href: '/services/floor-repair/', text: 'floor repair' },
       { href: '/services/hardwood-flooring-installation/', text: 'replacement install' },
+      { href: '/blog/gaps-in-hardwood-floors/', text: 'gaps, cupping, and what they mean' },
     ],
   },
   {
@@ -999,6 +1006,7 @@ Want to know if your floors are a candidate? [Book a free in-home look](/free-es
       { href: '/services/hardwood-floor-refinishing/', text: 'hardwood floor refinishing' },
       { href: '/flooring/dustless-floor-refinishing/', text: 'dustless refinishing explained' },
       { href: '/flooring/sand-and-stain/', text: 'the full sand, stain & seal process' },
+      { href: '/blog/screen-and-recoat-vs-full-refinish/', text: 'do you need a recoat or a full sand?' },
     ],
     faqs: [
       { q: 'How many times can hardwood floors be refinished?', a: 'Solid 3/4-inch hardwood can typically be sanded and refinished 4 to 7 times over its lifetime. Engineered hardwood can usually be refinished once or twice, depending on the thickness of its top wear layer.' },
@@ -1061,6 +1069,7 @@ Not sure which fits your rooms and budget? We bring samples of all four to every
       { href: '/services/luxury-vinyl-plank/', text: 'luxury vinyl plank' },
       { href: '/services/hardwood-flooring-installation/', text: 'hardwood flooring installation' },
       { href: '/flooring/engineered-hardwood-flooring/', text: 'engineered hardwood for slab subfloors' },
+      { href: '/blog/hardwood-floors-on-concrete-slab/', text: 'hardwood on a concrete slab' },
     ],
     faqs: [
       { q: 'What is the best flooring for a hot, dry climate like Southern California?', a: 'Engineered hardwood and luxury vinyl plank are the two most reliable choices. Both are dimensionally stable, so they handle the Inland Empire heat and dry indoor air without the seasonal gapping or cupping that can affect wide-plank solid wood.' },
@@ -1124,6 +1133,7 @@ The short version: **when water is anywhere in the picture, choose [luxury vinyl
       { href: '/services/luxury-vinyl-plank/', text: 'luxury vinyl plank installation' },
       { href: '/services/laminate-flooring/', text: 'laminate flooring installation' },
       { href: '/flooring/laminate-vs-luxury-vinyl-plank/', text: 'laminate vs LVP, in depth' },
+      { href: '/blog/replace-damaged-vinyl-plank/', text: 'replacing a damaged vinyl plank' },
     ],
     faqs: [
       { q: 'Is luxury vinyl plank better than laminate?', a: 'It depends on the room. LVP is waterproof, so it wins in kitchens, bathrooms, laundry rooms, and pet households. Laminate has a slightly harder, more scratch-resistant surface and is a strong value in dry bedrooms, living rooms, and hallways.' },
@@ -1264,6 +1274,7 @@ Choosing well isn't about finding the lowest bid - it's about finding a licensed
       { href: '/services/hardwood-flooring-installation/', text: 'hardwood flooring installation' },
       { href: '/areas-we-serve/san-bernardino/', text: 'flooring in San Bernardino' },
       { href: '/services/hardwood-floor-refinishing/', text: 'hardwood floor refinishing' },
+      { href: '/blog/hardwood-floors-on-concrete-slab/', text: 'slab moisture testing: what to ask' },
     ],
     faqs: [
       { q: 'Do flooring contractors in California need a license?', a: 'Yes. Any contractor performing more than $500 in combined labor and materials must be licensed by the Contractors State License Board (CSLB). Flooring work falls under the C-15 Flooring and Floor Covering classification. You can verify any contractor license for free on the CSLB website.' },
@@ -1611,6 +1622,7 @@ Come and see both in the same light, or [book a free in-home estimate](/contact/
     internalLinks: [
       { href: '/services/hardwood-flooring-installation/', text: 'Hardwood flooring installation' },
       { href: '/services/laminate-flooring/', text: 'Laminate flooring' },
+      { href: '/blog/laminate-vs-hardwood-real-cost/', text: 'the real 10-year cost difference' },
     ],
     faqs: [
       { q: 'Is laminate cheaper than hardwood?', a: 'Yes, meaningfully, in both material and installation. The honest comparison is cost over the life of the floor rather than at purchase, because hardwood can be refinished several times and laminate has to be replaced when its wear layer goes.' },
@@ -1892,6 +1904,7 @@ Our [floor repair service](/services/floor-repair/) covers the range, and [a fre
     internalLinks: [
       { href: '/services/floor-repair/', text: 'Floor repair' },
       { href: '/services/hardwood-floor-refinishing/', text: 'Hardwood floor refinishing' },
+      { href: '/blog/replace-damaged-vinyl-plank/', text: 'replacing a damaged vinyl plank' },
     ],
     faqs: [
       { q: 'Is it cheaper to repair or replace a floor?', a: 'Repair, in most cases where the damage is localised and the rest of the floor is sound. Replacement makes sense when the subfloor has failed, when the same problem recurs across the whole floor, or when the material is discontinued and a match is impossible.' },
@@ -1971,6 +1984,562 @@ Our [laminate flooring service](/services/laminate-flooring/) covers what we ins
       { q: 'Do I need underlayment under laminate?', a: 'Yes, unless it is already attached to the planks. It controls how the floor sounds and feels, cushions the locking joints, and on a slab it often provides the moisture barrier as well. Skipping it is what makes a laminate floor sound hollow.' },
       { q: 'Can laminate go directly on concrete?', a: 'With the right underlayment and, where the moisture reading calls for it, a barrier. The slab also has to be flat, because dips cause the locking joints to flex until they separate. A moisture test before installation is worth the five minutes.' },
       { q: 'How flat does the subfloor need to be?', a: 'Flatter than most people expect, and manufacturers publish a tolerance that installing outside of voids the warranty. We measure rather than judge by eye, and on a slab that often means some grinding and filling before we start.' },
+    ],
+  },
+  {
+    slug: 'laminate-vs-hardwood-real-cost',
+    title: 'Laminate vs. Hardwood: The Real Cost Difference Over 10 Years',
+    metaTitle: 'Laminate vs. Hardwood Price: The 10-Year Cost | Monteros',
+    metaDesc: 'Laminate costs less to install than hardwood. Over ten years the gap narrows and sometimes reverses. The full cost-of-ownership math for Inland Empire homes.',
+    excerpt: 'Laminate wins on day one. Whether it still wins in year ten depends on three things nobody puts in the quote.',
+    date: '2026-08-25',
+    category: 'cost',
+    image: '/images/laminate-vs-luxury-vinyl-comparison.webp',
+    alt: 'Laminate and hardwood flooring samples compared side by side',
+    readMins: 7,
+    body: `Ask what laminate costs versus hardwood and you get two numbers that make the decision look obvious. Laminate runs roughly **$4 to $8 per square foot installed** in the Inland Empire. Hardwood runs **$8 to $16**. Laminate wins, next question.
+
+Except that is the purchase price, not the cost. Over the time you actually own the floor, three things move the comparison, and on a house you plan to keep, they can close the gap entirely.
+
+## The day-one number
+
+Start honest. For 1,000 square feet:
+
+- **Laminate**: roughly $4,000 to $8,000 installed
+- **Hardwood**: roughly $8,000 to $16,000 installed
+
+That is a real difference and it is why laminate exists. If cash today is the binding constraint, laminate is a legitimate answer and we install a lot of it. Our [laminate flooring installation](/services/laminate-flooring/) page covers what we put down and why.
+
+## Factor one: how long each floor lasts before it is replaced
+
+This is the biggest lever, and it is where the two products separate.
+
+**Laminate has a service life, not a lifespan.** Good AC4 or AC5 laminate in a normal household runs **15 to 25 years** before the wear layer gives out or the seams start to show their age. When that happens there is no repair path. The wear layer is a printed photographic layer under melamine, and once it is worn through, the plank is finished. The floor comes out.
+
+**Hardwood is refinishable.** Solid 3/4-inch hardwood can be sanded and refinished **four to seven times**, and each refinish resets the surface completely. A hardwood floor that gets refinished on schedule genuinely lasts the life of the house. We refinish oak in [Redlands](/areas-we-serve/redlands/) and [Riverside](/areas-we-serve/riverside/) that was installed before 1950.
+
+Run that over 30 years on 1,000 square feet:
+
+- **Laminate**: install at year 0, replace around year 20. Two installations.
+- **Hardwood**: install at year 0, refinish around year 12 and year 24. One installation, two refinishes at roughly $3 to $8 per square foot each.
+
+The second laminate installation costs about what two hardwood refinishes cost, and at the end of it you have a 10-year-old laminate floor rather than a 30-year-old hardwood floor that looks new.
+
+## Factor two: repairability
+
+Damage happens. What differs is what happens next.
+
+A gouged, water-swollen, or deeply scratched **laminate plank cannot be repaired**. It has to be replaced, and if it is in the middle of a floating floor, that means unlocking planks back to the wall or cutting the plank out and gluing a replacement in. It is doable and we do it, but the replacement will not match perfectly if the floor has aged or the product has been discontinued, which after eight or ten years it usually has.
+
+**Hardwood repairs disappear.** A damaged board gets cut out, a new one gets woven in, and the whole area gets sanded and refinished as one surface. Done properly, you cannot find it afterward. Our [floor repair](/services/floor-repair/) page covers what that looks like, and the [scratch and gouge repair guide](/flooring/scratch-and-gouge-repair/) has the detail.
+
+## Factor three: resale
+
+Real estate listings say *hardwood floors*. They do not say *laminate floors*. Whether that is fair is beside the point, buyers respond to it, and appraisers and agents treat hardwood as a feature and laminate as neutral.
+
+If you are selling in two years, this argues for spending less, not more, since you will not recover a full hardwood premium in that window. If you are staying ten years and selling after, hardwood is carrying value the whole time. Our post on [flooring and resale value](/blog/flooring-for-resale-value/) goes further.
+
+## Where laminate is genuinely the right answer
+
+None of this makes laminate a bad product. It is the correct choice in several real situations:
+
+- **Rental and investment property.** Tenants are hard on floors, the exit is a full replacement either way, and durability per dollar is what matters. See [flooring for rental properties](/blog/flooring-for-rental-properties/).
+- **You are moving within a few years.** You will not be there for the refinish that makes hardwood pay off.
+- **Rooms where wood is the wrong material anyway.** Laundry rooms, some bathrooms. Though in those, [luxury vinyl plank](/services/luxury-vinyl-plank/) usually beats laminate outright because it is waterproof rather than water-resistant.
+- **The budget is the budget.** A laminate floor you can afford now beats a hardwood floor you cannot. This is a real and sufficient reason.
+
+## The version that actually decides it
+
+Ask yourself one question: **how long will I own this house?**
+
+Under about seven years, buy on the day-one number. Laminate, and do not overthink it.
+
+Over about fifteen years, run the 30-year math above, because you are going to live through the replacement cycle. Hardwood's cost advantage is deferred but it is real.
+
+In between, it comes down to how much the look matters to you and how hard your household is on floors.
+
+## One thing that is not a cost argument
+
+Laminate and hardwood do not feel the same or sound the same underfoot, and no spreadsheet captures that. Laminate over an underlayment on a slab has a characteristic slightly hollow sound. Nailed solid hardwood does not. Some people never notice. Some people notice every day for fifteen years.
+
+Before you decide on price alone, stand on both. Our [hardwood vs. laminate comparison](/blog/hardwood-vs-laminate-inland-empire/) covers the performance differences, and we will bring samples to your house so you can hear the difference in your own rooms.
+
+Want the real numbers for your square footage? [Book a free in-home estimate](/free-estimate/) and we will quote both.`,
+    internalLinks: [
+      { href: '/services/hardwood-flooring-installation/', text: 'hardwood flooring installation' },
+      { href: '/services/laminate-flooring/', text: 'laminate flooring installation' },
+      { href: '/blog/hardwood-vs-laminate-inland-empire/', text: 'hardwood vs. laminate: performance compared' },
+      { href: '/free-estimate/', text: 'get a free in-home estimate' },
+    ],
+    faqs: [
+      { q: 'Is laminate cheaper than hardwood?', a: 'To install, yes, roughly $4 to $8 per square foot for laminate against $8 to $16 for hardwood in the Inland Empire. Over 20 to 30 years the gap narrows considerably, because laminate has to be fully replaced when its wear layer gives out while hardwood can be refinished four to seven times.' },
+      { q: 'How long does laminate flooring last?', a: 'Good AC4 or AC5 laminate typically lasts 15 to 25 years in a normal household. When the wear layer wears through there is no repair option, the floor has to be replaced, because the visible surface is a printed layer rather than real wood.' },
+      { q: 'Can laminate flooring be refinished?', a: 'No. Laminate has a printed photographic layer under a melamine wear coat, not real wood, so there is nothing to sand. This is the single biggest difference in long-term cost between laminate and hardwood.' },
+      { q: 'Does hardwood add more resale value than laminate?', a: 'Generally yes. Real estate listings advertise hardwood floors as a feature, while laminate is treated as neutral. If you are selling within a couple of years the premium is unlikely to be recovered; over a longer hold, hardwood carries value throughout.' },
+    ],
+  },
+  {
+    slug: 'replace-damaged-vinyl-plank',
+    title: 'Can One Damaged Vinyl Plank Be Replaced Without Redoing the Floor?',
+    metaTitle: 'Replacing a Damaged Vinyl Plank | Monteros Hardwood Flooring',
+    metaDesc: 'A gouged or lifted LVP plank does not mean a new floor. How single-plank replacement works on click-lock and glue-down vinyl, and when it is not worth it.',
+    excerpt: 'One ruined plank in the middle of the room. Here is when it can be swapped out invisibly, and when the honest answer is that it cannot.',
+    date: '2026-08-25',
+    category: 'maintenance',
+    image: '/images/luxury-vinyl-plank-detail.webp',
+    alt: 'Close-up of luxury vinyl plank flooring showing plank seams',
+    readMins: 6,
+    body: `A refrigerator gets dragged. A dropped knife lands point-down. A plank near the slider lifts at one corner. Now there is one obviously damaged board in the middle of an otherwise perfect floor, and the question is whether that means a new floor.
+
+Usually it does not. Here is how single-plank replacement actually works.
+
+## First: which kind of vinyl do you have?
+
+Everything depends on this, and you can figure it out without any tools.
+
+**Click-lock (floating).** The planks lock into each other and float over the subfloor without adhesive. Press firmly near a wall or in a doorway, a floating floor has a small amount of give and may make a faint sound. There is a gap hidden under the baseboard or shoe molding around the perimeter.
+
+**Glue-down.** The planks are adhered directly to the slab. There is no give at all, no perimeter gap, and the floor feels like part of the concrete.
+
+Both are repairable. The methods are completely different.
+
+## Replacing a click-lock plank
+
+There are two routes.
+
+**Unlock back to the plank.** Pull the shoe molding on the nearest wall, then unclick rows back to the damaged board, swap it, and click everything back. This is the clean method and it leaves no evidence at all. It is practical when the damaged plank is within a few rows of a wall and the room is not full of heavy furniture.
+
+**Cut it out in place.** When the plank is in the middle of a large room, unlocking half the floor is not sensible. Instead the damaged plank gets scored and cut out, the locking edges are trimmed off the replacement, and it is glued into the opening. Done by someone who has done it before, this is invisible. Done casually, the repair sits slightly proud of the floor and catches light.
+
+Our [floor repair](/services/floor-repair/) service covers both.
+
+## Replacing a glue-down plank
+
+Heat and patience. The damaged plank is warmed to soften the adhesive underneath, then lifted out. The old adhesive is scraped off the slab, fresh adhesive goes down, and the new plank is set and weighted while it cures.
+
+It is more work than a click-lock swap but it is very reliable, because there are no locking edges to reconcile. The slab has to be genuinely clean before the new plank goes down, adhesive over old adhesive is how you get a plank that lifts again in a year.
+
+## The real obstacle: do you have a matching plank?
+
+This is what determines the outcome far more than the method, and it is worth saying plainly.
+
+**If you kept leftover material, you are in good shape.** This is the single best argument for keeping a box of spare planks in the garage after any LVP installation. If you have leftovers, a repair is straightforward.
+
+**If you did not, it depends on the age of the floor.** Manufacturers discontinue and revise products constantly. On a floor under about three years old, we can often source a match. Past five years it gets difficult, and past eight it is unlikely.
+
+There is also **dye lot**. Even the same product from a different production run can differ slightly in color. And an installed floor has been living under [Southern California](/blog/best-flooring-for-southern-california-homes/) sun, which fades vinyl over time, so a brand-new plank of the identical product can read lighter than its neighbors.
+
+## The trick when you cannot find a match
+
+Take the replacement from a closet.
+
+Pull a plank from inside a bedroom closet, under the refrigerator, or behind a door, somewhere nobody looks, and use it for the visible repair. Then put the imperfectly matched new plank in the hidden spot.
+
+The eye is very good at spotting a mismatch in the middle of a living room and completely blind to one inside a pantry. This costs nothing and it is the difference between a repair you notice and one you do not.
+
+## When replacing a plank is the wrong answer
+
+Three situations where a spot repair is treating a symptom:
+
+**Water underneath.** If a plank lifted, cupped at the edges, or the floor feels soft nearby, the problem is moisture under the floor rather than the plank on top. A slab passing moisture, a failed slider seal, or a slow plumbing leak will ruin the replacement too. Find the water first. Our [water damage floor repair guide](/flooring/water-damage-floor-repair/) covers what to look for.
+
+**Multiple planks failing along seams.** Widespread edge damage usually points at an installation problem, an uneven slab, a missing expansion gap, or the wrong underlayment, not at individual bad planks.
+
+**The plank is peaking or the floor is buckling.** A floating floor that has nowhere to expand pushes up. The fix is restoring the expansion gap at the perimeter, not swapping planks.
+
+## Preventing the next one
+
+- **Keep a box of leftover planks.** Free insurance, and the single most useful thing you can do.
+- **Felt pads under every furniture leg**, and replace them when they compress.
+- **Never drag appliances.** Lift them or put them on a sheet of hardboard.
+- **A real mat at every exterior door.** Grit is what dulls a vinyl wear layer, and in the Inland Empire there is plenty of it.
+
+Not sure what you are dealing with, or whether it is one plank or a floor-wide problem? [Book a free in-home look](/free-estimate/) and we will tell you straight, including when the answer is that it is fine and you should leave it alone.`,
+    internalLinks: [
+      { href: '/services/floor-repair/', text: 'floor repair services' },
+      { href: '/services/luxury-vinyl-plank/', text: 'luxury vinyl plank installation' },
+      { href: '/flooring/water-damage-floor-repair/', text: 'water-damaged floor repair' },
+      { href: '/free-estimate/', text: 'book a free in-home look' },
+    ],
+    faqs: [
+      { q: 'Can a single vinyl plank be replaced without redoing the floor?', a: 'Usually yes. On click-lock floating floors the plank can either be reached by unlocking rows from the nearest wall, or cut out in place and glued in. On glue-down vinyl the plank is warmed to soften the adhesive, lifted, and a new one is set into fresh adhesive.' },
+      { q: 'What if my vinyl plank product has been discontinued?', a: 'Take the replacement plank from a hidden area such as inside a closet or under the refrigerator, use it for the visible repair, and put the imperfectly matched new plank in the hidden spot. This is why keeping a box of leftover planks after installation is worth doing.' },
+      { q: 'Why did my vinyl plank lift at the edge?', a: 'Most often moisture underneath, from a slab passing moisture, a failed door seal, or a slow leak, or a missing expansion gap at the perimeter of a floating floor. Both are floor-level problems, so replacing the plank without fixing the cause means the replacement fails too.' },
+      { q: 'Is luxury vinyl plank repairable at all, or does it have to be replaced?', a: 'Individual planks are replaceable, which is one of LVP’s practical advantages. What cannot be repaired is the plank itself, unlike hardwood there is no sanding or refinishing, so damage is addressed by swapping the board rather than resurfacing it.' },
+    ],
+  },
+  {
+    slug: 'hardwood-floors-on-concrete-slab',
+    title: 'Can You Put Hardwood on a Concrete Slab? (Inland Empire Homes)',
+    metaTitle: 'Hardwood Floors on a Concrete Slab | Monteros Hardwood',
+    metaDesc: 'Most Inland Empire homes built after 1990 sit on slab. What that means for hardwood: engineered vs solid, moisture testing, and the three install methods.',
+    excerpt: 'Slab-on-grade rules out one kind of hardwood and makes another one work beautifully. Which is which, and the test that has to happen first.',
+    date: '2026-08-25',
+    category: 'comparison',
+    image: '/images/hardwood-modern-open-living.webp',
+    alt: 'Engineered hardwood flooring installed over a concrete slab in a modern home',
+    readMins: 7,
+    body: `If your house was built in the Inland Empire after about 1990, it is almost certainly slab-on-grade. No crawlspace, no floor joists, just a concrete slab poured on the dirt with the house built on top of it.
+
+That is the single most important fact about your floor, and it is the reason "can I have hardwood?" has a longer answer here than it does in older parts of the country.
+
+The short version: **yes, but it changes which hardwood and how it goes down.**
+
+## Why concrete is the problem
+
+Concrete looks inert. It is not. A slab poured on soil is in permanent contact with ground moisture, and it passes some of that moisture upward as vapor, continuously, for the life of the house.
+
+That is fine for tile and fine for [luxury vinyl plank](/services/luxury-vinyl-plank/). It is a genuine problem for wood, which absorbs moisture, expands, and then contracts when it dries. Do that under a floor that is fastened down and you get cupping, crowning, gapping, and in bad cases planks that lift off the slab entirely.
+
+A slab also cannot be nailed into, which rules out the traditional install method on its own.
+
+## Solid hardwood on slab: technically possible, usually not the answer
+
+Solid 3/4-inch hardwood is normally nailed to a wood subfloor. On a slab there is nothing to nail to, so the options are gluing it directly to the concrete or building a plywood subfloor over the slab first and nailing to that.
+
+Both work. Both are done. Neither is what we usually recommend, for three reasons:
+
+- **Solid wood moves more.** It is a single piece of wood, so it expands and contracts across its width with every seasonal humidity change. Directly over a moisture source, that movement is what you are trying to avoid.
+- **Building a plywood subfloor raises the floor** by three-quarters of an inch or more, which creates problems at door thresholds, at the base of stairs, and at transitions to tile.
+- **It costs meaningfully more** than the alternative that performs better.
+
+If you have your heart set on solid hardwood on a slab, it can be done, and we will tell you honestly what it involves. See our [solid hardwood guide](/flooring/solid-hardwood-flooring/).
+
+## Engineered hardwood: the right tool for a slab
+
+[Engineered hardwood](/flooring/engineered-hardwood-flooring/) is real wood, a genuine hardwood wear layer, bonded to a multi-ply plywood core. The plies are cross-laminated, each layer running perpendicular to the one below it, which is what makes the plank dimensionally stable. Cross-grain construction fights the movement that plain-sawn solid wood cannot resist.
+
+Practically, on a slab, that means:
+
+- It handles the moisture vapor a slab gives off without cupping
+- It can be glued directly to concrete or floated over it, no plywood buildup, no height problem
+- It comes in wider planks than solid wood can manage here, 5 inches and up, which is what most people want and what solid wood struggles to deliver stably in this climate
+- With a 3mm or thicker wear layer it can still be refinished once or twice
+
+The honest limitation is refinishing. Solid wood gives you four to seven refinishes. Engineered gives you one or two, and a thin 1mm wear layer gives you none. If you are buying engineered, the wear layer thickness is the number that matters most, ask for it and get it in writing.
+
+## The step nobody should skip: moisture testing
+
+Before any wood goes over any slab, the slab gets tested. Not looked at. Tested.
+
+Two standard methods: a calcium chloride test that measures how much vapor comes through in 24 hours, and relative humidity probes set into holes drilled in the slab. Either gives you a number.
+
+That number drives everything downstream, whether a moisture barrier or a vapor-retarding adhesive is needed, whether a floating install is safer than a glue-down, and occasionally whether wood is the right material at all.
+
+This is where slab jobs go wrong. A crew that skips the test, glues wood to a slab that is passing more moisture than the adhesive can tolerate, and leaves, has installed a floor that will fail in year two. The homeowner blames the wood. It was never the wood.
+
+**Ask any contractor how they will test slab moisture and what number they need to see.** If the answer is vague, keep looking. Our guide on [choosing a flooring contractor in the Inland Empire](/blog/how-to-choose-flooring-contractor-inland-empire/) covers the rest of the questions worth asking.
+
+## The three install methods on slab
+
+**Glue-down.** Engineered planks adhered directly to the slab with a moisture-control adhesive. Feels the most solid underfoot, closest to nailed hardwood, quiet, no hollow sound. Requires a genuinely flat, clean slab. This is what we recommend most often.
+
+**Floating.** Planks joined to each other over an underlayment, not attached to the slab. Faster, less expensive, and tolerant of a slab that is not perfectly flat. Slightly more sound underfoot. Good choice when slab moisture readings are high, because the underlayment can include a vapor barrier.
+
+**Plywood subfloor over slab.** Plywood fastened down first, then nail-down hardwood over it. The only route to genuine solid hardwood, and the one that raises the floor height.
+
+## Flatness matters as much as moisture
+
+One more thing specific to slabs: they are rarely flat. Poured concrete has high spots and low spots, and tolerances that were fine for carpet are not fine for a rigid plank floor.
+
+High spots get ground down. Low spots get filled with self-leveling compound. This happens before installation, and on an older slab it can be a meaningful line item. It is not an upsell, a plank floor over an uneven slab flexes at every step, and flexing is what breaks locking edges and pops glue bonds.
+
+## What we would tell a neighbor
+
+For a slab home in [San Bernardino](/areas-we-serve/san-bernardino/), [Fontana](/areas-we-serve/fontana/), [Rancho Cucamonga](/areas-we-serve/rancho-cucamonga/), or anywhere else across the valley: **engineered hardwood with a 3mm or thicker wear layer, glued down, after a moisture test and whatever flatness prep the slab needs.**
+
+That floor looks identical to solid hardwood, behaves better on concrete, keeps your door heights, and can still be refinished when the time comes.
+
+Want to know what your slab is actually doing? [Book a free in-home estimate](/free-estimate/) and we will take a look before recommending anything.`,
+    internalLinks: [
+      { href: '/services/hardwood-flooring-installation/', text: 'hardwood flooring installation' },
+      { href: '/flooring/engineered-hardwood-flooring/', text: 'engineered hardwood explained' },
+      { href: '/blog/engineered-vs-solid-hardwood/', text: 'engineered vs. solid hardwood' },
+      { href: '/free-estimate/', text: 'get a free in-home estimate' },
+    ],
+    faqs: [
+      { q: 'Can you install hardwood floors on a concrete slab?', a: 'Yes. Engineered hardwood is the right choice for slab-on-grade homes because its cross-laminated plywood core resists the movement caused by moisture vapor coming up through concrete. It can be glued directly to the slab or floated over it. Solid hardwood on slab requires either direct glue-down or building a plywood subfloor first.' },
+      { q: 'Why can’t you nail hardwood to a concrete slab?', a: 'There is nothing to nail into. Traditional nail-down installation fastens planks to a wood subfloor over joists. On slab-on-grade construction the options are gluing the flooring to the concrete, floating it, or first building a plywood subfloor over the slab and nailing to that.' },
+      { q: 'Does a concrete slab need to be moisture tested before hardwood?', a: 'Always. Concrete poured on soil passes moisture vapor upward continuously. A calcium chloride test or in-slab relative humidity probes give a number that determines whether a moisture barrier or vapor-retarding adhesive is needed and whether glue-down or floating is safer. Skipping this test is the most common cause of slab flooring failures.' },
+      { q: 'How thick should the wear layer be on engineered hardwood?', a: 'Look for 3mm or thicker if you want the option to refinish once or twice over the floor’s life. Budget engineered products with a 1mm wear layer cannot be sanded at all, which means damage and wear can only be addressed by replacing planks.' },
+    ],
+  },
+  {
+    slug: 'gaps-in-hardwood-floors',
+    title: 'Why Gaps Appear in Hardwood Floors, and Which Ones Need Fixing',
+    metaTitle: 'Gaps in Hardwood Floors: What Is Normal | Monteros',
+    metaDesc: 'Seasonal gaps in hardwood are normal in the Inland Empire. Permanent ones are not. How to tell the difference before you pay anyone to fix them.',
+    excerpt: 'Gaps that open in summer and close in winter are the floor working correctly. Gaps that never close are telling you something else.',
+    date: '2026-08-25',
+    category: 'maintenance',
+    image: '/images/hardwood-large-living-space.webp',
+    alt: 'Hardwood flooring in a large Inland Empire living space',
+    readMins: 6,
+    body: `Every autumn we get the same call. A homeowner has noticed thin dark lines between the boards that were not there in spring, and wants to know what went wrong.
+
+Usually nothing did. Wood is a natural material that takes on moisture from the air and gives it back, and it changes size when it does. In the Inland Empire, where indoor humidity swings hard between a dry summer and a damp winter, that movement is visible.
+
+The useful question is not "do I have gaps." It is **do my gaps close again**.
+
+## Normal seasonal gapping
+
+Here is what normal looks like:
+
+- Thin gaps, roughly the thickness of a dime or less
+- Spread fairly evenly across the whole floor rather than concentrated in one area
+- They **open in the dry season and close in the humid season**
+- No cupping, no movement underfoot, no noise
+
+That is wood behaving exactly as designed. Every solid hardwood floor in this climate does it. The expansion gap hidden under your baseboards exists specifically to give the floor room to do it. Filling these gaps is a mistake, when the wood expands again it has nowhere to go, and the result is crowning or a floor that pushes against the walls.
+
+**The test:** mark one gap with painter's tape and a note of the date. Check it in six months. If it is visibly narrower, your floor is fine and you can stop thinking about it.
+
+## Gaps that mean something
+
+Four patterns are worth attention.
+
+**1. Gaps that never close.** If a gap is the same width in February as it was in August, the boards have shrunk permanently. This usually means the wood was installed at a much higher moisture content than the house ever reaches, that is, it was not acclimated properly before installation. Boards that go down wet and then dry out never come back.
+
+**2. One big gap, not many small ones.** A single wide gap in one spot, while the rest of the floor is tight, is not humidity. That is boards separating from each other, which points at a fastening problem, subfloor movement, or a floor being pulled in one direction.
+
+**3. Gaps plus cupping.** If the board edges are higher than their centers, there is moisture coming from below, a slab passing vapor, a plumbing leak, a crawlspace issue. Cupping plus gapping together is a water problem, not a humidity problem, and the source needs finding before anything else happens. Our [water damage repair guide](/flooring/water-damage-floor-repair/) covers what to look for.
+
+**4. Gaps you can feel underfoot.** If a board moves, clicks, or drops slightly when you step on it, that is fastening or subfloor, not seasonal movement. Worth a look.
+
+## The Inland Empire version of the problem
+
+Two local factors make this more pronounced here than in most places.
+
+**Air conditioning is a dehumidifier.** Running AC hard through a long valley summer pulls indoor humidity well down, often into the 20s or lower. Wood shrinks. This is why gaps here tend to be at their widest in late summer, which is the opposite of what people expect, most flooring advice online is written for climates where summer is the humid season.
+
+**Winter rain brings it back up.** Indoor humidity climbs through the wet months, wood swells, gaps close. The annual cycle is real and it is wide.
+
+The practical consequence: **do not judge your floor in one season.** A gap measured in September and a gap measured in February are two different measurements of the same floor.
+
+## What actually helps
+
+**Keep indoor humidity in a band.** Somewhere around 35 to 55 percent year-round is the target. A whole-house humidifier is the thorough answer; a portable one in the main living area during the driest months helps meaningfully and costs little. This is the single most effective thing you can do, and it also protects cabinets, doors, and furniture.
+
+**Do not over-wet-mop.** Water sitting on a hardwood floor swells board edges from above. Damp, not wet, and dry behind. Our post on [caring for hardwood floors in the desert](/blog/how-to-care-for-hardwood-floors-in-the-desert/) has the routine.
+
+**Leave the expansion gap alone.** The space under your baseboards and shoe molding is functional. Do not caulk it, do not fill it.
+
+## When filling gaps is appropriate, and when it is not
+
+**Do not fill** gaps that close seasonally. You will trap filler in a joint that needs to move, and the filler will crack out or the floor will crown.
+
+**Filling can be appropriate** when gaps are genuinely permanent, when the floor is stable across a full year, and when it is done as part of a [full sand and refinish](/flooring/sand-and-stain/) rather than as a standalone fix. During a refinish, gaps can be filled and the whole floor sanded flat as one surface, so the repair disappears. Done separately, filler sits in a dark line and looks exactly like filler.
+
+For very wide permanent gaps in an older floor, the better answer is sometimes slivering, cutting thin strips of matching wood and fitting them into the gaps. It is slow and it costs more, and on an original floor in a period home in [Redlands](/areas-we-serve/redlands/) or [Riverside](/areas-we-serve/riverside/) it is worth every dollar. Our post on [historic hardwood floors](/blog/historic-hardwood-floors-redlands-riverside/) covers that work.
+
+## The short version
+
+Measure before you worry. Mark a gap, wait six months, look again. Seasonal movement is your floor working. Permanent gaps, cupping, or movement underfoot are worth a professional look.
+
+Not sure which one you have? [Book a free in-home look](/free-estimate/) and we will tell you straight, including when the honest answer is to leave it alone.`,
+    internalLinks: [
+      { href: '/services/hardwood-floor-refinishing/', text: 'hardwood floor refinishing' },
+      { href: '/blog/how-to-care-for-hardwood-floors-in-the-desert/', text: 'caring for hardwood in a dry climate' },
+      { href: '/services/floor-repair/', text: 'hardwood floor repair' },
+      { href: '/free-estimate/', text: 'book a free in-home look' },
+    ],
+    faqs: [
+      { q: 'Are gaps in hardwood floors normal?', a: 'Thin gaps that open in the dry season and close again when humidity rises are completely normal, especially in the Inland Empire where air conditioning pulls indoor humidity low through the summer. Gaps that stay the same width all year are not seasonal and are worth investigating.' },
+      { q: 'How do I know if my hardwood gaps are a problem?', a: 'Mark one gap with painter’s tape, note the date, and check it six months later. If it has narrowed, the floor is behaving normally. If it is unchanged, or if you also see cupped board edges or feel movement underfoot, have it looked at.' },
+      { q: 'Should I fill gaps in my hardwood floor?', a: 'Not if they close seasonally. Filler trapped in a joint that needs to move will crack out, or the floor will crown when the wood expands. Filling is appropriate only for genuinely permanent gaps, and it is best done as part of a full sand and refinish so the repair sands flat with the rest of the floor.' },
+      { q: 'What indoor humidity level is best for hardwood floors?', a: 'Roughly 35 to 55 percent year-round. Holding that range reduces seasonal movement substantially and also protects cabinets, doors, and furniture. A whole-house humidifier is the thorough solution; a portable unit in the main living area during the driest months helps considerably.' },
+    ],
+  },
+  {
+    slug: 'screen-and-recoat-vs-full-refinish',
+    title: 'Screen and Recoat vs. Full Refinish: Which One Do Your Floors Need?',
+    metaTitle: 'Screen and Recoat vs. Full Refinish | Monteros Hardwood',
+    metaDesc: 'A screen and recoat costs a fraction of a full sand and takes one day. How to tell which one your hardwood floors actually need, with a test you can do yourself.',
+    excerpt: 'Plenty of floors booked for a full sand only needed a recoat. Here is the water-drop test that tells you which camp yours is in.',
+    date: '2026-08-25',
+    category: 'maintenance',
+    image: '/images/hardwood-floor-refinishing.webp',
+    alt: 'Hardwood floor being refinished in an Inland Empire home',
+    readMins: 6,
+    body: `There are two very different jobs that both get called "refinishing," and they differ by about a week of your life and a large multiple in price.
+
+Homeowners routinely book the expensive one when the cheap one would have done it. Here is how to tell them apart before you call anyone.
+
+## What each one actually is
+
+**Screen and recoat** (also called a buff and coat). A machine with an abrasive screen lightly scuffs the existing finish, just enough to give a new coat something to grip. The floor is cleaned, and one or two fresh coats of finish go on top.
+
+Nothing is sanded off. The wood is never exposed. You are renewing the protective coating, not the floor.
+
+- Usually **one day**
+- Minimal dust and no bare-wood stage
+- Cannot change the stain colour
+- Can change the [sheen](/flooring/sand-and-stain/), matte, satin, or semi-gloss
+
+**Full sand and refinish.** Drum and edge sanders take the floor down through the old finish to bare wood, in progressively finer passes. Then optional stain, then multiple coats of finish, each needing cure time before the next.
+
+- **Three to five days** for a main living area
+- Removes scratches, gouges, stains, and sun fading that live in the wood
+- Lets you change the colour completely
+- Uses up a portion of the floor's finite sanding life
+
+Our [dustless refinishing guide](/flooring/dustless-floor-refinishing/) covers how we contain the dust on full sands, and the [sand and stain guide](/flooring/sand-and-stain/) walks the full process.
+
+## The test that decides it
+
+Put a few drops of water on the floor in a high-traffic area, in front of the sink, in the main walkway, not in a corner. Wait ten minutes.
+
+**The water beads and sits on the surface.** The finish is intact. The wood is protected. Whatever you are unhappy about is on top of the finish, which means a screen and recoat is very likely enough.
+
+**The water soaks in and darkens the wood.** The finish is worn through. Water is reaching bare wood, and so is everything else. This floor needs a full sand.
+
+Do it in two or three spots, because floors wear unevenly. A hallway can be worn through while the bedroom next to it is untouched, and that is a completely reasonable reason to do different rooms differently.
+
+## What each one can and cannot fix
+
+**A screen and recoat handles:**
+
+- A dull, tired-looking surface
+- Fine surface scratches, including light pet-nail scuffing
+- A finish that has lost its protection but not failed
+- Changing sheen, this is the big one, and it is why a large share of our recoats happen. Homeowners who are done with a glossy 2000s finish and want matte can get there in a day.
+
+**A screen and recoat will not touch:**
+
+- Deep scratches or gouges that reach the wood
+- Stains, pet urine, or water marks in the wood itself
+- Sun fading and the pale rectangles where rugs sat
+- Colour changes of any kind
+- Cupped, crowned, or uneven boards
+- Peeling or flaking finish, if the existing coating is failing, adding another coat on top of it fails too
+
+That last one matters. A recoat bonds to the old finish. If the old finish is not bonded to the floor, you are stacking coatings on a bad foundation.
+
+## The waxed-floor exception
+
+If your floor has ever been waxed, or treated with an oil soap product, a recoat will not stick. Polyurethane does not bond to wax, it beads, peels, and fails within months.
+
+Test it: rub a small hidden area with fine steel wool and mineral spirits. A grey or waxy residue on the wool means wax. Older floors around the Inland Empire, particularly pre-1970 homes, are the usual candidates. A waxed floor can still be recoated, but only after full wax removal, and often a full sand is the more reliable route.
+
+## The economics, and the argument for recoating on a schedule
+
+A screen and recoat costs a fraction of a full sand and takes a fraction of the time. But the real argument is longer-term.
+
+Every full sand removes wood. Solid 3/4-inch hardwood has roughly four to seven sandings in it over its whole life, and then it is done. Engineered hardwood has one or two, depending on its wear layer.
+
+A floor that gets recoated every five to seven years, before the finish wears through, may **never need a full sand at all**. The finish gets renewed before wear reaches the wood, so the sanding budget is never spent.
+
+That is the case for treating recoating as maintenance rather than repair. It is the cheapest thing you can do for a hardwood floor and the one that most extends its life. Our post on [how long hardwood floors last](/blog/how-long-do-hardwood-floors-last/) puts numbers on it.
+
+## When a full sand is clearly the right call
+
+- The water test soaks in across the main living areas
+- You want a different colour
+- There are gouges, pet stains, or water marks in the wood
+- Sun fading has left obvious tonal differences
+- The finish is peeling, flaking, or cloudy
+- You are opening up a floor after removing walls or carpet and need everything to match
+
+And a third possibility worth naming: sometimes the honest answer is that the floor should be replaced rather than refinished at all. Our post on [refinishing versus replacing](/blog/should-i-refinish-or-replace-my-hardwood-floors/) covers how to tell.
+
+Not sure which camp your floors are in? [Book a free in-home look](/free-estimate/). We will do the water test, check the wear layer, and quote whichever job you actually need, including the cheap one.`,
+    internalLinks: [
+      { href: '/services/hardwood-floor-refinishing/', text: 'hardwood floor refinishing' },
+      { href: '/flooring/screen-and-recoat/', text: 'screen and recoat explained' },
+      { href: '/blog/hardwood-floor-refinishing-inland-empire-dustless-process/', text: 'our dustless refinishing process' },
+      { href: '/free-estimate/', text: 'book a free in-home look' },
+    ],
+    faqs: [
+      { q: 'What is the difference between a screen and recoat and a full refinish?', a: 'A screen and recoat lightly abrades the existing finish and adds fresh coats on top, taking about a day and never exposing bare wood. A full refinish sands the floor down to bare wood, taking three to five days, and can remove scratches, stains, and fading and change the colour.' },
+      { q: 'How do I know if my floors just need a recoat?', a: 'Put a few drops of water on the floor in a high-traffic spot and wait ten minutes. If the water beads on the surface, the finish is intact and a screen and recoat is likely enough. If it soaks in and darkens the wood, the finish is worn through and the floor needs a full sand.' },
+      { q: 'How often should hardwood floors be recoated?', a: 'Every five to seven years in a normal household, before the finish wears through to the wood. A floor kept on that schedule may never need a full sand at all, which preserves its limited sanding life and can extend the floor’s usable lifespan by decades.' },
+      { q: 'Can a screen and recoat change the colour of my floor?', a: 'No. Colour lives in the stain, which is under the finish, so changing it requires sanding to bare wood. A recoat can change the sheen, from gloss to satin or matte, which is one of the most common reasons homeowners book one.' },
+    ],
+  },
+  {
+    slug: 'paying-for-new-floors-inland-empire',
+    title: 'Paying for New Floors: Financing, Phasing, and What to Do First',
+    metaTitle: 'How to Pay for New Floors in the Inland Empire | Monteros',
+    metaDesc: 'Can’t do the whole house at once? How 0% financing compares to phasing a flooring project, the dye-lot trap, and which rooms to do first.',
+    excerpt: 'Most homeowners cannot floor a whole house in one go. There are two ways to handle that, and one of them quietly costs more.',
+    date: '2026-08-25',
+    category: 'cost',
+    image: '/images/laminate-sample-selection.webp',
+    alt: 'Homeowner comparing flooring samples during an in-home estimate',
+    readMins: 6,
+    body: `Very few people replace every floor in a house in a single transaction. The common situation is a homeowner who wants the whole thing done and can comfortably fund about a third of it.
+
+There are two ways through that, and they do not cost the same.
+
+## Option one: phase the project over years
+
+Do the living areas this year, the bedrooms in eighteen months, the hallway after that. No debt, no interest, no application.
+
+It is the instinctive choice and it has one clear advantage: you never owe anyone anything. But it carries four costs that do not appear on any quote.
+
+**Dye lots.** Flooring is manufactured in batches, and batches differ slightly in colour. Material bought eighteen months apart will very likely come from different lots. In separate rooms with a threshold between them, you may never notice. In an open floor plan, or where the hallway meets the living room, a subtle colour shift at the transition is visible forever and cannot be fixed without redoing one side.
+
+**Discontinuation.** Manufacturers revise and drop products constantly. Phase two of your project may find that the exact product no longer exists. This is more common than people expect on a two-year timeline.
+
+**Repeated mobilisation.** Every phase is its own furniture move, its own crew day, its own setup and cleanup. Three phases means paying that three times instead of once. On a whole-house job the difference is real money.
+
+**Price drift.** Material and labour cost more in two years than they do today.
+
+## Option two: 0% promotional financing
+
+Buy all the material at once, install it all at once, and pay for it over time. We offer **0% promotional financing over 18 months** for qualified buyers, with no interest when the balance is paid in full inside the promotional window. Details are on our [financing page](/financing/).
+
+This solves every one of the four problems above: one dye lot, one product, one mobilisation, today's prices.
+
+**But there is one mechanic you have to understand.** Promotions like this are usually *deferred* interest, not forgiven interest. Interest accrues quietly in the background. Pay the balance off inside the window and all of it is waived. Leave any balance when the promotion expires and the accrued interest can be charged **retroactively on the original purchase amount**, not on what is left.
+
+That is how a 0% plan becomes an expensive one, and the cause is almost always paying the statement's minimum payment, which is not sized to clear the balance in time.
+
+**The fix takes one minute.** Divide the project total by 18 and set up an automatic payment for that figure. A $5,400 project is $300 a month. Pay $300, finish on schedule, pay zero interest. Ignore the minimum entirely.
+
+## Which to choose
+
+**Phase it** when your rooms are genuinely separate, closed doors, thresholds, different materials by room, so a dye-lot shift will never be visible. Also when the second phase is far enough out that you would rather re-decide than commit now.
+
+**Finance it** when the floor runs continuously across the space, when it is one material through an open plan, or when a phase-two mismatch would bother you. Which is most houses.
+
+**Do neither** if the monthly figure would be uncomfortable in a slow month. That is real information, not an obstacle to route around with a longer term. Scale the project down or change the material instead.
+
+## If you are phasing anyway, buy the material at once
+
+This is the move most people miss, and it costs nothing.
+
+Buy all the flooring now, in one lot, and store the phase-two material in a garage or spare room. Install in stages as budget allows. You get one dye lot and today's price while still spreading the labour cost over time.
+
+Flooring stores well as long as it stays flat, dry, and out of direct sun. It is the single best compromise between the two options.
+
+## Which rooms to do first
+
+If you are staging it, sequence by wear and by visibility rather than by room size.
+
+1. **The entry and main traffic path.** They take the most abuse and they are what everyone sees.
+2. **The main living area**, especially if it is continuous with the entry, do continuous spaces together, always.
+3. **The kitchen**, if the existing floor is failing or a leak has already caused damage.
+4. **Bedrooms.** Lowest traffic, most easily isolated by a threshold, and the most forgiving place for a dye-lot difference.
+5. **Stairs.** Often the highest cost per square foot, and they can be done independently later. See [staircase installation](/services/stair-installation/).
+
+## Before any of this: get a real number
+
+None of these decisions can be made against a per-square-foot estimate. Get an itemised installed total, material, labour, demolition, disposal, subfloor prep, transitions, stairs, and then decide how to pay for it.
+
+Our post on [what hardwood installation actually costs in the Inland Empire](/blog/cost-to-install-hardwood-floors-inland-empire/) sets out the ranges, and [how to choose a flooring contractor](/blog/how-to-choose-flooring-contractor-inland-empire/) covers what should be on a legitimate bid.
+
+[Book a free in-home estimate](/free-estimate/) and we will measure, quote the whole house, and tell you honestly what it would cost to do it in stages instead.`,
+    internalLinks: [
+      { href: '/financing/', text: 'flooring financing options' },
+      { href: '/blog/cost-to-install-hardwood-floors-inland-empire/', text: 'what hardwood installation costs here' },
+      { href: '/free-estimate/', text: 'get a free in-home estimate' },
+    ],
+    faqs: [
+      { q: 'Do you offer financing for flooring in the Inland Empire?', a: 'Yes. Qualified buyers can use 0% promotional financing over 18 months, with no interest owed when the balance is paid in full within the promotional period. You can apply around the time of your free in-home estimate, once you know the actual project total.' },
+      { q: 'Is it cheaper to do flooring in phases?', a: 'Not usually. Phasing avoids interest but adds repeated crew mobilisation and furniture moves, exposes you to price increases, risks the product being discontinued, and can produce a visible dye-lot mismatch between phases. Financing one lot installed at once often costs less overall.' },
+      { q: 'What is a dye lot and why does it matter?', a: 'Flooring is produced in batches, and batches vary slightly in colour. Material bought months apart may come from different lots and not match at the transition. If you are phasing a project, buy all the material at once and store it, then install in stages.' },
+      { q: 'What happens if I don’t pay off a 0% balance in time?', a: 'With deferred-interest promotions, accrued interest can be charged retroactively on the original purchase amount rather than on the remaining balance. Dividing the total by the number of promotional months and paying that automatically every month avoids it entirely.' },
     ],
   },
 ];

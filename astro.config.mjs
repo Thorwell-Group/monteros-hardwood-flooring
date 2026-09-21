@@ -1,6 +1,7 @@
 import { defineConfig } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
 import sitemap from '@astrojs/sitemap';
+import sitemapNoindexFilter from './src/integrations/sitemap-noindex-filter.mjs';
 
 export default defineConfig({
   site: 'https://monteroshardwoodflooring.com',
@@ -26,6 +27,8 @@ export default defineConfig({
         return item;
       },
     }),
+    // Runs after sitemap() and drops any URL whose built page is noindex.
+    sitemapNoindexFilter(),
   ],
   image: {
     domains: [],

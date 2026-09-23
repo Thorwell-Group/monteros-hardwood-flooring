@@ -17,17 +17,15 @@ export const business = {
 
   email: 'monteroshardwood@gmail.com',
 
+  // Service-area business: the Google Business Profile hides the street
+  // address (it is a residence), so the site publishes city/region only.
+  // Do not add a street, postal code or coordinates back.
   address: {
-    street:      '717 W 36th St',
     city:        'San Bernardino',
     region:      'CA',
     regionName:  'California',
-    postalCode:  '92405',
     country:     'US',
     countryName: 'United States',
-    // Approximate, used for LocalBusiness schema and the office map.
-    latitude:  34.1438,
-    longitude: -117.2992,
   },
 
   hours: [

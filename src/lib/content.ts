@@ -69,7 +69,7 @@ export function cityServiceWhyUs(city: City, service: Service): string {
     : service.intent === 'repair' ? 'repairing'
     : 'installing';
   const driveLine = city.driveMinutesFromHQ === 0
-    ? `Our shop is right here in ${city.name} on West 36th Street, so we can be at your door for an estimate within hours, not days.`
+    ? `We're based right here in ${city.name}, so we can be at your door for an estimate within hours, not days.`
     : `Our San Bernardino shop is about ${city.driveMinutesFromHQ} minutes from ${city.name} - close enough for fast service in ${leadHood(city)} and the rest of the city, and established enough that we know the building stock and the local permitting quirks.`;
 
   return `${driveLine} We have been ${verb} hardwood and luxury flooring across ${city.county} for over 20 years, and ${city.name} - from ${twoHoods(city)} out to the neighborhoods near ${leadLandmark(city)} - is one of the cities we work in most.`;

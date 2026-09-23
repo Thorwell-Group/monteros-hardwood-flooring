@@ -40,7 +40,7 @@ const cityServiceLinks = cityVariantServices.map((s) => ({
 const cityFaqs = [
   {
     q: `Do you serve ${city.name}, CA?`,
-    a: `Yes - ${city.name} is one of our core service cities. We work in ${city.neighborhoods.slice(0, 3).join(', ')}, and across the rest of ${city.name} weekly. ${city.driveMinutesFromHQ === 0 ? 'Our shop is located here in San Bernardino at 717 W 36th St.' : `Our San Bernardino shop is about ${city.driveMinutesFromHQ} minutes away.`}`,
+    a: `Yes - ${city.name} is one of our core service cities. We work in ${city.neighborhoods.slice(0, 3).join(', ')}, and across the rest of ${city.name} weekly. ${city.driveMinutesFromHQ === 0 ? 'We are based right here in San Bernardino.' : `Our San Bernardino shop is about ${city.driveMinutesFromHQ} minutes away.`}`,
   },
   {
     q: `What flooring services do you offer in ${city.name}?`,

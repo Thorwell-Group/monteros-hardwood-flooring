@@ -38,7 +38,7 @@ const schemas = [breadcrumbSchema(crumbs), faqSchema(generalFaqs)];
     <div class="grid lg:grid-cols-3 gap-8 items-start">
       <div class="lg:col-span-2 prose-brand">
         <h2>Our Inland Empire Service Area</h2>
-        <p>Our shop is at {business.address.street} in {business.address.city}, {business.address.region}. From there, our crews fan out across the Inland Empire daily - installing, refinishing, and repairing floors in homes, condos, and small commercial spaces from San Bernardino to Corona.</p>
+        <p>We're based in {business.address.city}, {business.address.region}. From there, our crews fan out across the Inland Empire daily - installing, refinishing, and repairing floors in homes, condos, and small commercial spaces from San Bernardino to Corona.</p>
         <p>Click any city below to see services, neighborhoods covered, and pricing specific to your area.</p>
       </div>
       <GoogleMap query={`${business.address.city}, ${business.address.region}`} title="Monteros Hardwood Flooring service area" />

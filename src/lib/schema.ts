@@ -66,16 +66,9 @@ export function localBusinessSchema() {
     priceRange: '$$ – $$$',
     address: {
       '@type': 'PostalAddress',
-      streetAddress:   business.address.street,
       addressLocality: business.address.city,
       addressRegion:   business.address.region,
-      postalCode:      business.address.postalCode,
       addressCountry:  business.address.country,
-    },
-    geo: {
-      '@type': 'GeoCoordinates',
-      latitude:  business.address.latitude,
-      longitude: business.address.longitude,
     },
     openingHoursSpecification: openingHours(),
     // All 10 served cities as City entries (plus their counties), so the

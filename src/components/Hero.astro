@@ -28,7 +28,12 @@ const words = title.split(' ');
 ---
 <section class="relative overflow-hidden bg-brand-950 text-white">
   <div class="absolute inset-0 z-0">
-    <img src={image} srcset={srcsetFor(image)} sizes="100vw" alt={alt} width="1600" height="1067" class="hero-kenburns h-full w-full object-cover" loading="eager" fetchpriority="high" />
+    {/* Phones always get the 800px file, even on 2x/3x screens: it sits under a
+        dark overlay, and the 1600px one cost ~1.5 s of first paint on 4G. */}
+    <picture class="block h-full w-full">
+      {srcsetFor(image) && <source media="(max-width: 767px)" srcset={image.replace(/\.webp$/, '-800.webp')} />}
+      <img src={image} alt={alt} width="1600" height="1067" class="hero-kenburns h-full w-full object-cover" loading="eager" fetchpriority="high" />
+    </picture>
     <div class="absolute inset-0 bg-gradient-to-r from-brand-950/95 via-brand-950/75 to-brand-950/25"></div>
     <div class="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-brand-950/70 to-transparent"></div>
   </div>

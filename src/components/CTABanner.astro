@@ -1,20 +1,26 @@
 ---
 import { business } from '~/data/business';
-interface Props { title?: string; subtitle?: string; }
+interface Props { title?: string; subtitle?: string; image?: string; }
 const {
   title = 'Ready to upgrade your floors?',
   subtitle = `Free in-home estimate. Honest pricing. ${business.yearsInBusiness}+ years of Inland Empire craftsmanship.`,
+  image = '/images/luxury-vinyl-plank-living-room.webp',
 } = Astro.props as Props;
 ---
-<section class="relative bg-gradient-to-br from-brand-800 via-brand-700 to-brand-900 text-white overflow-hidden">
-  <div class="absolute -top-20 -left-20 h-72 w-72 rounded-full bg-brand-400/20 blur-3xl drift" aria-hidden="true"></div>
-  <div class="absolute -bottom-20 -right-20 h-80 w-80 rounded-full bg-brand-300/20 blur-3xl drift" style="animation-delay:-3s" aria-hidden="true"></div>
-  <div class="relative container-wide py-14 md:py-20 text-center">
-    <h2 class="text-white text-balance" data-reveal>{title}</h2>
-    <p class="mt-4 text-lg text-brand-100 max-w-2xl mx-auto text-balance" data-reveal data-reveal-delay="100">{subtitle}</p>
-    <div class="mt-8 flex flex-wrap items-center justify-center gap-3" data-reveal data-reveal-delay="200">
-      <a href="/free-estimate/" class="btn-cta">Get a Free Estimate</a>
-      <a href={`tel:${business.phoneE164}`} class="btn-outline">Call {business.phoneDisplay}</a>
+<section class="container-wide py-12 md:py-16">
+  <div class="relative overflow-hidden rounded-[2rem] bg-brand-950 text-white shadow-2xl" data-reveal="zoom">
+    <img src={image} alt="" aria-hidden="true" loading="lazy" decoding="async" class="absolute inset-0 h-full w-full object-cover opacity-40" />
+    <div class="absolute inset-0 bg-gradient-to-r from-brand-950 via-brand-950/85 to-brand-900/40"></div>
+    <div class="relative grid md:grid-cols-[1.4fr_1fr] gap-8 items-center px-7 py-14 md:px-16 md:py-20">
+      <div>
+        <div class="eyebrow-light mb-4">Free in-home estimate</div>
+        <h2 class="text-white text-balance">{title}</h2>
+        <p class="mt-4 text-lg text-brand-100/90 max-w-xl text-balance">{subtitle}</p>
+      </div>
+      <div class="flex flex-col sm:flex-row md:flex-col gap-3 md:items-end">
+        <a href="/free-estimate/" class="btn-cta text-base px-8 py-4">Get a Free Estimate</a>
+        <a href={`tel:${business.phoneE164}`} class="btn-outline text-base px-8 py-4 border-white/50">Call {business.phoneDisplay}</a>
+      </div>
     </div>
   </div>
 </section>

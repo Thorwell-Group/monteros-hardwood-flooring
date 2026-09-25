@@ -1,22 +1,46 @@
 ---
-interface Step { step: string; detail: string; }
+interface Step { step: string; detail: string; image?: string; alt?: string; }
 interface Props { steps: Step[]; heading?: string; subheading?: string; }
 const { steps, heading = 'How It Works', subheading } = Astro.props as Props;
+// With a photo on every step the section becomes alternating image/text rows;
+// without photos it stays a compact numbered card grid.
+const showcase = steps.length > 0 && steps.every((s) => s.image);
 ---
-<section class="container-wide py-16">
-  <div class="max-w-2xl mb-10" data-reveal>
+<section class="container-wide section">
+  <div class:list={['mb-14', showcase ? 'max-w-2xl mx-auto text-center' : 'max-w-2xl']} data-reveal>
+    <div class="eyebrow mb-4">The process</div>
     <h2 class="text-balance">{heading}</h2>
-    {subheading && <p class="mt-3 text-lg text-slate-600">{subheading}</p>}
+    {subheading && <p class="mt-4 text-lg text-slate-600">{subheading}</p>}
   </div>
-  <ol class="flex flex-wrap justify-center gap-6">
-    {steps.map((s, i) => (
-      <li class="card p-6 relative group w-full md:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)]" data-reveal data-reveal-delay={String((i * 100) + 100)}>
-        <div class="flex items-center gap-3 mb-2">
-          <div class="flex h-12 w-12 items-center justify-center rounded-full bg-brand-100 text-brand-700 font-display text-xl font-bold transition-all duration-300 group-hover:bg-brand-500 group-hover:text-white group-hover:scale-110">{String(i + 1).padStart(2, '0')}</div>
-        </div>
-        <h3 class="text-lg font-semibold text-brand-900">{s.step}</h3>
-        <p class="mt-2 text-sm text-slate-600">{s.detail}</p>
-      </li>
-    ))}
-  </ol>
+
+  {showcase ? (
+    <ol class="space-y-16 md:space-y-24">
+      {steps.map((s, i) => (
+        <li class="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
+          <div class:list={['relative', i % 2 === 1 && 'md:order-2']}>
+            <div class="overflow-hidden rounded-[1.25rem] shadow-xl aspect-[4/3]" data-reveal="mask">
+              <img src={s.image} alt={s.alt ?? s.step} loading="lazy" decoding="async" width="900" height="675" class="h-full w-full object-cover transition-transform duration-[1.5s] hover:scale-105" />
+            </div>
+          </div>
+          <div data-reveal={i % 2 === 1 ? 'left' : 'right'}>
+            <div class="font-display text-6xl md:text-7xl font-extrabold leading-none text-transparent [-webkit-text-stroke:1.5px_theme(colors.wood.400)]">{String(i + 1).padStart(2, '0')}</div>
+            <h3 class="mt-4 text-2xl md:text-3xl font-bold text-brand-900">{s.step}</h3>
+            <p class="mt-4 text-lg text-slate-600 leading-relaxed">{s.detail}</p>
+          </div>
+        </li>
+      ))}
+    </ol>
+  ) : (
+    <ol class="flex flex-wrap justify-center gap-6">
+      {steps.map((s, i) => (
+        <li class="card p-7 relative group w-full md:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)]" data-reveal data-reveal-delay={String((i * 100) + 100)}>
+          <div class="flex items-center gap-3 mb-4">
+            <div class="flex h-12 w-12 items-center justify-center rounded-full bg-brand-100 text-brand-700 font-display text-lg font-bold transition-all duration-300 group-hover:bg-brand-600 group-hover:text-white group-hover:scale-110">{String(i + 1).padStart(2, '0')}</div>
+          </div>
+          <h3 class="text-lg font-semibold text-brand-900">{s.step}</h3>
+          <p class="mt-2 text-sm text-slate-600 leading-relaxed">{s.detail}</p>
+        </li>
+      ))}
+    </ol>
+  )}
 </section>

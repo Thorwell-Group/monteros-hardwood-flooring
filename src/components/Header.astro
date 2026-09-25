@@ -4,27 +4,36 @@ import { services } from '~/data/services';
 import { cities } from '~/data/cities';
 ---
 
-<header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b-2 border-brand-100 shadow-sm">
+<div class="bg-brand-950 text-brand-100/90 text-xs">
+  <div class="container-wide flex items-center justify-between h-9 gap-4">
+    <span class="truncate"><span class="text-wood-300 font-semibold">Family-owned {business.yearsInBusiness}+ years</span><span class="hidden sm:inline"> · Serving San Bernardino &amp; Riverside Counties</span></span>
+    <span class="flex items-center gap-4 shrink-0">
+      <span class="hidden md:inline">{business.hoursSummary}</span>
+      <a href={`tel:${business.phoneE164}`} class="font-semibold text-white hover:text-wood-200">Call {business.phoneDisplay}</a>
+    </span>
+  </div>
+</div>
+<header id="site-header" class="sticky top-0 z-40 bg-white/90 backdrop-blur-xl border-b border-slate-200/70 transition-shadow duration-300">
   <div class="container-wide flex items-center justify-between h-[var(--header-h)]">
     <a href="/" class="flex items-center gap-3 group" aria-label={`${business.brandName} home`}>
-      <span class="relative inline-flex items-center justify-center h-16 w-16 md:h-[72px] md:w-[72px] rounded-2xl bg-white ring-2 ring-brand-200 shadow-md transition-transform duration-300 group-hover:scale-105 group-hover:ring-brand-400">
-        <img src={business.brand.logo} alt={`${business.brandName} logo`} width="60" height="60" loading="eager" decoding="async" class="h-12 w-12 md:h-14 md:w-14 object-contain" />
+      <span class="relative inline-flex items-center justify-center h-12 w-12 md:h-14 md:w-14 rounded-xl bg-white ring-1 ring-brand-200 shadow-sm transition-transform duration-300 group-hover:scale-105 group-hover:ring-brand-400">
+        <img src={business.brand.logo} alt={`${business.brandName} logo`} width="56" height="56" loading="eager" decoding="async" class="h-10 w-10 md:h-12 md:w-12 object-contain" />
       </span>
       <div class="leading-tight">
-        <div class="font-display text-xl md:text-2xl font-extrabold text-brand-900 tracking-tight">{business.shortName}</div>
+        <div class="font-display text-lg md:text-2xl font-extrabold text-brand-900 tracking-tight">{business.shortName}</div>
         <div class="text-[11px] md:text-xs uppercase tracking-[0.18em] text-brand-600 font-semibold">Hardwood Flooring</div>
       </div>
     </a>
 
     <nav class="hidden lg:flex items-center gap-1" aria-label="Primary">
-      <a href="/" class="px-3 py-2 text-sm font-medium text-slate-700 hover:text-brand-800">Home</a>
+      <a href="/" class="px-3 py-2 text-[15px] font-medium text-slate-700 hover:text-brand-800 transition-colors">Home</a>
 
       <div class="relative group">
-        <button class="px-3 py-2 text-sm font-medium text-slate-700 hover:text-brand-800 inline-flex items-center gap-1" aria-haspopup="true">
+        <button class="px-3 py-2 text-[15px] font-medium text-slate-700 hover:text-brand-800 transition-colors inline-flex items-center gap-1" aria-haspopup="true">
           Services
           <svg class="h-3 w-3" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4z"/></svg>
         </button>
-        <div class="absolute left-0 top-full hidden group-hover:block group-focus-within:block bg-white shadow-lg rounded-lg border border-slate-200 min-w-[260px] py-2">
+        <div class="absolute left-0 top-full hidden group-hover:block group-focus-within:block bg-white shadow-2xl shadow-brand-950/10 rounded-2xl border border-slate-200/80 min-w-[260px] py-2">
           <a href="/services/" class="block px-4 py-2 text-sm font-semibold text-brand-800 hover:bg-brand-50">All Services</a>
           {services.map((s) => (
             <a href={`/services/${s.slug}/`} class="block px-4 py-2 text-sm text-slate-700 hover:bg-brand-50">{s.shortName}</a>
@@ -33,11 +42,11 @@ import { cities } from '~/data/cities';
       </div>
 
       <div class="relative group">
-        <button class="px-3 py-2 text-sm font-medium text-slate-700 hover:text-brand-800 inline-flex items-center gap-1" aria-haspopup="true">
+        <button class="px-3 py-2 text-[15px] font-medium text-slate-700 hover:text-brand-800 transition-colors inline-flex items-center gap-1" aria-haspopup="true">
           Areas We Serve
           <svg class="h-3 w-3" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4z"/></svg>
         </button>
-        <div class="absolute left-0 top-full hidden group-hover:block group-focus-within:block bg-white shadow-lg rounded-lg border border-slate-200 min-w-[260px] py-2 max-h-[80vh] overflow-auto">
+        <div class="absolute left-0 top-full hidden group-hover:block group-focus-within:block bg-white shadow-2xl shadow-brand-950/10 rounded-2xl border border-slate-200/80 min-w-[260px] py-2 max-h-[80vh] overflow-auto">
           <a href="/areas-we-serve/" class="block px-4 py-2 text-sm font-semibold text-brand-800 hover:bg-brand-50">All Cities</a>
           {cities.map((c) => (
             <a href={`/areas-we-serve/${c.slug}/`} class="block px-4 py-2 text-sm text-slate-700 hover:bg-brand-50">{c.name}, {c.state}</a>
@@ -45,13 +54,13 @@ import { cities } from '~/data/cities';
         </div>
       </div>
 
-      <a href="/financing/" class="px-3 py-2 text-sm font-medium text-slate-700 hover:text-brand-800">Financing</a>
+      <a href="/financing/" class="px-3 py-2 text-[15px] font-medium text-slate-700 hover:text-brand-800 transition-colors">Financing</a>
       <div class="relative group">
-        <button class="px-3 py-2 text-sm font-medium text-slate-700 hover:text-brand-800 inline-flex items-center gap-1" aria-haspopup="true">
+        <button class="px-3 py-2 text-[15px] font-medium text-slate-700 hover:text-brand-800 transition-colors inline-flex items-center gap-1" aria-haspopup="true">
           Company
           <svg class="h-3 w-3" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4z"/></svg>
         </button>
-        <div class="absolute right-0 top-full hidden group-hover:block group-focus-within:block bg-white shadow-lg rounded-lg border border-slate-200 min-w-[200px] py-2">
+        <div class="absolute right-0 top-full hidden group-hover:block group-focus-within:block bg-white shadow-2xl shadow-brand-950/10 rounded-2xl border border-slate-200/80 min-w-[200px] py-2">
           <a href="/about/" class="block px-4 py-2 text-sm text-slate-700 hover:bg-brand-50">About</a>
           <a href="/reviews/" class="block px-4 py-2 text-sm text-slate-700 hover:bg-brand-50">Reviews</a>
           <a href="/blog/" class="block px-4 py-2 text-sm text-slate-700 hover:bg-brand-50">Blog</a>
@@ -64,7 +73,7 @@ import { cities } from '~/data/cities';
         <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path d="M2 4a2 2 0 012-2h2.5a1 1 0 01.97.757l1.5 6a1 1 0 01-.504 1.125l-1.85.925a11 11 0 005.585 5.585l.925-1.85a1 1 0 011.125-.504l6 1.5A1 1 0 0118 16.5V19a2 2 0 01-2 2h-1C7.611 21 1 14.389 1 6V5a2 2 0 011-1z"/></svg>
         {business.phoneDisplay}
       </a>
-      <a href="/free-estimate/" class="btn-primary">Free Estimate</a>
+      <a href="/free-estimate/" class="btn-primary whitespace-nowrap px-4 py-2.5 md:px-6 md:py-3.5">Free Estimate</a>
       <button class="lg:hidden p-2 text-slate-700" id="mobile-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
         <svg class="h-6 w-6" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"><path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round"/></svg>
       </button>
@@ -108,6 +117,11 @@ import { cities } from '~/data/cities';
 </header>
 
 <script>
+  const hdr = document.getElementById('site-header');
+  if (hdr) {
+    const onS = () => hdr.classList.toggle('shadow-lg', window.scrollY > 40);
+    document.addEventListener('scroll', onS, { passive: true }); onS();
+  }
   const btn = document.getElementById('mobile-toggle');
   const menu = document.getElementById('mobile-menu');
   if (btn && menu) {

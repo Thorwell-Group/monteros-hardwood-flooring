@@ -13,7 +13,8 @@ import { cityServiceIntro, cityServiceWhyUs, neighborhoodsCallout, cityServiceEx
 import { business } from '~/data/business';
 import type { Service } from '~/data/services';
 import { AREA_PROFILE, SERVICE_BY_ARCHETYPE, localFaqs, pageVariant, INTRO_VARIANTS } from '~/data/local-context';
-import type { City } from '~/data/cities';
+import { cities, type City } from '~/data/cities';
+import { srcsetFor } from '~/lib/img';
 
 interface Props { service: Service; city: City; }
 const { service, city } = Astro.props as Props;
@@ -113,6 +114,60 @@ const galleryPool: { src: string; alt: string }[] = [
   { src: '/images/laminate-large-space.webp', alt: `Laminate flooring across a large ${city.name} room` },
   { src: '/images/monteros-flooring-team-installation.webp', alt: `Monteros crew installing flooring in ${city.name}` },
 ];
+// In-page photos. Each service has its own pool; the starting point rotates by
+// city so neighbouring city pages don't show the same pictures in the same slots.
+const POOLS: Record<string, { src: string; what: string }[]> = {
+  'hardwood-flooring-installation': [
+    { src: '/images/hardwood-dining-room-floor.webp', what: 'Hardwood flooring in a dining room' },
+    { src: '/images/hardwood-fireplace-living-room.webp', what: 'Hardwood floor in a living room with a fireplace' },
+    { src: '/images/hardwood-entry-staircase.webp', what: 'Hardwood running from the entry to the staircase' },
+    { src: '/images/hardwood-formal-living-room.webp', what: 'Hardwood in a bright formal living room' },
+    { src: '/images/hardwood-large-living-space.webp', what: 'Hardwood across a large open living space' },
+  ],
+  'hardwood-floor-refinishing': [
+    { src: '/images/hardwood-fireplace-living-room.webp', what: 'Refinished hardwood in a living room with a fireplace' },
+    { src: '/images/hardwood-dining-room-floor.webp', what: 'Satin-finish hardwood in a dining room' },
+    { src: '/images/hardwood-large-living-space.webp', what: 'Freshly coated hardwood across a large room' },
+    { src: '/images/hardwood-entry-staircase.webp', what: 'Refinished hardwood entry and stair landing' },
+  ],
+  'luxury-vinyl-plank': [
+    { src: '/images/luxury-vinyl-plank-kitchen.webp', what: 'Luxury vinyl plank in a kitchen' },
+    { src: '/images/luxury-vinyl-plank-bedroom.webp', what: 'Luxury vinyl plank in a bedroom' },
+    { src: '/images/luxury-vinyl-plank-perspective.webp', what: 'Luxury vinyl plank through an open floor plan' },
+    { src: '/images/luxury-vinyl-plank-styled-room.webp', what: 'Chevron-pattern luxury vinyl plank in a living room' },
+  ],
+  'laminate-flooring': [
+    { src: '/images/laminate-kitchen-floor.webp', what: 'Laminate flooring in an open kitchen' },
+    { src: '/images/laminate-bedroom-floor.webp', what: 'Laminate flooring in a bedroom' },
+    { src: '/images/laminate-large-space.webp', what: 'Laminate across a large open room' },
+    { src: '/images/laminate-living-space.webp', what: 'Laminate in a furnished living room' },
+  ],
+  'floor-repair': [
+    { src: '/images/hardwood-dining-room-floor.webp', what: 'Hardwood dining room floor with seamless boards' },
+    { src: '/images/hardwood-fireplace-living-room.webp', what: 'Hardwood living room floor, repaired boards blended in' },
+    { src: '/images/laminate-kitchen-floor.webp', what: 'Kitchen floor with replaced planks matched to the rest' },
+    { src: '/images/hardwood-large-living-space.webp', what: 'Hardwood across a large room after board replacement' },
+  ],
+  'stair-installation': [
+    { src: '/images/stairs-grand-hardwood.webp', what: 'Hardwood staircase in an open foyer' },
+    { src: '/images/stairs-hardwood-treads.webp', what: 'Hardwood stair treads with a metal railing' },
+    { src: '/images/hardwood-entry-staircase.webp', what: 'Hardwood entry leading to a staircase' },
+  ],
+};
+// Real Monteros job photos for the sidebar card.
+const REAL = [
+  { src: '/images/hardwood-flooring-installation.webp', what: 'Hardwood install by the Monteros crew' },
+  { src: '/images/hardwood-kitchen-flooring.webp', what: 'Kitchen hardwood by the Monteros crew' },
+  { src: '/images/hardwood-staircase-installation.webp', what: 'Stairs finished by the Monteros crew' },
+  { src: '/images/monteros-flooring-team-installation.webp', what: 'The Monteros crew installing hardwood' },
+  { src: '/images/hardwood-floor-refinishing.webp', what: 'Monteros sanding an oak floor' },
+];
+const cityIdx = Math.max(0, cities.findIndex((c) => c.slug === city.slug));
+const pool = POOLS[service.slug] ?? POOLS['hardwood-flooring-installation'];
+const rot = <T,>(arr: T[], n: number) => arr.map((_, i) => arr[(i + n) % arr.length]);
+const inPage = rot(pool, cityIdx).map((p) => ({ src: p.src, alt: `${p.what} in ${city.name}, ${city.state}`, what: p.what }));
+const realCard = REAL[cityIdx % REAL.length];
+
 const seen = new Set<string>();
 const projectPhotos = galleryPool.filter((p) => p.src !== service.heroImage && !seen.has(p.src) && seen.add(p.src)).slice(0, 8);
 ---
@@ -142,6 +197,13 @@ const projectPhotos = galleryPool.filter((p) => p.src !== service.heroImage && !
         <p>{intro}</p>
         <p>{whyUs}</p>
 
+        <figure class="not-prose my-10 overflow-hidden rounded-2xl shadow-xl" data-reveal="mask">
+          <div class="relative">
+            <img src={inPage[0].src} srcset={srcsetFor(inPage[0].src)} sizes="(min-width: 1024px) 800px, 100vw" alt={inPage[0].alt} loading="lazy" decoding="async" width="800" height="450" class="aspect-[16/9] w-full object-cover" />
+            <figcaption class="absolute left-4 bottom-4 rounded-full bg-white/95 px-4 py-1.5 text-xs font-semibold text-brand-900 shadow">{service.shortName} · {city.name}</figcaption>
+          </div>
+        </figure>
+
         <h3>What You Get</h3>
         <ul>{service.benefits.map((b) => <li>{b}</li>)}</ul>
 
@@ -151,6 +213,14 @@ const projectPhotos = galleryPool.filter((p) => p.src !== service.heroImage && !
             <ul>{service.materials.map((m) => <li>{m}</li>)}</ul>
           </>
         )}
+
+        <div class="not-prose my-10 grid grid-cols-2 gap-4">
+          {inPage.slice(1, 3).map((p, i) => (
+            <figure class="overflow-hidden rounded-2xl shadow-lg group" data-reveal data-reveal-delay={String(i * 150 + 100)}>
+              <img src={p.src} srcset={srcsetFor(p.src)} sizes="(min-width: 1024px) 400px, 50vw" alt={p.alt} loading="lazy" decoding="async" width="400" height="300" class="aspect-[4/3] w-full object-cover img-zoom" />
+            </figure>
+          ))}
+        </div>
 
         <h3>Coverage Across {city.name}</h3>
         <p>{neighborhoods}</p>
@@ -172,6 +242,14 @@ const projectPhotos = galleryPool.filter((p) => p.src !== service.heroImage && !
 
       <aside class="lg:sticky lg:top-24">
         <GoogleMap query={`${city.name}, ${city.state}`} title={`Map of ${city.name}, ${city.state}`} height="h-[320px]" />
+        <figure class="mt-6 overflow-hidden rounded-2xl bg-white shadow-xl ring-1 ring-slate-200" data-reveal>
+          <img src={realCard.src.replace(/\.webp$/, '-800.webp')} alt={realCard.what} loading="lazy" decoding="async" width="400" height="300" class="aspect-[4/3] w-full object-cover" />
+          <figcaption class="p-5">
+            <div class="eyebrow mb-2">Real Monteros job</div>
+            <p class="text-sm text-slate-600">{realCard.what}. Family-owned, {business.yearsInBusiness}+ years across the Inland Empire.</p>
+            <a href="/free-estimate/" class="btn-primary mt-4 w-full">Free estimate in {city.name}</a>
+          </figcaption>
+        </figure>
       </aside>
     </div>
   </section>
@@ -187,8 +265,9 @@ const projectPhotos = galleryPool.filter((p) => p.src !== service.heroImage && !
   />
 
   {localBlock && (
-    <section class={localFirst ? 'container-wide py-16 bg-slate-50' : 'container-wide py-16'}>
-      <div class="max-w-3xl">
+    <section class={localFirst ? 'container-wide py-16 bg-cream rounded-none' : 'container-wide py-16'}>
+      <div class="grid lg:grid-cols-[1fr_0.8fr] gap-12 items-center">
+      <div class:list={['max-w-3xl', localFirst && 'lg:order-2']}>
         <span class="eyebrow">{city.name} homes</span>
         <h2 class="mt-2 text-3xl font-bold text-slate-900">{localBlock.heading}</h2>
         {localBlock.body.map((para) => <p class="mt-5 text-slate-600 leading-relaxed">{para}</p>)}
@@ -203,6 +282,12 @@ const projectPhotos = galleryPool.filter((p) => p.src !== service.heroImage && !
             </li>
           ))}
         </ul>
+      </div>
+      <div class="relative hidden lg:block">
+        <div class="overflow-hidden rounded-[1.25rem] shadow-2xl" data-reveal="mask">
+          <img src={inPage[3 % inPage.length].src} srcset={srcsetFor(inPage[3 % inPage.length].src)} sizes="480px" alt={inPage[3 % inPage.length].alt} loading="lazy" decoding="async" width="480" height="600" class="aspect-[4/5] w-full object-cover" />
+        </div>
+      </div>
       </div>
     </section>
   )}

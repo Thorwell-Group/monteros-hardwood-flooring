@@ -1,4 +1,5 @@
 ---
+import { srcsetFor } from '~/lib/img';
 interface Photo { src: string; alt: string; }
 interface Props {
   heading?: string;
@@ -19,6 +20,8 @@ const { heading = 'Recent Projects', subheading, photos } = Astro.props as Props
           <figure class="overflow-hidden rounded-xl ring-1 ring-brand-100 shadow-sm group" data-reveal data-reveal-delay={String((i % 4) * 60)}>
             <img
               src={p.src}
+              srcset={srcsetFor(p.src)}
+              sizes="(min-width: 1024px) 300px, 50vw"
               alt={p.alt}
               loading="lazy"
               decoding="async"

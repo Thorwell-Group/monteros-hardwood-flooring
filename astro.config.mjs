@@ -15,7 +15,9 @@ export default defineConfig({
   },
   compressHTML: true,
   integrations: [
-    tailwind({ applyBaseStyles: true }),
+    // global.css already carries the @tailwind directives; applyBaseStyles: true
+    // shipped a second full copy of Tailwind on every page.
+    tailwind({ applyBaseStyles: false }),
     sitemap({
       changefreq: 'weekly',
       priority: 0.7,

@@ -138,14 +138,19 @@
 [data-reveal="mask"] > * { clip-path: inset(100% 0 0 0); transition: clip-path 1.2s cubic-bezier(0.22, 1, 0.36, 1), transform 1.5s ease-out; }
 [data-reveal="mask"].is-visible > * { clip-path: inset(0 0 0 0); }
 
-/* ───── Hero word-by-word rise ───── */
-@keyframes rise { from { opacity: 0; transform: translateY(0.5em); } to { opacity: 1; transform: none; } }
-.rise { display: inline-block; opacity: 0; animation: rise 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards; }
+/* ───── Hero word-by-word rise ─────
+   Movement only, never opacity 0: Google times "largest content painted" from
+   when text is visible, so a fade-in would count against page speed. */
+@keyframes rise { from { transform: translateY(0.35em); } to { transform: none; } }
+.rise { display: inline-block; animation: rise 0.9s cubic-bezier(0.22, 1, 0.36, 1) both; }
+/* Supporting hero lines: pure CSS, so they don't wait for the reveal script */
+@keyframes hero-in { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
+.hero-in { animation: hero-in 0.8s cubic-bezier(0.22, 1, 0.36, 1) both; }
 
 /* Grain-free glass panel used over photos */
 .glass { background: rgba(255,255,255,0.08); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border: 1px solid rgba(255,255,255,0.14); }
 
 @media (prefers-reduced-motion: reduce) {
-  .marquee-track, .rise, .hero-kenburns, .drift { animation: none !important; opacity: 1 !important; }
+  .marquee-track, .rise, .hero-in, .hero-kenburns, .drift { animation: none !important; opacity: 1 !important; }
   [data-reveal="mask"] > * { clip-path: none; }
 }

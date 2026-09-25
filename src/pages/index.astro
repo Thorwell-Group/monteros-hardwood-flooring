@@ -12,10 +12,30 @@ import { faqSchema } from '~/lib/schema';
 import { business } from '~/data/business';
 
 const homeProcess = [
-  { step: 'Free in-home estimate', detail: 'We measure your space, take subfloor moisture readings, and walk you through species, finishes, and width options on-site.' },
-  { step: 'Written, itemized quote', detail: 'No vague pricing. You get every line item in writing - materials, labor, demo, disposal - and the price holds for 30 days.' },
-  { step: 'Materials acclimate, then install', detail: 'Hardwood acclimates 3 - 5 days in your home before install. Our crew shows up on schedule, lays drop cloths, and works clean.' },
-  { step: 'Final walk-through and warranty', detail: 'You sign off only when it\'s right. Lifetime workmanship guarantee, materials warranty paperwork in hand.' },
+  { step: 'Free in-home estimate', detail: 'We measure your space, take subfloor moisture readings, and walk you through species, finishes, and width options on-site.', image: '/images/laminate-vs-luxury-vinyl-comparison.webp', alt: 'Two flooring samples laid side by side on a subfloor during a Monteros in-home estimate' },
+  { step: 'Written, itemized quote', detail: 'No vague pricing. You get every line item in writing - materials, labor, demo, disposal - and the price holds for 30 days.', image: '/images/luxury-vinyl-plank-flooring.webp', alt: 'Fan of wood-look flooring samples for choosing a color and finish' },
+  { step: 'Materials acclimate, then install', detail: 'Hardwood acclimates 3 - 5 days in your home before install. Our crew shows up on schedule, lays drop cloths, and works clean.', image: '/images/laminate-installation.webp', alt: 'Installer clicking a wood-look plank into place' },
+  { step: 'Final walk-through and warranty', detail: 'You sign off only when it\'s right. Lifetime workmanship guarantee, materials warranty paperwork in hand.', image: '/images/hardwood-formal-living-room.webp', alt: 'Finished hardwood floor in a bright living room with a fireplace' },
+];
+
+// Real photos from Monteros job sites (not stock) — shown in the hero stack and the work strip.
+const realJobs = [
+  { src: '/images/hardwood-flooring-installation.webp', alt: 'Dark-stained hardwood floor just installed by Monteros in an Inland Empire bedroom', label: 'Hardwood install' },
+  { src: '/images/hardwood-kitchen-flooring.webp', alt: 'Light oak hardwood running the length of a kitchen, installed by Monteros', label: 'Kitchen hardwood' },
+  { src: '/images/hardwood-staircase-installation.webp', alt: 'Staircase with new treads and risers finished by Monteros', label: 'Stairs' },
+  { src: '/images/hardwood-floor-refinishing.webp', alt: 'Monteros sanding an oak floor during a refinish', label: 'Refinishing' },
+  { src: '/images/monteros-flooring-team-installation.webp', alt: 'The Monteros crew installing hardwood in a living room', label: 'Our crew at work' },
+  { src: '/images/commercial-flooring-installation.webp', alt: 'Freshly finished commercial wood floor by Monteros', label: 'Commercial' },
+  { src: '/images/laminate-vs-luxury-vinyl-comparison.webp', alt: 'Flooring samples compared on site by Monteros', label: 'On-site samples' },
+];
+
+const whyUs = [
+  { t: 'Written, itemized quotes', d: 'Materials, labor, demo and disposal each on their own line. The price holds for 30 days.' },
+  { t: 'Lifetime workmanship guarantee', d: 'On every install: if our installation ever fails, we fix it.' },
+  { t: 'Family crew, not subcontractors', d: `The Monteros family has run these jobs for ${business.yearsInBusiness}+ years across the Inland Empire.` },
+  { t: 'Dust-controlled, clean job sites', d: 'Drop cloths down, daily clean-up, and dust-controlled sanding on refinishing jobs.' },
+  { t: 'Done right, not rushed', d: 'Hardwood acclimates 3 - 5 days in your home before a single board goes down.' },
+  { t: 'No high-pressure sales', d: 'We measure, explain your options, and leave the quote with you. No mystery fees.' },
 ];
 
 const schemas = [faqSchema(generalFaqs)];
@@ -31,15 +51,28 @@ const schemas = [faqSchema(generalFaqs)];
     title="Hardwood Floors Done Right the First Time"
     subtitle={`Family-owned for ${business.yearsInBusiness}+ years across San Bernardino, Riverside, and the Inland Empire. Hardwood installation, refinishing, luxury vinyl, laminate, and repair - with honest pricing and a lifetime workmanship guarantee.`}
     image="/images/hardwood-modern-open-living.webp"
-    alt="Wide-plank hardwood flooring in a bright modern open-concept living and kitchen space installed by Monteros"
+    alt="Wide-plank hardwood flooring in a bright modern open-concept living and kitchen space"
+    stack={realJobs.slice(0, 3)}
   />
 
   <TrustBar />
 
-  <section class="container-wide py-16 md:py-20">
-    <div class="grid lg:grid-cols-2 gap-10 items-center">
-      <div data-reveal="left">
-        <div class="badge mb-3">Family-Owned · {business.yearsInBusiness}+ Years</div>
+  <section class="container-wide section">
+    <div class="grid lg:grid-cols-2 gap-14 lg:gap-20 items-center">
+      <div class="relative order-2 lg:order-1">
+        <div class="overflow-hidden rounded-[1.25rem] shadow-2xl aspect-[4/3]" data-reveal="mask">
+          <img src="/images/monteros-flooring-team-installation.webp" alt="The Monteros crew installing hardwood flooring in an Inland Empire living room" loading="lazy" decoding="async" width="900" height="675" class="h-full w-full object-cover" />
+        </div>
+        <div class="absolute -bottom-8 right-4 md:-right-6 w-40 md:w-48 overflow-hidden rounded-2xl ring-8 ring-white shadow-xl hidden sm:block" data-reveal="zoom" data-reveal-delay="300">
+          <img src="/images/hardwood-kitchen-flooring.webp" alt="Oak hardwood kitchen floor installed by Monteros" loading="lazy" decoding="async" width="300" height="400" class="aspect-[3/4] w-full object-cover" />
+        </div>
+        <div class="absolute -top-6 -left-3 md:-left-6 rounded-2xl bg-brand-800 text-white px-5 py-4 shadow-xl" data-reveal="zoom" data-reveal-delay="200">
+          <div class="font-display text-4xl font-extrabold leading-none">{business.yearsInBusiness}+</div>
+          <div class="mt-1 text-[10px] uppercase tracking-[0.2em] text-wood-200 font-semibold">Years family-owned</div>
+        </div>
+      </div>
+      <div class="order-1 lg:order-2" data-reveal="right">
+        <div class="eyebrow mb-4">Family-Owned · {business.yearsInBusiness}+ Years</div>
         <h2 class="text-balance">Inland Empire Homeowners' First Call for Real Hardwood Floors</h2>
         <p class="mt-5 text-lg text-slate-700 leading-relaxed">For over two decades, the Monteros family has been the Inland Empire's trusted <a href="/services/" class="font-semibold text-brand-700 underline decoration-brand-300 underline-offset-2 hover:text-brand-900">flooring contractors</a> - installing, refinishing, and repairing hardwood, luxury vinyl, and laminate floors across San Bernardino County, Riverside County, and beyond. We measure twice, install once, and stand behind every job for life.</p>
         <p class="mt-4 text-slate-700 leading-relaxed">No high-pressure sales. No mystery fees. Just a written, itemized quote, on-time crews, dust-controlled work, and floors that look as good in ten years as they do on day one.</p>
@@ -49,16 +82,57 @@ const schemas = [faqSchema(generalFaqs)];
           <a href="/about/" class="btn-secondary">About Our Family</a>
         </div>
       </div>
-      <div class="relative" data-reveal="right" data-reveal-delay="200">
-        <div class="absolute -inset-4 -z-10 rounded-3xl bg-gradient-to-tr from-brand-200/50 to-brand-50 blur-2xl"></div>
-        <img src="/images/hardwood-formal-living-room.webp" alt="Hand-finished hardwood flooring in a formal Inland Empire living room installed by Monteros" loading="lazy" decoding="async" width="800" height="600" class="rounded-2xl shadow-xl ring-1 ring-brand-100 hover:scale-[1.02] transition-transform duration-500" />
-      </div>
     </div>
   </section>
 
   <ServiceGrid heading="Our Flooring Services" subheading="Six core services, every floor type, all delivered with the same craftsmanship and clear pricing." />
 
-  <div class="bg-slate-50">
+  <section class="bg-cream section overflow-hidden">
+    <div class="container-wide flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12" data-reveal>
+      <div class="max-w-2xl">
+        <div class="eyebrow mb-4">From our job sites</div>
+        <h2 class="text-balance">Real floors, installed by the Monteros crew</h2>
+        <p class="mt-4 text-lg text-slate-600">No stock photos in this row. These are Inland Empire homes and businesses we have worked on.</p>
+      </div>
+      <a href="/gallery/" class="btn-secondary shrink-0">See the gallery</a>
+    </div>
+    <div class="marquee relative">
+      <div class="marquee-track flex gap-5">
+        {[...realJobs, ...realJobs].map((p, i) => (
+          <figure class="relative w-64 md:w-80 shrink-0 overflow-hidden rounded-2xl shadow-lg group" aria-hidden={i >= realJobs.length ? 'true' : undefined}>
+            <img src={p.src} alt={i >= realJobs.length ? '' : p.alt} loading="lazy" decoding="async" width="320" height="400" class="aspect-[4/5] w-full object-cover img-zoom" />
+            <figcaption class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-brand-950/85 to-transparent px-4 pb-4 pt-12 text-sm font-semibold text-white">{p.label}</figcaption>
+          </figure>
+        ))}
+      </div>
+      <div class="pointer-events-none absolute inset-y-0 left-0 w-16 md:w-32 bg-gradient-to-r from-[#faf7f2] to-transparent"></div>
+      <div class="pointer-events-none absolute inset-y-0 right-0 w-16 md:w-32 bg-gradient-to-l from-[#faf7f2] to-transparent"></div>
+    </div>
+  </section>
+
+  <section class="relative overflow-hidden bg-brand-950 text-white">
+    <img src="/images/hardwood-large-living-space.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" class="absolute inset-0 h-full w-full object-cover opacity-30" />
+    <div class="absolute inset-0 bg-gradient-to-br from-brand-950/95 via-brand-950/80 to-brand-900/70"></div>
+    <div class="relative container-wide section">
+      <div class="max-w-2xl mb-12" data-reveal>
+        <div class="eyebrow-light mb-4">Why Monteros</div>
+        <h2 class="text-white text-balance">Why Inland Empire homeowners call us first</h2>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        {whyUs.map((w, i) => (
+          <div class="glass rounded-2xl p-6 transition-all duration-500 hover:bg-white/15 hover:-translate-y-1" data-reveal data-reveal-delay={String((i % 3) * 100 + 100)}>
+            <div class="flex h-10 w-10 items-center justify-center rounded-full bg-wood-400 text-brand-950">
+              <svg class="h-5 w-5" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5l4 4 8-9"/></svg>
+            </div>
+            <h3 class="mt-5 text-lg font-bold text-white">{w.t}</h3>
+            <p class="mt-2 text-sm text-brand-100/80 leading-relaxed">{w.d}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <div>
     <ProcessSteps steps={homeProcess} heading="The Monteros Process" subheading="Predictable from first call to final walk-through. No surprises." />
   </div>
 

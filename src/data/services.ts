@@ -89,8 +89,8 @@ export const services: Service[] = [
     metaTitleBase: 'Hardwood Floor Refinishing',
     metaTitle: 'Hardwood Refinishing, Inland Empire | Dust-Free | Monteros',
     metaDescBase: 'Restore tired hardwood to like-new across the Inland Empire - dust-free sanding, custom stain matching, and most homes finished in 3-5 days. Book a free estimate.',
-    heroImage: '/images/hardwood-floor-sander.webp',
-    altText: 'Professional drum sander mid-refinish on an Inland Empire hardwood floor',
+    heroImage: '/images/hardwood-refinished-oak-floor.webp',
+    altText: 'Glossy refinished oak hardwood floor in a sunlit room',
     priceFromUSD: 3,
     priceToUSD: 7,
     timeline: '3 – 5 days, including cure time',
@@ -121,6 +121,7 @@ export const services: Service[] = [
     gallery: [
       { src: '/images/hardwood-floor-refinishing.webp', alt: 'Mid-refinishing hardwood floor showing freshly sanded wood ready for stain' },
       { src: '/images/hardwood-staircase-refinishing.webp', alt: 'Hardwood staircase mid-refinish' },
+      { src: '/images/hardwood-floor-sander.webp', alt: 'Floor sander working across an oak floor during a refinish' },
     ],
     relatedGuides: [
       { slug: 'sand-and-stain', label: 'Full sand, stain & seal process' },

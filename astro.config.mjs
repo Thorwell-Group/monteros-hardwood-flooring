@@ -32,6 +32,13 @@ export default defineConfig({
     // Runs after sitemap() and drops any URL whose built page is noindex.
     sitemapNoindexFilter(),
   ],
+  vite: {
+    build: {
+      // Keep font files as separate (cacheable) woff2 requests instead of
+      // base64-inlining the small Fontsource subsets into the render-blocking CSS.
+      assetsInlineLimit: (file) => (/\.(woff2?|ttf|otf)$/.test(file) ? false : undefined),
+    },
+  },
   image: {
     domains: [],
     remotePatterns: [],

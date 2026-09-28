@@ -72,13 +72,14 @@ function fitTitle(t, max = 60) {
 <html lang="en" class="scroll-pt-20">
   <head>
     <!-- Google tag (gtag.js) -->
-    <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-MBZFMGB68K"></script>
     <script is:inline>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
       gtag('config', 'G-MBZFMGB68K');
+      // gtag.js itself loads after window load; commands above queue until then.
+      window.addEventListener('load', function () { setTimeout(function () { var s = document.createElement('script'); s.async = true; s.src = 'https://www.googletagmanager.com/gtag/js?id=G-MBZFMGB68K'; document.head.appendChild(s); }, 0); });
     </script>
 
     <meta charset="UTF-8" />

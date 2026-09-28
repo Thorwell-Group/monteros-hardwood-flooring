@@ -33,7 +33,7 @@ import { cities } from '~/data/cities';
       </div>
 
       <div>
-        <h4 class="text-white font-semibold text-sm uppercase tracking-wider mb-4">Services</h4>
+        <h3 class="text-white font-semibold text-sm uppercase tracking-wider mb-4">Services</h3>
         <ul class="space-y-2 text-sm">
           {services.map((s) => (
             <li><a href={`/services/${s.slug}/`} class="hover:text-white">{s.shortName}</a></li>
@@ -42,7 +42,7 @@ import { cities } from '~/data/cities';
       </div>
 
       <div>
-        <h4 class="text-white font-semibold text-sm uppercase tracking-wider mb-4">Areas We Serve</h4>
+        <h3 class="text-white font-semibold text-sm uppercase tracking-wider mb-4">Areas We Serve</h3>
         <ul class="space-y-2 text-sm">
           {cities.slice(0, 8).map((c) => (
             <li><a href={`/areas-we-serve/${c.slug}/`} class="hover:text-white">{c.name}, {c.state}</a></li>
@@ -52,7 +52,7 @@ import { cities } from '~/data/cities';
       </div>
 
       <div>
-        <h4 class="text-white font-semibold text-sm uppercase tracking-wider mb-4">Company</h4>
+        <h3 class="text-white font-semibold text-sm uppercase tracking-wider mb-4">Company</h3>
         <ul class="space-y-2 text-sm">
           <li><a href="/about/" class="hover:text-white">About Monteros</a></li>
           <li><a href="/process/" class="hover:text-white">Our Process</a></li>

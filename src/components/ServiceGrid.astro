@@ -1,5 +1,6 @@
 ---
 import { services } from '~/data/services';
+import { srcsetFor } from '~/lib/img';
 import type { City } from '~/data/cities';
 interface Props { city?: City; heading?: string; subheading?: string; }
 const { city, heading, subheading } = Astro.props as Props;
@@ -18,7 +19,7 @@ const titleSuffix = city ? ` in ${city.name}` : '';
     {services.filter((s) => !city || s.cityVariant).map((s, i) => (
       <a href={`${linkBase}/${s.slug}/`} class="card group overflow-hidden" data-reveal data-reveal-delay={String((i % 3) * 100 + 100)}>
         <div class="aspect-[4/3] overflow-hidden bg-slate-100 relative">
-          <img src={s.heroImage} alt={s.altText} loading="lazy" decoding="async" width="640" height="400" class="h-full w-full object-cover img-zoom" />
+          <img src={s.heroImage} srcset={srcsetFor(s.heroImage)} sizes="(min-width: 1024px) 400px, (min-width: 640px) 50vw, 100vw" alt={s.altText} loading="lazy" decoding="async" width="640" height="400" class="h-full w-full object-cover img-zoom" />
           <div class="absolute inset-0 bg-gradient-to-t from-brand-950/50 via-transparent to-transparent opacity-60 group-hover:opacity-100 transition-opacity duration-500"></div>
           <span class="absolute left-4 top-4 rounded-full bg-white/95 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.16em] text-brand-800 shadow-sm">{String(i + 1).padStart(2, '0')}</span>
         </div>

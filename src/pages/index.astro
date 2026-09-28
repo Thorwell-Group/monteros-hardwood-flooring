@@ -10,6 +10,7 @@ import CTABanner from '~/components/CTABanner.astro';
 import { generalFaqs } from '~/data/faqs';
 import { faqSchema } from '~/lib/schema';
 import { business } from '~/data/business';
+import { srcsetFor } from '~/lib/img';
 
 const homeProcess = [
   { step: 'Free in-home estimate', detail: 'We measure your space, take subfloor moisture readings, and walk you through species, finishes, and width options on-site.', image: '/images/laminate-vs-luxury-vinyl-comparison.webp', alt: 'Two flooring samples laid side by side on a subfloor during a Monteros in-home estimate' },
@@ -111,7 +112,7 @@ const schemas = [faqSchema(generalFaqs)];
   </section>
 
   <section class="relative overflow-hidden bg-brand-950 text-white">
-    <img src="/images/hardwood-large-living-space.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" class="absolute inset-0 h-full w-full object-cover opacity-30" />
+    <img src="/images/hardwood-large-living-space.webp" srcset={srcsetFor('/images/hardwood-large-living-space.webp')} sizes="100vw" alt="" aria-hidden="true" loading="lazy" decoding="async" class="absolute inset-0 h-full w-full object-cover opacity-30" />
     <div class="absolute inset-0 bg-gradient-to-br from-brand-950/95 via-brand-950/80 to-brand-900/70"></div>
     <div class="relative container-wide section">
       <div class="max-w-2xl mb-12" data-reveal>

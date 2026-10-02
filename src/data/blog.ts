@@ -1593,7 +1593,7 @@ Here is the difference that actually matters, without the sales pitch on either 
 
 **Hardwood** is wood all the way through, or in the case of engineered, real wood on a stable core. The surface you walk on is the material itself.
 
-**Laminate** is a high-resolution photograph of wood, sealed under a hard transparent wear layer, bonded to a fibreboard core. Modern laminate photography is genuinely convincing, and the surface texture is often embossed to match the printed grain.
+**Laminate** is a high-resolution photograph of wood, sealed under a hard transparent wear layer, bonded to a fiberboard core. Modern laminate photography is genuinely convincing, and the surface texture is often embossed to match the printed grain.
 
 Everything below follows from that one distinction.
 
@@ -1611,23 +1611,23 @@ That is why hardwood is a floor you buy once and laminate is a floor you buy aga
 
 We install a lot of laminate and we are not talking anyone out of it. It has real advantages:
 
-- **Scratch resistance.** The aluminium-oxide wear layer on laminate is harder than most finishes on hardwood. If your first concern is a large dog rather than long-term value, laminate genuinely performs better day to day.
-- **Cost.** Substantially cheaper installed, both in material and in labour.
+- **Scratch resistance.** The aluminum-oxide wear layer on laminate is harder than most finishes on hardwood. If your first concern is a large dog rather than long-term value, laminate genuinely performs better day to day.
+- **Cost.** Substantially cheaper installed, both in material and in labor.
 - **Consistency.** Every plank matches, which suits people who want an even floor rather than natural variation.
-- **Sun.** Inland Empire light is punishing, and laminate's printed layer holds its colour better than many wood species do.
+- **Sun.** Inland Empire light is punishing, and laminate's printed layer holds its color better than many wood species do.
 
 ## Where hardwood wins
 
 - **It lasts.** Properly maintained and refinished when needed, a hardwood floor outlives several laminate floors.
 - **It can be repaired.** A damaged board can be replaced and blended in. A damaged laminate plank in the middle of a floating floor is far more awkward to reach.
-- **Water.** Neither loves it, but a hardwood floor that gets wet can often be dried and refinished. Laminate's fibreboard core swells and does not recover.
+- **Water.** Neither loves it, but a hardwood floor that gets wet can often be dried and refinished. Laminate's fiberboard core swells and does not recover.
 - **Resale.** Real wood reads as real wood to a buyer, and in this market that matters.
 
 ## The slab question, specifically for here
 
 Most Inland Empire homes sit on a concrete slab, and that rules some things out.
 
-Solid hardwood over a slab is generally not recommended, because slabs pass moisture vapour upward. Engineered hardwood handles it, and that is what we install most often here. Laminate goes over a slab fine with the right underlayment and moisture barrier.
+Solid hardwood over a slab is generally not recommended, because slabs pass moisture vapor upward. Engineered hardwood handles it, and that is what we install most often here. Laminate goes over a slab fine with the right underlayment and moisture barrier.
 
 So the practical comparison in this region is usually **engineered hardwood versus laminate**, not solid versus laminate — and engineered narrows the cost gap while keeping the ability to refinish, provided the wear layer is thick enough. Our [engineered vs solid comparison](/blog/engineered-vs-solid-hardwood/) covers how to check that.
 
@@ -1637,7 +1637,7 @@ If you are staying in the house long term and want a floor you stop thinking abo
 
 What we would not do is choose laminate for a bathroom or laundry, or choose solid hardwood over a slab. Those are the two decisions that cause problems here.
 
-Come and see both in the same light, or [book a free in-home estimate](/contact/) and we will bring samples to the room they are going in.`,
+The fair way to compare them is in your own light: [book a free in-home estimate](/free-estimate/) and we will bring samples of both to the room they are going in.`,
     internalLinks: [
       { href: '/services/hardwood-flooring-installation/', text: 'Hardwood flooring installation' },
       { href: '/services/laminate-flooring/', text: 'Laminate flooring' },
@@ -1646,8 +1646,8 @@ Come and see both in the same light, or [book a free in-home estimate](/contact/
     faqs: [
       { q: 'Is laminate cheaper than hardwood?', a: 'Yes, meaningfully, in both material and installation. The honest comparison is cost over the life of the floor rather than at purchase, because hardwood can be refinished several times and laminate has to be replaced when its wear layer goes.' },
       { q: 'Can laminate be refinished?', a: 'No. The surface is a printed layer under a wear coating, and sanding it removes the image. This is the single biggest practical difference between the two materials and the reason hardwood is treated as a long-term investment.' },
-      { q: 'Which is better with dogs?', a: 'For scratch resistance specifically, laminate, because its aluminium-oxide wear layer is harder than most wood finishes. For accidents, hardwood is more recoverable if caught quickly. Which matters more depends on the dog.' },
-      { q: 'Can I put hardwood on my slab?', a: 'Engineered hardwood yes, solid hardwood generally not. Concrete passes moisture vapour upward and solid wood responds badly to that. Almost all the hardwood we install in the Inland Empire is engineered for exactly this reason.' },
+      { q: 'Which is better with dogs?', a: 'For scratch resistance specifically, laminate, because its aluminum-oxide wear layer is harder than most wood finishes. For accidents, hardwood is more recoverable if caught quickly. Which matters more depends on the dog.' },
+      { q: 'Can I put hardwood on my slab?', a: 'Engineered hardwood yes, solid hardwood generally not. Concrete passes moisture vapor upward and solid wood responds badly to that. Almost all the hardwood we install in the Inland Empire is engineered for exactly this reason.' },
     ],
   },
   {
@@ -1699,13 +1699,13 @@ We work in a way that keeps stairs usable overnight wherever possible, but there
 
 If the stairs are being done alongside new flooring, matching is straightforward because the material comes from the same batch.
 
-If the floors already exist and you are only doing the stairs, matching is harder. Your existing floor has aged and changed colour under Inland Empire sun, so brand-new material in the same species will not match on day one. We do sample stains against the actual floor rather than working from a colour name, and sometimes the honest answer is a deliberate contrast rather than a near-miss.
+If the floors already exist and you are only doing the stairs, matching is harder. Your existing floor has aged and changed color under Inland Empire sun, so brand-new material in the same species will not match on day one. We do sample stains against the actual floor rather than working from a color name, and sometimes the honest answer is a deliberate contrast rather than a near-miss.
 
 ## Grip, which nobody asks about until later
 
 Hardwood stairs are more slippery than carpeted ones. It is worth deciding early whether you want a runner, because a runner changes the tread finish decision — there is no point paying for a premium finish on the middle of a tread that will be covered.
 
-Our [stair installation service](/services/stair-installation/) covers the full scope, and if the stairs are part of a larger project our [hardwood installation page](/services/hardwood-flooring-installation/) covers the rest. [Book a free estimate](/contact/) and we will look at what is under the carpet before pricing anything.`,
+Our [stair installation service](/services/stair-installation/) covers the full scope, and if the stairs are part of a larger project our [hardwood installation page](/services/hardwood-flooring-installation/) covers the rest. [Book a free estimate](/free-estimate/) and we will look at what is under the carpet before pricing anything.`,
     internalLinks: [
       { href: '/services/stair-installation/', text: 'Stair installation' },
       { href: '/services/hardwood-flooring-installation/', text: 'Hardwood flooring installation' },
@@ -1714,7 +1714,7 @@ Our [stair installation service](/services/stair-installation/) covers the full 
       { q: 'Can you put hardwood on existing carpeted stairs?', a: 'Usually yes. What is underneath decides the method: solid stock that was carpeted over can sometimes be refinished, while rough construction-grade stringers need new treads and risers fitted over them. Pull back a corner of carpet before budgeting.' },
       { q: 'Why do stairs cost so much compared to a room?', a: 'Because nothing repeats. Every tread is measured and cut individually to its own opening, the risers and nosing are separate pieces, and all of it is finished to a standard that holds up at eye level. Stairs are priced per tread for that reason.' },
       { q: 'Can we still use the stairs during the work?', a: 'For most of the time, yes, though there will be periods during the day when a section is unusable and finish needs time to cure. If it is the only staircase, tell us at the estimate and we will plan the sequence around the household.' },
-      { q: 'Will new stairs match my existing floors?', a: 'Not automatically, because your existing floor has aged and changed colour under sun exposure. We stain samples against the actual floor rather than matching to a product name, and sometimes a deliberate contrast reads better than an almost-match.' },
+      { q: 'Will new stairs match my existing floors?', a: 'Not automatically, because your existing floor has aged and changed color under sun exposure. We stain samples against the actual floor rather than matching to a product name, and sometimes a deliberate contrast reads better than an almost-match.' },
     ],
   },
   {
@@ -1728,7 +1728,7 @@ Our [stair installation service](/services/stair-installation/) covers the full 
     image: '/images/hardwood-large-living-space.webp',
     alt: 'Wide plank hardwood flooring in a large open living space',
     readMins: 5,
-    body: `Board width changes how a room reads more than colour does, and wide plank is the option people most often fall for in the showroom and least often ask the right questions about.
+    body: `Board width changes how a room reads more than color does, and wide plank is the option people most often fall for in the showroom and least often ask the right questions about.
 
 It is a genuinely better look in the right house. Here is what it asks in return.
 
@@ -1770,14 +1770,14 @@ Board width is very hard to judge from a sample. A single wide plank in your han
 
 Ask to see several boards laid together, and ideally in the room they are going in. What looks generous in a showroom can overwhelm a small room, and what looks right in a photograph can read differently under your own light.
 
-Our [hardwood species and finishes guide](/blog/hardwood-flooring-inland-empire-species-and-finishes/) covers the other half of that decision, and [a free in-home estimate](/contact/) gets samples into the actual room.`,
+Our [hardwood species and finishes guide](/blog/hardwood-flooring-inland-empire-species-and-finishes/) covers the other half of that decision, and [a free in-home estimate](/free-estimate/) gets samples into the actual room.`,
     internalLinks: [
       { href: '/services/hardwood-flooring-installation/', text: 'Hardwood flooring installation' },
       { href: '/flooring/engineered-vs-solid-hardwood/', text: 'Engineered vs solid hardwood' },
     ],
     faqs: [
       { q: 'Does wide plank flooring gap more?', a: 'It can show gaps more visibly. Each board shrinks by a percentage of its width, so a wider board gives up more absolute width and the gap at each seam is larger. Engineered construction reduces this substantially, which is why we recommend it at wider widths.' },
-      { q: 'Can wide plank go over a concrete slab?', a: 'Engineered wide plank yes, solid generally not. Slabs pass moisture vapour upward, and wide solid boards are the least forgiving thing you could put over that. The slab also needs to be genuinely flat, because wide boards bridge dips rather than following them.' },
+      { q: 'Can wide plank go over a concrete slab?', a: 'Engineered wide plank yes, solid generally not. Slabs pass moisture vapor upward, and wide solid boards are the least forgiving thing you could put over that. The slab also needs to be genuinely flat, because wide boards bridge dips rather than following them.' },
       { q: 'Is wide plank more expensive?', a: 'The material usually costs more per square foot, and the subfloor preparation is often higher because flatness matters more. Installation itself can be quicker, since there are fewer boards to lay for the same area.' },
       { q: 'What width counts as wide plank?', a: 'Generally anything above about five inches, and the character of the look changes as you go wider. Rather than pick a number from a guide, it is worth seeing several boards together in your own room, because the right width depends heavily on the size of the space.' },
     ],
@@ -1807,7 +1807,7 @@ Most water-resistant laminate falls here. It buys you time, and time is genuinel
 
 The core of the plank will not swell or break down if water reaches it. This is the meaningful specification, and it is what luxury vinyl offers that laminate does not.
 
-The distinction matters because laminate's core is compressed wood fibre. Once that swells, the plank is permanently deformed and no amount of drying brings it back. A waterproof core is unaffected.
+The distinction matters because laminate's core is compressed wood fiber. Once that swells, the plank is permanently deformed and no amount of drying brings it back. A waterproof core is unaffected.
 
 ## "Waterproof floor" — the claim to be careful with
 
@@ -1831,7 +1831,7 @@ Our climate is dry, which means two things worth knowing.
 
 Ambient humidity is rarely the problem here that it is in the South East. You are not fighting a damp house.
 
-But slab homes still pass moisture vapour upward, and the amount varies seasonally more than people expect. A moisture reading before installation is worth doing on any slab, and it determines whether a barrier is needed. That is separate from the waterproof rating of the plank and it is not something the product label can tell you.
+But slab homes still pass moisture vapor upward, and the amount varies seasonally more than people expect. A moisture reading before installation is worth doing on any slab, and it determines whether a barrier is needed. That is separate from the waterproof rating of the plank and it is not something the product label can tell you.
 
 ## The specification to actually compare
 
@@ -1841,7 +1841,7 @@ Almost every luxury vinyl product on the market now has a waterproof core, so th
 
 Ask for that number, compare it across the products you are considering, and treat "waterproof" as a baseline rather than a feature. Our [LVP versus laminate comparison](/blog/luxury-vinyl-plank-vs-laminate-inland-empire/) goes through the rest of the decision.
 
-If a leak has already happened, our [water-damaged hardwood guide](/blog/water-damaged-hardwood-floors/) covers what can be saved. Otherwise [book a free estimate](/contact/) and we will tell you what your rooms actually need.`,
+If a leak has already happened, our [water-damaged hardwood guide](/blog/water-damaged-hardwood-floors/) covers what can be saved. Otherwise [book a free estimate](/free-estimate/) and we will tell you what your rooms actually need.`,
     internalLinks: [
       { href: '/blog/lvp-installation-inland-empire-what-good-looks-like/', text: 'LVP installation: what a good job looks like' },
       { href: '/services/luxury-vinyl-plank/', text: 'Luxury vinyl plank' },
@@ -1849,8 +1849,8 @@ If a leak has already happened, our [water-damaged hardwood guide](/blog/water-d
     ],
     faqs: [
       { q: 'Is waterproof flooring really waterproof?', a: 'The plank is. The floor is not, because water travels through the seams and reaches the subfloor underneath, which is not waterproof. Waterproof flooring means you probably do not have to replace the floor; it does not mean you can ignore a leak.' },
-      { q: 'Is water-resistant laminate good enough for a kitchen?', a: 'We would not specify it there. Water-resistant means the surface holds out for a period, and kitchen water damage usually comes from a slow appliance leak that goes unnoticed for weeks. A waterproof core handles that; a fibreboard core does not.' },
-      { q: 'Does waterproof flooring need a moisture barrier on a slab?', a: 'Often yes, and it depends on the moisture reading rather than on the flooring. The barrier protects against vapour coming up out of the concrete, which is a separate issue from water landing on top of the floor.' },
+      { q: 'Is water-resistant laminate good enough for a kitchen?', a: 'We would not specify it there. Water-resistant means the surface holds out for a period, and kitchen water damage usually comes from a slow appliance leak that goes unnoticed for weeks. A waterproof core handles that; a fiberboard core does not.' },
+      { q: 'Does waterproof flooring need a moisture barrier on a slab?', a: 'Often yes, and it depends on the moisture reading rather than on the flooring. The barrier protects against vapor coming up out of the concrete, which is a separate issue from water landing on top of the floor.' },
       { q: 'What matters more than waterproofing?', a: 'Wear layer thickness. Nearly every luxury vinyl product is now waterproof-core, so that claim no longer separates products. The wear layer is what determines how the floor looks after years of traffic.' },
     ],
   },
@@ -1889,15 +1889,15 @@ Covering a soft spot with new flooring hides it until it gets worse. This is the
 
 A gouge, a burn, a pet-damaged patch or a section under a leak does not require replacing a floor. Individual boards can be lifted out and replaced.
 
-The honest limitation is matching. Your existing floor has aged and, under Inland Empire sun, has changed colour. A new board in the same species will not match on day one, though it closes the gap over time.
+The honest limitation is matching. Your existing floor has aged and, under Inland Empire sun, has changed color. A new board in the same species will not match on day one, though it closes the gap over time.
 
-Where an exact match matters, the trick is to take boards from somewhere invisible — inside a wardrobe, under a permanent appliance — and put the new material in the hidden spot instead. That is the difference between a repair you notice and one you do not.
+Where an exact match matters, the trick is to take boards from somewhere invisible — inside a closet, under a permanent appliance — and put the new material in the hidden spot instead. That is the difference between a repair you notice and one you do not.
 
 ## Lifted or peaked floating floors
 
 With laminate and click-together vinyl, planks that have risen against each other usually mean the floor had nowhere to expand.
 
-These floors are designed to move slightly and need an expansion gap around the perimeter, hidden under the skirting. When that gap was cut too small, or when something later pinned the floor down, the expansion has to go somewhere.
+These floors are designed to move slightly and need an expansion gap around the perimeter, hidden under the baseboard. When that gap was cut too small, or when something later pinned the floor down, the expansion has to go somewhere.
 
 The fix is normally to release the perimeter rather than replace anything — a much better conversation than the one people expect to have.
 
@@ -1920,7 +1920,7 @@ In those cases a repair is money spent twice and we will say so rather than take
 
 We look before quoting, because the useful information is usually underneath rather than visible. If the answer is a downspout and a loose board, that is what we will tell you.
 
-Our [floor repair service](/services/floor-repair/) covers the range, and [a free estimate](/contact/) costs nothing but the visit.`,
+Our [floor repair service](/services/floor-repair/) covers the range, and [a free estimate](/free-estimate/) costs nothing but the visit.`,
     internalLinks: [
       { href: '/blog/matching-new-hardwood-to-existing-floors/', text: 'Matching new hardwood to existing floors' },
       { href: '/services/floor-repair/', text: 'Floor repair' },
@@ -1928,8 +1928,8 @@ Our [floor repair service](/services/floor-repair/) covers the range, and [a fre
       { href: '/blog/replace-damaged-vinyl-plank/', text: 'replacing a damaged vinyl plank' },
     ],
     faqs: [
-      { q: 'Is it cheaper to repair or replace a floor?', a: 'Repair, in most cases where the damage is localised and the rest of the floor is sound. Replacement makes sense when the subfloor has failed, when the same problem recurs across the whole floor, or when the material is discontinued and a match is impossible.' },
-      { q: 'Can you replace just a few damaged boards?', a: 'Yes. The limitation is colour matching, because your existing floor has aged. Where an exact match matters we take boards from a hidden area, a wardrobe or under an appliance, and put the new material there instead.' },
+      { q: 'Is it cheaper to repair or replace a floor?', a: 'Repair, in most cases where the damage is localized and the rest of the floor is sound. Replacement makes sense when the subfloor has failed, when the same problem recurs across the whole floor, or when the material is discontinued and a match is impossible.' },
+      { q: 'Can you replace just a few damaged boards?', a: 'Yes. The limitation is color matching, because your existing floor has aged. Where an exact match matters we take boards from a hidden area, a closet or under an appliance, and put the new material there instead.' },
       { q: 'Why is part of my floor springy?', a: 'Almost always weakened subfloor rather than a problem with the flooring itself, and moisture is the usual cause. It is the one symptom worth acting on quickly, because covering it over does not stop it progressing.' },
       { q: 'My laminate has lifted at the seams. Does it need replacing?', a: 'Usually not. Floating floors need an expansion gap around the perimeter, and lifting normally means that gap was too small or something has pinned the floor down. Releasing the perimeter often resolves it without replacing any planks.' },
     ],
@@ -1953,7 +1953,7 @@ The product is rarely the problem. Three details are.
 
 Laminate is a floating floor. It is not fastened to anything — it rests on the subfloor and moves as a single sheet with changes in temperature and humidity.
 
-That means it needs a gap around the entire perimeter, hidden under the skirting or beneath a trim profile. Without it, the floor expands, has nowhere to go, and lifts in the middle of the room or peaks at a seam.
+That means it needs a gap around the entire perimeter, hidden under the baseboard or beneath a trim profile. Without it, the floor expands, has nowhere to go, and lifts in the middle of the room or peaks at a seam.
 
 This is the single most common laminate failure and it is entirely preventable. It also has to be maintained at every fixed obstacle — door frames, pipes, kitchen islands — not just the walls.
 
@@ -1971,9 +1971,9 @@ On a slab, underlayment often doubles as the moisture barrier, which brings us t
 
 ## Slab moisture
 
-Most homes here sit on concrete, and concrete passes moisture vapour upward. The amount varies through the year and it is not something you can judge by looking.
+Most homes here sit on concrete, and concrete passes moisture vapor upward. The amount varies through the year and it is not something you can judge by looking.
 
-Laminate's core is compressed wood fibre. Vapour arriving from underneath over months will swell it just as effectively as a spill will, and because it happens slowly and invisibly the first sign is usually seams lifting across a whole area.
+Laminate's core is compressed wood fiber. Vapor arriving from underneath over months will swell it just as effectively as a spill will, and because it happens slowly and invisibly the first sign is usually seams lifting across a whole area.
 
 A moisture reading before installation tells us whether a barrier is needed. This is a five-minute step that prevents the most expensive kind of laminate failure, and it is routinely skipped.
 
@@ -1995,7 +1995,7 @@ Where laminate meets another flooring type, the transition profile has to allow 
 
 If you are comparing quotes, ask what underlayment is included, what the moisture plan is for the slab, and what subfloor preparation is allowed for. Those three answers are where the difference between quotes almost always sits.
 
-Our [laminate flooring service](/services/laminate-flooring/) covers what we install, and if you are still weighing materials our [LVP versus laminate comparison](/blog/luxury-vinyl-plank-vs-laminate-inland-empire/) is the place to start. [Book a free estimate](/contact/) and we will check the slab before quoting.`,
+Our [laminate flooring service](/services/laminate-flooring/) covers what we install, and if you are still weighing materials our [LVP versus laminate comparison](/blog/luxury-vinyl-plank-vs-laminate-inland-empire/) is the place to start. [Book a free estimate](/free-estimate/) and we will check the slab before quoting.`,
     internalLinks: [
       { href: '/services/laminate-flooring/', text: 'Laminate flooring' },
       { href: '/services/luxury-vinyl-plank/', text: 'Luxury vinyl plank' },
@@ -2398,14 +2398,14 @@ Nothing is sanded off. The wood is never exposed. You are renewing the protectiv
 
 - Usually **one day**
 - Minimal dust and no bare-wood stage
-- Cannot change the stain colour
+- Cannot change the stain color
 - Can change the [sheen](/flooring/sand-and-stain/), matte, satin, or semi-gloss
 
 **Full sand and refinish.** Drum and edge sanders take the floor down through the old finish to bare wood, in progressively finer passes. Then optional stain, then multiple coats of finish, each needing cure time before the next.
 
 - **Three to five days** for a main living area
 - Removes scratches, gouges, stains, and sun fading that live in the wood
-- Lets you change the colour completely
+- Lets you change the color completely
 - Uses up a portion of the floor's finite sanding life
 
 Our [dustless refinishing guide](/flooring/dustless-floor-refinishing/) covers how we contain the dust on full sands, and the [sand and stain guide](/flooring/sand-and-stain/) walks the full process.
@@ -2434,7 +2434,7 @@ Do it in two or three spots, because floors wear unevenly. A hallway can be worn
 - Deep scratches or gouges that reach the wood
 - Stains, pet urine, or water marks in the wood itself
 - Sun fading and the pale rectangles where rugs sat
-- Colour changes of any kind
+- Color changes of any kind
 - Cupped, crowned, or uneven boards
 - Peeling or flaking finish, if the existing coating is failing, adding another coat on top of it fails too
 
@@ -2459,7 +2459,7 @@ That is the case for treating recoating as maintenance rather than repair. It is
 ## When a full sand is clearly the right call
 
 - The water test soaks in across the main living areas
-- You want a different colour
+- You want a different color
 - There are gouges, pet stains, or water marks in the wood
 - Sun fading has left obvious tonal differences
 - The finish is peeling, flaking, or cloudy
@@ -2477,10 +2477,10 @@ Not sure which camp your floors are in? [Book a free in-home look](/free-estimat
       { href: '/free-estimate/', text: 'book a free in-home look' },
     ],
     faqs: [
-      { q: 'What is the difference between a screen and recoat and a full refinish?', a: 'A screen and recoat lightly abrades the existing finish and adds fresh coats on top, taking about a day and never exposing bare wood. A full refinish sands the floor down to bare wood, taking three to five days, and can remove scratches, stains, and fading and change the colour.' },
+      { q: 'What is the difference between a screen and recoat and a full refinish?', a: 'A screen and recoat lightly abrades the existing finish and adds fresh coats on top, taking about a day and never exposing bare wood. A full refinish sands the floor down to bare wood, taking three to five days, and can remove scratches, stains, and fading and change the color.' },
       { q: 'How do I know if my floors just need a recoat?', a: 'Put a few drops of water on the floor in a high-traffic spot and wait ten minutes. If the water beads on the surface, the finish is intact and a screen and recoat is likely enough. If it soaks in and darkens the wood, the finish is worn through and the floor needs a full sand.' },
       { q: 'How often should hardwood floors be recoated?', a: 'Every five to seven years in a normal household, before the finish wears through to the wood. A floor kept on that schedule may never need a full sand at all, which preserves its limited sanding life and can extend the floor’s usable lifespan by decades.' },
-      { q: 'Can a screen and recoat change the colour of my floor?', a: 'No. Colour lives in the stain, which is under the finish, so changing it requires sanding to bare wood. A recoat can change the sheen, from gloss to satin or matte, which is one of the most common reasons homeowners book one.' },
+      { q: 'Can a screen and recoat change the color of my floor?', a: 'No. Color lives in the stain, which is under the finish, so changing it requires sanding to bare wood. A recoat can change the sheen, from gloss to satin or matte, which is one of the most common reasons homeowners book one.' },
     ],
   },
   {
@@ -2504,19 +2504,19 @@ Do the living areas this year, the bedrooms in eighteen months, the hallway afte
 
 It is the instinctive choice and it has one clear advantage: you never owe anyone anything. But it carries four costs that do not appear on any quote.
 
-**Dye lots.** Flooring is manufactured in batches, and batches differ slightly in colour. Material bought eighteen months apart will very likely come from different lots. In separate rooms with a threshold between them, you may never notice. In an open floor plan, or where the hallway meets the living room, a subtle colour shift at the transition is visible forever and cannot be fixed without redoing one side.
+**Dye lots.** Flooring is manufactured in batches, and batches differ slightly in color. Material bought eighteen months apart will very likely come from different lots. In separate rooms with a threshold between them, you may never notice. In an open floor plan, or where the hallway meets the living room, a subtle color shift at the transition is visible forever and cannot be fixed without redoing one side.
 
 **Discontinuation.** Manufacturers revise and drop products constantly. Phase two of your project may find that the exact product no longer exists. This is more common than people expect on a two-year timeline.
 
-**Repeated mobilisation.** Every phase is its own furniture move, its own crew day, its own setup and cleanup. Three phases means paying that three times instead of once. On a whole-house job the difference is real money.
+**Repeated mobilization.** Every phase is its own furniture move, its own crew day, its own setup and cleanup. Three phases means paying that three times instead of once. On a whole-house job the difference is real money.
 
-**Price drift.** Material and labour cost more in two years than they do today.
+**Price drift.** Material and labor cost more in two years than they do today.
 
 ## Option two: 0% promotional financing
 
 Buy all the material at once, install it all at once, and pay for it over time. We offer **0% promotional financing over 18 months** for qualified buyers, with no interest when the balance is paid in full inside the promotional window. Details are on our [financing page](/financing/).
 
-This solves every one of the four problems above: one dye lot, one product, one mobilisation, today's prices.
+This solves every one of the four problems above: one dye lot, one product, one mobilization, today's prices.
 
 **But there is one mechanic you have to understand.** Promotions like this are usually *deferred* interest, not forgiven interest. Interest accrues quietly in the background. Pay the balance off inside the window and all of it is waived. Leave any balance when the promotion expires and the accrued interest can be charged **retroactively on the original purchase amount**, not on what is left.
 
@@ -2536,7 +2536,7 @@ That is how a 0% plan becomes an expensive one, and the cause is almost always p
 
 This is the move most people miss, and it costs nothing.
 
-Buy all the flooring now, in one lot, and store the phase-two material in a garage or spare room. Install in stages as budget allows. You get one dye lot and today's price while still spreading the labour cost over time.
+Buy all the flooring now, in one lot, and store the phase-two material in a garage or spare room. Install in stages as budget allows. You get one dye lot and today's price while still spreading the labor cost over time.
 
 Flooring stores well as long as it stays flat, dry, and out of direct sun. It is the single best compromise between the two options.
 
@@ -2552,7 +2552,7 @@ If you are staging it, sequence by wear and by visibility rather than by room si
 
 ## Before any of this: get a real number
 
-None of these decisions can be made against a per-square-foot estimate. Get an itemised installed total, material, labour, demolition, disposal, subfloor prep, transitions, stairs, and then decide how to pay for it.
+None of these decisions can be made against a per-square-foot estimate. Get an itemized installed total, material, labor, demolition, disposal, subfloor prep, transitions, stairs, and then decide how to pay for it.
 
 Our post on [what hardwood installation actually costs in the Inland Empire](/blog/cost-to-install-hardwood-floors-inland-empire/) sets out the ranges, and [how to choose a flooring contractor](/blog/how-to-choose-flooring-contractor-inland-empire/) covers what should be on a legitimate bid.
 
@@ -2565,8 +2565,8 @@ Our post on [what hardwood installation actually costs in the Inland Empire](/bl
     ],
     faqs: [
       { q: 'Do you offer financing for flooring in the Inland Empire?', a: 'Yes. Qualified buyers can use 0% promotional financing over 18 months, with no interest owed when the balance is paid in full within the promotional period. You can apply around the time of your free in-home estimate, once you know the actual project total.' },
-      { q: 'Is it cheaper to do flooring in phases?', a: 'Not usually. Phasing avoids interest but adds repeated crew mobilisation and furniture moves, exposes you to price increases, risks the product being discontinued, and can produce a visible dye-lot mismatch between phases. Financing one lot installed at once often costs less overall.' },
-      { q: 'What is a dye lot and why does it matter?', a: 'Flooring is produced in batches, and batches vary slightly in colour. Material bought months apart may come from different lots and not match at the transition. If you are phasing a project, buy all the material at once and store it, then install in stages.' },
+      { q: 'Is it cheaper to do flooring in phases?', a: 'Not usually. Phasing avoids interest but adds repeated crew mobilization and furniture moves, exposes you to price increases, risks the product being discontinued, and can produce a visible dye-lot mismatch between phases. Financing one lot installed at once often costs less overall.' },
+      { q: 'What is a dye lot and why does it matter?', a: 'Flooring is produced in batches, and batches vary slightly in color. Material bought months apart may come from different lots and not match at the transition. If you are phasing a project, buy all the material at once and store it, then install in stages.' },
       { q: 'What happens if I don’t pay off a 0% balance in time?', a: 'With deferred-interest promotions, accrued interest can be charged retroactively on the original purchase amount rather than on the remaining balance. Dividing the total by the number of promotional months and paying that automatically every month avoids it entirely.' },
     ],
   },

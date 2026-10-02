@@ -27,10 +27,17 @@ interface Props extends SEOInput {
 const { schemas = [], bodyClass = '', ...seoInput } = Astro.props as Props;
 const seo = buildSEO({ ...seoInput, pathname: seoInput.pathname ?? Astro.url.pathname });
 
+// /thank-you/ is part of the ad funnel (Meta Pixel conversion page), so it keeps
+// the review count it shipped with until the owner signs off on a funnel edit.
+// Every other page shows the live Google Business Profile count.
+const reviewCount = seo.canonical.endsWith('/thank-you/')
+  ? business.ratings.reviewCount
+  : business.ratings.googleReviewCount;
+
 const ldJson = [
   organizationSchema(),
   websiteSchema(),
-  localBusinessSchema(),
+  localBusinessSchema({ reviewCount }),
   ...schemas,
 ];
 
@@ -131,7 +138,7 @@ function fitTitle(t, max = 60) {
     <main id="main" tabindex="-1">
       <slot />
     </main>
-    <GoogleReviews />
+    <GoogleReviews reviewCount={reviewCount} />
     <Footer />
 
     <a href="/free-estimate/" class="float-cta" id="float-cta" aria-label="Get a free flooring estimate">

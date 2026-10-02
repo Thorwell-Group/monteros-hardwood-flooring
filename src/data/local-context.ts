@@ -155,15 +155,15 @@ export const SERVICE_BY_ARCHETYPE: Record<string, Record<Archetype, Block>> = {
       body: [
         'In a historic home LVP earns its place in the rooms where wood should not go — laundries, bathrooms, and any area that has had a water problem before.',
         'Before putting it anywhere else, it is worth checking whether there is original oak underneath. Covering old-growth flooring with vinyl is a decision worth making deliberately rather than by default.',
-        'Raised-foundation homes rarely have flat subfloors, and LVP is less forgiving of that than people expect. Levelling is where the quality of this install is decided.',
+        'Raised-foundation homes rarely have flat subfloors, and LVP is less forgiving of that than people expect. Leveling is where the quality of this install is decided.',
       ],
-      checklist: ['Original wood checked for before covering it', 'Subfloor levelled, not just covered', 'Specified for wet rooms in period homes', 'Height controlled to suit original thresholds'],
+      checklist: ['Original wood checked for before covering it', 'Subfloor leveled, not just covered', 'Specified for wet rooms in period homes', 'Height controlled to suit original thresholds'],
     },
     mixed: {
       heading: 'LVP across both kinds of home here',
       body: [
         'LVP suits both halves of this market, which is why it is the product we install most. Waterproof, hard-wearing, and convincing enough now to read as wood in most rooms.',
-        'What changes between houses is the preparation. Slab homes usually need grinding or filling; raised-foundation homes need the subfloor levelled. Same product, different work underneath.',
+        'What changes between houses is the preparation. Slab homes usually need grinding or filling; raised-foundation homes need the subfloor leveled. Same product, different work underneath.',
         'We bring samples to the house — print quality and texture vary enormously between products, and they all photograph better than they look.',
       ],
       checklist: ['Preparation scaled to the subfloor you actually have', 'Wear layer specified for the household', 'Samples judged in your own light', 'Waterproof throughout'],
@@ -215,7 +215,7 @@ export const SERVICE_BY_ARCHETYPE: Record<string, Record<Archetype, Block>> = {
         'Where treads are original we refinish rather than replace wherever the wood allows. A period staircase with new treads and an original balustrade rarely looks right.',
         'Balusters, newels and handrail profiles get matched to what is already there — that detail is what people actually see from the hall.',
       ],
-      checklist: ['Original treads refinished wherever possible', 'Winders and irregular risers cut by hand', 'Baluster and newel profiles matched', 'Period character kept rather than modernised'],
+      checklist: ['Original treads refinished wherever possible', 'Winders and irregular risers cut by hand', 'Baluster and newel profiles matched', 'Period character kept rather than modernized'],
     },
     mixed: {
       heading: 'Hardwood stairs, whatever the house sits on',
@@ -232,10 +232,10 @@ export const SERVICE_BY_ARCHETYPE: Record<string, Record<Archetype, Block>> = {
       heading: 'Water damage over a slab',
       body: [
         'When a floor over slab cups or lifts, the first question is always whether water is coming up through the concrete rather than down from a leak. Those look identical at the surface and need completely different fixes.',
-        'We test slab moisture before touching a board. Replacing flooring over an unresolved vapour problem is a repair you pay for twice, and it is the most common reason we get called back to somebody else\u2019s work.',
+        'We test slab moisture before touching a board. Replacing flooring over an unresolved vapor problem is a repair you pay for twice, and it is the most common reason we get called back to somebody else\u2019s work.',
         'Where the source is a leak, we make sure it is fixed and the slab has dried to spec before new flooring goes anywhere near it.',
       ],
-      checklist: ['Slab moisture tested before any repair', 'Vapour drive ruled in or out first', 'Slab dried to spec before re-flooring', 'Insurance documentation supported'],
+      checklist: ['Slab moisture tested before any repair', 'Vapor drive ruled in or out first', 'Slab dried to spec before re-flooring', 'Insurance documentation supported'],
     },
     historic: {
       heading: 'Water damage in an older home',
@@ -249,7 +249,7 @@ export const SERVICE_BY_ARCHETYPE: Record<string, Record<Archetype, Block>> = {
     mixed: {
       heading: 'Water damage: finding the cause first',
       body: [
-        'Whether your home sits on slab or a raised foundation changes both the likely cause and the fix. Slab homes point toward vapour drive through concrete; raised foundations point toward crawlspace humidity or a plumbing leak.',
+        'Whether your home sits on slab or a raised foundation changes both the likely cause and the fix. Slab homes point toward vapor drive through concrete; raised foundations point toward crawlspace humidity or a plumbing leak.',
         'We identify which before touching the floor, because repairing without solving the cause means doing the whole job again.',
         'We also measure and wait where waiting is right. A floor responding to a one-off event will often recover on its own, and we would rather tell you that than sell you a full replacement.',
       ],

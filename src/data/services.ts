@@ -13,8 +13,9 @@ export interface Service {
   areaLink?: { href: string; label: string; before: string; after: string };
   heroImage: string;
   altText: string;
-  priceFromUSD: number;     // per sq ft, low end
-  priceToUSD: number;       // per sq ft, high end
+  priceFromUSD: number;     // per priceUnit, low end
+  priceToUSD: number;       // per priceUnit, high end
+  priceUnit?: string;       // what the price range is quoted per; defaults to 'square foot'
   timeline: string;         // typical project window
   cityVariant: boolean;
   benefits: string[];
@@ -78,6 +79,8 @@ export const services: Service[] = [
       { slug: 'engineered-hardwood-flooring', label: 'Engineered hardwood for slab subfloors' },
       { slug: 'oak-flooring', label: 'Red oak vs white oak flooring' },
       { slug: 'engineered-vs-solid-hardwood', label: 'Engineered vs solid hardwood comparison' },
+      { slug: 'bedroom-flooring', label: 'Best flooring for bedrooms' },
+      { slug: 'kitchen-flooring', label: 'Best flooring for kitchens' },
     ],
     blogLink: { href: '/blog/how-to-fix-squeaky-hardwood-floors/', label: 'how to fix squeaky hardwood floors' },
   },
@@ -178,6 +181,9 @@ export const services: Service[] = [
       { slug: 'spc-flooring', label: 'SPC vs WPC cores explained' },
       { slug: 'click-lock-vinyl-plank', label: 'Click-lock vs glue-down LVP' },
       { slug: 'laminate-vs-luxury-vinyl-plank', label: 'Laminate vs LVP comparison' },
+      { slug: 'kitchen-flooring', label: 'Best flooring for kitchens' },
+      { slug: 'bathroom-flooring', label: 'Best flooring for bathrooms' },
+      { slug: 'basement-flooring', label: 'Flooring for basements and lower levels' },
     ],
   },
   {
@@ -229,6 +235,7 @@ export const services: Service[] = [
       { slug: 'water-resistant-laminate', label: 'Water-resistant laminate guide' },
       { slug: 'laminate-vs-luxury-vinyl-plank', label: 'Laminate vs LVP comparison' },
       { slug: 'hardwood-vs-laminate', label: 'Hardwood vs laminate comparison' },
+      { slug: 'bedroom-flooring', label: 'Best flooring for bedrooms' },
     ],
   },
   {
@@ -242,6 +249,7 @@ export const services: Service[] = [
     altText: 'Detailed hardwood floor repair showing seamless board replacement',
     priceFromUSD: 250,
     priceToUSD: 1500,
+    priceUnit: 'repair area',
     timeline: '1 – 2 days for most repairs',
     cityVariant: true,
     benefits: [
@@ -263,6 +271,7 @@ export const services: Service[] = [
       { q: 'Can you fix water damage?', a: 'Usually yes, if the damage is caught before mold sets in. We replace cupped or stained boards, treat the subfloor, and address the water source if needed. Severe wide-area damage may call for a refinish or partial replacement.' },
       { q: 'My floors squeak - can you fix that?', a: 'Almost always. Most squeaks come from boards rubbing against each other or against subfloor nails. We diagnose from above (no ceiling work needed) and silence the squeak with screws designed to break off below the floor surface.' },
       { q: 'What about deep gouges and pet damage?', a: 'Small gouges can be filled and finished. Larger areas - especially urine stains that have soaked through - need board replacement. We assess in person and quote both options.' },
+      { q: 'Do you repair luxury vinyl plank and laminate floors too?', a: 'Yes. A single damaged vinyl plank can usually be replaced without redoing the floor. On a click-lock floor we either unlock the rows back to it from the nearest wall or cut it out in place; on glue-down vinyl we warm the plank, lift it, and set a new one in fresh adhesive. Laminate that has lifted at the seams usually needs its expansion gap released rather than new planks. Keep any leftover planks from the original install - an exact match is the hard part.' },
       { q: 'Should I repair or refinish?', a: 'If damage is in 2 – 3 areas, repair. If it\'s widespread or the whole finish is worn out, refinish makes more sense and often costs less per square foot. We\'ll tell you straight which path fits.' },
     ],
     intent: 'repair',
@@ -288,6 +297,7 @@ export const services: Service[] = [
     altText: 'Newly refinished hardwood staircase by Monteros in an Inland Empire home',
     priceFromUSD: 80,
     priceToUSD: 200,
+    priceUnit: 'tread',
     timeline: '2 – 4 days for most staircases',
     // Enabled 2026-07-30. Stairs are the one service where the slab-vs-raised
     // question does not limit the answer — treads are framed in wood regardless —
@@ -329,3 +339,8 @@ export const services: Service[] = [
 
 export const servicesBySlug = Object.fromEntries(services.map((s) => [s.slug, s]));
 export const cityVariantServices = services.filter((s) => s.cityVariant);
+
+// Descriptive anchor text for internal links to a service or city-service page,
+// e.g. "Hardwood Floor Refinishing". shortName ("Refinishing", "Stairs") is a
+// nav label and too vague to use as link text on its own.
+export const serviceAnchor = (s: Service): string => s.metaTitleBase.replace(/ & Refinishing$/, '');

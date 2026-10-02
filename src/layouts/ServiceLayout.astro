@@ -214,7 +214,7 @@ const projectPhotos = galleryPool.filter((p) => p.src !== service.heroImage && !
 
   <FAQ faqs={service.faqs} heading={`${service.shortName} FAQ`} />
 
-  <AreaGrid heading="Areas We Serve" subheading={`We bring ${service.shortName.toLowerCase()} to homes across the Inland Empire - find your city.`} />
+  <AreaGrid heading="Areas We Serve" subheading={`We bring ${service.shortName.toLowerCase()} to homes across the Inland Empire - find your city.`} service={service} />
 
   <CTABanner />
   <RelatedGuides path={`/services/${service.slug}/`} />

@@ -92,7 +92,9 @@ export function cityServiceExtraFaqs(city: City, service: Service): { q: string;
     },
     {
       q: `What's typical pricing for ${service.shortName.toLowerCase()} in ${city.name}?`,
-      a: `${city.name} pricing aligns with our standard Inland Empire range: ${service.intent === 'repair' ? `$${service.priceFromUSD} – $${service.priceToUSD} per repair area` : `$${service.priceFromUSD} – $${service.priceToUSD} per square foot installed`}. ${service.intent === 'install' ? 'Final price depends on species, subfloor condition, and demo complexity.' : service.intent === 'refinish' ? 'Final price depends on square footage, floor condition, and stain choice.' : 'Final price depends on damage extent and matching difficulty.'} Free in-home estimate gives you exact numbers.`,
+      // The range is quoted per square foot for installs and refinishing, per
+      // repair area for repairs and per tread for stairs (service.priceUnit).
+      a: `${city.name} pricing aligns with our standard Inland Empire range: $${service.priceFromUSD} – $${service.priceToUSD} per ${service.priceUnit ?? 'square foot'}${service.intent === 'install' ? ' installed' : ''}. ${service.intent === 'install' ? 'Final price depends on species, subfloor condition, and demo complexity.' : service.intent === 'refinish' ? 'Final price depends on square footage, floor condition, and stain choice.' : service.intent === 'repair' ? 'Final price depends on damage extent and matching difficulty.' : 'Final price depends on the number of treads, the wood species, and the stain match.'} Free in-home estimate gives you exact numbers.`,
     },
     {
       q: `How long will a ${service.shortName.toLowerCase()} project take in ${city.name}?`,

@@ -1,7 +1,10 @@
 ---
 import { cities } from '~/data/cities';
-interface Props { heading?: string; subheading?: string; }
-const { heading, subheading } = Astro.props as Props;
+import { serviceAnchor, type Service } from '~/data/services';
+// Pass `service` (service pages do) to add a list of links to that service's
+// page in each city under the city cards. Without it the grid is unchanged.
+interface Props { heading?: string; subheading?: string; service?: Service; }
+const { heading, subheading, service } = Astro.props as Props;
 ---
 <section class="container-wide section">
   {heading && (
@@ -21,4 +24,18 @@ const { heading, subheading } = Astro.props as Props;
       </a>
     ))}
   </div>
+  {service && service.cityVariant && (
+    <div class="mt-10 card p-6 md:p-8 bg-brand-50/60 border-brand-200">
+      <h3 class="text-2xl font-bold text-brand-900">{serviceAnchor(service)} by City</h3>
+      <p class="mt-2 text-slate-700">Each city page covers the local housing stock, subfloors, and what the job involves there.</p>
+      <ul class="mt-5 grid sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-3">
+        {cities.map((c) => (
+          <li class="flex items-start gap-3">
+            <span class="mt-2 h-2 w-2 rounded-full bg-brand-500 shrink-0"></span>
+            <a href={`/areas-we-serve/${c.slug}/${service.slug}/`} class="font-semibold text-brand-700 hover:text-brand-900">{serviceAnchor(service)} in {c.name}</a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  )}
 </section>

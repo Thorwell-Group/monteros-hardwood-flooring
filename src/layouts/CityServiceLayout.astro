@@ -11,7 +11,7 @@ import ProjectGallery from '~/components/ProjectGallery.astro';
 import { serviceSchema, breadcrumbSchema, faqSchema } from '~/lib/schema';
 import { cityServiceIntro, cityServiceWhyUs, neighborhoodsCallout, cityServiceExtraFaqs } from '~/lib/content';
 import { business } from '~/data/business';
-import type { Service } from '~/data/services';
+import { cityVariantServices, serviceAnchor, type Service } from '~/data/services';
 import { AREA_PROFILE, SERVICE_BY_ARCHETYPE, localFaqs, pageVariant, INTRO_VARIANTS } from '~/data/local-context';
 import { cities, type City } from '~/data/cities';
 import { srcsetFor } from '~/lib/img';
@@ -59,6 +59,7 @@ const titleLead: Record<string, string> = {
   'luxury-vinyl-plank': 'Luxury Vinyl Plank',
   'laminate-flooring': 'Laminate Flooring',
   'floor-repair': 'Hardwood Floor Repair',
+  'stair-installation': 'Hardwood Stair Installation',
 };
 const lead = titleLead[service.slug] ?? service.shortName;
 // e.g. "Hardwood Floor Install in Highland, CA | Monteros" — brand short form
@@ -90,14 +91,24 @@ const benefitShortByIntent: Record<Service['intent'], string> = {
 };
 const useLandmark = service.intent === 'refinish' || service.intent === 'repair';
 const anchor = useLandmark ? descLandmark : descHood;
-let description = `${service.shortName} in ${city.name}, CA, serving ${anchor} and nearby. ${benefitByIntent[service.intent]} Free in-home estimate.`;
+// "Stairs" on its own says nothing in a search result, so the stair pages lead
+// with the full service; every other service keeps its existing short label.
+const descLead = service.slug === 'stair-installation' ? 'Hardwood stair installation' : service.shortName;
+let description = `${descLead} in ${city.name}, CA, serving ${anchor} and nearby. ${benefitByIntent[service.intent]} Free in-home estimate.`;
 // Step down to shorter variants only when a long city/anchor pushes past 160.
 if (description.length > 160) {
-  description = `${service.shortName} in ${city.name}, CA, serving ${anchor}. ${benefitShortByIntent[service.intent]} Free in-home estimate.`;
+  description = `${descLead} in ${city.name}, CA, serving ${anchor}. ${benefitShortByIntent[service.intent]} Free in-home estimate.`;
 }
 if (description.length > 160) {
-  description = `${service.shortName} in ${city.name}, CA. ${benefitShortByIntent[service.intent]} Free in-home estimate from a family-owned crew.`;
+  description = `${descLead} in ${city.name}, CA. ${benefitShortByIntent[service.intent]} Free in-home estimate from a family-owned crew.`;
 }
+
+// Internal links out of this page. These city-service pages were reachable only
+// from their own city hub and the HTML sitemap, so each one now points at the
+// other services in the same city and the same service in the other cities.
+const siblingServices = cityVariantServices.filter((s) => s.slug !== service.slug);
+const otherCities = cities.filter((c) => c.slug !== city.slug);
+const linkClass = 'font-semibold text-brand-700 underline decoration-brand-300 underline-offset-2 hover:text-brand-900';
 
 const intro = cityServiceIntro(city, service);
 const whyUs = cityServiceWhyUs(city, service);
@@ -115,7 +126,7 @@ const galleryPool: { src: string; alt: string }[] = [
   { src: '/images/monteros-flooring-team-installation.webp', alt: `Monteros crew installing flooring in ${city.name}` },
 ];
 // In-page photos. Each service has its own pool; the starting point rotates by
-// city so neighbouring city pages don't show the same pictures in the same slots.
+// city so neighboring city pages don't show the same pictures in the same slots.
 const POOLS: Record<string, { src: string; what: string }[]> = {
   'hardwood-flooring-installation': [
     { src: '/images/hardwood-dining-room-floor.webp', what: 'Hardwood flooring in a dining room' },
@@ -298,11 +309,29 @@ const projectPhotos = galleryPool.filter((p) => p.src !== service.heroImage && !
     <div class="card p-8 bg-brand-50 border-brand-200">
       <h3 class="font-display text-2xl font-bold text-brand-900">Other Services We Offer in {city.name}</h3>
       <p class="text-slate-700 mt-2">Looking for a different flooring service in {city.name}? Browse all options:</p>
-      <div class="mt-4 flex flex-wrap gap-2">
+      <ul class="mt-5 grid sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-3">
+        {siblingServices.map((s) => (
+          <li class="flex items-start gap-3">
+            <span class="mt-2 h-2 w-2 rounded-full bg-brand-500 shrink-0"></span>
+            <a href={`/areas-we-serve/${city.slug}/${s.slug}/`} class={linkClass}>{serviceAnchor(s)} in {city.name}</a>
+          </li>
+        ))}
+      </ul>
+      <div class="mt-6 flex flex-wrap gap-2">
         <a href={`/areas-we-serve/${city.slug}/`} class="btn-secondary">All {city.name} services</a>
         <a href={`/services/${service.slug}/`} class="btn-secondary">About {service.shortName}</a>
         <a href="/services/" class="btn-secondary">All flooring services</a>
       </div>
+      <h3 class="mt-10 font-display text-2xl font-bold text-brand-900">{serviceAnchor(service)} in Nearby Cities</h3>
+      <p class="text-slate-700 mt-2">We do the same work across the Inland Empire. See what it involves in each city:</p>
+      <ul class="mt-5 grid sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-3">
+        {otherCities.map((c) => (
+          <li class="flex items-start gap-3">
+            <span class="mt-2 h-2 w-2 rounded-full bg-brand-500 shrink-0"></span>
+            <a href={`/areas-we-serve/${c.slug}/${service.slug}/`} class={linkClass}>{serviceAnchor(service)} in {c.name}</a>
+          </li>
+        ))}
+      </ul>
     </div>
   </section>
 

@@ -58,11 +58,19 @@ export const business = {
   },
 
   // Trust signals. Source of truth = the live Google Business Profile.
-  // Verified 2026-07-20: 4.9★ average across 28 Google reviews. Update both
-  // numbers here whenever the GBP changes — they drive the visible rating
-  // and the LocalBusiness aggregateRating markup.
+  // Verified 2026-10-01 against the hub's daily GBP sync: 4.9★ across 33 Google
+  // reviews. `googleReviewCount` drives the visible rating on every indexable
+  // page and the LocalBusiness aggregateRating markup — update it (and
+  // averageRating) whenever the GBP changes.
+  //
+  // `reviewCount` is the older 2026-07-20 figure and is deliberately left
+  // alone: it is read only by the ad funnel pages (/free-estimate/,
+  // /es/free-estimate/) and pinned on /thank-you/ (see BaseLayout). Those pages
+  // are wired to the Meta Pixel and only change on the owner's say-so. Once
+  // approved, set it equal to googleReviewCount and remove the pin.
   ratings: {
     averageRating:  4.9,
+    googleReviewCount: 33,
     reviewCount:    28,
     bestRating:     5,
     worstRating:    1,

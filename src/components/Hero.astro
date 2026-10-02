@@ -60,7 +60,7 @@ const words = title.split(' ');
             <span class="flex items-center gap-0.5 text-amber-400">
               {[1,2,3,4,5].map(() => (<svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.928 6.063L19.5 8 14.75 12.625 16 19l-6-3.5L4 19l1.25-6.375L.5 8l6.572-.937L10 1z"/></svg>))}
             </span>
-            <span><strong>{business.ratings.averageRating}</strong> from {business.ratings.reviewCount} Google reviews</span>
+            <span><strong>{business.ratings.averageRating}</strong> from {business.ratings.googleReviewCount} Google reviews</span>
           </a>
         )}
       </div>

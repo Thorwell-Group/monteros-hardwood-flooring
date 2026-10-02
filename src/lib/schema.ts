@@ -52,7 +52,7 @@ export function websiteSchema() {
   };
 }
 
-export function localBusinessSchema() {
+export function localBusinessSchema(opts?: { reviewCount?: number }) {
   return {
     '@context': 'https://schema.org',
     '@type': ['LocalBusiness', 'HomeAndConstructionBusiness'],
@@ -82,13 +82,13 @@ export function localBusinessSchema() {
       },
     })),
     // reviewCount + ratingValue mirror the live Google Business Profile exactly
-    // (verified 4.9★ / 28 reviews, 2026-07-20), so the AggregateRating markup stays truthful.
-    // The page shows a curated sample of the full-text reviews; the count here
-    // is the real GBP total, not just the on-page sample.
+    // (business.ratings.googleReviewCount), so the AggregateRating markup stays
+    // truthful. The page shows a curated sample of the full-text reviews; the
+    // count here is the real GBP total, not just the on-page sample.
     aggregateRating: {
       '@type': 'AggregateRating',
       ratingValue: business.ratings.averageRating,
-      reviewCount: business.ratings.reviewCount,
+      reviewCount: opts?.reviewCount ?? business.ratings.googleReviewCount,
       bestRating:  business.ratings.bestRating,
       worstRating: business.ratings.worstRating,
     },
@@ -134,7 +134,7 @@ export function serviceSchema(service: Service, opts?: { city?: City }) {
         priceCurrency: 'USD',
         minPrice: service.priceFromUSD,
         maxPrice: service.priceToUSD,
-        unitText: 'square foot',
+        unitText: service.priceUnit ?? 'square foot',
       },
       availability: 'https://schema.org/InStock',
     },

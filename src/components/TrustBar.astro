@@ -4,7 +4,7 @@ import { business } from '~/data/business';
 // BaseLayout only animates them up when JS runs, so nothing ever shows "0".
 const stats = [
   { value: String(business.yearsInBusiness), suffix: '+', counter: true, label: 'Years family-owned' },
-  { value: String(business.ratings.averageRating), suffix: '★', counter: true, label: `${business.ratings.reviewCount} Google reviews` },
+  { value: String(business.ratings.averageRating), suffix: '★', counter: true, label: `${business.ratings.googleReviewCount} Google reviews` },
   { value: 'Lifetime', label: 'Workmanship guarantee' },
   { value: 'Free', label: 'In-home estimate' },
 ];

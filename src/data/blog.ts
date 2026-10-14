@@ -3091,6 +3091,222 @@ Ready to see real colors on your real floor? [Book a free estimate](/free-estima
       { q: 'Can you change the color of existing hardwood floors?', a: 'Yes, if the floor is solid hardwood or engineered with a thick enough wear layer to sand. Refinishing takes the floor to bare wood and the new stain goes on fresh. We test candidate colors on your floor and you approve one before the whole room is stained.' },
     ],
   },
+  {
+    slug: 'pet-urine-stains-hardwood-floors',
+    title: 'Pet Urine Stains on Hardwood Floors: What Sanding Fixes and When Boards Have to Go',
+    metaTitle: 'Pet Urine Stains on Hardwood Floors: Can They Be Fixed?',
+    metaDesc: 'Why dog and cat urine turns hardwood gray or black, which stains sand out and which mean replacing boards, how to deal with odor in the subfloor, and what to do about a fresh accident.',
+    excerpt: 'A pale ring near the back door usually sands out. A black patch under the rug usually does not. Here is how to tell which one you have, and what the fix involves.',
+    date: '2026-10-14',
+    category: 'maintenance',
+    image: '/images/hardwood-refinished-oak-floor.webp',
+    alt: 'Refinished oak hardwood floor after pet stain repair',
+    readMins: 6,
+    body: `Pet stains are one of the most common reasons homeowners call us about a floor that otherwise looks fine. The question is almost always the same: will sanding get it out? Sometimes. It depends on how long the urine sat, how far it went into the wood, and what species the floor is.
+
+## Why urine changes the color of wood
+
+A sound finish is a barrier. A puddle wiped up within a few minutes on a floor with intact polyurethane usually leaves nothing behind.
+
+The trouble starts when urine gets past the finish. It finds its way in through worn traffic areas, the seams between boards, and anywhere the finish has cracked. Once it is in the wood, the ammonia in it reacts with the natural tannins. Oak is high in tannins, so oak floors, which are most of the hardwood in older Inland Empire homes, tend to turn gray and then black where urine has soaked in. Repeated accidents in the same spot push the stain deeper each time.
+
+That is why the worst stains we find are under area rugs. A rug pad holds urine against the floor and hides it, sometimes for years, until the rug comes up before a sale or a refinish.
+
+## Light stains vs dark stains
+
+Look at the color and the shape before you plan anything.
+
+**Light, cloudy or white marks** are usually in the finish, not the wood. The finish has reacted or been etched, but the wood underneath is close to its normal color. A full sand takes the old finish off and these usually disappear with it.
+
+**Gray or light brown stains** have reached the wood but may not be deep. Sanding often lightens them a lot and sometimes removes them completely. We cannot promise which until the first sanding pass is done and we can see the bare wood.
+
+**Dark gray to black stains, often following the board edges** have usually gone deep. The dark color follows the grain down into the board, and a solid hardwood floor can only be sanded so far before you reach the tongue. In our experience these rarely sand out, and chasing them with the sander just leaves a dip in the floor.
+
+Some refinishers try oxalic acid wood bleach on dark stains. It can lighten them, but results on urine stains are unpredictable and it often leaves a pale patch that does not match the surrounding floor. We will tell you honestly whether it is worth a test on your floor.
+
+## When boards need to be replaced
+
+For deep black stains the reliable fix is to cut out the affected boards and weave in new ones. Our [floor repair service](/services/floor-repair/) does this board by board: the damaged pieces come out, matching species and width go in at staggered lengths so there is no square patch, and the new wood is stained to blend.
+
+Because the rest of the floor has aged, new boards almost never match perfectly on day one. When the stains are spread across a room, the usual plan is to replace the boards and then [refinish the whole floor](/services/hardwood-floor-refinishing/) so old and new wood come out the same color. Our post on [matching new hardwood to existing floors](/blog/matching-new-hardwood-to-existing-floors/) explains why.
+
+Engineered hardwood is less forgiving. The real wood layer on top is thin, so there is little to sand, and urine that soaks into the core can make it swell or delaminate. Stained engineered boards are usually replaced rather than sanded.
+
+## The smell is a separate problem
+
+Even when the visible stain is gone, odor can stay in the subfloor underneath. If we lift stained boards and the subfloor is saturated, it gets cleaned, dried and sealed with an odor-blocking primer before new wood goes down, or that section of subfloor is replaced if it is soft. Skipping this step is how a refinished floor starts to smell again on the first warm day.
+
+## If it just happened
+
+- **Blot, do not spread.** Soak up as much as you can with paper towels.
+- **Use an enzyme cleaner made for pet urine,** applied lightly and wiped up, not left to puddle. Too much liquid on a wood floor creates a second problem.
+- **Avoid steam mops and heavy wet mopping.** They push moisture into the seams.
+- **Check under rugs and pads regularly** if you have a pet that has had accidents. Breathable rug pads trap less.
+- **Keep the finish in good shape.** A worn finish lets urine in faster. A [screen and recoat](/blog/screen-and-recoat-vs-full-refinish/) every few years in high-traffic homes is cheap insurance.
+
+If you are choosing a new floor with pets in mind, our [pet flooring post](/blog/best-flooring-for-pets/) compares the options.
+
+## Getting it assessed
+
+Every pet stain job starts with looking at the floor in person, because the color tells us a lot but not everything. [Book a free estimate](/free-estimate/) and we will check how deep the stains go and quote both options: sanding and refinishing alone, or board replacement followed by a refinish.`,
+    internalLinks: [
+      { href: '/services/floor-repair/', text: 'Hardwood floor repair' },
+      { href: '/services/hardwood-floor-refinishing/', text: 'Hardwood floor refinishing' },
+      { href: '/blog/matching-new-hardwood-to-existing-floors/', text: 'Matching new hardwood to existing floors' },
+      { href: '/free-estimate/', text: 'Book a free estimate' },
+    ],
+    faqs: [
+      { q: 'Can pet urine stains be sanded out of hardwood floors?', a: 'Light and cloudy stains usually can, because they sit mostly in the finish. Gray stains often lighten a lot with sanding. Dark gray to black stains have usually soaked deep into the wood and rarely sand out; those boards are normally cut out and replaced.' },
+      { q: 'Why did pet urine turn my oak floor black?', a: 'Once urine gets past the finish, its ammonia reacts with the natural tannins in the wood. Oak is high in tannins, so it turns gray and then black, and repeated accidents in the same spot push the stain deeper each time.' },
+      { q: 'Will replacing stained boards leave a visible patch?', a: 'New boards rarely match aged wood on day one. They are woven in at staggered lengths so there is no square patch, then stained to blend. Where stains are spread across a room, refinishing the whole floor afterward brings old and new wood to the same color.' },
+      { q: 'How do you get rid of pet urine smell under hardwood floors?', a: 'If the odor is in the subfloor, the stained boards are lifted and the subfloor is cleaned, dried and sealed with an odor-blocking primer, or replaced if it has gone soft. Refinishing the surface alone will not stop a smell that is coming from underneath.' },
+    ],
+  },
+  {
+    slug: 'refinishing-hardwood-stairs',
+    title: 'Refinishing Hardwood Stairs: What Changes When the Floor Goes Vertical',
+    metaTitle: 'Refinishing Hardwood Stairs: Treads, Risers and Rails',
+    metaDesc: 'How hardwood stair refinishing works: why stairs are sanded by hand, worn nosings, staple holes from old carpet, painted vs stained risers, matching the floor, and keeping the stairs usable during the job.',
+    excerpt: 'Stairs wear differently from floors and they cannot be sanded the same way. Here is what refinishing existing hardwood stairs involves, and when a tread is too far gone.',
+    date: '2026-10-14',
+    category: 'maintenance',
+    image: '/images/hardwood-staircase-refinishing.webp',
+    alt: 'Refinished hardwood staircase with stained treads in an Inland Empire home',
+    readMins: 6,
+    body: `A worn staircase is often the first thing that makes a house look tired. The finish goes gray down the middle of every tread, the nosings get rounded and dark, and the stairs stop matching the floor at the bottom. If the treads are real hardwood, refinishing them in place can bring them back without replacing anything.
+
+It is a different job from refinishing a floor, though, and it helps to know why.
+
+## Stairs are sanded mostly by hand
+
+A floor is sanded with a large drum or belt sander that covers ground quickly. None of that fits on a stair tread. Each tread is sanded with smaller edge and detail sanders, then the corners, the area against the stringers, and the back of the tread where it meets the riser are finished by hand scraping and hand sanding.
+
+The nosing is the hardest part. It is rounded, it takes most of the wear, and it has to come out smooth and even all the way across or it catches the light wrong on every step. This is where most of the time goes, and it is why stairs are priced per tread instead of by area.
+
+## What we check first
+
+**Are the treads solid wood?** Many stairs that look like hardwood are a thin veneer or a cap over a plywood or particleboard tread. A cap with a thick wear layer can sometimes be lightly sanded. A thin veneer cannot. We check this before quoting, usually from the underside or an exposed edge.
+
+**How worn are the nosings?** On older stairs the front edge can be worn down unevenly, sometimes split or chipped. Light wear sands out. A nosing that has lost its shape, or a tread that is cracked or soft, is better replaced than refinished. Replacing one or two treads and refinishing the rest is common.
+
+**Were the stairs carpeted?** Pulling up carpet from stairs leaves staples, tack strip nail holes, and sometimes paint drips along the edges. The holes can be filled with wood filler tinted to the stain, but on a lighter floor they will still be faintly visible. If there are hundreds of them, new treads may look better. Our [stair installation post](/blog/staircase-installation-inland-empire/) covers what happens when what is under the carpet is not worth keeping.
+
+## Risers: paint or stain?
+
+Risers take almost no foot traffic, so they do not need the same protection as treads. Many homeowners paint them white or to match the trim, which makes the staircase look crisp and hides any mismatched wood or old repairs on the risers. Others stain risers to match the treads for an all-wood look.
+
+Painted risers with stained treads is the more forgiving choice on older stairs. All-wood stairs look best when the risers are in good shape and the same species as the treads.
+
+## Matching the floor
+
+If the floor at the top or bottom is being refinished at the same time, the stairs get the same stain and finish and match naturally. If the floor is not being touched, the stairs have to be matched to wood that has aged and changed color for years. We test stain on a tread and hold it next to the floor in the stairway's own light before doing the whole run. Our [sand and stain guide](/flooring/sand-and-stain/) explains the test.
+
+For finish, we use a satin sheen on stairs. Gloss looks dramatic but it is more slippery and shows every scuff on the nosings.
+
+## Rails and balusters
+
+Handrails and newel posts can usually be sanded and refinished to match the treads at the same time. Swapping old wood spindles for iron balusters is a popular update, and it is easiest to do during a stair project, before the final finish goes on. Full railing replacement is a bigger job and is quoted separately.
+
+## Living with it during the job
+
+For most homes the staircase is the only way upstairs. A common approach is to finish every other tread first, let them dry, then do the rest, so you can still go up and down carefully. We plan the order around your household and the finish dry times. If someone in the house has trouble with stairs, mention it at the estimate.
+
+Most staircases take two to four days from start to finish depending on how many treads there are, how much repair they need, and the finish system.
+
+## Refinish or replace?
+
+Refinish when the treads are solid wood, the nosings still have their shape, and the damage is wear rather than structure. Replace when treads are veneer, cracked, soft, or covered in carpet holes you do not want to see. Our [stair installation and refinishing service](/services/stair-installation/) covers both, and often the answer is a mix.
+
+[Book a free estimate](/free-estimate/) and we will look at the treads, the nosings and the floor they need to match before recommending either.`,
+    internalLinks: [
+      { href: '/services/stair-installation/', text: 'Hardwood stair installation and refinishing' },
+      { href: '/flooring/sand-and-stain/', text: 'Full sand, stain and seal' },
+      { href: '/blog/staircase-installation-inland-empire/', text: 'Hardwood stairs: what the job involves' },
+      { href: '/free-estimate/', text: 'Book a free estimate' },
+    ],
+    faqs: [
+      { q: 'Can hardwood stairs be refinished?', a: 'Yes, if the treads are solid hardwood or have a thick enough wear layer. Each tread is sanded with small edge and detail sanders and finished by hand around the nosing and corners, then stained and sealed. Thin veneer treads usually need replacing instead.' },
+      { q: 'How long does it take to refinish a staircase?', a: 'Most staircases take two to four days, depending on the number of treads, how much repair the nosings need, and the finish system. Finishing every other tread first lets the household keep using the stairs carefully during the job.' },
+      { q: 'Should stair risers be painted or stained?', a: 'Either works. Painted risers with stained treads is the more forgiving look on older stairs because it hides mismatched wood and old repairs. Stained risers suit stairs where the risers are in good shape and the same species as the treads.' },
+      { q: 'Can carpeted stairs be refinished after the carpet is removed?', a: 'Sometimes. If the treads underneath are hardwood, the staple and tack strip holes can be filled and the treads refinished, though the filled holes may stay faintly visible on lighter stains. If the treads are construction-grade material, new hardwood treads are the better route.' },
+    ],
+  },
+  {
+    slug: 'hardwood-floors-before-or-after-kitchen-cabinets',
+    title: 'Kitchen Remodel: Do the Floors Go In Before or After the Cabinets?',
+    metaTitle: 'Flooring Before or After Kitchen Cabinets? A Contractor Answers',
+    metaDesc: 'Whether new flooring goes under kitchen cabinets or up to them depends on the floor type. Nail-down and glue-down hardwood vs floating LVP and laminate, dishwasher height, islands, and protecting a new floor during the remodel.',
+    excerpt: 'It is one of the first scheduling questions in any kitchen remodel, and the right answer depends on what kind of floor you are putting down.',
+    date: '2026-10-14',
+    category: 'design',
+    image: '/images/hardwood-kitchen-flooring.webp',
+    alt: 'Hardwood flooring running through a remodeled kitchen',
+    readMins: 6,
+    body: `Kitchen remodels involve several trades, and the floor sits in the middle of the schedule. Homeowners and cabinet installers ask us the same question all the time: should the new floor go in first, with the cabinets set on top of it, or should the cabinets go in first and the floor run up to them?
+
+The short answer: **floating floors go in after the cabinets. Nail-down and glue-down hardwood can go in before them, and there are good reasons to do it that way.** The details matter more than the rule, so here is how we think about it.
+
+## Floating floors: always after the cabinets
+
+Most luxury vinyl plank and laminate is installed as a floating floor. The planks click together and rest on the subfloor without being fastened, so the whole floor can expand and contract a little with temperature and humidity. Inland Empire homes swing between hot, dry summers and cooler winters, and a floating floor needs that room to move.
+
+Set a few hundred pounds of cabinets and stone countertop on top of a floating floor and you pin it in place. The floor can then buckle or separate at the seams somewhere else in the room. Most manufacturers say not to do it, and doing it can void the product warranty.
+
+So with [luxury vinyl plank](/services/luxury-vinyl-plank/) or laminate, the cabinets go in first, the flooring runs up to the cabinet bases with the required expansion gap, and the gap is hidden under the toe kick or a small trim piece.
+
+## Nail-down and glue-down hardwood: before is often better
+
+Solid hardwood nailed to a wood subfloor, and engineered hardwood glued to a slab, are fastened down. They do not need room to float, so setting cabinets on them does not cause the same problem.
+
+Installing the [hardwood](/services/hardwood-flooring-installation/) first has real advantages:
+
+- **Future layout changes are easier.** If you later move or remove a cabinet or island, there is floor underneath instead of bare subfloor.
+- **Appliance openings stay at the right height.** The floor runs into the dishwasher and range openings, so appliances sit on the same level as the floor around them.
+- **Cleaner edges.** There are no cut edges to scribe and trim along every cabinet base.
+
+The trade-offs are more material, since you are buying flooring that ends up hidden, and the risk of the new floor getting damaged while cabinets and counters go in. Some homeowners choose to run hardwood only to the cabinet line to save on material. That works too, as long as the appliance openings are handled.
+
+## The dishwasher problem
+
+This is the detail that catches people out. A dishwasher slides into a fixed opening under the countertop. If the cabinets and counters go in first and then a new floor goes down in front of the dishwasher, the opening is now shorter by the thickness of the new floor. The dishwasher may still fit today, but pulling it out for a repair or replacement can mean prying up the countertop or cutting the floor.
+
+The fix is to continue the flooring, or a level shim of the same height, into the dishwasher bay before the dishwasher is installed. The same logic applies to a range or refrigerator slid into a tight space between cabinets. Plan it before the cabinet installer arrives.
+
+## Islands
+
+An island is usually anchored to the floor. With fastened hardwood, it can sit on the finished floor. With a floating floor, the island goes in first and the flooring runs around it with an expansion gap and trim, the same as the perimeter cabinets.
+
+## Site-finished hardwood and the rest of the schedule
+
+If you are installing unfinished hardwood that we sand and finish on site, the usual sequence is to install it early and do the final sanding and finish coats near the end of the remodel, after the messy trades are done. That way the finish is not scratched by cabinet installers, plumbers and countertop crews. Prefinished hardwood and vinyl floors are finished when they arrive, so they need careful protection instead.
+
+Either way, a new floor that goes in before other work should be covered with a breathable floor protection board, taped at the seams, until the last trade leaves. Plastic sheeting traps moisture and slips underfoot, so it is not a good substitute.
+
+## A sequence that works
+
+1. Demolition and removal of the old floor
+2. Subfloor or slab prep, including moisture testing on slabs
+3. Hardwood installation, if it is going under the cabinets
+4. Cabinets, islands, countertops
+5. Floating floor installation, if that is the plan
+6. Appliances, trim, and final sanding and finishing for site-finished hardwood
+
+For choosing the floor itself, our [kitchen flooring guide](/flooring/kitchen-flooring/) and our post on [kitchen flooring options](/blog/kitchen-flooring-options/) compare what holds up best.
+
+If you are planning a kitchen remodel, bring us in before the cabinets are ordered. [Book a free estimate](/free-estimate/) and we will help you set the order of work so the floor, the cabinets and the appliances all fit together.`,
+    internalLinks: [
+      { href: '/services/hardwood-flooring-installation/', text: 'Hardwood flooring installation' },
+      { href: '/services/luxury-vinyl-plank/', text: 'Luxury vinyl plank installation' },
+      { href: '/flooring/kitchen-flooring/', text: 'Kitchen flooring options' },
+      { href: '/free-estimate/', text: 'Book a free estimate' },
+    ],
+    faqs: [
+      { q: 'Should flooring go under kitchen cabinets?', a: 'It depends on the floor. Floating floors such as most click-lock LVP and laminate should not go under cabinets, because the weight pins the floor and it can buckle. Nail-down solid hardwood and glue-down engineered hardwood can go under cabinets, which keeps appliance openings level and makes future layout changes easier.' },
+      { q: 'Do you install flooring before or after cabinets?', a: 'Floating floors go in after the cabinets, running up to the cabinet bases with an expansion gap hidden by the toe kick or trim. Fastened hardwood is often installed before the cabinets, then protected until the remodel is finished.' },
+      { q: 'Does flooring need to go under the dishwasher?', a: 'The floor, or a level shim of the same height, should continue into the dishwasher bay. Otherwise the new floor in front makes the opening shorter, and the dishwasher can get trapped under the countertop when it needs to be pulled out.' },
+      { q: 'Can a kitchen island sit on a floating floor?', a: 'It should not be anchored on top of one. With a floating floor the island is installed first and the flooring runs around it with an expansion gap and trim. With nail-down or glue-down hardwood the island can sit on the finished floor.' },
+    ],
+  },
 ];
 
 export const blogBySlug = Object.fromEntries(blogPosts.map((p) => [p.slug, p]));

@@ -81,6 +81,7 @@ export const services: Service[] = [
       'hardwood-floors-on-concrete-slab',
       'wide-plank-hardwood-california',
       'best-flooring-for-southern-california-homes',
+      'hardwood-floors-before-or-after-kitchen-cabinets',
     ],
     relatedGuides: [
       { slug: 'solid-hardwood-flooring', label: 'Solid hardwood flooring explained' },
@@ -313,6 +314,7 @@ export const services: Service[] = [
       'water-damaged-hardwood-floors',
       'replace-damaged-vinyl-plank',
       'matching-new-hardwood-to-existing-floors',
+      'pet-urine-stains-hardwood-floors',
     ],
     relatedGuides: [
       { slug: 'water-damage-floor-repair', label: 'Water-damaged floor repair guide' },
@@ -365,6 +367,7 @@ export const services: Service[] = [
     ],
     relatedPosts: [
       'staircase-installation-inland-empire',
+      'refinishing-hardwood-stairs',
     ],
     relatedGuides: [
       { slug: 'oak-flooring', label: 'Matching stair treads to oak floors' },

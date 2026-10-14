@@ -12,11 +12,13 @@ import ProjectGallery from '~/components/ProjectGallery.astro';
 import { serviceSchema, breadcrumbSchema, faqSchema } from '~/lib/schema';
 import type { Service } from '~/data/services';
 import { guidesBySlug } from '~/data/guides';
+import { blogPosts } from '~/data/blog';
 import { business } from '~/data/business';
 
 interface Props { service: Service; }
 const { service } = Astro.props as Props;
 const path = `/services/${service.slug}/`;
+const relatedPosts = (service.relatedPosts ?? []).map((slug) => blogPosts.find((p) => p.slug === slug)).filter((p): p is NonNullable<typeof p> => Boolean(p));
 
 const crumbs = [
   { name: 'Home', href: '/' },
@@ -198,6 +200,19 @@ const projectPhotos = galleryPool.filter((p) => p.src !== service.heroImage && !
             ) : null;
           })}
         </ul>
+        {relatedPosts.length > 0 && (
+          <>
+            <h3 class="mt-8 text-xl font-bold text-brand-900">From our blog</h3>
+            <ul class="mt-4 grid sm:grid-cols-2 gap-x-8 gap-y-3">
+              {relatedPosts.map((p) => (
+                <li class="flex items-start gap-3">
+                  <span class="mt-1.5 h-2 w-2 rounded-full bg-brand-500 shrink-0"></span>
+                  <a href={`/blog/${p.slug}/`} class="text-lg font-semibold text-brand-700 hover:text-brand-900">{p.title}</a>
+                </li>
+              ))}
+            </ul>
+          </>
+        )}
       </div>
     </section>
   )}

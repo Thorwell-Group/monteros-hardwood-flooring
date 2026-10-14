@@ -26,6 +26,8 @@ export interface Service {
   gallery?: { src: string; alt: string }[];  // additional service-relevant photos
   // Educational/material deep-dives this transactional service page should link DOWN to.
   relatedGuides?: { slug: string; label: string }[];
+  // Blog posts (by slug) listed under the guides on the service page.
+  relatedPosts?: string[];
   // Optional contextual blog interlink (anchor text + path).
   blogLink?: { href: string; label: string };
 }
@@ -73,6 +75,12 @@ export const services: Service[] = [
       { src: '/images/hardwood-formal-living-room.webp', alt: 'Hardwood flooring in a formal Inland Empire living room' },
       { src: '/images/hardwood-large-living-space.webp', alt: 'Hardwood flooring in a large open living space' },
       { src: '/images/hardwood-kitchen-flooring.webp', alt: 'Hardwood kitchen flooring installation' },
+    ],
+    relatedPosts: [
+      'hardwood-vs-laminate-inland-empire',
+      'hardwood-floors-on-concrete-slab',
+      'wide-plank-hardwood-california',
+      'best-flooring-for-southern-california-homes',
     ],
     relatedGuides: [
       { slug: 'solid-hardwood-flooring', label: 'Solid hardwood flooring explained' },
@@ -126,6 +134,12 @@ export const services: Service[] = [
       { src: '/images/hardwood-staircase-refinishing.webp', alt: 'Hardwood staircase mid-refinish' },
       { src: '/images/hardwood-floor-sander.webp', alt: 'Floor sander working across an oak floor during a refinish' },
     ],
+    relatedPosts: [
+      'sun-faded-hardwood-floors-inland-empire',
+      'screen-and-recoat-vs-full-refinish',
+      'hardwood-floor-refinishing-cost-inland-empire',
+      'hardwood-floor-stain-colors-inland-empire',
+    ],
     relatedGuides: [
       { slug: 'sand-and-stain', label: 'Full sand, stain & seal process' },
       { slug: 'screen-and-recoat', label: 'Screen & recoat (light refresh)' },
@@ -175,6 +189,12 @@ export const services: Service[] = [
       { src: '/images/luxury-vinyl-plank-perspective.webp', alt: 'Low-angle perspective of luxury vinyl plank flooring' },
       { src: '/images/luxury-vinyl-plank-styled-room.webp', alt: 'Styled room featuring luxury vinyl plank flooring' },
       { src: '/images/luxury-vinyl-plank-samples.webp', alt: 'Luxury vinyl plank samples laid out for selection' },
+    ],
+    relatedPosts: [
+      'hardwood-vs-luxury-vinyl-plank',
+      'luxury-vinyl-plank-vs-laminate-inland-empire',
+      'lvp-installation-inland-empire-what-good-looks-like',
+      'waterproof-flooring-southern-california',
     ],
     relatedGuides: [
       { slug: 'waterproof-luxury-vinyl-plank', label: 'What makes LVP waterproof' },
@@ -230,6 +250,12 @@ export const services: Service[] = [
       { src: '/images/laminate-sample-selection.webp', alt: 'Laminate flooring samples laid out for selection' },
       { src: '/images/dog-on-laminate-flooring.webp', alt: 'Family dog resting on durable laminate flooring' },
     ],
+    relatedPosts: [
+      'hardwood-vs-laminate-inland-empire',
+      'laminate-vs-hardwood-real-cost',
+      'laminate-flooring-installation-inland-empire',
+      'luxury-vinyl-plank-vs-laminate-inland-empire',
+    ],
     relatedGuides: [
       { slug: 'ac-rated-laminate', label: 'AC ratings explained (AC4 vs AC5)' },
       { slug: 'water-resistant-laminate', label: 'Water-resistant laminate guide' },
@@ -281,6 +307,13 @@ export const services: Service[] = [
       { src: '/images/hardwood-floor-refinishing.webp', alt: 'Hardwood floor mid-repair, freshly sanded for board matching' },
       { src: '/images/hardwood-flooring-installation.webp', alt: 'Hardwood floor showing seamlessly patched boards woven into the existing pattern' },
     ],
+    relatedPosts: [
+      'floor-repair-inland-empire',
+      'gaps-in-hardwood-floors',
+      'water-damaged-hardwood-floors',
+      'replace-damaged-vinyl-plank',
+      'matching-new-hardwood-to-existing-floors',
+    ],
     relatedGuides: [
       { slug: 'water-damage-floor-repair', label: 'Water-damaged floor repair guide' },
       { slug: 'scratch-and-gouge-repair', label: 'Scratch & gouge repair guide' },
@@ -329,6 +362,9 @@ export const services: Service[] = [
     intent: 'specialty',
     gallery: [
       { src: '/images/hardwood-staircase-refinishing.webp', alt: 'Refinished hardwood staircase with matching treads and risers' },
+    ],
+    relatedPosts: [
+      'staircase-installation-inland-empire',
     ],
     relatedGuides: [
       { slug: 'oak-flooring', label: 'Matching stair treads to oak floors' },

@@ -1576,9 +1576,9 @@ San Bernardino, Riverside, Highland, Redlands, Rialto, Loma Linda, Fontana, Ranc
   },
 {
     slug: 'hardwood-vs-laminate-inland-empire',
-    title: 'Hardwood vs Laminate: The Honest Difference',
-    metaTitle: 'Hardwood vs Laminate: The Honest Difference',
-    metaDesc: 'Hardwood and laminate look similar and behave nothing alike. Cost, lifespan, refinishing, and which one suits an Inland Empire home on a slab.',
+    title: 'Laminate vs Hardwood Flooring: What Is the Difference?',
+    metaTitle: 'Laminate vs Hardwood: What Is the Difference?',
+    metaDesc: 'Hardwood is real wood you can sand and refinish. Laminate is a printed image on fiberboard that cannot be refinished. Cost, water, pets and slabs compared.',
     excerpt: 'One is real wood you can sand back to new. The other is a photograph of wood under a very tough coating. That difference decides almost everything else.',
     date: '2026-08-11',
     category: 'comparison',
@@ -1588,6 +1588,19 @@ San Bernardino, Riverside, Highland, Redlands, Rialto, Loma Linda, Fontana, Ranc
     body: `Put a hardwood sample next to a good laminate one and plenty of people cannot tell which is which. Live on them for ten years and nobody has any doubt.
 
 Here is the difference that actually matters, without the sales pitch on either side.
+
+**The short answer:** hardwood is real wood (solid, or a real wood layer on a stable core) that can be sanded and refinished when it wears. Laminate is a photograph of wood under a hard clear wear layer on a fiberboard core. It costs less and resists scratches better, but it cannot be refinished and its core swells if it gets wet.
+
+## Laminate vs hardwood at a glance
+
+| | Hardwood | Laminate |
+| --- | --- | --- |
+| **What it is** | Real wood, or real wood on a stable core (engineered) | Printed image of wood on a fiberboard core |
+| **Refinishing** | Can be sanded and refinished, solid several times | Cannot be refinished; worn planks are replaced |
+| **Scratches** | Softer finish, scratches more easily | Aluminum-oxide wear layer, very scratch resistant |
+| **Water** | Can often be dried and refinished | Core swells and does not recover |
+| **Cost** | Higher, in material and labor | Substantially cheaper installed |
+| **On a concrete slab** | Engineered yes, solid generally not | Yes, with underlayment and a moisture barrier |
 
 ## What they physically are
 
@@ -1719,8 +1732,8 @@ Our [stair installation service](/services/stair-installation/) covers the full 
   },
   {
     slug: 'wide-plank-hardwood-california',
-    title: 'Wide Plank Flooring in a Dry Climate',
-    metaTitle: 'Wide Plank Hardwood in Southern California',
+    title: 'Wide Plank Hardwood Flooring in a Dry California Climate',
+    metaTitle: 'Wide Plank Hardwood Flooring in California',
     metaDesc: 'Wide boards make a room look calmer and move more with humidity. What wide plank needs from a subfloor and why engineered is the right call here.',
     excerpt: 'Wide plank is the biggest visual upgrade available in wood flooring, and the one that asks the most from the floor underneath it.',
     date: '2026-08-11',
@@ -2932,7 +2945,7 @@ We answer all four in writing at the [free estimate](/free-estimate/), with a bo
   {
     slug: 'sun-faded-hardwood-floors-inland-empire',
     title: 'Sun-Faded Hardwood Floors: Why Inland Empire Sun Changes Wood Color and What Fixes It',
-    metaTitle: 'Sun-Faded Hardwood Floors | Inland Empire Fixes',
+    metaTitle: 'Sun-Faded Hardwood Floors: Fixes and Prevention',
     metaDesc: 'Why hardwood floors fade, darken or leave rug-shaped patches under Inland Empire sun, which species change most, what a recoat can and cannot fix, and how to protect a floor from UV going forward.',
     excerpt: 'Move a rug you have had down for five years and there it is: a rectangle of a different floor. Here is what the sun actually does to wood, and which fixes work.',
     date: '2026-09-06',
@@ -2974,7 +2987,7 @@ The same applies to darkening. A Brazilian cherry floor that has deepened in the
 
 **A stain change, while you are refinishing.** A medium or darker stain hides future uneven fading better than a natural finish, because the stain color dominates the wood color. Worth considering in a room you know will keep getting sun.
 
-## Protecting the floor going forward
+## How to prevent fading on hardwood floors
 
 Prevention is much cheaper than a refinish.
 

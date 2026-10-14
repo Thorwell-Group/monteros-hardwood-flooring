@@ -998,6 +998,8 @@ Want to compare in person? We bring both samples to every visit. [Get a free in-
 - **Choose laminate** if budget is the deciding factor, the home is a 5 - 10 year hold or a rental, and you're sticking to dry rooms.
 - **Strongly consider [luxury vinyl plank](/services/luxury-vinyl-plank/) instead** if any room touches water or you have pets. At a similar price to laminate, LVP is fully waterproof - see our [laminate vs LVP comparison](/flooring/laminate-vs-luxury-vinyl-plank/). For wet rooms, neither hardwood nor laminate belongs.
 
+Most Inland Empire homes sit on a concrete slab, which changes the comparison: solid hardwood is generally not recommended there, so the real choice is usually engineered hardwood versus laminate. Our article on [the difference between laminate and hardwood flooring](/blog/hardwood-vs-laminate-inland-empire/) walks through that slab question in more detail.
+
 Ready to compare in person? We bring [hardwood](/services/hardwood-flooring-installation/), [laminate](/services/laminate-flooring/), and LVP samples to your home. [Get a free in-home estimate](/free-estimate/).`,
     relatedGuides: ['laminate-vs-luxury-vinyl-plank', 'hardwood-vs-luxury-vinyl-plank'],
     faqs: [

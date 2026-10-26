@@ -3307,6 +3307,240 @@ If you are planning a kitchen remodel, bring us in before the cabinets are order
       { q: 'Can a kitchen island sit on a floating floor?', a: 'It should not be anchored on top of one. With a floating floor the island is installed first and the flooring runs around it with an expansion gap and trim. With nail-down or glue-down hardwood the island can sit on the finished floor.' },
     ],
   },
+  {
+    slug: 'santa-ana-winds-hardwood-floors',
+    title: 'Santa Ana Winds and Hardwood Floors: What Fall Does to Your Floors',
+    metaTitle: 'Santa Ana Winds and Hardwood Floors | Inland Empire',
+    metaDesc: 'Why hardwood floors gap, tick and dull during Santa Ana wind season in the Inland Empire, which changes are normal, which are not, and the simple humidity and cleaning habits that protect a wood floor from October to March.',
+    excerpt: 'The first big Santa Ana event of the fall drops indoor humidity overnight, and by morning there are new lines between the boards. Here is what is normal, what is not, and what to do about it.',
+    date: '2026-10-26',
+    category: 'maintenance',
+    image: '/images/hardwood-fireplace-living-room.webp',
+    alt: 'Hardwood floor in front of a fireplace in an Inland Empire living room',
+    readMins: 5,
+    body: `Every fall we get the same calls in the same week. The first strong Santa Ana wind blows through the Cajon Pass, and homeowners in Fontana, Rialto and San Bernardino wake up to thin dark lines between their floorboards that were not there on Friday.
+
+Most of the time the floor is fine. But wind season is the hardest stretch of the year on a wood floor here, so it is worth knowing what is happening and what to do.
+
+## What the wind actually does
+
+Santa Ana winds are warm, fast and extremely dry. Outdoor relative humidity can fall into the single digits for days at a time, and that dry air finds its way inside through every door opening, window gap and duct.
+
+Wood is hygroscopic. It holds moisture and trades it with the air around it. When the air in the house goes from a comfortable 40 percent to 15 or 20 percent, the boards give up moisture and shrink across their width. Each board loses only a sliver, but across a room those slivers add up to visible gaps.
+
+The effect is strongest in the communities that sit right in the wind path, below the Cajon Pass and along the foothills, but every city in the region feels it.
+
+## What is normal
+
+**Small, even gaps that appear in fall and close in spring.** This is seasonal movement, and it is how solid hardwood behaves everywhere. The gaps are usually the width of a business card or less and spread fairly evenly across the floor. Our [post on gaps in hardwood floors](/blog/gaps-in-hardwood-floors/) explains how to tell seasonal gaps from permanent ones.
+
+**A few new creaks and ticks.** Shrinking boards move against each other and against their fasteners. Some squeaks show up in the dry months and fade when humidity returns. Our [squeaky floor guide](/blog/how-to-fix-squeaky-hardwood-floors/) covers the ones that do not go away.
+
+**More noticeable movement on wide planks.** A seven-inch solid plank moves more than a two-and-a-quarter-inch strip because there is more wood in each board. It is one reason we often steer people toward engineered for wide plank here, as our [wide plank post](/blog/wide-plank-hardwood-california/) explains.
+
+## What is not normal
+
+- **Gaps that stay the same width all year.** If the gap in May matches the gap in December, the boards have shrunk for good, usually because they were installed before they were acclimated.
+- **A few very wide gaps instead of many small ones.** Sometimes a group of boards moves together and opens one big gap. This is often a fastening or adhesive issue rather than humidity alone.
+- **Cracks along the length of a board or splits at the ends.** Severe drying can check the surface of some boards, especially wide solid planks.
+- **Finish cracking along the seams.** When a floor finish bridges the joints between boards, shrinkage can split it in a line. It looks alarming, but it is usually a cosmetic finish problem.
+
+If you see any of these, our [floor repair team](/services/floor-repair/) can take a look before you decide anything.
+
+## Habits that protect the floor
+
+**Keep indoor humidity in a steady band.** Thirty-five to fifty percent is the target for most wood floors. An inexpensive digital hygrometer tells you where you are. A portable humidifier helps in one room; a whole-house humidifier on the HVAC system is the real fix for a house with a lot of wood.
+
+**Close up the house during a wind event.** Windows and sliders stay shut while the wind is blowing. That keeps the driest air out, and the dust with it.
+
+**Do not fill seasonal gaps.** Wood filler or caulk pushed into a fall gap gets crushed or squeezed out when the boards swell again in spring. Seasonal gaps should be left alone.
+
+**Sweep and dry mop more often.** Santa Ana winds carry fine grit and, in fire season, ash. Grit under shoes acts like sandpaper on the finish. Mats at every exterior door and a daily dry mop during windy weeks do more for the finish than any product. Dry mop or vacuum ash before any damp cleaning, so it is not smeared into the grain. Our [desert care guide](/blog/how-to-care-for-hardwood-floors-in-the-desert/) covers the full routine.
+
+**Watch fireplaces and space heaters.** Running a fireplace or space heater during a dry spell pulls humidity down further and dries the boards closest to it. Those rooms are where a humidifier earns its keep.
+
+## Thinking about new floors this fall?
+
+Wind season does not stop installations, but it changes how they should be done. Wood should acclimate in the house until its moisture content matches the home, and the installer should be checking the wood and the subfloor with a moisture meter, not guessing. Installing boards that arrived from a humid warehouse during a dry wind week, without acclimation, is how gaps get built into a new floor.
+
+If you are planning a project, ask any contractor how they handle acclimation during Santa Ana season. It is a good test of whether they have worked in this climate. Our [hardwood installation page](/services/hardwood-flooring-installation/) describes how we handle it.
+
+Seeing gaps, cracks or cupping you are not sure about? [Book a free estimate](/free-estimate/) and we will tell you whether it is the season or something that needs fixing.`,
+    internalLinks: [
+      { href: '/blog/gaps-in-hardwood-floors/', text: 'Why gaps appear in hardwood floors' },
+      { href: '/blog/how-to-care-for-hardwood-floors-in-the-desert/', text: 'Caring for hardwood in the desert' },
+      { href: '/services/floor-repair/', text: 'Hardwood floor repair' },
+      { href: '/areas-we-serve/fontana/', text: 'Flooring in Fontana' },
+      { href: '/free-estimate/', text: 'Book a free estimate' },
+    ],
+    faqs: [
+      { q: 'Why do my hardwood floors have gaps after Santa Ana winds?', a: 'Santa Ana winds drop humidity sharply, sometimes into the single digits outdoors. Wood gives up moisture to dry air and shrinks across its width, so small gaps open between boards. Even, narrow gaps that appear in fall and close in spring are normal seasonal movement.' },
+      { q: 'Should I fill the gaps in my hardwood floor in winter?', a: 'Not if they are seasonal. Filler pushed into a fall gap gets crushed or squeezed out when the boards swell again in spring. Only gaps that stay the same width all year are candidates for repair.' },
+      { q: 'What humidity should I keep my house at for hardwood floors?', a: 'Thirty-five to fifty percent relative humidity suits most hardwood floors. A digital hygrometer shows where you are, a portable humidifier helps in a single room, and a whole-house humidifier on the HVAC is the best fix during dry Santa Ana weeks.' },
+      { q: 'Can hardwood floors be installed during Santa Ana season?', a: 'Yes, as long as the wood is acclimated in the home until its moisture content matches the house and the installer checks the wood and subfloor with a moisture meter. Skipping acclimation during a dry spell is how permanent gaps get built into a new floor.' },
+    ],
+  },
+  {
+    slug: 'new-floors-before-the-holidays-inland-empire',
+    title: 'Can You Get New Floors Before the Holidays? A Realistic Timeline',
+    metaTitle: 'New Floors Before the Holidays? A Realistic Timeline',
+    metaDesc: 'Working backward from Thanksgiving and Christmas: how long hardwood installation, LVP, laminate and refinishing really take in the Inland Empire, including ordering, acclimation and cure time, and which projects still fit before you host.',
+    excerpt: 'You are hosting in a few weeks and the floors are the thing you would change. Here is how to work backward from the date and pick a project that is actually finished, furniture and rugs included, before guests arrive.',
+    date: '2026-10-26',
+    category: 'local',
+    image: '/images/hardwood-dining-room-floor.webp',
+    alt: 'Hardwood floor in a dining room ready for holiday hosting',
+    readMins: 6,
+    body: `Late October is when the question starts: "We are hosting Thanksgiving. Is there still time to do the floors?"
+
+Sometimes yes. Sometimes only if you choose a different project. The way to find out is to work backward from the day guests walk in, because the install itself is rarely the long part. Ordering, acclimation and cure time are.
+
+This year Thanksgiving falls on **Thursday, November 26**, and Christmas on a Friday. Here is how each type of project fits.
+
+## Step one: the real start date
+
+Before anyone touches a floor, three things happen.
+
+**The estimate and measure.** Someone needs to see the rooms, measure, check the subfloor and confirm what is underneath the current floor. That takes a visit, not a phone call.
+
+**Material.** In-stock flooring can arrive within days. Special-order species, specific widths and particular colors can add weeks. If the holidays are the deadline, ask at the estimate which products are in stock now and choose from those.
+
+**Acclimation.** Hardwood needs **three to five days** in the house before installation so it can match the moisture of the home. LVP and laminate need a day or two at room temperature. This time cannot be skipped to save a week; skipping it is how floors gap. Our [Santa Ana winds post](/blog/santa-ana-winds-hardwood-floors/) explains why it matters even more in the dry months.
+
+## Step two: how long each project takes
+
+**Luxury vinyl plank or laminate.** The fastest by far. Most homes are done in **one to three days**, and you can walk on a floating floor as soon as the last plank is down. This is the safest bet when the deadline is close. Our [LVP installation guide](/blog/lvp-installation-inland-empire-what-good-looks-like/) covers what happens on those days.
+
+**New hardwood.** Plan on **three to seven days** including acclimation, and longer for a large area or if the subfloor needs work. Prefinished hardwood can be used as soon as it is installed; site-finished hardwood needs the same cure time as a refinish.
+
+**Full sand and refinish.** **Three to five days** for a main living area, but the clock does not stop when the crew leaves. Socks after 24 hours, shoes after 48, furniture back after **five to seven days** and rugs after **two weeks**. Our [refinishing cost post](/blog/hardwood-floor-refinishing-cost-inland-empire/) breaks the stages down.
+
+**Screen and recoat.** About **one day** of work and a short cure. If the floor is worn but not damaged, this is the project that still fits when nothing else does. Our [screen and recoat comparison](/blog/screen-and-recoat-vs-full-refinish/) explains when it is enough.
+
+**Stairs.** Treads and risers are custom work, quoted on their own, and usually take several days. If the staircase is the only one in the house, plan the sequence early.
+
+## Working backward from Thanksgiving
+
+Here is the math for a full refinish of a living and dining area, aiming to have the table, the chairs and the rugs back by November 26:
+
+- **Rugs back by Thanksgiving** means the last coat goes down by about **November 12**.
+- **Three to five days of sanding and coats** means work starts around **November 7 to 9**.
+- That leaves the first week of November for the estimate, scheduling and moving furniture out.
+
+If you can live without area rugs for the holiday, the window stretches by about a week. If the plan is LVP instead, a mid-November install still leaves comfortable margin.
+
+Christmas gives you roughly four more weeks on all of these numbers.
+
+## What usually goes wrong
+
+**Waiting for the perfect product.** A special-order plank that arrives December 10 does not help a Thanksgiving deadline. Choose from what is available.
+
+**Forgetting the furniture.** A floor cannot be finished under a sofa. Plan where everything goes; our [preparation checklist](/blog/preparing-for-flooring-install/) covers the rest.
+
+**Surprises under the old floor.** Water damage, an uneven slab or old adhesive can add prep days. A good estimate looks for these up front, and a little slack in the schedule absorbs them.
+
+**Cold nights.** Inland Empire evenings get cool in November. Finishes cure more slowly in a cold house, so keep the heat at a normal living temperature during and after a refinish rather than turning it off while you are away.
+
+## If the date is too close
+
+Do one room instead of the whole house. Refinish the dining room now and do the hallway in January. Install LVP in the kitchen now and plan hardwood for the living room after the holidays. Phasing is often the better plan anyway, and our [financing and phasing post](/blog/paying-for-new-floors-inland-empire/) walks through how to split a project.
+
+The honest answer depends on your rooms, your current floor and what is in stock. [Book a free estimate](/free-estimate/) or call **(909) 279-8225**, tell us the date you are hosting, and we will tell you which option still makes it.`,
+    internalLinks: [
+      { href: '/services/luxury-vinyl-plank/', text: 'Luxury vinyl plank installation' },
+      { href: '/services/hardwood-floor-refinishing/', text: 'Hardwood floor refinishing' },
+      { href: '/blog/preparing-for-flooring-install/', text: 'How to prepare your home for installation' },
+      { href: '/blog/paying-for-new-floors-inland-empire/', text: 'Financing vs. phasing a flooring project' },
+      { href: '/free-estimate/', text: 'Book a free estimate' },
+    ],
+    faqs: [
+      { q: 'How far ahead should I book new floors before the holidays?', a: 'Work backward from the day guests arrive. For a full hardwood refinish with rugs back in place, the last coat needs to go down about two weeks before, so work should start roughly two and a half weeks out, with the estimate before that. LVP and laminate need much less lead time because most homes are installed in one to three days.' },
+      { q: 'What is the fastest flooring to install before hosting?', a: 'Click-lock luxury vinyl plank or laminate. Most homes are done in one to three days, the planks only need a day or two to acclimate, and a floating floor can be walked on as soon as it is installed.' },
+      { q: 'How soon can I put furniture back after refinishing hardwood floors?', a: 'Socks after 24 hours, shoes after 48 hours, furniture after five to seven days and area rugs after two weeks. Putting weight or rugs on a finish before it cures is the most common way new floors get marked in their first week.' },
+      { q: 'Is a screen and recoat fast enough to do before the holidays?', a: 'Usually. A screen and recoat takes about a day and has a short cure, so it can fit when a full refinish will not. It refreshes a dull or lightly scratched finish but cannot remove deep scratches, stains or fading.' },
+    ],
+  },
+  {
+    slug: 'replacing-tile-with-hardwood-or-lvp',
+    title: 'Replacing Tile With Hardwood or LVP: What Tile Removal Really Involves',
+    metaTitle: 'Replacing Tile With Hardwood or LVP | Inland Empire',
+    metaDesc: 'What it takes to replace ceramic or porcelain tile with hardwood or luxury vinyl plank on an Inland Empire slab: demolition, grinding thinset flat, dust control, asbestos testing in older homes, and when installing over tile makes sense.',
+    excerpt: 'Tile is the hardest floor to take out and the one homeowners most often want gone. Here is what the demolition actually involves, why the slab underneath matters more than the tile, and when you can skip removal altogether.',
+    date: '2026-10-26',
+    category: 'cost',
+    image: '/images/luxury-vinyl-plank-kitchen.webp',
+    alt: 'Luxury vinyl plank kitchen floor installed after tile removal',
+    readMins: 6,
+    body: `A huge number of Inland Empire homes built from the 1980s through the 2000s have ceramic or porcelain tile through the entry, kitchen and family room. It is durable, but it is cold and hard underfoot, and the grout never looks clean again. When those homeowners want wood or a warmer-looking floor, the first question is always the same: what does it take to get the tile out?
+
+More than taking out carpet, and more than most quotes make obvious. Here is what happens.
+
+## Why tile is the hardest floor to remove
+
+Carpet rolls up. Floating floors unclick. Tile is bonded to the slab with thinset mortar, a cement-based adhesive, and every tile has to be broken free.
+
+The work is done with electric demolition hammers and chisels, row by row. It is loud, it is slow, and the debris is heavy: a kitchen and family room produce a surprising amount of broken tile and mortar to haul away. That is why tile demo is quoted on its own line, and why it is the most labor-intensive demolition we do.
+
+## The part that matters most: the slab underneath
+
+Pulling the tile is only half the job. What is left behind is a slab covered in ridges of old thinset, and every new floor has a flatness requirement.
+
+Most floating LVP, laminate and engineered hardwood products call for the subfloor to be flat to within about **3/16 of an inch over ten feet**. Ridges of mortar and the low spots where tiles popped up clean do not meet that. So after demolition the slab is ground down to remove the remaining thinset, and low areas are filled with patching or leveling compound.
+
+Skip this and the new floor tells you within months. Floating floors flex over the high spots and the click joints separate or break. Glue-down floors telegraph every ridge through the surface. Our post on [hardwood on a concrete slab](/blog/hardwood-floors-on-concrete-slab/) covers the rest of slab prep, including the moisture testing that should happen before any wood goes down.
+
+## Dust: what to expect and what to ask
+
+Breaking tile and grinding thinset makes fine concrete dust. A careful crew controls it with plastic sheeting over doorways and openings, HVAC returns sealed off, and grinders connected to HEPA vacuums. Even so, plan for a dusty few days and keep people and pets away from the work area.
+
+Ask any contractor exactly how they contain dust during tile removal. If the answer is "we sweep up at the end," expect to be cleaning your whole house afterward.
+
+## Older homes: test before anyone breaks anything
+
+Ceramic and porcelain tile is rarely the concern. The concern in older homes is **9-by-9-inch vinyl floor tile and black adhesive** (cutback mastic), which were commonly made with asbestos before the 1980s. These materials sometimes hide under later tile or carpet in older Redlands, Riverside and San Bernardino homes.
+
+If your house was built before about 1980 and there is any chance of old vinyl tile or black mastic in the floor build-up, have a sample tested before demolition starts. If it comes back positive, removal is a job for a licensed abatement contractor, and the flooring work starts after that.
+
+## Can you install over tile instead?
+
+Sometimes, and it can save real time and money.
+
+**Floating LVP or laminate over tile** works if the tile is solidly bonded (no hollow-sounding or cracked tiles), the grout lines are filled or skim-coated so they do not show through, and the surface is flat. Many manufacturers allow it.
+
+**But check the height.** The new floor adds its thickness on top of the tile. That can mean:
+
+- **Doors** that no longer clear and need trimming.
+- **Transitions** that become a noticeable step up from the next room.
+- **A dishwasher** that gets trapped under the countertop once the floor around it rises. This one catches a lot of people.
+- **Toe kicks and baseboards** that look short against the raised floor.
+
+**Hardwood over tile** is generally not the right call. Solid hardwood is nailed and needs a wood subfloor. Glue-down engineered hardwood needs a clean, flat, properly prepared substrate. In almost every case we recommend removing tile before hardwood.
+
+## Hardwood or LVP once the tile is gone?
+
+It depends on the room. Kitchens, laundry rooms and baths usually do best with waterproof LVP, because the realistic risk is a slow appliance or plumbing leak. Living rooms, dining rooms and entries are where [engineered hardwood](/flooring/engineered-hardwood-flooring/) earns its cost on a slab. Our [kitchen flooring options post](/blog/kitchen-flooring-options/) and the [hardwood vs LVP comparison](/blog/hardwood-vs-luxury-vinyl-plank/) cover the trade-offs.
+
+One more thing to plan for: tile often runs under the kitchen cabinets or stops neatly at them. Removal can chip toe kicks, and it usually means the baseboards come off and go back on, or get replaced. Ask that these be in the quote.
+
+## What a good quote includes
+
+Look for each of these as a separate line: tile and thinset removal, disposal, slab grinding and leveling, moisture testing, baseboard removal and reinstallation, transitions, and appliance moving. A low tile-to-floor quote usually leaves one of them out.
+
+[Book a free estimate](/free-estimate/) and we will check how your tile is bonded, measure the height at the doors and appliances, and tell you whether removal or an over-tile install makes more sense for your house.`,
+    internalLinks: [
+      { href: '/services/luxury-vinyl-plank/', text: 'Luxury vinyl plank installation' },
+      { href: '/services/hardwood-flooring-installation/', text: 'Hardwood floor installation' },
+      { href: '/flooring/engineered-hardwood-flooring/', text: 'Engineered hardwood for slab subfloors' },
+      { href: '/blog/hardwood-floors-on-concrete-slab/', text: 'Hardwood on a concrete slab' },
+      { href: '/free-estimate/', text: 'Book a free estimate' },
+    ],
+    faqs: [
+      { q: 'Can you put LVP over ceramic tile?', a: 'Often, yes. Floating LVP can go over tile that is solidly bonded and flat, with grout lines filled so they do not show through. Check the added height first: doors may need trimming, transitions can become a step, and a dishwasher can end up trapped under the countertop.' },
+      { q: 'Can hardwood be installed over tile?', a: 'Generally not. Solid hardwood needs a wood subfloor to nail into, and glue-down engineered hardwood needs a clean, flat, properly prepared slab. In almost every case the tile should be removed and the slab ground flat before hardwood goes down.' },
+      { q: 'Why does tile removal cost more than carpet removal?', a: 'Tile is bonded to the slab with cement-based thinset, so every tile has to be broken free with a demolition hammer, the debris is heavy to haul, and the leftover thinset has to be ground off so the slab is flat enough for the new floor.' },
+      { q: 'Does old floor tile contain asbestos?', a: 'Ceramic and porcelain tile rarely does. The concern is 9-by-9-inch vinyl floor tile and black cutback adhesive installed before about 1980, which often contained asbestos. In an older home, have suspect material tested before demolition; if it is positive, a licensed abatement contractor removes it.' },
+    ],
+  },
 ];
 
 export const blogBySlug = Object.fromEntries(blogPosts.map((p) => [p.slug, p]));

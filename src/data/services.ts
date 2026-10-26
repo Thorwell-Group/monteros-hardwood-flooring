@@ -140,6 +140,7 @@ export const services: Service[] = [
       'screen-and-recoat-vs-full-refinish',
       'hardwood-floor-refinishing-cost-inland-empire',
       'hardwood-floor-stain-colors-inland-empire',
+      'new-floors-before-the-holidays-inland-empire',
     ],
     relatedGuides: [
       { slug: 'sand-and-stain', label: 'Full sand, stain & seal process' },
@@ -196,6 +197,7 @@ export const services: Service[] = [
       'luxury-vinyl-plank-vs-laminate-inland-empire',
       'lvp-installation-inland-empire-what-good-looks-like',
       'waterproof-flooring-southern-california',
+      'replacing-tile-with-hardwood-or-lvp',
     ],
     relatedGuides: [
       { slug: 'waterproof-luxury-vinyl-plank', label: 'What makes LVP waterproof' },
@@ -315,6 +317,7 @@ export const services: Service[] = [
       'replace-damaged-vinyl-plank',
       'matching-new-hardwood-to-existing-floors',
       'pet-urine-stains-hardwood-floors',
+      'santa-ana-winds-hardwood-floors',
     ],
     relatedGuides: [
       { slug: 'water-damage-floor-repair', label: 'Water-damaged floor repair guide' },

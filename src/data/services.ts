@@ -82,6 +82,7 @@ export const services: Service[] = [
       'wide-plank-hardwood-california',
       'best-flooring-for-southern-california-homes',
       'hardwood-floors-before-or-after-kitchen-cabinets',
+      'which-direction-should-flooring-run',
     ],
     relatedGuides: [
       { slug: 'solid-hardwood-flooring', label: 'Solid hardwood flooring explained' },
@@ -258,6 +259,7 @@ export const services: Service[] = [
       'laminate-vs-hardwood-real-cost',
       'laminate-flooring-installation-inland-empire',
       'luxury-vinyl-plank-vs-laminate-inland-empire',
+      'how-much-flooring-do-i-need',
     ],
     relatedGuides: [
       { slug: 'ac-rated-laminate', label: 'AC ratings explained (AC4 vs AC5)' },
@@ -318,6 +320,7 @@ export const services: Service[] = [
       'matching-new-hardwood-to-existing-floors',
       'pet-urine-stains-hardwood-floors',
       'santa-ana-winds-hardwood-floors',
+      'protecting-hardwood-floors-during-the-holidays',
     ],
     relatedGuides: [
       { slug: 'water-damage-floor-repair', label: 'Water-damaged floor repair guide' },

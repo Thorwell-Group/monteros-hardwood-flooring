@@ -3541,6 +3541,258 @@ Look for each of these as a separate line: tile and thinset removal, disposal, s
       { q: 'Does old floor tile contain asbestos?', a: 'Ceramic and porcelain tile rarely does. The concern is 9-by-9-inch vinyl floor tile and black cutback adhesive installed before about 1980, which often contained asbestos. In an older home, have suspect material tested before demolition; if it is positive, a licensed abatement contractor removes it.' },
     ],
   },
+  {
+    slug: 'protecting-hardwood-floors-during-the-holidays',
+    title: 'Protecting Hardwood Floors During the Holidays: Trees, Guests and Rain',
+    metaTitle: 'Protecting Hardwood Floors During the Holidays',
+    metaDesc: 'How to keep hardwood and LVP floors safe from Christmas tree water, rearranged furniture, rental chairs, high heels, kitchen spills and the first rains of the season, plus what to check once the decorations come down.',
+    excerpt: 'More floor damage starts between Thanksgiving and New Year than in any other stretch of the year, and most of it is avoidable. Here is where it comes from and the cheap fixes that prevent it.',
+    date: '2026-11-02',
+    category: 'maintenance',
+    image: '/images/hardwood-formal-living-room.webp',
+    alt: 'Hardwood floor in a formal living room ready for holiday guests',
+    readMins: 6,
+    body: `The calls we get in January follow a pattern. A gray ring where the Christmas tree stood. Scratches across the dining room from chairs that were dragged into place for a big dinner. A row of dents by the front door. A dark patch by the kitchen sink.
+
+None of these need special products to prevent. They need a few minutes of planning before the house fills up. Here is where holiday damage comes from and what to do about each one.
+
+## The Christmas tree: the number one holiday floor problem
+
+A fresh-cut tree drinks a lot of water, especially in its first week, so the stand gets topped up constantly. Every top-up is a chance to spill, and many stands seep slowly around the base. The tree skirt hides it. The water sits against the floor for a month before anyone sees it.
+
+On hardwood, that means **white or gray rings** where moisture got into the finish, **cupped boards** where it got into the wood, and on oak, **black stains**, which form when water reacts with the natural tannins in the wood. Black water stains usually go deeper than a refinish can reach, and the boards often have to be replaced.
+
+What prevents it:
+
+- **Put a waterproof tray under the stand.** A large plastic plant saucer or a boot tray, wider than the stand, with a mat or towel on top to catch drips. A tree skirt alone is not protection.
+- **Water with a funnel or a long-spout watering can,** and check the tray, not just the reservoir, every day or two.
+- **Lift the skirt once a week** and look at the floor around the tray.
+- **Artificial trees have a different problem.** Metal bases and leg tips scratch. Set the base on a piece of felt or a thin rug, and never drag the tree into place.
+
+## Moving furniture for a crowd
+
+Extra tables and rearranged rooms mean furniture gets pushed across the floor, often by guests trying to help.
+
+- **Lift, do not drag.** Two people carrying a sofa a few feet is better than one person sliding it.
+- **Check the felt pads before you move anything.** Pads compress and collect grit over the year, and a worn pad with sand in it scratches like sandpaper. Our [desert care guide](/blog/how-to-care-for-hardwood-floors-in-the-desert/) covers how often to replace them.
+- **Rental and folding chairs are the worst offenders.** Many have bare metal or hard plastic feet. Add felt or slip-on caps before the party, or put the table on a rug.
+
+## Heels and dents
+
+A stiletto heel puts the weight of a person on a tiny point. A heel whose rubber tip has worn off, exposing the metal pin, will dent almost any wood floor, and the dents are permanent until the floor is sanded.
+
+Harder species such as hickory and oak resist dents better than walnut, cherry or pine, but none are immune. Rigid core LVP holds up well to heels. If a lot of guests will be in dress shoes, put down area rugs in the busiest spots, and do not be shy about a basket of slippers by the door.
+
+## Rain, wet shoes and the entry
+
+Our rainy season usually gets going right around the holidays, often after weeks of dry Santa Ana weather. Guests come in with wet shoes and umbrellas, and the entry takes the hit.
+
+- **A mat outside and a mat inside every door that guests use.** The outside mat takes the grit, the inside mat takes the water.
+- **A boot tray for umbrellas and wet shoes,** so they do not drip on the floor all evening.
+- **Wipe up puddles as they happen.** A few minutes of standing water is harmless. A wet doormat sitting on the floor overnight is not.
+
+## The kitchen during holiday cooking
+
+Hours of cooking means spills, grease and dripping dish towels. Wipe spills right away with a damp, not wet, cloth, and dry the spot. Grease left on the floor gets tracked across the house.
+
+Be careful with mats. **Rubber-backed and latex-backed mats can trap moisture and permanently discolor some wood finishes and vinyl floors.** Use mats that the manufacturer says are safe for hardwood or vinyl, and lift them to let the floor dry after a big cleanup.
+
+## Fireplaces, heaters and dry air
+
+Holiday evenings mean fires and space heaters, which dry out the air further after a dry fall. Keep indoor humidity between 35 and 50 percent if you can, and keep heaters well away from wood floors and rugs. A hearth rug catches the embers and ash that pop out of a fireplace. Our [Santa Ana winds post](/blog/santa-ana-winds-hardwood-floors/) explains what dry air does to wood and why a little seasonal gapping is normal.
+
+## Pets and visitors
+
+New people and noise can unsettle dogs and cats, and accidents happen more often in a full house. Clean them up right away; urine left to soak is the one pet problem that sanding often cannot fix. Our [pet urine stain guide](/blog/pet-urine-stains-hardwood-floors/) covers what to do.
+
+## After the holidays: a five-minute check
+
+Once the decorations come down, look at the floor before the furniture goes back.
+
+- **Under the tree.** Gray or white haze is usually in the finish and can often be repaired. Dark gray or black, or boards with raised edges, means water got into the wood. Our [water damage guide](/blog/water-damaged-hardwood-floors/) explains what happens next.
+- **The dining room and entry.** Look for scratches and dents in a raking light from a window.
+- **Overall dullness.** If the finish looks tired but there are no deep scratches or stains, a [screen and recoat](/blog/screen-and-recoat-vs-full-refinish/) in January is a quick, inexpensive refresh.
+
+Found something you are not sure about? [Book a free estimate](/free-estimate/) or call **(909) 279-8225** and we will tell you whether it needs a repair, a refresh or nothing at all.`,
+    internalLinks: [
+      { href: '/services/floor-repair/', text: 'Hardwood floor repair' },
+      { href: '/blog/water-damaged-hardwood-floors/', text: 'What to do about water-damaged hardwood' },
+      { href: '/blog/screen-and-recoat-vs-full-refinish/', text: 'Screen and recoat vs. full refinish' },
+      { href: '/blog/new-floors-before-the-holidays-inland-empire/', text: 'New floors before the holidays: a timeline' },
+      { href: '/free-estimate/', text: 'Book a free estimate' },
+    ],
+    faqs: [
+      { q: 'How do I protect my hardwood floor from a Christmas tree?', a: 'Put a waterproof tray, such as a large plastic plant saucer or boot tray, under the tree stand, with a mat or towel on top. A tree skirt alone does not stop water. Water with a funnel or long-spout can and check the tray every day or two. For artificial trees, set the base on felt or a thin rug so the metal legs do not scratch.' },
+      { q: 'Can water stains from a Christmas tree be removed from hardwood?', a: 'White or gray rings are usually moisture trapped in the finish and can often be repaired. Black stains mean water has reacted with the tannins in the wood, which usually goes too deep to sand out, so the affected boards are typically replaced.' },
+      { q: 'Do high heels damage hardwood floors?', a: 'They can. A heel concentrates body weight on a tiny point, and a heel with a worn tip that exposes the metal pin will dent almost any wood. Harder species such as hickory and oak resist dents better than walnut, cherry or pine. Rugs in busy areas help.' },
+      { q: 'Are rubber-backed mats safe on hardwood or vinyl floors?', a: 'Not always. Rubber-backed and latex-backed mats can trap moisture and permanently discolor some wood finishes and vinyl floors. Use mats labeled safe for hardwood or vinyl and lift them so the floor can dry after cleaning.' },
+    ],
+  },
+  {
+    slug: 'how-much-flooring-do-i-need',
+    title: 'How Much Flooring Do I Need? Measuring Square Footage and Waste',
+    metaTitle: 'How Much Flooring Do I Need? Square Footage + Waste',
+    metaDesc: 'How to measure a room for hardwood, LVP or laminate, how much extra to order for waste (and why diagonal and herringbone need more), how to round up to full boxes, and why you should keep a spare box after the install.',
+    excerpt: 'Order too little and the last room waits weeks for a matching box. Order too much and you have paid for flooring that sits in the garage. Here is how to measure a room and how much extra to plan for.',
+    date: '2026-11-02',
+    category: 'cost',
+    image: '/images/luxury-vinyl-plank-samples.webp',
+    alt: 'Luxury vinyl plank samples laid out while planning a flooring order',
+    readMins: 6,
+    body: `Flooring is priced by the square foot and sold by the box, and the number on the box is never quite the number on your floor plan. Every installation needs extra material to cover cuts, defects and the odd board that ends up too short to use.
+
+Getting that number right matters. Run short, and the last room waits while a matching batch is found, which sometimes means a different dye lot. Order far too much, and you have paid for boxes that sit in the garage. Here is how to work it out.
+
+## Step one: measure each room
+
+Measure the length and width of each room at the floor, in feet, and multiply. A living room that is 18 feet by 15 feet is **270 square feet**.
+
+- **Break odd shapes into rectangles.** An L-shaped family room is two rectangles added together.
+- **Include closets, hallways and alcoves** that will get the same floor.
+- **Measure to the wall, not to the baseboard.** The floor runs under the trim.
+- **Measure the areas under appliances that the floor will run under,** such as the refrigerator alcove and the dishwasher bay. Our [kitchen cabinets post](/blog/hardwood-floors-before-or-after-kitchen-cabinets/) explains why the floor should continue under them.
+- **Do not count the space under kitchen cabinets for a floating floor.** Floating LVP and laminate stop at the cabinet bases.
+
+Add the rooms together for the total. As an example, a living room (270 sq ft), dining room (12 by 12, 144 sq ft) and hallway (3 by 20, 60 sq ft) come to **474 square feet**.
+
+## Step two: add the waste factor
+
+Waste is the material that ends up as offcuts at the walls, the boards set aside for defects or color, and the pieces lost around doorways, vents and corners. How much you need depends on the product and the layout.
+
+| Layout and product | Typical extra to order |
+|---|---|
+| Straight lay, LVP or laminate, simple rooms | 5 to 10 percent |
+| Straight lay, hardwood | 7 to 10 percent |
+| Many small rooms, closets or angled walls | 10 to 15 percent |
+| Diagonal layout | about 15 percent |
+| Herringbone or chevron | 15 to 20 percent |
+
+These are typical figures. The installation instructions for your product and the layout of your actual rooms set the final number, which is one reason the measurement should come from the installer rather than a guess.
+
+Hardwood runs a little higher than LVP because it is a natural product. Boards vary in color and grain, and a careful installer sets aside the odd board that does not suit the floor. Diagonal and herringbone layouts need more because every board meeting a wall is cut at an angle. Our [floor direction post](/blog/which-direction-should-flooring-run/) explains when a diagonal layout is worth it.
+
+For the 474 square foot example with straight-lay LVP at 10 percent, that is **about 522 square feet**.
+
+## Step three: round up to full boxes
+
+Flooring is sold by the box, and each box lists how many square feet it covers. Divide your total by the box coverage and always round up. If each box covers 20 square feet, 522 divided by 20 is 26.1, so you order **27 boxes, 540 square feet**.
+
+## Stairs and trim are separate
+
+**Stairs are not measured by the square foot.** They are counted by the step, with treads, risers and nosings ordered to match. A staircase is quoted on its own; our [staircase post](/blog/staircase-installation-inland-empire/) explains how.
+
+**Trim is measured in linear feet.** Baseboard, quarter round or shoe molding, and transition strips at doorways are ordered by the length of the walls and openings, not the floor area.
+
+## Why you should keep a spare box
+
+When the job is done, do not return every leftover box. **Keep at least one full box,** stored flat, indoors, and labeled with the product name, color and date.
+
+Flooring lines change and get discontinued every few years, and dye lots vary. If a dishwasher leaks or a dropped pan cracks a plank five years from now, a matching board from that box makes the repair nearly invisible. Without one, the repair turns into a search for a close match. Our posts on [replacing damaged vinyl plank](/blog/replace-damaged-vinyl-plank/) and [matching new hardwood to existing floors](/blog/matching-new-hardwood-to-existing-floors/) show how much easier that is with spare stock on hand.
+
+## Common mistakes
+
+- **Buying the material before the room is measured by the installer.** Online calculators do not see the angled wall, the closet or the fireplace hearth.
+- **Ordering in batches.** Buying half now and half later risks two dye lots that do not match. Order the whole job at once.
+- **Forgetting a room.** Hallways and closets are the ones that get missed, and they are usually what connects the rest of the floor.
+- **Ordering exact square footage with no extra.** The floor will run short. Every installation produces waste.
+
+## Let us do the measuring
+
+Our [free estimate](/free-estimate/) includes measuring every room, checking the subfloor and working out the right waste factor for your product and layout, so the quote reflects the material you actually need. Call **(909) 279-8225** to schedule.`,
+    internalLinks: [
+      { href: '/services/luxury-vinyl-plank/', text: 'Luxury vinyl plank installation' },
+      { href: '/services/laminate-flooring/', text: 'Laminate flooring installation' },
+      { href: '/blog/cost-to-install-hardwood-floors-inland-empire/', text: 'What hardwood installation costs' },
+      { href: '/blog/replace-damaged-vinyl-plank/', text: 'Replacing a damaged vinyl plank' },
+      { href: '/free-estimate/', text: 'Book a free estimate' },
+    ],
+    faqs: [
+      { q: 'How much extra flooring should I buy?', a: 'For a straight-lay LVP or laminate floor in simple rooms, plan on 5 to 10 percent extra. Hardwood usually needs 7 to 10 percent. Many small rooms or angled walls push it to 10 to 15 percent, a diagonal layout needs about 15 percent, and herringbone or chevron 15 to 20 percent.' },
+      { q: 'How do I calculate square footage for flooring?', a: 'Measure the length and width of each room in feet and multiply. Break L-shaped or odd rooms into rectangles, include closets and hallways, then add the rooms together. Add the waste factor, divide by the coverage per box and round up to the next full box.' },
+      { q: 'Should I keep leftover flooring?', a: 'Yes. Keep at least one full box, stored flat and indoors and labeled with the product and color. Flooring lines are discontinued and dye lots vary, so a matching spare plank makes a future repair far easier.' },
+      { q: 'How are stairs measured for flooring?', a: 'Stairs are counted by the step rather than the square foot. Treads, risers and nosings are ordered to match the number of steps, and a staircase is usually quoted separately from the floors.' },
+    ],
+  },
+  {
+    slug: 'which-direction-should-flooring-run',
+    title: 'Which Direction Should Hardwood or LVP Flooring Run?',
+    metaTitle: 'Which Direction Should Flooring Run? Hardwood + LVP',
+    metaDesc: 'How to choose the direction of hardwood, LVP or laminate boards: joists, the longest wall, light from windows, the view from the front door, hallways, open floor plans, and when a diagonal or herringbone layout is worth the extra cost.',
+    excerpt: 'Board direction is one of the few flooring decisions you cannot change later, and it changes how big and how finished a room looks. Here are the rules that decide it, and the one that sometimes overrides the rest.',
+    date: '2026-11-02',
+    category: 'design',
+    image: '/images/luxury-vinyl-plank-living-room.webp',
+    alt: 'Plank flooring running the length of an open living room',
+    readMins: 6,
+    body: `Board direction is decided once. After the first row goes down, every other board follows it, and you live with the result for as long as the floor lasts. It changes how long a room looks, how visible the seams are, and whether the floor reads as one continuous surface or a patchwork of rooms.
+
+Here is how we decide, starting with the one rule that is about structure rather than looks.
+
+## The structural rule: joists, for nail-down hardwood
+
+When solid hardwood is nailed to a wood subfloor over floor joists, the boards should run **perpendicular to the joists**, across them rather than along them. That way each board spans several joists and the subfloor is less likely to sag or flex between them, which helps prevent squeaks and movement. Running boards parallel to the joists is possible, but the subfloor usually needs to be reinforced first.
+
+This matters mainly on second floors and in older homes with raised wood floors, which you find in older neighborhoods of Redlands, Riverside and San Bernardino.
+
+**Most Inland Empire homes are built on a concrete slab, and there the joist rule does not apply.** Engineered hardwood, LVP and laminate on a slab can run whichever way looks best. Our post on [hardwood on a concrete slab](/blog/hardwood-floors-on-concrete-slab/) covers what does matter on a slab.
+
+## The design rules
+
+**Run boards along the longest dimension of the room.** Boards running the long way make a room feel longer and more open, and there are fewer short cuts and end joints. In a long, narrow room, running boards across the width makes it feel shorter and choppier.
+
+**Run boards toward the main light source.** When light from a big window or sliding door runs along the length of the boards, it hides the seams between them. When it hits the boards from the side, every joint casts a small shadow. In many homes, the longest wall and the main windows point the same way, which makes the decision easy.
+
+**Think about the view from the front door.** The entry is where the floor makes its first impression. Boards that run away from you as you walk in draw the eye into the house. Boards that run across the entry can look like a barrier.
+
+**Run hallways lengthwise.** Boards running down the length of a hall look right. Boards running across a long hall look like a ladder and produce a lot of short pieces.
+
+## Open floor plans: pick one direction
+
+In a modern open plan, the living room, dining area, kitchen and hallway are one big floor. It should run in **one direction** throughout. Changing direction between rooms that are open to each other breaks up the space and needs a transition strip or a border board at every change.
+
+Choose the direction based on the largest space and the main sightline, usually from the entry or from the main living area toward the back windows, and let the smaller areas follow.
+
+Floating floors have one extra consideration. Many LVP and laminate products have a **maximum continuous run** before an expansion break is required, and on some laminates it is shorter than a large open plan. The limit varies by product, so check it before you choose, because it decides whether a big open area can be done without a transition strip in a doorway.
+
+## When rooms are separate
+
+When rooms are separated by doors, direction can change room by room, with a threshold or transition at the doorway. Bedrooms off a hallway are a common example: the hall runs lengthwise, and each bedroom runs along its own longest wall.
+
+The more common choice is still to keep one direction across the whole house. It makes the home feel connected and avoids extra transitions.
+
+## Diagonal and herringbone
+
+**Diagonal** layouts, at 45 degrees to the walls, can make a small or square room feel larger and help disguise walls that are not square. They take more labor and more material, because every board meeting a wall is cut at an angle; plan on about 15 percent extra. Our [how much flooring do I need post](/blog/how-much-flooring-do-i-need/) explains waste factors.
+
+**Herringbone and chevron** are patterns rather than directions, and they are having a moment, especially with [wide-plank European oak](/flooring/wide-plank-european-oak/) and in entries and dining rooms. They are slower and more precise to install and use more material, but they make a statement no straight floor can. They also hide the "which way" question, because the pattern reads in both directions.
+
+## Rooms that are not square
+
+Very few rooms are perfectly square. If boards run parallel to a wall that is out of square, the last row tapers noticeably from one end to the other. A good installer measures the room, snaps a reference line, and splits the difference so the taper is spread across both sides or hidden along the wall that is least visible, such as under a cabinet run or behind a sofa.
+
+## Stairs and landings
+
+Where flooring meets the top of a staircase, the boards usually run so they meet the stair nosing squarely, which gives the cleanest look. On landings, direction is often set by the stairs rather than the room. Our [staircase post](/blog/staircase-installation-inland-empire/) covers how treads and landings tie into the floor.
+
+## A quick way to decide
+
+Lay a few sample boards down in each direction, stand at the front door and then in the main living area, and look at them in daylight. The right direction is usually obvious once you see it in your own light.
+
+At a [free estimate](/free-estimate/) we check the subfloor and joist direction, look at the light and sightlines, and recommend a direction before anything is ordered. Call **(909) 279-8225** to schedule.`,
+    internalLinks: [
+      { href: '/services/hardwood-flooring-installation/', text: 'Hardwood floor installation' },
+      { href: '/services/luxury-vinyl-plank/', text: 'Luxury vinyl plank installation' },
+      { href: '/blog/hardwood-floors-on-concrete-slab/', text: 'Hardwood on a concrete slab' },
+      { href: '/blog/how-much-flooring-do-i-need/', text: 'How much flooring do I need?' },
+      { href: '/free-estimate/', text: 'Book a free estimate' },
+    ],
+    faqs: [
+      { q: 'Should hardwood floors run parallel or perpendicular to the joists?', a: 'Nail-down solid hardwood over a wood subfloor should run perpendicular to the floor joists, so each board spans several joists. Running parallel is possible but usually requires reinforcing the subfloor first. On a concrete slab, which most Inland Empire homes have, there are no joists and the direction is a design choice.' },
+      { q: 'Which way should flooring run in a room?', a: 'Usually along the longest dimension of the room and toward the main source of natural light, which hides the seams between boards. Boards that run away from you as you walk in the front door also make the home feel larger.' },
+      { q: 'Should flooring run the same direction in every room?', a: 'In an open floor plan, yes. Connected spaces should run in one direction so the floor reads as one surface without extra transitions. Rooms separated by doors can change direction, but keeping one direction through the house is the more common choice.' },
+      { q: 'Does diagonal flooring cost more?', a: 'Yes. Every board that meets a wall is cut at an angle, so diagonal installs take more labor and need about 15 percent extra material, compared with roughly 5 to 10 percent for a straight lay.' },
+    ],
+  },
 ];
 
 export const blogBySlug = Object.fromEntries(blogPosts.map((p) => [p.slug, p]));

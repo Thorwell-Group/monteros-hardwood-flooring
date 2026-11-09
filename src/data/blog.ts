@@ -3793,6 +3793,243 @@ At a [free estimate](/free-estimate/) we check the subfloor and joist direction,
       { q: 'Does diagonal flooring cost more?', a: 'Yes. Every board that meets a wall is cut at an angle, so diagonal installs take more labor and need about 15 percent extra material, compared with roughly 5 to 10 percent for a straight lay.' },
     ],
   },
+  {
+    slug: 'prefinished-vs-site-finished-hardwood',
+    title: 'Prefinished vs. Site-Finished Hardwood: Which Is Right for Your Home?',
+    metaTitle: 'Prefinished vs. Site-Finished Hardwood Floors',
+    metaDesc: 'Prefinished hardwood arrives with a factory finish and is ready the day it is installed. Site-finished hardwood is sanded, stained and coated in your home. How they differ in look, schedule, durability, refinishing and price.',
+    excerpt: 'Two hardwood floors can use the same oak and still look and live differently, depending on where the finish went on. Here is how prefinished and site-finished floors compare and how to pick.',
+    date: '2026-11-09',
+    category: 'comparison',
+    image: '/images/hardwood-modern-open-living.webp',
+    alt: 'Hardwood floor running through a modern open living area',
+    readMins: 6,
+    body: `**Short answer:** choose **prefinished** hardwood if you want the fastest install with no sanding, no fumes and no waiting to use the room. Choose **site-finished** hardwood if you want a custom stain color, a perfectly flat surface with no grooves between boards, or new wood that has to blend with an existing floor.
+
+Both are real hardwood, and both can be solid or engineered. The difference is where the finish goes on: in a factory, or on your floor after the boards are installed.
+
+## What each one is
+
+**Prefinished hardwood** is sanded, stained and coated at the factory, usually with several coats of a hard finish that often contains aluminum oxide. The boards arrive ready to live on. We install them and you can walk on the floor the same day.
+
+**Site-finished hardwood** (also called unfinished hardwood) arrives as raw wood. We install it, sand the whole floor flat, apply stain if you want it, and then put on a sealer and two to three coats of finish in your home.
+
+## How they compare
+
+| | Prefinished | Site-finished |
+|---|---|---|
+| Ready to use | Same day as install | Socks after 24 hours, furniture after 5 to 7 days, rugs after 2 weeks |
+| Dust and smell | Little dust, no finish fumes | Sanding dust (minimal with dust containment) and finish odor |
+| Surface | Small bevels (grooves) at the board edges | Flat and seamless |
+| Color choice | The colors the manufacturer makes | Any stain, mixed and tested on your floor |
+| Matching an existing floor | Hard; the new boards rarely blend | The best way to blend old and new |
+| Water resistance at the seams | Seams are not sealed | The finish bridges the seams |
+| Factory finish warranty | Yes, often long | Workmanship warranty from the installer |
+
+## Where prefinished wins
+
+**Speed and disruption.** There is no sanding and no finish to dry, so a prefinished floor fits tight schedules. It is the better choice when you are living in the house during the work, when someone in the home is sensitive to odors, or when the room has to be back in use fast. Our [holiday timeline post](/blog/new-floors-before-the-holidays-inland-empire/) walks through how much that matters on a deadline.
+
+**A hard factory finish.** Factory finishes are cured under UV light and are very hard. They resist everyday wear well.
+
+**Predictability.** The color in the showroom sample is the color on the floor, give or take natural variation in the wood.
+
+## Where site-finished wins
+
+**A flat, seamless floor.** Most prefinished boards have a small bevel on each edge so slight height differences between boards do not show. Those grooves collect dirt and are visible in low light. A site-finished floor is sanded flat after install, so it reads as one smooth surface.
+
+**Any color you want.** We can mix stains and lay test patches on your actual floor in your actual light. Our [stain color guide](/blog/hardwood-floor-stain-colors-inland-empire/) explains why that matters in Inland Empire sun.
+
+**Blending with existing floors.** If you are adding a room, replacing damaged boards or removing a wall, new unfinished boards sanded and finished together with the old floor are the only reliable way to make them match. Our post on [matching new hardwood to existing floors](/blog/matching-new-hardwood-to-existing-floors/) goes into detail.
+
+**Sealed seams.** The finish coats run across the joints between boards, which helps keep a spill on the surface instead of letting it run down into the seams. That makes site-finished a common choice for kitchens.
+
+## Refinishing later
+
+Both kinds can be refinished if there is enough wood above the tongue. A few things to know:
+
+- **Factory aluminum oxide finishes are very hard,** which makes a light [screen and recoat](/blog/screen-and-recoat-vs-full-refinish/) difficult: new finish does not bond well to them without special preparation. Many prefinished floors go straight to a full sand when they need refreshing.
+- **Sanding a beveled floor flat removes the bevels,** but only after enough wood comes off to reach the bottom of the grooves. On engineered boards with a thin wear layer, that may not be possible.
+- **A site-finished floor can usually be recoated** every few years to keep the finish healthy without sanding to bare wood.
+
+## Price
+
+Prefinished boards cost more per square foot than unfinished boards, but the install is less labor. Site-finished boards cost less to buy, but sanding, staining and finishing add labor and days. For many homes the installed totals end up in a similar range, so we usually quote both when a homeowner is undecided. Our [installation cost guide](/blog/cost-to-install-hardwood-floors-inland-empire/) covers the factors that move the price most.
+
+## How we usually advise
+
+- **Moving into an empty house, or a new addition that needs to match the old floor?** Site-finished.
+- **Living in the home during the work with kids, pets or tight dates?** Prefinished.
+- **Want a specific custom color, or a smooth floor with no grooves?** Site-finished.
+- **Installing over a slab?** Prefinished engineered is the most common choice, but engineered boards can be site-finished too if the wear layer is thick enough.
+
+Not sure which fits your home? [Book a free estimate](/free-estimate/) or call **(909) 279-8225**. We bring samples of both so you can see the difference in your own light.`,
+    internalLinks: [
+      { href: '/services/hardwood-flooring-installation/', text: 'Hardwood flooring installation' },
+      { href: '/services/hardwood-floor-refinishing/', text: 'Hardwood floor refinishing' },
+      { href: '/blog/matching-new-hardwood-to-existing-floors/', text: 'Matching new hardwood to existing floors' },
+      { href: '/blog/water-based-vs-oil-based-polyurethane-floors/', text: 'Water-based vs. oil-based floor finish' },
+      { href: '/free-estimate/', text: 'Book a free estimate' },
+    ],
+    faqs: [
+      { q: 'What is the difference between prefinished and site-finished hardwood?', a: 'Prefinished hardwood is sanded, stained and coated at the factory and can be used the day it is installed. Site-finished hardwood is installed as raw wood and then sanded, stained and finished in the home, which takes several days but allows custom colors and a flat surface with no grooves between boards.' },
+      { q: 'Is prefinished hardwood more durable than site-finished?', a: 'Factory finishes are UV-cured and very hard, so they resist everyday wear well. A site-applied finish seals across the seams between boards, which helps with spills. Both last for many years with normal care; the bigger differences are schedule, appearance and color choice.' },
+      { q: 'Can prefinished hardwood floors be refinished?', a: 'Yes, if there is enough wood above the tongue. The hard factory finish makes a simple screen and recoat difficult without special preparation, so many prefinished floors get a full sand when they need refreshing. Sanding also removes the beveled edges, as long as there is enough wood to reach the bottom of the bevels.' },
+      { q: 'Which is better for matching an existing hardwood floor?', a: 'Site-finished. New unfinished boards that are sanded and finished together with the existing floor blend far better than prefinished boards laid next to an older, aged finish.' },
+    ],
+  },
+  {
+    slug: 'water-based-vs-oil-based-polyurethane-floors',
+    title: 'Water-Based vs. Oil-Based Polyurethane for Hardwood Floors',
+    metaTitle: 'Water-Based vs. Oil-Based Polyurethane for Floors',
+    metaDesc: 'How water-based and oil-based polyurethane floor finishes differ in color, ambering, dry time, odor, durability and upkeep, and which one fits white oak, red oak, light stains, dark stains and busy households.',
+    excerpt: 'The finish is the part of a hardwood floor you actually walk on, and it changes the color more than most people expect. Here is how water-based and oil-based polyurethane compare and how to choose.',
+    date: '2026-11-09',
+    category: 'comparison',
+    image: '/images/hardwood-refinished-oak-floor.webp',
+    alt: 'Freshly refinished oak hardwood floor with a clear protective finish',
+    readMins: 6,
+    body: `**Short answer:** choose **water-based** polyurethane if you want the wood to stay the color you picked, want to be back in the house sooner, or have someone sensitive to odors at home. Choose **oil-based** polyurethane if you want a warm amber glow, especially on red oak or a medium-brown stain.
+
+Both protect the wood well. The real differences are color, how long the job takes and how strong the smell is. Here is how they compare.
+
+## Color: the difference you will notice most
+
+**Oil-based polyurethane ambers.** It adds a yellow-orange warmth the day it goes on, and it keeps getting warmer for years. On red oak, fir and medium-brown stains that warmth can look rich and traditional.
+
+**Water-based polyurethane stays clear.** The color you approve on the sample patch is the color you keep. On white oak, maple and natural or light gray-brown stains, that is usually what people want. An oil finish on a pale floor tends to turn it orange within a few years, and it is one of the most common color complaints we hear.
+
+Sun matters here too. Oil-based finishes yellow with age and offer limited UV protection. Many modern water-based finishes include UV inhibitors that slow fading and darkening underneath. Our [sun fade post](/blog/sun-faded-hardwood-floors-inland-empire/) explains what Inland Empire sun does to wood.
+
+## Dry time and getting your house back
+
+**Water-based finishes dry fast.** Several coats can often go on in one day, so a refinish wraps up sooner. For a typical refinish we plan on socks after 24 hours, shoes after 48, furniture back after five to seven days and rugs after two weeks.
+
+**Oil-based finishes dry slowly.** Usually one coat a day, sometimes less in a cold house, so a three-coat job adds days to the schedule. Furniture and rugs wait longer too. Both kinds keep curing for about 30 days, so be gentle with the floor for the first month either way.
+
+## Odor and VOCs
+
+Oil-based polyurethane has a strong solvent smell and off-gasses for several days. Most families plan to stay elsewhere, and pets should be out of the house.
+
+Water-based polyurethane is much lower in VOCs (volatile organic compounds) and has a milder smell. It is our default for homes with kids, pets, older relatives or anyone with asthma or chemical sensitivity. Some people still choose to be out while it dries, but the house is usually comfortable again quickly.
+
+## Durability
+
+The old rule was that oil-based is tougher. That is no longer automatically true. Inexpensive single-part water-based finishes are softer, but professional-grade two-component water-based finishes, which use a hardener mixed in just before application, hold up to everyday traffic as well as oil and often resist scratches better.
+
+Oil-based finishes go on thicker per coat and are forgiving to apply, which is part of their reputation. Both kinds need the same basic care: felt pads, mats at the entries and a hardwood-safe cleaner. Our [desert care guide](/blog/how-to-care-for-hardwood-floors-in-the-desert/) covers the routine.
+
+## Look and feel
+
+Oil-based finishes have a slightly deeper, warmer look with a bit of depth to the grain. Water-based finishes look crisper and cleaner, and they come in a range of sheens from matte to gloss. Satin and matte hide scratches and dust better than gloss, which is why most homeowners choose them.
+
+## Recoating and switching later
+
+You can switch types at a future refinish, because a full sand takes the floor back to bare wood. For a [screen and recoat](/blog/screen-and-recoat-vs-full-refinish/), compatibility matters. Water-based finish can go over a fully cured, properly prepared oil finish, but oil over water-based is generally avoided. If you do not know what is on your floor, we test before we quote.
+
+## Which one for which floor
+
+| Floor | What we usually suggest |
+|---|---|
+| White oak, natural or light stain | Water-based, to keep it light |
+| Maple | Water-based, since oil yellows maple quickly |
+| Red oak, natural look | Either; oil if you like the warmth |
+| Medium or dark brown stain | Either; oil adds warmth, water keeps the stain true |
+| Gray or whitewashed stains | Water-based; oil turns gray stains green or yellow |
+| Home with kids, pets or odor sensitivity | Water-based |
+| Matching an older oil-finished floor next to it | Often oil, to match the amber |
+
+## The bottom line
+
+Ask any contractor which finish they plan to use and why. It should be a decision made for your wood, your stain and your household, not just whatever is on the truck. Our [refinishing cost guide](/blog/hardwood-floor-refinishing-cost-inland-empire/) shows how the finish choice affects the price.
+
+Want to see both side by side? [Book a free estimate](/free-estimate/) or call **(909) 279-8225**. On a refinish we lay test patches on your own floor before the full job.`,
+    internalLinks: [
+      { href: '/services/hardwood-floor-refinishing/', text: 'Hardwood floor refinishing' },
+      { href: '/flooring/sand-and-stain/', text: 'Full sand, stain and seal process' },
+      { href: '/blog/hardwood-floor-stain-colors-inland-empire/', text: 'Choosing a stain color for Inland Empire light' },
+      { href: '/blog/prefinished-vs-site-finished-hardwood/', text: 'Prefinished vs. site-finished hardwood' },
+      { href: '/free-estimate/', text: 'Book a free estimate' },
+    ],
+    faqs: [
+      { q: 'Does oil-based polyurethane turn yellow?', a: 'Yes. Oil-based polyurethane adds an amber tone when it is applied and keeps yellowing for years. That warmth can look good on red oak and medium-brown stains, but it tends to turn light and natural floors orange. Water-based polyurethane stays clear.' },
+      { q: 'Is water-based polyurethane as durable as oil-based?', a: 'Professional two-component water-based finishes, which use a hardener, are as durable as oil-based for normal household traffic and often more scratch-resistant. Cheaper single-part water-based products are softer. Ask your contractor which product they use.' },
+      { q: 'How long does polyurethane take to cure on hardwood floors?', a: 'Both types keep curing for about 30 days. With water-based finish on a typical refinish, plan on socks after 24 hours, shoes after 48 hours, furniture after five to seven days and rugs after two weeks. Oil-based finish dries more slowly, so the schedule runs longer.' },
+      { q: 'Can I put water-based polyurethane over oil-based?', a: 'Often yes, if the oil finish is fully cured, cleaned and properly abraded, and the product is rated for it. Oil-based over water-based is generally avoided. A full sand to bare wood removes the question entirely.' },
+    ],
+  },
+  {
+    slug: 'area-rugs-and-rug-pads-on-hardwood-floors',
+    title: 'Area Rugs on Hardwood and LVP: Choosing a Rug Pad That Will Not Damage the Floor',
+    metaTitle: 'Rug Pads for Hardwood and LVP Floors: What Is Safe',
+    metaDesc: 'Which rug pads are safe for hardwood, luxury vinyl plank and laminate, why some rubber and PVC pads stain floors, how to size a pad, when rugs can go down after a refinish, and how rugs cause uneven fading.',
+    excerpt: 'A rug protects a floor, until the wrong pad leaves a pattern stamped into the finish. Here is which pads are safe on hardwood and LVP, how to size them, and the rug habits that prevent damage.',
+    date: '2026-11-09',
+    category: 'maintenance',
+    image: '/images/hardwood-fireplace-living-room.webp',
+    alt: 'Hardwood living room floor by a fireplace, ready for an area rug',
+    readMins: 5,
+    body: `Area rugs are one of the best ways to protect a floor. They take foot traffic in the busiest spots, soften dropped toys and dishes, and quiet a room. But some of the most frustrating floor damage we see comes from under a rug: a grid pattern stamped into the finish, a yellow rectangle, or a stain nobody knew was there.
+
+Almost all of it comes down to the pad, and a few habits.
+
+## The pads that cause problems
+
+**Cheap rubber, PVC and vinyl-backed pads.** Some of these contain plasticizers and other chemicals that react with wood finishes and vinyl flooring. The result is a discolored pattern matching the pad's waffle or grid, and it is often permanent. Many LVP and laminate manufacturers specifically warn against rubber-backed and latex-backed mats and pads, and staining from them can void the floor's warranty.
+
+**Pads that do not breathe.** A solid plastic pad traps moisture against the floor. After mopping, a spill or a pet accident, the water has nowhere to go.
+
+**No pad at all.** A rug without a pad slides, bunches and becomes a trip hazard. Grit also works through the rug's weave and gets ground into the finish every time someone walks over it, which wears a dull patch the shape of the rug.
+
+## What to use instead
+
+- **Felt pads** cushion, breathe and are safe on finished wood. They do not grip much on their own, so they work best under large, heavy rugs that will not move.
+- **Felt with a natural rubber backing** is the best all-around choice for most rugs. The felt cushions and the natural rubber holds the rug in place. Look for pads labeled safe for hardwood or for vinyl floors, and check the floor manufacturer's care guide.
+- **Thin natural rubber pads** suit runners and small rugs in high-traffic spots where grip matters most.
+
+When in doubt, ask for the pad's material in writing and avoid anything that lists PVC or vinyl, or just says "rubber" with no detail.
+
+## Size the pad correctly
+
+Cut the pad about one inch smaller than the rug on every side, so the rug's edges taper down to the floor. That keeps the pad hidden and stops the edge from becoming a trip line.
+
+## When rugs can go down on new or refinished floors
+
+- **After a full refinish:** wait **two weeks** before putting rugs back. The finish is still curing, and a rug laid too early can imprint the pad pattern or trap solvents. Full cure takes about 30 days, so go easy for the first month.
+- **After a screen and recoat:** follow the same rule unless your contractor tells you otherwise for the specific product.
+- **On new prefinished hardwood, LVP or laminate:** rugs can usually go down right away, with the right pad.
+
+## Rugs and fading
+
+Wood changes color in sunlight. Some species darken and some lighten. A rug that stays in one spot for years leaves a shadow, a patch of wood that looks different from the floor around it once the rug comes up. Rotating rugs and moving furniture every few months keeps the change more even. Our [sun fade post](/blog/sun-faded-hardwood-floors-inland-empire/) explains which species change most and what fixes it.
+
+## Habits that prevent damage under rugs
+
+- **Vacuum under the rug** every few weeks. Lift it and clean the floor and pad, because grit collects underneath.
+- **Lift the rug after any spill** and let the floor dry. Do not let a wet rug sit on wood or laminate overnight.
+- **Check under rugs if you have pets.** Urine soaks through to the floor and stays hidden. The worst stains we find are under rugs. Our [pet urine stain guide](/blog/pet-urine-stains-hardwood-floors/) explains what can be sanded out.
+- **Put felt pads under the furniture** that sits on the rug, too. Heavy legs press through a thin rug and pad and can dent the wood.
+- **Use rugs at every entry,** inside and out, to catch the grit that does most of the scratching.
+
+## Spotted a pattern or stain under a rug?
+
+If the mark is only in the finish, a screen and recoat or a refinish can usually remove it. If it went into the wood, boards may need to be sanded deeper or replaced. On LVP, a stained plank can often be swapped out on its own; see our post on [replacing a damaged vinyl plank](/blog/replace-damaged-vinyl-plank/).
+
+[Book a free estimate](/free-estimate/) or call **(909) 279-8225** and we will tell you what it will take to fix.`,
+    internalLinks: [
+      { href: '/services/floor-repair/', text: 'Hardwood floor repair' },
+      { href: '/services/luxury-vinyl-plank/', text: 'Luxury vinyl plank installation' },
+      { href: '/blog/how-to-care-for-hardwood-floors-in-the-desert/', text: 'Caring for hardwood floors in a dry climate' },
+      { href: '/blog/protecting-hardwood-floors-during-the-holidays/', text: 'Protecting hardwood floors during the holidays' },
+      { href: '/free-estimate/', text: 'Book a free estimate' },
+    ],
+    faqs: [
+      { q: 'What kind of rug pad is safe for hardwood floors?', a: 'Felt pads, or felt pads with a natural rubber backing, are the safest choice. Avoid cheap rubber, PVC and vinyl pads, which can react with the finish and leave a permanent discolored pattern, and solid pads that trap moisture against the floor.' },
+      { q: 'Can rug pads stain luxury vinyl plank?', a: 'Yes. Rubber-backed and latex-backed mats and pads can react with vinyl flooring and leave yellow or discolored marks. Many LVP manufacturers warn against them, and the damage may void the floor warranty. Use pads labeled safe for vinyl floors.' },
+      { q: 'How long after refinishing can I put rugs down?', a: 'Wait two weeks after a full refinish before putting area rugs back. The finish is still curing and a rug laid too early can imprint the pad pattern or trap solvents. The finish reaches full cure at about 30 days.' },
+      { q: 'Why is the floor a different color under my rug?', a: 'Sunlight changes the color of wood over time, and the area under the rug was shaded. Some species darken and others lighten. Rotating rugs and furniture every few months keeps the change more even, and a refinish can bring the floor back to one color.' },
+    ],
+  },
 ];
 
 export const blogBySlug = Object.fromEntries(blogPosts.map((p) => [p.slug, p]));

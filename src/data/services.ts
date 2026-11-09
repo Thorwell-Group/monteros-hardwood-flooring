@@ -83,6 +83,7 @@ export const services: Service[] = [
       'best-flooring-for-southern-california-homes',
       'hardwood-floors-before-or-after-kitchen-cabinets',
       'which-direction-should-flooring-run',
+      'prefinished-vs-site-finished-hardwood',
     ],
     relatedGuides: [
       { slug: 'solid-hardwood-flooring', label: 'Solid hardwood flooring explained' },
@@ -142,6 +143,7 @@ export const services: Service[] = [
       'hardwood-floor-refinishing-cost-inland-empire',
       'hardwood-floor-stain-colors-inland-empire',
       'new-floors-before-the-holidays-inland-empire',
+      'water-based-vs-oil-based-polyurethane-floors',
     ],
     relatedGuides: [
       { slug: 'sand-and-stain', label: 'Full sand, stain & seal process' },
@@ -321,6 +323,7 @@ export const services: Service[] = [
       'pet-urine-stains-hardwood-floors',
       'santa-ana-winds-hardwood-floors',
       'protecting-hardwood-floors-during-the-holidays',
+      'area-rugs-and-rug-pads-on-hardwood-floors',
     ],
     relatedGuides: [
       { slug: 'water-damage-floor-repair', label: 'Water-damaged floor repair guide' },

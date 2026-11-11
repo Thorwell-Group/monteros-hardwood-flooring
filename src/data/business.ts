@@ -14,6 +14,11 @@ export const business = {
   phone:        '(909) 279-8225',
   phoneE164:    '+19092798225',
   phoneDisplay: '(909) 279-8225',
+  phoneSchema:  '+1-909-279-8225', // JSON-LD telephone format
+
+  // Google Business Profile listing (cid) for schema hasMap + sameAs.
+  // Service-area GBP: the listing shows no address, and neither may the site.
+  mapsUrl: 'https://maps.google.com/maps?cid=17271783734296650601',
 
   email: 'monteroshardwood@gmail.com',
 

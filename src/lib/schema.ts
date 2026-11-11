@@ -10,6 +10,13 @@ const ORGANIZATION_ID = `${business.siteUrl}/#organization`;
 const LOCALBUSINESS_ID = `${business.siteUrl}/#localbusiness`;
 const WEBSITE_ID = `${business.siteUrl}/#website`;
 
+// sameAs = profiles of this business. The googleSearch entry is a search-results
+// URL (used by the visible "on Google" buttons), not a profile, so it stays out.
+function sameAsLinks() {
+  const { googleSearch: _search, ...profiles } = business.social;
+  return [...new Set([...Object.values(profiles), business.mapsUrl].filter(Boolean))];
+}
+
 function openingHours() {
   // Schema.org expects opening hours specification.
   return business.hours
@@ -30,10 +37,10 @@ export function organizationSchema() {
     name: business.legalName,
     url: business.siteUrl,
     logo: `${business.siteUrl}${business.brand.logo}`,
-    sameAs: Object.values(business.social).filter(Boolean),
+    sameAs: sameAsLinks(),
     contactPoint: {
       '@type': 'ContactPoint',
-      telephone: business.phoneE164,
+      telephone: business.phoneSchema,
       contactType: 'customer service',
       areaServed: ['US-CA'],
       availableLanguage: ['English', 'Spanish'],
@@ -61,7 +68,7 @@ export function localBusinessSchema(opts?: { reviewCount?: number }) {
     url: business.siteUrl,
     image: `${business.siteUrl}${business.brand.ogImage}`,
     logo: `${business.siteUrl}${business.brand.logo}`,
-    telephone: business.phoneE164,
+    telephone: business.phoneSchema,
     email: business.email,
     priceRange: '$$ – $$$',
     address: {
@@ -92,7 +99,8 @@ export function localBusinessSchema(opts?: { reviewCount?: number }) {
       bestRating:  business.ratings.bestRating,
       worstRating: business.ratings.worstRating,
     },
-    sameAs: Object.values(business.social).filter(Boolean),
+    hasMap: business.mapsUrl,
+    sameAs: sameAsLinks(),
   };
 }
 

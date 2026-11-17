@@ -4030,6 +4030,241 @@ If the mark is only in the finish, a screen and recoat or a refinish can usually
       { q: 'Why is the floor a different color under my rug?', a: 'Sunlight changes the color of wood over time, and the area under the rug was shaded. Some species darken and others lighten. Rotating rugs and furniture every few months keeps the change more even, and a refinish can bring the floor back to one color.' },
     ],
   },
+  {
+    slug: 'laminate-floor-repair-swelling-chips-gaps',
+    title: 'Laminate Floor Repair: What Can Be Fixed, From Swollen Edges to Gaps and Chips',
+    metaTitle: 'Laminate Floor Repair: Swelling, Gaps, Chips, Peaking',
+    metaDesc: 'Which laminate floor problems can be repaired and which mean new planks: swollen edges, separating seams, peaking, chips, and soft spots. Inland Empire floor repair.',
+    excerpt: 'Laminate is tough until water, a missing expansion gap or a dip in the slab gets to it. Here is what each common problem looks like, what causes it, and whether it can be repaired or needs new planks.',
+    date: '2026-11-17',
+    category: 'maintenance',
+    image: '/images/laminate-installation.webp',
+    alt: 'Installer tapping a dark laminate plank into place over underlayment',
+    readMins: 6,
+    body: `Laminate floors hold up well to daily life. They resist scratches, they do not dent easily and they clean up with a damp mop. But when something does go wrong, the fix depends on what the problem is. Some laminate damage can be repaired in place. Some means replacing planks. A few problems point to something under the floor that has to be fixed first, or the repair will fail again.
+
+Here is how to read the most common laminate problems.
+
+## Swollen or raised edges
+
+**What it looks like:** The edges of the planks puff up along the seams, often with a slight ridge you can feel with your hand. Sometimes the surface layer starts to lift or bubble.
+
+**What causes it:** Water. Most laminate has a fiberboard core, and when water gets into the seams the core swells. Common sources are a leaking dishwasher, a pet water bowl, wet mopping, or a leak under a sink or refrigerator.
+
+**Can it be repaired?** Not in place. Swollen fiberboard does not shrink back when it dries. The fix is to find and stop the water, let the subfloor dry, and replace the damaged planks. If the floor is a water-resistant laminate, it handles spills better, but standing water can still get through. Our [water-resistant laminate guide](/flooring/water-resistant-laminate/) explains what those ratings cover.
+
+## Gaps between planks
+
+**What it looks like:** Thin dark lines open up along the ends or long edges of the planks.
+
+**What causes it:** Usually one of three things. The click joints were not fully engaged at installation. Heavy furniture or a kitchen island is pinning part of the floor so the rest pulls away as it moves. Or the slab underneath has a dip, which lets the joints flex every time someone walks over it.
+
+**Can it be repaired?** Often, yes. Small gaps can sometimes be closed by tapping the planks back together with the right tool. If the gaps keep coming back, we look for the cause: a pinch point, a missing expansion gap or an uneven slab. Fixing the cause is what makes the repair last.
+
+## Peaking or buckling
+
+**What it looks like:** Two planks push against each other and rise into a tent shape at the seam, or a section of floor lifts off the subfloor.
+
+**What causes it:** A floating floor needs room to expand and contract. If the installer left no gap at the walls, or if baseboards, cabinets, door jambs or transition strips are clamping the floor, it has nowhere to go when it expands. Moisture makes it worse. In the Inland Empire, big swings between hot summers and dry Santa Ana wind days can make a tight floor move more than usual.
+
+**Can it be repaired?** Usually. The fix is to free the floor: trim back the edges where it is tight against walls or fixed objects, undercut jambs, and reset the planks. Planks that have been damaged at the joints get replaced.
+
+## Chips, scratches and dents
+
+**What it looks like:** A small chip at an edge, a scratch through the top layer, or a dent from a dropped pan.
+
+**What causes it:** Impact, grit dragged under furniture, or pets.
+
+**Can it be repaired?** Small chips and scratches can often be filled with a color-matched laminate repair compound so they disappear from standing height. Larger damage, or anything that has broken through the printed layer over a wide area, is better handled by replacing the plank. Laminate cannot be sanded or refinished, so there is no way to take a scratch out the way you would on hardwood. Our guide to [AC ratings](/flooring/ac-rated-laminate/) explains how wear ratings affect scratch resistance on new floors.
+
+## Soft, hollow or bouncy spots
+
+**What it looks like:** One area of the floor flexes or clicks underfoot.
+
+**What causes it:** A low spot in the slab or subfloor under the planks. The floor bridges over the dip and moves every time it is stepped on, which wears the joints and eventually opens gaps.
+
+**Can it be repaired?** Yes, but it means lifting the planks over the area, leveling the subfloor, and relaying them, with new planks where the joints have broken.
+
+## Replacing a laminate plank
+
+Most laminate clicks together, so a single damaged plank can be replaced in two ways. If it is close to a wall, the rows are unclicked back to it, the plank is swapped and the rows go back down. If it is in the middle of a room, the damaged plank can be cut out and a new one set in its place. The steps are similar to [replacing a damaged vinyl plank](/blog/replace-damaged-vinyl-plank/).
+
+The hard part is often finding a match. Laminate lines get discontinued, and planks from a different production run can look slightly different. If you have spare boxes from the original installation, keep them. If you do not, a plank from a closet or under an appliance can sometimes be moved to the visible spot.
+
+## When repair is no longer worth it
+
+If water damage runs across a large area, or the floor is worn through in the traffic lanes, repairing plank by plank costs more than it is worth. At that point a new floor makes more sense. If you are weighing options, our comparison of [luxury vinyl plank vs laminate](/blog/luxury-vinyl-plank-vs-laminate-inland-empire/) covers which one handles water and wear better.
+
+## Have it looked at
+
+Tell us what you are seeing, or send a photo. We repair laminate, luxury vinyl and hardwood across the Inland Empire, and we will tell you plainly whether the floor can be fixed or needs new planks. [Book a free estimate](/free-estimate/) or call **(909) 279-8225**.`,
+    internalLinks: [
+      { href: '/services/floor-repair/', text: 'Floor repair services' },
+      { href: '/services/laminate-flooring/', text: 'Laminate flooring installation' },
+      { href: '/blog/replace-damaged-vinyl-plank/', text: 'Replacing a damaged vinyl plank' },
+      { href: '/blog/water-damaged-hardwood-floors/', text: 'Water-damaged floors' },
+      { href: '/free-estimate/', text: 'Book a free estimate' },
+    ],
+    faqs: [
+      { q: 'Can swollen laminate flooring be fixed?', a: 'Not in place. Most laminate has a fiberboard core that does not shrink back after it swells. The fix is to stop the water source, let the subfloor dry, and replace the damaged planks.' },
+      { q: 'Why is my laminate floor separating?', a: 'Gaps usually come from click joints that were not fully engaged, heavy furniture or cabinets pinning part of the floor, or a dip in the slab that lets the joints flex. Small gaps can often be closed, but the cause has to be fixed or they come back.' },
+      { q: 'Why is my laminate floor lifting at the seams?', a: 'Peaking and buckling usually mean the floor has no room to expand. It may have been installed tight to the walls, or trim, cabinets or door jambs are clamping it. Moisture makes it worse. Freeing the edges and replacing damaged planks fixes it.' },
+      { q: 'Can you replace one laminate plank?', a: 'Yes. Planks near a wall can be unclicked and swapped. Planks in the middle of a room can be cut out and replaced. The biggest challenge is finding a matching plank if the line has been discontinued.' },
+      { q: 'Can laminate floors be refinished?', a: 'No. Laminate has a printed image under a clear wear layer, with no wood to sand. Small chips can be filled, and damaged planks can be replaced.' },
+    ],
+  },
+  {
+    slug: 'floor-transitions-between-rooms',
+    title: 'Floor Transitions: How to Handle Where Hardwood, LVP, Tile and Carpet Meet',
+    metaTitle: 'Floor Transitions Between Rooms: Types and Planning',
+    metaDesc: 'T-moldings, reducers, thresholds and flush transitions: how to plan where hardwood, LVP, laminate, tile and carpet meet, and how to avoid trip edges and door problems.',
+    excerpt: 'The place where one floor meets another is easy to forget until it is a bump, a gap or a door that will not close. Here is how transitions work and how to plan them before the new floor goes in.',
+    date: '2026-11-17',
+    category: 'design',
+    image: '/images/hardwood-entry-staircase.webp',
+    alt: 'Hand-scraped hardwood running from the front entry past the staircase into the dining room',
+    readMins: 6,
+    body: `When people pick a new floor, they think about color, plank width and durability. Very few think about the doorways. But every place the new floor meets tile, carpet, a slider or a stair is a detail that either looks clean or looks like an afterthought. Transitions also decide whether you trip at the kitchen doorway and whether the bathroom door still closes.
+
+Here is how transitions work and what to decide before installation day.
+
+## The common types
+
+- **T-molding.** A T-shaped strip that covers the joint between two floors of about the same height. It is common between rooms on floating floors like LVP and laminate.
+- **Reducer.** A sloped strip that steps down from a thicker floor to a thinner one, for example from hardwood down to sheet vinyl or a thin tile.
+- **Threshold or end cap.** A strip that finishes the floor's edge against something it does not continue into, like a sliding door track, a fireplace hearth or a step-down.
+- **Carpet transition.** A strip that grips the carpet edge and finishes it neatly against a hard floor.
+- **Stair nose.** The rounded piece that finishes the edge of a step or landing. Our [stair installation service](/services/stair-installation/) covers stairs in more detail.
+- **Flush transition.** No strip at all. The two floors meet at the same height with a tight seam. It looks the cleanest but takes the most planning.
+
+## Why floating floors need breaks
+
+LVP and laminate are usually installed as floating floors. They expand and contract with temperature and humidity, and in the Inland Empire that can be a lot, with hot summers and dry Santa Ana wind days. Manufacturers set limits on how far a floating floor can run before it needs an expansion break, and they usually require a break at doorways between rooms. Ignore those rules and the floor can peak or buckle.
+
+That is why you often see T-moldings in doorways on vinyl and laminate jobs. If you want one continuous floor through the house with no strips, ask about it early. Depending on the product and the layout, a glue-down installation or a product rated for longer runs may make that possible. Our guide to [click-lock vs glue-down vinyl](/flooring/click-lock-vinyl-plank/) explains the difference.
+
+Nail-down and glue-down hardwood behaves differently. It does not need breaks at every doorway, so a hardwood floor can usually run room to room without strips.
+
+## Height is the real question
+
+Most transition problems come down to height. New floors are rarely the same thickness as the old ones, and the old floor may stay in some rooms.
+
+- **New floor next to existing tile.** Measure both. If the new floor sits higher, a reducer handles it. If they are close, a T-molding works. If you want flush, the subfloor may need to be built up or ground down.
+- **Removing tile.** When tile comes out of one room and stays in the next, the slab under the removed tile is often lower than the surrounding floors. Our post on [replacing tile with hardwood or LVP](/blog/replacing-tile-with-hardwood-or-lvp/) covers how the slab gets prepped.
+- **Doors.** A thicker floor can stop doors from swinging. Interior doors may need to be trimmed, and door jambs and casings are usually undercut so the floor slides beneath them for a clean edge.
+- **Sliders and exterior doors.** The floor has to finish neatly against the track without blocking drainage or the door's movement.
+
+## Where the transition goes
+
+The usual rule is to put the transition directly under the closed door, centered in the doorway, so you see one floor from each room. In open plans without doors, transitions often go where the floor material changes naturally, like at the edge of a kitchen or entry. Plank direction also affects how a transition looks. A floor running parallel to a doorway meets the strip differently than one running into it. Our post on [which direction flooring should run](/blog/which-direction-should-flooring-run/) explains how we decide.
+
+## Matching the trim
+
+Transitions for LVP and laminate usually come in colors made to match the floor. For hardwood, transitions can be made from the same species and finished with the floor so they blend in. Some homeowners prefer a contrasting threshold, such as a stone saddle at a bathroom door. Either works if it is chosen on purpose.
+
+## Avoiding trip edges
+
+A transition should be smooth enough that nobody catches a toe on it. That matters most at kitchen doorways, between the house and a garage step, and anywhere older family members walk at night. If two floors differ a lot in height, a longer reducer gives a gentler slope.
+
+## Plan it before installation
+
+We go over every doorway and edge at the estimate: what floor is on each side, how high each one sits, which doors will need trimming and which transition fits. That way there are no surprises on installation day. See our [hardwood installation](/services/hardwood-flooring-installation/) and [luxury vinyl plank](/services/luxury-vinyl-plank/) services, and our [installation prep guide](/blog/preparing-for-flooring-install/). [Book a free estimate](/free-estimate/) or call **(909) 279-8225**.`,
+    internalLinks: [
+      { href: '/services/hardwood-flooring-installation/', text: 'Hardwood floor installation' },
+      { href: '/services/luxury-vinyl-plank/', text: 'Luxury vinyl plank installation' },
+      { href: '/services/laminate-flooring/', text: 'Laminate flooring installation' },
+      { href: '/blog/replacing-tile-with-hardwood-or-lvp/', text: 'Replacing tile with hardwood or LVP' },
+      { href: '/free-estimate/', text: 'Book a free estimate' },
+    ],
+    faqs: [
+      { q: 'Do you need a transition strip between rooms?', a: 'For floating LVP and laminate floors, manufacturers usually require an expansion break at doorways and after a certain run length, which is often covered by a T-molding. Nail-down and glue-down hardwood can usually run room to room without strips.' },
+      { q: 'What is the difference between a T-molding and a reducer?', a: 'A T-molding covers the joint between two floors of about the same height. A reducer slopes down from a thicker floor to a thinner one, so there is no step at the edge.' },
+      { q: 'Can new flooring be flush with existing tile?', a: 'Sometimes. If the two floors are close in height, the subfloor can be built up or prepared so they meet flush. If they differ a lot, a reducer is the safer, smoother option.' },
+      { q: 'Where should a floor transition go in a doorway?', a: 'Usually directly under the closed door, centered in the doorway, so each room shows only its own floor when the door is shut.' },
+      { q: 'Will new flooring stop my doors from closing?', a: 'It can, if the new floor is thicker than the old one. Doors may need to be trimmed, and jambs and casings are usually undercut so the floor fits beneath them. We check this at the estimate.' },
+    ],
+  },
+  {
+    slug: 'baseboards-and-quarter-round-with-new-floors',
+    title: 'Baseboards and Quarter Round With New Floors: Keep, Replace or Add Trim?',
+    metaTitle: 'Baseboards and Quarter Round With New Flooring',
+    metaDesc: 'Should baseboards come off for new flooring? Quarter round vs shoe molding, when to replace baseboards, and what changes when old tile comes out. Inland Empire guide.',
+    excerpt: 'Every new floor raises the same question at the walls: leave the baseboards and add quarter round, pull them and reinstall, or replace them. Here is how to decide, and what to ask before installation day.',
+    date: '2026-11-17',
+    category: 'design',
+    image: '/images/laminate-flooring-detail.webp',
+    alt: 'Light wood-look floor running to the wall and a sunny window',
+    readMins: 6,
+    body: `The trim along the bottom of your walls does a real job with a new floor. Hardwood, LVP and laminate all need a small gap at the walls so the floor can move, and the trim covers that gap. How the trim is handled also decides whether the finished room looks crisp or looks like a floor was dropped into it.
+
+There are three main approaches. Here is how they compare.
+
+## Option 1: Leave the baseboards and add quarter round
+
+The new floor goes in up to the existing baseboards, and a small molding called quarter round, or a slimmer version called shoe molding, gets nailed along the bottom to cover the expansion gap.
+
+**Pros:** It is the least disruptive approach. Baseboards stay on the wall, paint and caulk lines stay intact, and there is less work at the walls.
+
+**Cons:** It adds a visible piece of trim that sticks out from the wall, which some people do not like on a modern home. If the new floor is thicker than the old one, it also makes the baseboard look shorter.
+
+**Quarter round or shoe molding?** Quarter round is a quarter circle. Shoe molding is taller and narrower, so it sits closer to the wall and looks a little more refined. Both cover the same gap.
+
+## Option 2: Pull the baseboards and reinstall them
+
+The baseboards come off before the floor goes in. The floor is installed close to the wall, and the baseboards go back on top of it, covering the expansion gap with no extra molding.
+
+**Pros:** It gives the cleanest look, with no quarter round. The baseboard keeps its full height above the new floor.
+
+**Cons:** Older baseboards can crack or split when they are removed, especially if they have been painted over many times. After reinstalling, nail holes need filling and the top edge usually needs new caulk and paint.
+
+## Option 3: Replace the baseboards
+
+Old baseboards come off and new ones go on after the floor is installed.
+
+**Pros:** It is the time to change the style or height of your trim. Taller baseboards can make a room look more finished, and new trim avoids the problems of reusing damaged pieces.
+
+**Cons:** It adds material, labor and painting to the project. If you want new trim, it is easier to plan it from the start than to add it later.
+
+## When tile is coming out
+
+Many Inland Empire homes have tile set directly on the slab, often with baseboards installed on top of the tile. When the tile comes out, the floor level drops, and if the new floor is thinner than the old tile, a gap shows under the baseboard. Sometimes the baseboards have to come off just to remove the tile cleanly. In these jobs, pulling or replacing baseboards often makes more sense than adding quarter round. Our post on [replacing tile with hardwood or LVP](/blog/replacing-tile-with-hardwood-or-lvp/) covers the rest of the process.
+
+## Cabinets, stairs and fireplaces
+
+Trim questions do not stop at the baseboards:
+
+- **Kitchen cabinets.** The floor usually stops at the cabinet toe kick, and a small molding or the toe kick itself covers the edge. Whether the floor goes under the cabinets or up to them is a bigger decision. Our post on [floors before or after kitchen cabinets](/blog/hardwood-floors-before-or-after-kitchen-cabinets/) explains it.
+- **Stairs.** The edges of treads and risers get their own trim, and stair noses finish the landings.
+- **Fireplaces and built-ins.** These usually get a threshold or a small molding where the floor stops.
+- **Door casings.** Casings are usually undercut so the floor slides under them, which looks much cleaner than trim cut around the casing.
+
+## Why the gap matters
+
+It can be tempting to run the floor tight to the walls with no trim. Do not. Wood and floating floors expand and contract with heat and humidity, and in the Inland Empire the swing between summer heat and dry wind events can be large. A floor installed without its expansion gap can peak, buckle or push against the walls. Our posts on [gaps in hardwood floors](/blog/gaps-in-hardwood-floors/) and [Santa Ana winds and hardwood](/blog/santa-ana-winds-hardwood-floors/) explain how that movement works.
+
+## Questions to settle before installation day
+
+- Are the baseboards staying, coming off and going back, or being replaced?
+- Is quarter round or shoe molding being added, and in what color or paint finish?
+- Who handles caulk, nail holes and paint touch-up on the trim afterwards?
+- How will the floor be finished at cabinets, stairs, sliders and fireplaces?
+
+Trim, transitions and baseboards are part of our installation process, and we go over them at the estimate so you know what the finished room will look like. See our [hardwood installation](/services/hardwood-flooring-installation/) and [laminate installation](/services/laminate-flooring/) services, and our [installation prep guide](/blog/preparing-for-flooring-install/). [Book a free estimate](/free-estimate/) or call **(909) 279-8225**.`,
+    internalLinks: [
+      { href: '/services/hardwood-flooring-installation/', text: 'Hardwood floor installation' },
+      { href: '/services/laminate-flooring/', text: 'Laminate flooring installation' },
+      { href: '/services/luxury-vinyl-plank/', text: 'Luxury vinyl plank installation' },
+      { href: '/blog/preparing-for-flooring-install/', text: 'Preparing for flooring installation' },
+      { href: '/free-estimate/', text: 'Book a free estimate' },
+    ],
+    faqs: [
+      { q: 'Do baseboards need to be removed for new flooring?', a: 'Not always. The floor can go in up to the existing baseboards with quarter round or shoe molding added to cover the expansion gap. Removing and reinstalling the baseboards gives a cleaner look without extra trim.' },
+      { q: 'What is the difference between quarter round and shoe molding?', a: 'Both cover the gap between the floor and the baseboard. Quarter round is a quarter circle. Shoe molding is taller and narrower, so it sits closer to the wall and looks slimmer.' },
+      { q: 'Can flooring be installed without quarter round?', a: 'Yes, if the baseboards are removed before installation and put back on top of the new floor, or replaced with new baseboards. Either way the baseboard covers the expansion gap.' },
+      { q: 'Why is there a gap under my baseboards after tile was removed?', a: 'Baseboards are often installed on top of tile. When the tile comes out and the new floor is thinner, the floor level drops and leaves a gap. Pulling and reinstalling or replacing the baseboards usually fixes it better than adding quarter round.' },
+      { q: 'Why does a floor need a gap at the walls?', a: 'Hardwood, laminate and vinyl plank expand and contract with heat and humidity. Without a small gap at the walls, the floor can peak or buckle. The baseboard or quarter round covers that gap.' },
+    ],
+  },
 ];
 
 export const blogBySlug = Object.fromEntries(blogPosts.map((p) => [p.slug, p]));

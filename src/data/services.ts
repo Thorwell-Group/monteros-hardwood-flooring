@@ -84,6 +84,7 @@ export const services: Service[] = [
       'hardwood-floors-before-or-after-kitchen-cabinets',
       'which-direction-should-flooring-run',
       'prefinished-vs-site-finished-hardwood',
+      'baseboards-and-quarter-round-with-new-floors',
     ],
     relatedGuides: [
       { slug: 'solid-hardwood-flooring', label: 'Solid hardwood flooring explained' },
@@ -201,6 +202,7 @@ export const services: Service[] = [
       'lvp-installation-inland-empire-what-good-looks-like',
       'waterproof-flooring-southern-california',
       'replacing-tile-with-hardwood-or-lvp',
+      'floor-transitions-between-rooms',
     ],
     relatedGuides: [
       { slug: 'waterproof-luxury-vinyl-plank', label: 'What makes LVP waterproof' },
@@ -262,6 +264,7 @@ export const services: Service[] = [
       'laminate-flooring-installation-inland-empire',
       'luxury-vinyl-plank-vs-laminate-inland-empire',
       'how-much-flooring-do-i-need',
+      'laminate-floor-repair-swelling-chips-gaps',
     ],
     relatedGuides: [
       { slug: 'ac-rated-laminate', label: 'AC ratings explained (AC4 vs AC5)' },
@@ -324,6 +327,7 @@ export const services: Service[] = [
       'santa-ana-winds-hardwood-floors',
       'protecting-hardwood-floors-during-the-holidays',
       'area-rugs-and-rug-pads-on-hardwood-floors',
+      'laminate-floor-repair-swelling-chips-gaps',
     ],
     relatedGuides: [
       { slug: 'water-damage-floor-repair', label: 'Water-damaged floor repair guide' },

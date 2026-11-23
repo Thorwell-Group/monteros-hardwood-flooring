@@ -145,6 +145,7 @@ export const services: Service[] = [
       'hardwood-floor-stain-colors-inland-empire',
       'new-floors-before-the-holidays-inland-empire',
       'water-based-vs-oil-based-polyurethane-floors',
+      'staying-home-during-floor-refinishing-or-installation',
     ],
     relatedGuides: [
       { slug: 'sand-and-stain', label: 'Full sand, stain & seal process' },

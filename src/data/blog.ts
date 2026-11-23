@@ -4265,6 +4265,88 @@ Trim, transitions and baseboards are part of our installation process, and we go
       { q: 'Why does a floor need a gap at the walls?', a: 'Hardwood, laminate and vinyl plank expand and contract with heat and humidity. Without a small gap at the walls, the floor can peak or buckle. The baseboard or quarter round covers that gap.' },
     ],
   },
+  {
+    slug: 'staying-home-during-floor-refinishing-or-installation',
+    title: 'Can You Stay Home During Floor Refinishing or New Floor Installation?',
+    metaTitle: 'Can You Stay Home During Floor Refinishing or Installation?',
+    metaDesc: 'When you can live in the house during hardwood refinishing, hardwood installation, LVP or laminate work, which nights to plan to be out, and how to handle kids, pets, the kitchen and bedroom access.',
+    excerpt: 'For most flooring jobs you can stay home. For a refinish, there are usually one or two nights you should not. Here is how it works by project type, and how to plan around kids, pets and the only hallway to the bedrooms.',
+    date: '2026-11-23',
+    category: 'maintenance',
+    image: '/images/hardwood-refinished-oak-floor.webp',
+    alt: 'Freshly refinished oak hardwood floor drying in an empty room',
+    readMins: 5,
+    body: `**Short answer:** for new LVP, laminate or prefinished hardwood, you can almost always stay in the house. It is loud during the day, but you sleep at home. For a **sand and refinish**, or new hardwood that is finished on site, you can often stay too, but plan to be out of the house, or at least out of that part of it, on the days the finish goes down and is drying.
+
+Here is how it breaks down, and what decides it for your home.
+
+## It depends on the type of job
+
+| Project | Can you stay? | What to plan for |
+|---|---|---|
+| LVP or laminate install | Yes | Noise and saw dust during the day. Rooms are usable again soon after each one is done. |
+| Prefinished hardwood install | Yes | Nail gun and saw noise. No finish fumes, no drying time. |
+| Site-finished hardwood install | Mostly | The install days are like any other. The sanding and finishing days work like a refinish. |
+| Sand and refinish, water-based finish | Often, with a plan | Rooms being coated are off limits for about 24 hours per coat. Mild odor. |
+| Sand and refinish, oil-based finish | Usually not | Strong solvent smell for several days. Most families stay elsewhere. |
+| Screen and recoat | Usually yes | One coat, one day. Stay off that floor for about 24 hours. |
+
+## Why refinishing is different
+
+New flooring goes down board by board, and the part that is done is mostly usable. A refinish is the opposite. Every room is sanded, then the whole floor gets coated at once, and nobody can walk on it until it dries.
+
+On a typical refinish we sand, then apply a sealer and two to three coats of finish. You can walk on it in socks after 24 hours, in shoes after 48 hours, furniture goes back after five to seven days, and rugs after two weeks. That is the schedule we give on every [refinishing job](/services/hardwood-floor-refinishing/), and our [dustless refinishing process](/blog/hardwood-floor-refinishing-inland-empire-dustless-process/) walks through each step.
+
+The sanding days are noisy but livable. With dust containment, most of the dust is captured at the sander. The finishing days are the ones to plan around.
+
+## Odor: water-based vs oil-based
+
+Water-based polyurethane is much lower in VOCs and has a milder smell. Many families stay home through it, keeping to rooms away from the work with windows open where possible. Oil-based polyurethane has a strong solvent smell and keeps off-gassing for days, so we recommend being out, and pets should be out too. Our [polyurethane comparison](/blog/water-based-vs-oil-based-polyurethane-floors/) covers the rest of the differences.
+
+If someone in the house is pregnant, has asthma, or is sensitive to smells, plan to be away on the finish days even with water-based.
+
+## The real question: can you get around the wet floor?
+
+This is what decides it more than anything. Look at your floor plan:
+
+- **Single-story home with hardwood in the hallway.** If the hallway is the only way from the bedrooms to the kitchen and front door, nobody can cross it while the finish is wet. Plan to be out the night after each coat, or we can sometimes split the job so one side is finished at a time.
+- **Two-story home.** Often easy. The family lives upstairs while the downstairs is done. The catch is the entry and the bottom of the stairs, so we plan the order so you always have a way out.
+- **Bedrooms only.** Usually no problem. Sleep in another room for a few nights.
+- **Kitchen included.** The fridge often moves to the garage or another room. Plan on takeout or a small setup in another room for a few days.
+
+Ask your contractor which door you will use to get in and out on each day. A good crew plans the last coat so they finish at an exit, not in a corner of the house.
+
+## Kids and pets
+
+- **Keep pets off the floor** until it can take shoes, and longer for big dogs. Paws and claws on soft finish leave marks that are permanent until the next sanding.
+- **Keep kids out of the work rooms.** Sanders, nail guns and saws are not safe to be around, and small handprints on wet finish do not come out.
+- **Cats** are the hardest. A cat that gets into a wet room will walk across it. A closed bedroom or a few days with a friend is safer.
+
+## A few things that help
+
+- **Plan the finish days in advance.** Ask for the schedule in writing, with the coating days marked.
+- **Keep the house at a normal living temperature.** Finish dries best in a comfortable house. Do not shut the heat or air conditioning off for the week.
+- **Pack what you need before the floor is coated.** Clothes, medicine, chargers, pet food. Once the finish is down, you cannot go back in for something you forgot.
+- **Consider phasing.** Doing the house in two stages costs more days but can keep half the home usable. It is a common choice for families who cannot leave, and our [holiday timeline post](/blog/new-floors-before-the-holidays-inland-empire/) shows how phasing affects the schedule.
+- **Prefer no finish days at all?** Prefinished hardwood skips them entirely. See [prefinished vs site-finished](/blog/prefinished-vs-site-finished-hardwood/).
+
+For the furniture, electronics and pre-install list, see [how to prepare your home for flooring installation](/blog/preparing-for-flooring-install/).
+
+At the free estimate we walk the floor plan with you and tell you which days, if any, you should plan to be out. [Book a free estimate](/free-estimate/) or call **(909) 279-8225**.`,
+    internalLinks: [
+      { href: '/services/hardwood-floor-refinishing/', text: 'Hardwood floor refinishing' },
+      { href: '/services/hardwood-flooring-installation/', text: 'Hardwood floor installation' },
+      { href: '/blog/screen-and-recoat-vs-full-refinish/', text: 'Screen and recoat vs full refinish' },
+      { href: '/process/', text: 'Our process' },
+      { href: '/free-estimate/', text: 'Book a free estimate' },
+    ],
+    faqs: [
+      { q: 'Can I stay in my house while my hardwood floors are refinished?', a: 'Often, yes, if the house uses water-based finish and you can get around the rooms being coated. Plan to be out, or in a separate part of the house, for about 24 hours after each coat. With oil-based finish, most families stay elsewhere because of the strong solvent smell.' },
+      { q: 'Can I stay home during LVP or laminate installation?', a: 'Yes. There is no finish to dry and no fumes. Expect saw noise and some dust during the day, and rooms can be used again soon after they are done.' },
+      { q: 'How long do I have to stay off refinished hardwood floors?', a: 'Socks after 24 hours, shoes after 48 hours, furniture back after five to seven days and area rugs after two weeks. The finish reaches full cure at about 30 days, so go easy during the first month.' },
+      { q: 'When can pets walk on refinished hardwood floors?', a: 'Keep pets off until the floor can take shoes, about 48 hours with water-based finish, and longer for large dogs. Claws on soft finish leave marks that stay until the floor is sanded again.' },
+    ],
+  },
 ];
 
 export const blogBySlug = Object.fromEntries(blogPosts.map((p) => [p.slug, p]));

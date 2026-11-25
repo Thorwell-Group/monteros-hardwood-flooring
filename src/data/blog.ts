@@ -4347,6 +4347,99 @@ At the free estimate we walk the floor plan with you and tell you which days, if
       { q: 'When can pets walk on refinished hardwood floors?', a: 'Keep pets off until the floor can take shoes, about 48 hours with water-based finish, and longer for large dogs. Claws on soft finish leave marks that stay until the floor is sanded again.' },
     ],
   },
+  {
+    slug: 'hardwood-flooring-grades-explained',
+    title: 'Hardwood Flooring Grades Explained: Clear, Select, #1 Common and Character',
+    metaTitle: 'Hardwood Flooring Grades Explained: Select vs #1 Common',
+    metaDesc: 'What hardwood flooring grades mean: clear, select, #1 common, #2 common and character grades, how grade affects look, price and waste, and which grade fits pets, kids and modern Inland Empire homes.',
+    excerpt: 'Two oak floors can cost very different amounts and look nothing alike, and the reason is often grade. Here is what clear, select, #1 common and character grades actually mean, and how to pick one.',
+    date: '2026-11-25',
+    category: 'comparison',
+    image: '/images/hardwood-large-living-space.webp',
+    alt: 'Oak hardwood floor showing natural knots and color variation across a large living space',
+    readMins: 5,
+    body: `**Short answer:** a hardwood grade describes how the boards **look**, not how strong they are. Higher grades like Clear and Select have fewer knots, less color variation and a cleaner, more uniform look. Lower grades like #1 Common, #2 Common and "character" grades show more knots, mineral streaks and color swings. The same species wears the same way at every grade.
+
+When two quotes for "white oak" are far apart, grade is one of the first things to check.
+
+## Grade is about appearance, not durability
+
+A white oak board graded Select and a white oak board graded #2 Common are the same wood, with the same hardness. A sound knot in a properly graded board is not a weak spot. What changes between grades is:
+
+- **Knots** - how many, and how large.
+- **Mineral streaks** - the dark gray or greenish lines common in oak and maple.
+- **Color variation** - darker heartwood vs the lighter sapwood near the bark, and board-to-board color swings.
+- **Board length** - higher grades tend to come in longer average lengths. Shorter boards mean more end joints across the floor.
+
+## The standard grades for solid oak
+
+Unfinished solid oak strip and plank in the US is commonly sold in four grades. You will see these names on most domestic red and white oak:
+
+| Grade | What it looks like | Best for |
+|---|---|---|
+| Clear | Mostly heartwood, very uniform color, almost no knots | Formal rooms, a calm and clean look, even darker stains |
+| Select | Mostly clean, with some natural color variation and small knots | The classic hardwood look most people picture |
+| #1 Common | Noticeable knots, mineral streaks, light and dark boards | Family homes, a more natural look, a lower price |
+| #2 Common | Rustic, with larger knots, more streaks and strong variation | Farmhouse and rustic designs, the lowest price |
+
+You may also see **"Select and Better"**, a mix of Select and higher, and **cabin** or **utility** grade below #2 Common. Cabin and utility grade come with more defects and shorter pieces, and a lot of it gets cut away. The savings often disappear into waste and labor.
+
+## Prefinished and engineered floors use their own names
+
+Prefinished and engineered hardwood usually do not follow the four standard names. Each manufacturer has its own scale, with names like **Prime, Select, Natural, Character** or **Rustic**, and many European oak lines use letters such as **AB, ABC** or **ABCD**, where more letters means more character is allowed.
+
+Because those names are not standardized, do not compare "Select" from one brand with "Select" from another. Look at a full box, or a large set of sample boards, and ask what the grade allows: knot size, filled knots, sapwood and color range. Our [wide plank European oak guide](/flooring/wide-plank-european-oak/) covers what to look for in those lines.
+
+## How grade changes the price
+
+For the same species, width and construction, the clean grades cost more per square foot because fewer boards from each log qualify. Moving from Select down to #1 Common is a common way to keep the species you want while lowering the material cost.
+
+Two things to keep in mind:
+
+- **Waste.** Lower grades usually need a little more set aside for boards with defects the installer will not put in the middle of a room. Our post on [how much flooring you need](/blog/how-much-flooring-do-i-need/) explains how waste is figured.
+- **Width and species still matter more.** A character-grade wide-plank European oak can cost more than a Select-grade 3-1/4" red oak strip. Grade moves the price within a product, not across products.
+
+## Which grade hides wear better?
+
+This is where character grades earn their place. Knots, streaks and color variation give the eye a lot to look at, so small scratches, dents, pet nail marks and dust disappear into the pattern. A clean, uniform Clear floor, especially in a dark stain, shows nearly every mark.
+
+For homes with dogs, young kids or heavy traffic, we often steer people toward #1 Common or a character grade, paired with a matte finish. See [best flooring for pets](/blog/best-flooring-for-pets/) for the full pet comparison.
+
+## Grade and stain color
+
+Grade also changes how a stain reads. Knots and mineral streaks take stain differently from the wood around them, so a character floor in a medium or dark stain looks more varied than the same color on a clean floor. Light, natural and "raw oak" looks are where character grades shine, and they fit the [2026 flooring trends](/blog/flooring-trends-2026/) we are seeing in Inland Empire homes. If you want a smooth, even dark floor, a higher grade gives a more consistent result. Our [stain color guide](/blog/hardwood-floor-stain-colors-inland-empire/) shows how species and color work together.
+
+## Grade is not the same as cut
+
+You may also hear **plain sawn, rift sawn** and **quarter sawn**. Those describe how the log was cut, which changes the grain pattern, not the grade. Rift and quartered boards have a straight, linear grain and are more dimensionally stable, which is a real advantage in our dry climate. Plain sawn shows the familiar "cathedral" grain. You can have a Select rift and quartered floor or a #1 Common plain sawn floor. Our [oak flooring guide](/flooring/oak-flooring/) covers red vs white oak.
+
+## Matching an existing floor
+
+If you are adding hardwood next to an existing floor, or patching in new boards, grade matters as much as species and width. New Select boards woven into an old #1 Common floor will look too clean. We match grade along with everything else, and our post on [matching new hardwood to existing floors](/blog/matching-new-hardwood-to-existing-floors/) explains the process.
+
+## How to choose
+
+- **Want a calm, uniform, formal look?** Clear or Select.
+- **Want classic hardwood at a fair price?** Select, or #1 Common if you like some character.
+- **Have pets, kids or busy hallways?** #1 Common or a character grade, with a matte finish.
+- **Going for a natural, rustic or European look?** A character grade.
+- **Comparing quotes?** Make sure both use the same species, width, construction and grade before you compare the price.
+
+At the free estimate we bring sample boards so you can see different grades in your own light, and we explain how each one will look across a whole room. [Book a free estimate](/free-estimate/) or call **(909) 279-8225**.`,
+    internalLinks: [
+      { href: '/services/hardwood-flooring-installation/', text: 'Hardwood floor installation' },
+      { href: '/flooring/oak-flooring/', text: 'Red oak vs white oak flooring' },
+      { href: '/flooring/wide-plank-european-oak/', text: 'Wide plank European oak' },
+      { href: '/blog/engineered-vs-solid-hardwood/', text: 'Engineered vs solid hardwood' },
+      { href: '/free-estimate/', text: 'Book a free estimate' },
+    ],
+    faqs: [
+      { q: 'What is the best grade of hardwood flooring?', a: 'There is no single best grade. Clear and Select give a uniform, clean look and cost more. #1 Common and character grades show more knots and color variation, cost less for the same species, and hide scratches and dents better. All grades of the same species are equally durable.' },
+      { q: 'What is the difference between Select and #1 Common hardwood?', a: 'Select is mostly clean, with small knots and some natural color variation. #1 Common allows more and larger knots, mineral streaks, and a wider mix of light and dark boards. It usually comes in shorter average lengths and costs less than Select in the same species.' },
+      { q: 'Is character grade hardwood lower quality?', a: 'No. Grade describes appearance, not strength. A character-grade board is the same species and hardness as a clean board, with more knots, streaks and color variation. Many homeowners choose it on purpose because it looks natural and hides everyday wear.' },
+      { q: 'Does hardwood grade affect how much flooring I need to order?', a: 'Slightly. Lower grades usually need a bit more set aside for boards with defects that should not go in the middle of a room. Very low cabin or utility grades can produce enough waste to erase most of the savings.' },
+    ],
+  },
 ];
 
 export const blogBySlug = Object.fromEntries(blogPosts.map((p) => [p.slug, p]));

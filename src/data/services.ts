@@ -85,6 +85,7 @@ export const services: Service[] = [
       'which-direction-should-flooring-run',
       'prefinished-vs-site-finished-hardwood',
       'baseboards-and-quarter-round-with-new-floors',
+      'hardwood-flooring-grades-explained',
     ],
     relatedGuides: [
       { slug: 'solid-hardwood-flooring', label: 'Solid hardwood flooring explained' },

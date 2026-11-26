@@ -20,7 +20,7 @@ const schemas = [breadcrumbSchema(crumbs), faqSchema(generalFaqs)];
 ---
 <BaseLayout
   title="Areas We Serve | Inland Empire Flooring"
-  description={`Inland Empire flooring service area. ${business.brandName} serves ${cities.length}+ cities across San Bernardino County and Riverside County, including ${cities.slice(0, 5).map((c) => c.name).join(', ')} and more.`}
+  description={`${business.brandName} serves ${cities.length}+ Inland Empire cities across San Bernardino and Riverside counties, including ${cities.slice(0, 2).map((c) => c.name).join(', ')} and ${cities[2].name}.`}
   pathname="/areas-we-serve/"
   schemas={schemas}
 >

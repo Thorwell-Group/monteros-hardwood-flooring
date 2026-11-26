@@ -58,6 +58,11 @@ function fitDescription(d, max = 160) {
     // to its first sentence, which threw away more than the cut would have.
     if (out.trim().length >= 120) return out.trim();
   }
+  // One long sentence: end it at the last clause break (comma, colon, semicolon)
+  // that still keeps most of the snippet, and close it with a full stop.
+  const head = text.slice(0, max - 1);
+  const breakAt = Math.max(head.lastIndexOf(', '), head.lastIndexOf(': '), head.lastIndexOf('; '));
+  if (breakAt >= 110) return head.slice(0, breakAt).replace(/\s+(and|or|the|a|an|of|to|for|with)$/i, '') + '.';
   return text.slice(0, max).replace(/\s+\S*$/, '');
 }
 
@@ -95,14 +100,14 @@ function fitTitle(t, max = 60) {
     <meta name="theme-color" content={business.brand.primaryColor} />
 
     <title>{fitTitle(seo.title)}</title>
-    <meta name="description" content={fitDescription(seo.description)} />
+    <meta name="description" content={fitDescription(seoInput.description ?? seo.description)} />
     <link rel="canonical" href={seo.canonical} />
     {seo.noindex && <meta name="robots" content="noindex, nofollow" />}
 
     <!-- Open Graph -->
     <meta property="og:type" content={seo.type} />
     <meta property="og:title" content={fitTitle(seo.title)} />
-    <meta property="og:description" content={fitDescription(seo.description)} />
+    <meta property="og:description" content={fitDescription(seoInput.description ?? seo.description)} />
     <meta property="og:url" content={seo.canonical} />
     <meta property="og:image" content={seo.image} />
     <meta property="og:site_name" content={business.brandName} />
@@ -112,7 +117,7 @@ function fitTitle(t, max = 60) {
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={fitTitle(seo.title)} />
-    <meta name="twitter:description" content={fitDescription(seo.description)} />
+    <meta name="twitter:description" content={fitDescription(seoInput.description ?? seo.description)} />
     <meta name="twitter:image" content={seo.image} />
 
     <!-- Favicon -->

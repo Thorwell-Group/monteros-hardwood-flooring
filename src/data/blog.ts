@@ -4249,8 +4249,9 @@ It can be tempting to run the floor tight to the walls with no trim. Do not. Woo
 - Who handles caulk, nail holes and paint touch-up on the trim afterwards?
 - How will the floor be finished at cabinets, stairs, sliders and fireplaces?
 
-Trim, transitions and baseboards are part of our installation process, and we go over them at the estimate so you know what the finished room will look like. See our [hardwood installation](/services/hardwood-flooring-installation/) and [laminate installation](/services/laminate-flooring/) services, and our [installation prep guide](/blog/preparing-for-flooring-install/). [Book a free estimate](/free-estimate/) or call **(909) 279-8225**.`,
+Trim, transitions and baseboards are part of our installation process, and we go over them at the estimate so you know what the finished room will look like. Our [baseboard and trim installation](/services/baseboards-and-trim/) page covers that work in more detail. See our [hardwood installation](/services/hardwood-flooring-installation/) and [laminate installation](/services/laminate-flooring/) services, and our [installation prep guide](/blog/preparing-for-flooring-install/). [Book a free estimate](/free-estimate/) or call **(909) 279-8225**.`,
     internalLinks: [
+      { href: '/services/baseboards-and-trim/', text: 'Baseboard and trim installation' },
       { href: '/services/hardwood-flooring-installation/', text: 'Hardwood floor installation' },
       { href: '/services/laminate-flooring/', text: 'Laminate flooring installation' },
       { href: '/services/luxury-vinyl-plank/', text: 'Luxury vinyl plank installation' },

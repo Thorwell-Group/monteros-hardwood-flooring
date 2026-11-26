@@ -133,7 +133,8 @@ export function serviceSchema(service: Service, opts?: { city?: City }) {
           '@type': 'AdministrativeArea',
           name: c,
         })),
-    offers: {
+    // No Offer when the service has no published price range.
+    ...(service.priceFromUSD != null ? { offers: {
       '@type': 'Offer',
       priceCurrency: 'USD',
       price: service.priceFromUSD,
@@ -145,7 +146,7 @@ export function serviceSchema(service: Service, opts?: { city?: City }) {
         unitText: service.priceUnit ?? 'square foot',
       },
       availability: 'https://schema.org/InStock',
-    },
+    } } : {}),
   };
 }
 

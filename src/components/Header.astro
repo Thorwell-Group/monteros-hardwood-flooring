@@ -1,7 +1,8 @@
 ---
 import { business } from '~/data/business';
-import { services } from '~/data/services';
+import { navServicesFor } from '~/data/services';
 import { cities } from '~/data/cities';
+const services = navServicesFor(Astro.url.pathname);
 ---
 
 <div class="bg-brand-950 text-brand-100/90 text-xs">

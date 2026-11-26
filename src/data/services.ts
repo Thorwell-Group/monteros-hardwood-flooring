@@ -13,8 +13,12 @@ export interface Service {
   areaLink?: { href: string; label: string; before: string; after: string };
   heroImage: string;
   altText: string;
-  priceFromUSD: number;     // per priceUnit, low end
-  priceToUSD: number;       // per priceUnit, high end
+  // Per priceUnit. Optional: a service with no published range (baseboards &
+  // trim) leaves these out, and the schema Offer and the city pricing FAQ fall
+  // back to `pricingNote` instead of printing a made-up number.
+  priceFromUSD?: number;    // per priceUnit, low end
+  priceToUSD?: number;      // per priceUnit, high end
+  pricingNote?: string;     // pricing answer used when there is no published range
   priceUnit?: string;       // what the price range is quoted per; defaults to 'square foot'
   timeline: string;         // typical project window
   cityVariant: boolean;
@@ -391,10 +395,72 @@ export const services: Service[] = [
       { slug: 'sand-and-stain', label: 'Refinishing & stain matching' },
     ],
   },
+  {
+    slug: 'baseboards-and-trim',
+    name: 'Baseboard & Trim Installation',
+    shortName: 'Baseboards & Trim',
+    oneLiner: 'Baseboards, quarter round and shoe molding installed or replaced, so the new floor meets the wall with a clean, finished line.',
+    metaTitleBase: 'Baseboard & Trim Installation',
+    metaDescBase: 'Baseboards, quarter round and shoe molding installed or replaced across the Inland Empire, with a new floor or on their own. Free in-home estimate.',
+    heroImage: '/images/hardwood-dining-room-floor.webp',
+    altText: 'White baseboards and wainscoting meeting a hardwood dining room floor',
+    pricingNote: 'Trim is itemized on the written estimate: linear feet of baseboard, quarter round or shoe molding, and whether existing baseboards come off and go back or get replaced. On our SPC vinyl installs, baseboard trim is already part of the installed price.',
+    timeline: 'Usually the last step of the floor install',
+    // Added 2026-11-26 on the owner's instruction that baseboards and trim are
+    // offered on every client site unless stated otherwise. City pages are
+    // differentiated by the same slab / historic / mixed archetype as the other
+    // services (see SERVICE_BY_ARCHETYPE in local-context.ts).
+    cityVariant: true,
+    benefits: [
+      'New baseboards, quarter round and shoe molding installed',
+      'Existing baseboards pulled before the floor and reinstalled after, where they are worth keeping',
+      'Trim replaced when it is cracked, too short for the new floor, or you want a new style',
+      'Expansion gap at every wall left open and covered, never caulked shut',
+      'Door casings undercut so the floor slides under them instead of trim cut around them',
+    ],
+    process: [
+      { step: 'Decide at the estimate', detail: 'Keep and add quarter round, pull and reinstall, or replace. We look at your baseboards and the new floor height and go over the options.' },
+      { step: 'Trim comes off before the floor', detail: 'Baseboards that are going back are removed carefully before installation. Old tile set under baseboards often means they have to come off anyway.' },
+      { step: 'Floor goes in with its gap', detail: 'Hardwood, LVP and laminate all need a gap at the walls so the floor can move. The trim is what covers it.' },
+      { step: 'Baseboards and molding go on', detail: 'Baseboards set on top of the new floor, with quarter round or shoe molding where it is the right finish. Trim is fastened to the wall, not through a floating floor.' },
+      { step: 'Fill, caulk, walk-through', detail: 'Nail holes filled and top edges caulked, then a final walk-through of every wall, doorway and transition.' },
+    ],
+    materials: ['Baseboards', 'Quarter round', 'Shoe molding', 'Stair noses and landing trim', 'Transition strips at doorways'],
+    faqs: [
+      { q: 'Should I keep my baseboards or replace them with new floors?', a: 'Keep them if they are in good shape and the height still looks right over the new floor. Replace them if they crack coming off, look short against a thicker floor, or you want a taller or different style. We look at them with you at the free estimate.' },
+      { q: 'Quarter round or shoe molding: what is the difference?', a: 'Quarter round is a quarter circle. Shoe molding is taller and narrower, so it sits closer to the wall and looks a little more refined. Both cover the expansion gap along the wall.' },
+      { q: 'Do my baseboards have to come off for new flooring?', a: 'Not always. Leaving them and adding quarter round is the least disruptive option. Pulling them and setting them back on top of the new floor gives the cleanest look with no extra molding. When tile is coming out, the baseboards often need to come off anyway.' },
+      { q: 'Why not run the floor tight to the wall with no trim?', a: 'Hardwood, LVP and laminate expand and contract with heat and humidity, and Inland Empire summers and dry wind events swing both a lot. A floor with no gap at the walls can peak or buckle. The trim covers that gap.' },
+      { q: 'Is trim included with a new floor?', a: 'On our SPC vinyl installs, baseboard trim is part of the installed price. On other jobs, trim is listed as its own line on the written estimate so you can see exactly what is being done at the walls.' },
+    ],
+    intent: 'specialty',
+    gallery: [
+      { src: '/images/hardwood-formal-living-room.webp', alt: 'Hardwood floor finished at painted baseboards in a formal living room' },
+      { src: '/images/hardwood-fireplace-living-room.webp', alt: 'Hardwood living room floor meeting the baseboards and fireplace' },
+      { src: '/images/laminate-flooring-detail.webp', alt: 'Light wood-look floor running to the wall and a sunny window' },
+    ],
+    relatedPosts: [
+      'baseboards-and-quarter-round-with-new-floors',
+      'floor-transitions-between-rooms',
+      'replacing-tile-with-hardwood-or-lvp',
+      'gaps-in-hardwood-floors',
+    ],
+    relatedGuides: [
+      { slug: 'engineered-vs-solid-hardwood', label: 'Engineered vs solid hardwood comparison' },
+      { slug: 'laminate-vs-luxury-vinyl-plank', label: 'Laminate vs LVP comparison' },
+    ],
+  },
 ];
 
 export const servicesBySlug = Object.fromEntries(services.map((s) => [s.slug, s]));
 export const cityVariantServices = services.filter((s) => s.cityVariant);
+
+// /thank-you/ is an ad-funnel page (Meta Pixel conversion) that renders the
+// shared header and footer. Funnel pages only change on the owner's say-so, so
+// services added after the funnel shipped stay out of the menus there.
+const FUNNEL_LOCKED_SERVICES = new Set(['baseboards-and-trim']);
+export const navServicesFor = (pathname: string): Service[] =>
+  /^\/(es\/)?thank-you\/?$/.test(pathname) ? services.filter((s) => !FUNNEL_LOCKED_SERVICES.has(s.slug)) : services;
 
 // Descriptive anchor text for internal links to a service or city-service page,
 // e.g. "Hardwood Floor Refinishing". shortName ("Refinishing", "Stairs") is a

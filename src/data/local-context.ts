@@ -227,6 +227,35 @@ export const SERVICE_BY_ARCHETYPE: Record<string, Record<Archetype, Block>> = {
       checklist: ['Existing treads assessed before quoting', 'Refinish or cap decided on evidence', 'Finish specified for concentrated stair traffic', 'Matched to the adjoining floor'],
     },
   },
+  'baseboards-and-trim': {
+    slab: {
+      heading: 'Baseboards and trim in a slab-built home',
+      body: [
+        'Most slab homes here were finished with tile or carpet, and a lot of that tile was set straight onto the concrete with the baseboards installed on top of it. When the tile comes out, the floor level drops, and a new floor that is thinner than the old tile leaves a gap under the baseboard.',
+        'That is why tile removal so often means the baseboards come off too. Pulling them and setting them back on the new floor, or replacing them, usually looks better than adding quarter round to cover a gap that should not be there.',
+        'Floating LVP and laminate over slab also need their expansion gap at every wall. The trim covers it and is fastened to the wall, never through the floor, so the floor can still move.',
+      ],
+      checklist: ['Baseboard height checked against the old tile and the new floor', 'Trim pulled before tile removal when it sits on the tile', 'Expansion gap covered, never caulked or nailed shut', 'Trim fastened to the wall, not through a floating floor'],
+    },
+    historic: {
+      heading: 'Baseboards and trim in an older home',
+      body: [
+        'Original baseboards in older homes are usually part of the character, and they have often been painted many times. Paint-locked trim can crack or split when it is pulled, so we decide with you up front whether it comes off or stays.',
+        'Where the baseboards stay, quarter round or the slimmer shoe molding covers the gap at the new floor. Where a piece has to be replaced, the new trim should match the profile and height of what is already on the walls.',
+        'Door casings get undercut so the floor slides under them. Trim cut around an old casing is the detail that makes a new floor look added rather than original.',
+      ],
+      checklist: ['Original baseboards kept wherever they come off cleanly', 'Shoe molding where the baseboards stay in place', 'Replacement pieces matched to the existing profile', 'Door casings undercut rather than trimmed around'],
+    },
+    mixed: {
+      heading: 'Baseboards and trim across both kinds of home here',
+      body: [
+        'This city has slab tracts and older raised-foundation homes, and the trim question plays out differently in each. In slab homes it is usually tile coming out from under the baseboards; in older homes it is painted original trim that may not survive being pulled.',
+        'We look at the baseboards and the new floor height together at the free in-home estimate, then go over the three options: keep them and add quarter round or shoe molding, pull and reinstall, or replace.',
+        'Whichever way it goes, the expansion gap at the walls stays open and covered so the floor can move through Inland Empire summers.',
+      ],
+      checklist: ['Keep, reinstall or replace decided before install day', 'Baseboard height checked against the new floor', 'Quarter round or shoe molding chosen to suit the room', 'Expansion gap covered at every wall'],
+    },
+  },
   'water-damage-floor-repair': {
     slab: {
       heading: 'Water damage over a slab',
@@ -308,6 +337,10 @@ const FAMILY_FAQ: Record<string, { q: string; a: () => string }[]> = {
     { q: 'Can I have hardwood stairs if the rest of my house is on a slab?', a: () => 'Yes. Stairs are framed in wood no matter what the ground floor sits on, so solid hardwood treads are an option in every home we work in — even where we have specified engineered or LVP downstairs. It is the one place the slab does not limit you.' },
     { q: 'Can you take the carpet off my stairs and finish what is underneath?', a: () => 'Sometimes. Solid oak treads under carpet are a straightforward win. Construction-grade treads need capping with new hardwood instead. We check before quoting so you know which job you actually have rather than finding out mid-project.' },
   ],
+  'baseboards-and-trim': [
+    { q: 'Can I add quarter round instead of pulling my baseboards?', a: () => 'Yes. Leaving the baseboards and adding quarter round, or the slimmer shoe molding, is the least disruptive way to cover the gap at a new floor. It adds a visible strip of trim and can make baseboards look shorter over a thicker floor, so we look at both before you decide.' },
+    { q: 'What happens to my baseboards when tile comes out?', a: () => 'If the baseboards were installed on top of the tile, they often need to come off to remove it cleanly. A new floor thinner than the old tile also leaves a gap under them. Pulling and reinstalling or replacing them usually gives a better finish than covering the gap with molding.' },
+  ],
   'water-damage-floor-repair': [
     { q: 'My floor is cupping — does it all need replacing?', a: () => 'Often not. Cupping is a moisture response, and once the source is fixed boards frequently flatten on their own over several weeks. Sanding too early wastes wood and can leave the floor crowned when it finally dries. We measure, fix the cause, and wait where waiting is the right answer.' },
     { q: 'Do you work with insurance claims?', a: () => 'Yes. We document moisture readings, the affected area and the cause, which is what an adjuster actually needs. We will not inflate a scope to suit a claim — that tends to get the whole claim questioned.' },
@@ -326,8 +359,16 @@ export function localFaqs(serviceSlug: string, serviceName: string, citySlug: st
     historic: `More than a newer home, and it is worth it. ${cityName} is ${p?.era}, and floors of that age hide previous repairs, old finishes and subfloor movement. A raised foundation lets us assess from below before quoting.`,
     mixed: `It depends which ${cityName} home you are in. The city runs ${p?.era}, so we confirm your subfloor at the free in-home measure instead of assuming from the build year.`,
   };
+  // Trim is decided at the wall, not by the subfloor, so its first answer talks
+  // about what the floor and baseboards in this city's housing usually look like.
+  const trimPrep: Record<Archetype, string> = {
+    slab: `${cityName} housing is ${p?.era}. Where tile was set on a slab with the baseboards on top, taking it out changes the floor height at the wall, so the baseboards and the new floor get checked together at the free in-home estimate.`,
+    historic: `${cityName} is ${p?.era}, so original painted baseboards are common. We decide with you whether they come off and go back, stay with shoe molding added, or get replaced, before install day.`,
+    mixed: `It depends which ${cityName} home you are in. The city runs ${p?.era}, so we look at your baseboards and the new floor height at the free in-home estimate and go over keep, reinstall or replace.`,
+  };
+  const firstAnswer = (serviceSlug === 'baseboards-and-trim' ? trimPrep : prep)[p?.archetype ?? 'mixed'];
   return [
-    { q: `What does ${lower} involve in a ${cityName} home?`, a: prep[p?.archetype ?? 'mixed'] },
+    { q: `What does ${lower} involve in a ${cityName} home?`, a: firstAnswer },
     ...(FAMILY_FAQ[serviceSlug] ?? []).map((f) => ({ q: f.q, a: f.a() })),
     { q: `Do you serve all of ${cityName}?`, a: `Yes — ${cityName} and the surrounding Inland Empire. ${p?.jobNote} Same crew on every job, and a free in-home estimate before you commit to anything.` },
   ];

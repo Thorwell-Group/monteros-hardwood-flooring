@@ -60,6 +60,7 @@ const titleLead: Record<string, string> = {
   'laminate-flooring': 'Laminate Flooring',
   'floor-repair': 'Hardwood Floor Repair',
   'stair-installation': 'Hardwood Stair Installation',
+  'baseboards-and-trim': 'Baseboard & Trim Install',
 };
 const lead = titleLead[service.slug] ?? service.shortName;
 // e.g. "Hardwood Floor Install in Highland, CA | Monteros" — brand short form
@@ -93,14 +94,25 @@ const useLandmark = service.intent === 'refinish' || service.intent === 'repair'
 const anchor = useLandmark ? descLandmark : descHood;
 // "Stairs" on its own says nothing in a search result, so the stair pages lead
 // with the full service; every other service keeps its existing short label.
-const descLead = service.slug === 'stair-installation' ? 'Hardwood stair installation' : service.shortName;
-let description = `${descLead} in ${city.name}, CA, serving ${anchor} and nearby. ${benefitByIntent[service.intent]} Free in-home estimate.`;
+const descLeadBySlug: Record<string, string> = {
+  'stair-installation': 'Hardwood stair installation',
+  'baseboards-and-trim': 'Baseboard and trim installation',
+};
+const descLead = descLeadBySlug[service.slug] ?? service.shortName;
+// Trim shares the 'specialty' intent with stairs, but the stair benefit line
+// ("matched to your existing floors") does not describe trim work.
+const benefitBySlug: Record<string, [string, string]> = {
+  'baseboards-and-trim': ['New or reinstalled baseboards, quarter round and shoe molding.', 'Baseboards, quarter round and shoe molding.'],
+};
+const benefitLong = benefitBySlug[service.slug]?.[0] ?? benefitByIntent[service.intent];
+const benefitShort = benefitBySlug[service.slug]?.[1] ?? benefitShortByIntent[service.intent];
+let description = `${descLead} in ${city.name}, CA, serving ${anchor} and nearby. ${benefitLong} Free in-home estimate.`;
 // Step down to shorter variants only when a long city/anchor pushes past 160.
 if (description.length > 160) {
-  description = `${descLead} in ${city.name}, CA, serving ${anchor}. ${benefitShortByIntent[service.intent]} Free in-home estimate.`;
+  description = `${descLead} in ${city.name}, CA, serving ${anchor}. ${benefitShort} Free in-home estimate.`;
 }
 if (description.length > 160) {
-  description = `${descLead} in ${city.name}, CA. ${benefitShortByIntent[service.intent]} Free in-home estimate from a family-owned crew.`;
+  description = `${descLead} in ${city.name}, CA. ${benefitShort} Free in-home estimate from a family-owned crew.`;
 }
 
 // Internal links out of this page. These city-service pages were reachable only
@@ -163,6 +175,12 @@ const POOLS: Record<string, { src: string; what: string }[]> = {
     { src: '/images/stairs-grand-hardwood.webp', what: 'Hardwood staircase in an open foyer' },
     { src: '/images/stairs-hardwood-treads.webp', what: 'Hardwood stair treads with a metal railing' },
     { src: '/images/hardwood-entry-staircase.webp', what: 'Hardwood entry leading to a staircase' },
+  ],
+  'baseboards-and-trim': [
+    { src: '/images/hardwood-dining-room-floor.webp', what: 'White baseboards and wainscoting meeting a hardwood floor' },
+    { src: '/images/hardwood-formal-living-room.webp', what: 'Hardwood floor finished at painted baseboards' },
+    { src: '/images/hardwood-fireplace-living-room.webp', what: 'Hardwood floor meeting the baseboards and fireplace' },
+    { src: '/images/laminate-bedroom-floor.webp', what: 'Laminate bedroom floor finished at the walls' },
   ],
 };
 // Real Monteros job photos for the sidebar card.

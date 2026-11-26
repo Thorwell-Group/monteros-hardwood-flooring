@@ -147,6 +147,7 @@ export const services: Service[] = [
       'new-floors-before-the-holidays-inland-empire',
       'water-based-vs-oil-based-polyurethane-floors',
       'staying-home-during-floor-refinishing-or-installation',
+      'refinishing-hardwood-stairs',
     ],
     relatedGuides: [
       { slug: 'sand-and-stain', label: 'Full sand, stain & seal process' },
@@ -374,6 +375,7 @@ export const services: Service[] = [
       { q: 'Can you match my existing wood floors?', a: 'Yes - that\'s our most common stair job. We pull treads in matching species, then custom-stain to your floor color. Rare species may need a special order.' },
       { q: 'Do I have to redo the whole staircase?', a: 'Usually yes for a clean look - treads, risers, and nosings should match. If you\'re refinishing existing wood treads, we can refinish in place; if they\'re carpet over plywood, the sub-treads need new hardwood treads on top.' },
       { q: 'What about my balusters and railings?', a: 'We can swap iron balusters and refinish railings as part of the project. Full railing replacement is more involved and quoted separately.' },
+      { q: 'Can you put luxury vinyl plank on stairs?', a: 'Yes. We install luxury vinyl plank on stairs, so the staircase can match new vinyl floors in the rest of the house. The old carpet and tack strips come off first. At the free in-home estimate we look at your stairs and quote them with the rest of the floor.' },
       { q: 'Are the treads slippery?', a: 'Properly finished hardwood treads have similar slip resistance to floors. We finish with satin polyurethane (less slippery than gloss) and can add discrete grip strips if needed.' },
     ],
     intent: 'specialty',

@@ -6,7 +6,8 @@ const { steps, heading = 'How It Works', subheading } = Astro.props as Props;
 // without photos it stays a compact numbered card grid.
 const showcase = steps.length > 0 && steps.every((s) => s.image);
 ---
-<section class="container-wide section">
+<!-- overflow-x:clip: the data-reveal="right" rows start 60px off to the right; clip them so phones get no sideways scroll before they animate in. -->
+<section class="container-wide section" style="overflow-x: clip">
   <div class:list={['mb-14', showcase ? 'max-w-2xl mx-auto text-center' : 'max-w-2xl']} data-reveal>
     <div class="eyebrow mb-4">The process</div>
     <h2 class="text-balance">{heading}</h2>

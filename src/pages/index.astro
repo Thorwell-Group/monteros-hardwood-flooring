@@ -58,7 +58,8 @@ const schemas = [faqSchema(generalFaqs)];
 
   <TrustBar />
 
-  <section class="container-wide section">
+  <!-- overflow-x:clip: the data-reveal="right" column starts 60px off to the right; clip it so phones get no sideways scroll before it animates in. -->
+  <section class="container-wide section" style="overflow-x: clip">
     <div class="grid lg:grid-cols-2 gap-14 lg:gap-20 items-center">
       <div class="relative order-2 lg:order-1">
         <div class="overflow-hidden rounded-[1.25rem] shadow-2xl aspect-[4/3]" data-reveal="mask">

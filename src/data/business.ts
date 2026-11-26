@@ -63,8 +63,8 @@ export const business = {
   },
 
   // Trust signals. Source of truth = the live Google Business Profile.
-  // Verified 2026-10-13 against the hub's daily GBP sync: 4.9★ across 32 Google
-  // reviews. `googleReviewCount` drives the visible rating on every indexable
+  // Verified 2026-11-26 against the hub's daily GBP sync: 4.9★ across 41 Google
+  // reviews (41 every day since 2026-11-17). `googleReviewCount` drives the visible rating on every indexable
   // page and the LocalBusiness aggregateRating markup — update it (and
   // averageRating) whenever the GBP changes.
   //
@@ -75,7 +75,7 @@ export const business = {
   // approved, set it equal to googleReviewCount and remove the pin.
   ratings: {
     averageRating:  4.9,
-    googleReviewCount: 32,
+    googleReviewCount: 41,
     reviewCount:    28,
     bestRating:     5,
     worstRating:    1,

@@ -210,6 +210,7 @@ export const services: Service[] = [
       'waterproof-flooring-southern-california',
       'replacing-tile-with-hardwood-or-lvp',
       'floor-transitions-between-rooms',
+      'how-to-clean-luxury-vinyl-plank-floors',
     ],
     relatedGuides: [
       { slug: 'waterproof-luxury-vinyl-plank', label: 'What makes LVP waterproof' },

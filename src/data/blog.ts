@@ -4441,6 +4441,102 @@ At the free estimate we bring sample boards so you can see different grades in y
       { q: 'Does hardwood grade affect how much flooring I need to order?', a: 'Slightly. Lower grades usually need a bit more set aside for boards with defects that should not go in the middle of a room. Very low cabin or utility grades can produce enough waste to erase most of the savings.' },
     ],
   },
+  {
+    slug: 'how-to-clean-luxury-vinyl-plank-floors',
+    title: 'How to Clean Luxury Vinyl Plank Floors (and What Quietly Damages Them)',
+    metaTitle: 'How to Clean Luxury Vinyl Plank (LVP) Floors the Right Way',
+    metaDesc: 'How to clean luxury vinyl plank floors: the weekly routine, which cleaners are safe, why steam mops, wax and rubber-backed mats cause trouble, and how to protect LVP from scratches, dents and Inland Empire sun.',
+    excerpt: 'LVP is about as easy to live with as a floor gets, but "waterproof" does not mean "anything goes." Here is the cleaning routine that keeps it looking new, and the common habits that dull it, stain it or void the warranty.',
+    date: '2026-11-27',
+    category: 'maintenance',
+    image: '/images/luxury-vinyl-plank-kitchen.webp',
+    alt: 'Clean luxury vinyl plank flooring in a bright kitchen',
+    readMins: 5,
+    body: `**Short answer:** sweep or vacuum often, then damp mop with plain warm water or a pH-neutral cleaner made for vinyl floors. Skip steam mops, wax, "mop and shine" products, abrasive pads and rubber-backed mats. Most LVP damage we see does not come from spills. It comes from grit, the wrong products and furniture with no pads.
+
+Luxury vinyl plank is one of the easiest floors to keep up in a busy Inland Empire home. But the surface you walk on is a thin clear **wear layer**, often 12 to 20 mil, about the thickness of a few sheets of paper. How you clean it decides how long that layer looks good.
+
+## The everyday routine
+
+- **Dry first, every time.** Sweep with a soft broom, use a dry microfiber mop, or vacuum on the hard-floor setting with the beater bar turned off. A spinning brush roll can scuff the surface over time.
+- **Damp mop weekly, or as needed.** Use a microfiber mop wrung out until it is just damp. Warm water handles most dirt. For more, use a cleaner your floor's manufacturer approves, or a pH-neutral cleaner labeled for vinyl or LVP.
+- **Wipe spills when they happen.** The planks shrug off water, but liquid that sits can work into the seams and run to the edges of the room.
+- **Rinse if you used soap.** Leftover cleaner leaves a film that dulls the floor and grabs dirt. If the floor looks streaky or hazy, a plain water pass usually fixes it.
+
+Fine dust and grit are the real enemy. During Santa Ana wind weeks, and anywhere ash or yard sand gets tracked in, a quick daily dry mop does more for an LVP floor than any product.
+
+## What not to use on LVP
+
+| Avoid | Why |
+|---|---|
+| Steam mops | Heat and moisture can soften the wear layer, weaken click joints and loosen glue-down floors. Many LVP warranties exclude steam cleaning. |
+| Wax, polish, "mop and shine" | Vinyl does not need a coating. These build up into a cloudy, sticky layer that is hard to strip. |
+| Abrasive pads and scouring powder | They scratch the wear layer, and scratches in vinyl cannot be sanded out. |
+| Bleach, ammonia and solvent cleaners | Strong or high-pH products can dull or discolor the surface. Use them only if the manufacturer allows it. |
+| Oil soaps and film-leaving wood cleaners | Made for wood finishes, not vinyl. They leave residue and slippery spots. |
+| Soaking wet mops | Water pools in seams and along walls, where it can reach the subfloor. |
+
+The safest move is to check the care sheet for the exact product on your floor. If you do not have it and we installed the floor, ask us. We keep product records for the floors we put in.
+
+## Stains and scuffs
+
+- **Shoe scuffs:** a dry microfiber cloth or a tennis ball often lifts them. Then damp wipe the spot.
+- **Ink, marker and nail polish:** many manufacturers allow a small amount of isopropyl (rubbing) alcohol on a soft cloth. Test it in a closet or under an appliance first.
+- **Grease and food:** a little vinyl-safe cleaner on a damp cloth, then rinse with plain water.
+
+Deeply textured "hand-scraped" LVP can hold dirt in the grain. A soft-bristle brush with your damp cleaner gets into the texture without scratching it.
+
+## Rubber-backed mats can stain vinyl
+
+This one surprises people. Many rubber and latex-backed rugs and mats react with vinyl and leave a yellow or brown stain that does not wash out. Use mats labeled safe for vinyl floors, or put a vinyl-safe pad under area rugs. Our [rug pad guide](/blog/area-rugs-and-rug-pads-on-hardwood-floors/) covers which materials are safe on LVP and hardwood.
+
+## Scratches and dents
+
+The wear layer resists scratches well, but it is not armor.
+
+- **Felt pads on every chair and table leg.** Check and replace them a few times a year, since grit gets stuck in old felt.
+- **Do not drag furniture or appliances.** Lift them, or slide them on hardboard or furniture sliders.
+- **Give heavy items wide feet.** Narrow legs on pianos, safes and loaded bookcases can leave permanent dents in vinyl. Use wide floor protectors.
+- **Rolling office chairs** need a vinyl-safe chair mat without a rubber backing, or soft casters made for hard floors.
+- **Pets:** keep nails trimmed. A thicker wear layer, 20 mil or more, holds up better in dog households. See [best flooring for pets](/blog/best-flooring-for-pets/).
+
+## Sun and heat
+
+Inland Empire sun is hard on floors. Vinyl expands with heat, and floors in front of south- or west-facing sliders can get hot enough to move. A floating floor may gap or lift if it was installed without proper expansion space. Strong UV can also fade some products over the years. Blinds, UV window film or a light curtain during the hottest part of the day helps. Our [Southern California flooring guide](/blog/best-flooring-for-southern-california-homes/) covers how heat affects each floor type.
+
+## When cleaning is not the fix
+
+Some problems come from the install or the subfloor, not dirt:
+
+- **Planks that separate, peak or click underfoot** usually point to missing expansion gaps, an uneven subfloor or heat.
+- **Water that got under the floor**, from a dishwasher, toilet or water heater, needs to be dried out. A waterproof plank does not stop water from sitting on the subfloor beneath it. Our post on [what "waterproof" really means](/blog/waterproof-flooring-southern-california/) explains why.
+- **A deep gouge or burn** cannot be cleaned out, but one damaged plank can often be swapped without redoing the room. See [replacing a damaged vinyl plank](/blog/replace-damaged-vinyl-plank/).
+
+## A simple LVP care checklist
+
+- Mats at exterior doors, with vinyl-safe backing only.
+- Dry mop or vacuum (beater bar off) a few times a week.
+- Damp mop with water or a pH-neutral vinyl cleaner as needed.
+- No steam, no wax, no abrasive pads.
+- Felt pads on furniture and wide protectors under heavy items.
+- Shade hot, sunny spots on summer afternoons.
+
+If your LVP is gapping, lifting or damaged, or you are weighing a new floor, we can take a look. [Book a free estimate](/free-estimate/) or call **(909) 279-8225**.`,
+    internalLinks: [
+      { href: '/services/luxury-vinyl-plank/', text: 'Luxury vinyl plank installation' },
+      { href: '/flooring/waterproof-luxury-vinyl-plank/', text: 'What makes LVP waterproof' },
+      { href: '/flooring/spc-flooring/', text: 'SPC vs WPC cores explained' },
+      { href: '/blog/lvp-installation-inland-empire-what-good-looks-like/', text: 'What a good LVP install looks like' },
+      { href: '/free-estimate/', text: 'Book a free estimate' },
+    ],
+    faqs: [
+      { q: 'What is the best way to clean luxury vinyl plank floors?', a: 'Remove grit first with a soft broom, a dry microfiber mop or a vacuum with the beater bar off. Then damp mop with warm water or a pH-neutral cleaner made for vinyl floors, using a mop wrung out until it is just damp. Rinse with plain water if the cleaner leaves a film.' },
+      { q: 'Can you use a steam mop on LVP?', a: 'It is not recommended. Steam combines heat and moisture, which can soften the wear layer, weaken click joints and loosen glue-down floors. Many LVP manufacturers exclude steam cleaning from their warranty, so check the care sheet for your product before using one.' },
+      { q: 'Can I use vinegar on vinyl plank floors?', a: 'Some manufacturers allow a weak, diluted vinegar solution and others do not, so check the care sheet for your product. A pH-neutral cleaner made for vinyl is the safer everyday choice. Do not use wax, oil soap or abrasive cleaners on LVP.' },
+      { q: 'Why does my LVP floor look cloudy or streaky?', a: 'Usually it is residue from too much cleaner, a product with wax or polish in it, or a wood cleaner that leaves a film. Mop with plain warm water and a clean microfiber pad, changing the water often. Heavy shine-product buildup may need a stripper the manufacturer recommends.' },
+      { q: 'Do rubber-backed rugs damage vinyl plank flooring?', a: 'They can. Rubber and latex backings often react with vinyl and leave a yellow or brown stain that does not come out. Use rugs and mats labeled safe for vinyl floors, or a vinyl-safe rug pad.' },
+    ],
+  },
 ];
 
 export const blogBySlug = Object.fromEntries(blogPosts.map((p) => [p.slug, p]));
